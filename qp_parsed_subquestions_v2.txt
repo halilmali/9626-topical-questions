@@ -1,0 +1,82 @@
+Parsed 27 subquestions from QP:
+
+Label: 1(a) | Marks: 1
+Text: Data can exist in two states, dynamic or static. Tick the most accurate statement referring to dynamic data. ✓ A sentence in a textbook that says, ‘The American Declaration of Independence was in 1776’ is an example of dynamic data Data that is read from and not written back to a file is called dynamic data A hard copy newspaper is an example of a dynamic data source Dynamic data can be updated quickly
+
+Label: 1(b) | Marks: 1
+Text: Tick the scenario that involves the use of an indirect data source. ✓ Handing out a questionnaire to factory workers to find out about working conditions Using sensors to monitor pollution in a river Asking businesses for their customers’ details to produce a mailing list Observing the number of customers entering a store to see how busy it is
+
+Label: 1(c) | Marks: 6
+Text: When data is entered into a database, verification is often used. Analyse, including their effectiveness, the different methods of verification that can be used when entering data into a database.
+
+Label: 2 | Marks: None
+Text: There are a number of different ways that data can be directly input to a computer.
+
+Label: 2(a) | Marks: 1
+Text: Tick the most accurate statement referring to the inputting of text using an Optical Character Reader. ✓ It is a lot slower to enter large amounts of text than an inexperienced user typing it in It can be used to read ordinary handwriting It is always completely accurate, with no mistakes being made It is more expensive to scan the text than to pay someone to type in the text
+
+Label: 2(b) | Marks: 1
+Text: Tick the most accurate statement referring to the inputting of examination paper answers using an Optical Mark Reader. ✓ It is very suitable for entering text It can read marks made on an otherwise blank piece of paper It is much more accurate than data being keyed in by a person If the marks are not in a dark enough pencil, they are still always read correctly
+
+Label: 2(c) | Marks: 8
+Text: Evaluate, by weighing up the advantages and disadvantages, the use of MICR for inputting text.
+
+Label: 3 | Marks: 8
+Text: Financial reports can be produced using word processing software or spreadsheet software. Compare and contrast the use of these two pieces of application software for this purpose.
+
+Label: 4 | Marks: 3
+Text: Describe how the data from an air pollution monitoring system is collected and prepared, ready for processing by a computer.
+
+Label: 5 | Marks: 6
+Text: A school has classrooms where students can use computers to access the school network. There are other classrooms where the computers do not have access to the school network. Compare and contrast the use of computers in both types of classroom.
+
+Label: 6 | Marks: 6
+Text: The World Wide Web is a service provided by the internet. Describe, without referring to how it is accessed, what is meant by the World Wide Web.
+
+Label: 7 | Marks: 8
+Text: The manager of an IT department has been asked to set up a video-conference. At the moment she only has a router, a networked computer and a large screen. Describe how she would set up this video-conference before joining in.
+
+Label: 8 | Marks: None
+Text: A company sells domestic appliances. The spreadsheet shows the sales of washing machines for the first five months of this year. A B C D E F G H I J K L M N Month Jan Jan Jan Jan Feb Feb Feb Feb Feb Mar Apr Apr May May May May Serial Number Price $481 $617 $616 $250 $231 $299 $500 $66 $632 $392 $59 $756 $74 $520 $250 $256 Sales Month Jan Feb Mar Apr May Monthly Total $1,964 $1,728 $392 $815 $1,100 Fig. 8.1
+
+Label: 8(a) | Marks: 3
+Text: The formula in cell D2 is =VALUE(RIGHT(B2,3)). Explain, without using cell references, what this formula does.
+
+Label: 8(b) | Marks: 4
+Text: In Fig. 8.1, the formula in cell G3 is =SUMIF(A$2:A$17,F3,D$2:D$17). Explain, without using cell references, what this formula does.
+
+Label: 8(c) | Marks: None
+Text: The bar chart in Fig. 8.1 lacks information about what it represents. It has been created from contiguous data.
+
+Label: 8(i) | Marks: 1
+Text: Identify the cell range that was used to create the bar chart.
+
+Label: 8(i)(ii) | Marks: 4
+Text: Describe what information should be added to the bar chart.
+
+Label: 8(d) | Marks: 6
+Text: Evaluate, by weighing up the advantages and disadvantages, the use of the spreadsheet in Fig. 8.1 for financial forecasting.
+
+Label: 9 | Marks: None
+Text: BLANK PAGE Metropolis City Library stores details of its books and borrowers in a database. Part of the Borrowers table is shown in Fig. 9.1. Gale Brown Leadbetter Brierley Greenhalgh Pooley Chalmers Lewis Patel Bopal Akula Benson Breen Clemantine Christine Karla Fred Ben Christopher Rio Ruksana Angela Udoka Billy Wesley Wally Mintair Redleigh Lowtown Redleigh Mintair Armley Fromman Lowtown Fromman Lowtown Armley Lowtown Armley BorrowerID FamilyName FirstName Phone T own_lived_in Fig. 9.1 The librarian has created the following query: Field: Table: Sort: Show: Criteria: or: BorrowerID Borrowers FamilyName Borrowers Like ʺB*ʺ FirstName Borrowers Phone Borrowers Town_lived_in Borrowers < > ʺLowtownʺ Fig. 9.2
+
+Label: 9(a) | Marks: 4
+Text: (i) Explain what information the librarian is looking for when using the query in Fig. 9.2.
+
+Label: 9(a)(ii) | Marks: 1
+Text: Identify the information that the query would output using the data in Fig. 9.1.
+
+Label: 9(b) | Marks: 2
+Text: Part of the Books table is shown in Fig. 9.3. Ruinous Orange That Was Then The Cheap Strangers Too Open Too Short The Divide of Decay Light and Day Never the Poor Gloom Brother Tempest Brother Ambuscade Significant Numbers Respeto por la Castilla Jonathon Roberts Jaswant Sandhu Reeta Khan Paul Stevenson Donal Haroldson Gabrial Aston Jaswant Sandhu Rowena Littleton Rowena Littleton Hortense de Vandre Jan Tudor Celia Rodriguez ISBN Title Author Ellipsoid Round Moon Publishers Round Moon Publishers Douglas Books Travellor Books Betelgeuse Round Moon Publishers Douglas Books Douglas Books Possum Books Frowpile Books Possum Books $16.99 $10.00 $18.99 $16.99 $19.99 $18.99 $18.99 $20.99 $13.99 $12.99 $17.99 $9.99 Publisher NumberofCopies Replacement Cost Fig. 9.3 The librarian has created the following query: Field: Table: Sort: Show: Criteria: or: ISBN Books Title Books Author Books Like ʺ*sonʺ Publisher Books NumberofCopies Books ReplacementCost Books < 10 Fig. 9.4 (i) Explain what information the librarian is looking for when using the query in Fig. 9.4.
+
+Label: 9(b)(ii) | Marks: 1
+Text: Identify the information that the query would output using the data in Fig. 9.3.
+
+Label: 10 | Marks: 8
+Text: A company is creating a database to record information about each employee. The IT manager is creating an on-screen data entry form that will be used by the Human Resources department. This is her first design: Name___ Address_______ Date of birth______ Gender_________ Date joined company______ Salary___________________ Describe, in detail, appropriate improvements that could be made to the form to make data entry more accurate and easier to complete.
+
+Label: 11 | Marks: 3
+Text: Explain, using examples, what is meant by the term generic file format.
+
+Label: 12 | Marks: 4
+Text: Describe, in detail, what is meant by a hierarchical database management system.

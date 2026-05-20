@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9626 IT Explorer - Admin Dashboard</title>
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="dark-mode">
+  <div class="admin-container">
+    
+    <!-- Top Nav Header -->
+    <header class="admin-header">
+      <div class="logo-area">
+        <span class="logo-dot"></span>
+        <div class="logo-titles">
+          <h1>9626 IT Explorer</h1>
+          <p class="subtitle">Database & Syllabus Admin Portal</p>
+        </div>
+      </div>
+      
+      <!-- Connection & Action Controls -->
+      <div class="header-actions">
+        <!-- Status Indicator -->
+        <div class="status-indicator" id="connection-status">
+          <span class="status-dot offline"></span>
+          <span class="status-text">Checking Server...</span>
+        </div>
+
+        <!-- Unsaved Indicator -->
+        <div class="unsaved-badge" id="unsaved-badge" style="display: none;">
+          <span class="badge-dot"></span>
+          <span>Unsaved Changes</span>
+        </div>
+
+        <!-- Action Buttons -->
+        <button class="action-btn secondary-btn" id="btn-undo" disabled title="Undo all unsaved edits">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><polyline points="3 3 3 8 8 8"></polyline></svg>
+          <span>Undo Edits</span>
+        </button>
+
+        <button class="action-btn primary-btn" id="btn-save" disabled title="Save database back to local disk">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+          <span>Save to Server</span>
+        </button>
+
+        <button class="action-btn backup-btn" id="btn-backup" title="Download database JSON backup directly">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download Backup</span>
+        </button>
+
+        <a href="index_v2.html" class="action-btn link-btn" title="Back to main explorer view">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          <span>View Explorer</span>
+        </a>
+      </div>
+    </header>
+
+    <div class="admin-workspace">
+      <!-- Admin Sidebar - Tabs -->
+      <aside class="admin-sidebar">
+        <nav class="admin-nav">
+          <button class="nav-item active" id="tab-assigner" onclick="switchTab('assigner')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span>Question Assigner</span>
+          </button>
+          <button class="nav-item" id="tab-syllabus" onclick="switchTab('syllabus')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            <span>Syllabus Manager</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-stats">
+          <h3>Database Statistics</h3>
+          <div class="stat-row">
+            <span>Total Questions:</span>
+            <strong id="stat-total">0</strong>
+          </div>
+          <div class="stat-row">
+            <span>Classified:</span>
+            <strong id="stat-classified" class="text-success">0</strong>
+          </div>
+          <div class="stat-row">
+            <span>Unclassified (Topic 1.1/Fallback):</span>
+            <strong id="stat-unclassified" class="text-warning">0</strong>
+          </div>
+          <div class="stat-row">
+            <span>Total Chapters:</span>
+            <strong id="stat-chapters">0</strong>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Panel -->
+      <main class="admin-main">
+        
+        <!-- SECTION 1: QUESTION ASSIGNER -->
+        <section id="sec-assigner" class="workspace-section active">
+          <div class="filter-bar">
+            <!-- Search -->
+            <div class="search-box">
+              <input type="text" id="q-search" placeholder="Search questions by text, ID, or paper details...">
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-dropdowns">
+              <div class="select-wrapper">
+                <select id="filter-paper">
+                  <option value="all">All Papers</option>
+                  <option value="Paper 1">Paper 1 (AS Theory)</option>
+                  <option value="Paper 2">Paper 2 (AS Practical)</option>
+                  <option value="Paper 3">Paper 3 (A Level Theory)</option>
+                  <option value="Paper 4">Paper 4 (A Level Practical)</option>
+                </select>
+              </div>
+
+              <div class="select-wrapper">
+                <select id="filter-year">
+                  <option value="all">All Years</option>
+                  <!-- Populated dynamically -->
+                </select>
+              </div>
+
+              <div class="select-wrapper">
+                <select id="filter-topic">
+                  <option value="all">All Topics</option>
+                  <!-- Populated dynamically -->
+                </select>
+              </div>
+
+              <div class="select-wrapper">
+                <select id="filter-status">
+                  <option value="all">All Statuses</option>
+                  <option value="unassigned">Fallback / Review Required</option>
+                  <option value="assigned">Custom Assigned</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question Table/List Container -->
+          <div class="questions-table-container">
+            <div class="loading-overlay" id="assigner-loading">
+              <div class="spinner"></div>
+              <span>Loading Database...</span>
+            </div>
+            
+            <div class="questions-list" id="assigner-list">
+              <!-- Cards rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Pagination Bar -->
+          <div class="pagination-bar" id="pagination-bar">
+            <span class="pagination-info" id="pagination-info">Showing 0-0 of 0</span>
+            <div class="pagination-controls">
+              <button class="pag-btn" id="pag-prev" onclick="prevPage()">&laquo; Prev</button>
+              <span class="pag-current" id="pag-current">Page 1</span>
+              <button class="pag-btn" id="pag-next" onclick="nextPage()">Next &raquo;</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: SYLLABUS MANAGER -->
+        <section id="sec-syllabus" class="workspace-section">
+          <div class="syllabus-tools">
+            <h2>Syllabus Structure</h2>
+            <button class="action-btn primary-btn add-btn" onclick="addNewChapter()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Add Chapter</span>
+            </button>
+          </div>
+
+          <div class="syllabus-tree-container">
+            <div class="loading-overlay" id="syllabus-loading" style="display:none;">
+              <div class="spinner"></div>
+            </div>
+            <div class="syllabus-tree" id="syllabus-tree">
+              <!-- Syllabus structure dynamically loaded here -->
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Zoom/Image Lightbox -->
+  <div class="lightbox" id="lightbox" style="display: none;">
+    <button class="lightbox-close" id="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <div class="lightbox-content">
+      <img src="" id="lightbox-img" alt="Zoomed View">
+      <div class="lightbox-caption" id="lightbox-caption">Zoomed view. Click outside or ESC to close.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script src="admin.js"></script>
+</body>
+</html>

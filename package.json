@@ -1,0 +1,13 @@
+{
+  "name": "9626-topical-past-papers",
+  "version": "1.0.0",
+  "description": "9626 IT Topical Past Papers Explorer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

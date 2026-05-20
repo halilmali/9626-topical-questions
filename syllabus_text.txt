@@ -1,0 +1,2450 @@
+
+--- Page 1 ---
+Syllabus
+Cambridge International  
+AS & A Level  
+Information Technology 9626
+Use this syllabus for exams in 2025, 2026 and 2027 .
+Exams are available in the June and November series.
+Also available for examination in March 2025, 2026 and 2027 for India.
+Version 3
+For the purposes of screen readers, any mention in this document of Cambridge IGCSE 
+refers to Cambridge International General Certificate of Secondary Education.
+--- Page 2 ---
+Why choose Cambridge International?
+Cambridge International prepares school students for life, helping them develop an informed curiosity and a 
+lasting passion for learning. We are part of Cambridge University Press & Assessment, which is a department 
+of the University of Cambridge.
+Our Cambridge Pathway gives students a clear path for educational success from age 5 to 19. Schools can 
+shape the curriculum around how they want students to learn – with a wide range of subjects and flexible ways 
+to offer them. It helps students discover new abilities and a wider world, and gives them the skills they need for 
+life, so they can achieve at school, university and work.
+Our programmes and qualifications set the global standard for international education. They are created by 
+subject experts, rooted in academic rigour and reflect the latest educational research. They provide a strong 
+platform for students to progress from one stage to the next, and are well supported by teaching and learning 
+resources.
+We review all our syllabuses regularly, so they reflect the latest research evidence and professional teaching 
+practice – and take account of the different national contexts in which they are taught.
+We consult with teachers to help us design each syllabus around the needs of their learners. Consulting with 
+leading universities has helped us make sure our syllabuses encourage students to master the key concepts in 
+the subject and develop the skills necessary for success in higher education.
+Our mission is to provide educational benefit through provision of international programmes and qualifications 
+for school education and to be the world leader in this field. Together with schools, we develop Cambridge 
+learners who are confident, responsible, reflective, innovative and engaged – equipped for success in the 
+modern world.
+Every year, nearly a million Cambridge students from 10 000 schools in 160 countries prepare for their future 
+with the Cambridge Pathway. 
+School feedback: ‘We think the Cambridge curriculum is superb preparation for university.’
+Feedback from: Christoph Guttentag, Dean of Undergraduate Admissions, Duke University, USA
+Quality management
+Cambridge International is committed to providing exceptional quality. In line with this commitment, our 
+quality management system for the provision of international qualifications and education programmes for 
+students aged 5 to 19 is independently certified as meeting the internationally recognised standard,  
+ISO 9001:2015. Learn more at www.cambridgeinternational.org/ISO9001
+© Cambridge University Press & Assessment September 2022
+Cambridge Assessment International Education is part of Cambridge University Press & Assessment. Cambridge University Press & 
+Assessment is a department of the University of Cambridge.
+Cambridge University Press & Assessment retains the copyright on all its publications. Registered centres are permitted to copy 
+material from this booklet for their own internal use. However, we cannot give permission to centres to photocopy any material that is 
+acknowledged to a third party even for internal use within a centre.
+--- Page 3 ---
+Important: Changes to this syllabus
+For information about changes to this syllabus for 2025, 2026 and 2027, go to page 72.
+The latest syllabus is version 2, published January 2023.
+Contents
+Why choose Cambridge International?  ........................................................................ 2
+1 Why choose this syllabus?  ........................................................................................ 4
+2 Syllabus overview  .......................................................................................................8
+Aims 8
+Content overview 9
+Assessment overview 10
+Assessment objectives 12
+3 Subject content  .........................................................................................................13
+Annual technical updates 13
+Topics 13
+AS Level topics 14
+A Level topics 35
+Flowchart, system flowchart and data flow diagram symbols 61
+4 Details of the assessment  ....................................................................................... 64
+Paper 1 – Theory 64
+Paper 2 – Practical 64
+Paper 3 – Advanced Theory 65
+Paper 4 – Advanced Practical 65
+Command words 66
+5 What else you need to know  ................................................................................... 67
+Before you start 67
+Making entries 68
+Accessibility and equality  68
+After the exam 69
+How students, teachers and higher education can use the grades 70
+Grade descriptions 71
+Changes to this syllabus for 2025, 2026 and 2027 72
+--- Page 4 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027.
+4
+www.cambridgeinternational.org/alevelBack to contents page
+1 Why choose this syllabus? 
+Key benefits 
+The best motivation for a student is a real passion for the 
+subject they’re learning. By offering students a variety of 
+Cambridge International AS & A Levels, you can give them the 
+greatest chance of finding the path of education they most 
+want to follow. With over 50 subjects to choose from, students 
+can select the ones they love and that they’re best at, which 
+helps motivate them throughout their studies.
+Following a Cambridge International AS & A Level programme 
+helps students develop abilities which universities value highly, 
+including:
+ • a deep understanding of their subjects
+ • higher order thinking skills – analysis, critical thinking,  
+problem solving 
+ • presenting ordered and coherent arguments
+ • independent learning and research.
+Cambridge International AS & A Level Information Technology  encourages learners to become 
+effective and discerning users of IT. Learners develop a broad range of knowledge, skills and understanding, 
+essential for progression on to higher education courses in Information Technology or employment.
+Our approach in Cambridge International AS & A Level Information Technology encourages learners to be:
+confident, using a range of software
+responsible, using technology ethically
+reflective, as learners, developing their knowledge and understanding of IT to solve problems
+innovative, creating efficient solutions to problems
+engaged, in technology, how it is built and how software solutions are developed.
+School feedback: ‘Cambridge students develop a deep understanding of subjects and 
+independent thinking skills.’
+Feedback from: Principal, Rockledge High School, USA
+Cambridge
+learner
+--- Page 5 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Why choose this syllabus? 
+5
+www.cambridgeinternational.org/alevelBack to contents page
+Key concepts
+Key concepts are essential ideas that help students develop a deep understanding of their subject and make 
+links between different aspects. Key concepts may open up new ways of thinking about, understanding or 
+interpreting the important things to be learned.  
+Good teaching and learning will incorporate and reinforce a subject’s key concepts to help students gain:
+ • a greater depth as well as breadth of subject knowledge
+ • confidence, especially in applying knowledge and skills in new situations  
+ • the vocabulary to discuss their subject conceptually and show how different aspects link together
+ • a level of mastery of their subject to help them enter higher education.
+The key concepts identified below, carefully introduced and developed, will help to underpin the course you will 
+teach. You may identify additional key concepts which will also enrich teaching and learning. 
+The key concepts for Cambridge International AS & A Level Information Technology are:
+ • Hardware and software  
+Hardware and software interact with each other in an IT system. It is important to understand how these 
+work and how they work together with each other, and with us in our environment.
+ • Networks 
+Computer systems can be connected together to form networks, allowing them to share data and 
+resources. The central role networks play in the internet, mobile and wireless applications and cloud 
+computing has rapidly increased the demand for network capacity and performance.
+ • The internet 
+The internet is a global communications network. It uses standardised communications protocols to allow 
+computers worldwide to connect and share information in many different forms. The impact of the internet 
+on our lives is profound. While the services the internet supports can provide huge benefits to society, they 
+have also introduced issues, for example security of data.
+ • System life cycle 
+Information systems are developed within a planned cycle of stages. They cover the initial development of 
+the system, through to its scheduled updating or redevelopment.
+ • New technologies  
+As the information industry changes so rapidly, it is important to keep track of new and emerging 
+technologies and consider how they might affect everyday life.
+--- Page 6 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Why choose this syllabus? 
+6
+www.cambridgeinternational.org/alevelBack to contents page
+International recognition and acceptance
+Our expertise in curriculum, teaching and learning, and assessment is the basis for the recognition of 
+our programmes and qualifications around the world. Every year thousands of students with Cambridge 
+International AS & A Levels gain places at leading universities worldwide. Our programmes and qualifications 
+are valued by top universities around the world including those in the UK, US (including Ivy League universities), 
+Europe, Australia, Canada and New Zealand.
+UK NARIC*, the national agency in the UK for the recognition and comparison of international qualifications and 
+skills, has carried out an independent benchmarking study of Cambridge International AS & A Level and found 
+it to be comparable to the standard of AS & A Level in the UK. This means students can be confident that their 
+Cambridge International AS & A Level qualifications are accepted as equivalent, grade for grade, to UK AS & A 
+Levels by leading universities worldwide.
+Cambridge International AS Level Information Technology makes up the first half of the Cambridge International 
+A Level course in Information Technology and provides a foundation for the study of Information Technology at 
+Cambridge International A Level. The AS Level can also be delivered as a standalone qualification. Depending 
+on local university entrance requirements, students may be able to use it to progress directly to university 
+courses in Information Technology or some other subjects. It is also suitable as part of a course of general 
+education. 
+Cambridge International A Level Information Technology provides a foundation for the study of Information 
+Technology or related courses in higher education. Equally it is suitable as part of a course of general 
+education.
+For more information about the relationship between the Cambridge International AS Level and Cambridge 
+International A Level see the ‘Assessment overview’ section of the Syllabus overview.
+We recommend learners check the Cambridge recognition database and university websites to find the most  
+up-to-date entry requirements for courses they wish to study. 
+* Due to the United Kingdom leaving the European Union, the UK NARIC national recognition agency function was re-titled as UK ENIC 
+on 1 March 2021, operated and managed by Ecctis Limited. From 1 March 2021, international benchmarking findings are published 
+under the Ecctis name.
+Learn more at www.cambridgeinternational.org/recognition
+--- Page 7 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Why choose this syllabus? 
+7
+www.cambridgeinternational.org/alevelBack to contents page
+Supporting teachers
+We provide a wide range of resources, detailed guidance, innovative training and professional development so 
+that you can give your students the best possible preparation for Cambridge International AS & A Level. To find 
+out which resources are available for each syllabus go to www.cambridgeinternational.org/support  
+The School Support Hub is our secure online site for Cambridge teachers where you can find the resources 
+you need to deliver our programmes. You can also keep up to date with your subject and the global Cambridge 
+community through our online discussion forums.  
+Find out more at www.cambridgeinternational.org/support
+Support for Cambridge International AS & A Level
+Planning and 
+preparation
+ • Schemes of work
+ • Specimen papers
+ • Syllabuses
+ • Teacher guides
+Teaching and 
+assessment
+ • Endorsed resources
+ • Online forums
+ • Support for 
+coursework and 
+speaking tests
+Learning and revision
+ • Example candidate 
+responses
+ • Past papers and 
+mark schemes
+ • Specimen paper 
+answers
+Results
+ • Candidate Results 
+Service
+ • Principal examiner 
+reports for teachers
+Sign up for email notifications about changes to syllabuses, including new and revised products and services at 
+www.cambridgeinternational.org/syllabusupdates
+Professional development
+We support teachers through:
+ • Introductory Training – face-to-face or online
+ • Extension Training – face-to-face or online
+ • Enrichment Professional Development – face-to-face or online
+Find out more at www.cambridgeinternational.org/events
+ • Cambridge Professional Development Qualifications
+Find out more at www.cambridgeinternational.org/profdev
+Supporting exams officers
+We provide comprehensive support and guidance for all Cambridge exams officers.  
+Find out more at: www.cambridgeinternational.org/eoguide
+--- Page 8 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027.
+8
+www.cambridgeinternational.org/alevelBack to contents page
+2 Syllabus overview 
+Aims
+The aims describe the purposes of a course based on this syllabus.
+The aims are to enable students to:
+ • develop a broad range of IT skills
+ • develop an understanding of the parts, use and applications of IT systems within a range of organisations, 
+including the use of networking technology
+ • develop an understanding of how IT systems affect society in general
+ • develop a broad knowledge of the use of IT in workplace situations and the potential risks
+ • develop an understanding of the system life cycle and apply this understanding to workplace situations
+ • develop an understanding of project management skills
+ • be aware of new and emerging technologies
+ • apply their knowledge and understanding of IT to solve problems.
+Cambridge Assessment International Education is an education organisation and politically  
+neutral. The contents of this syllabus, examination papers and associated materials do not endorse any 
+political view. We endeavour to treat all aspects of the exam process neutrally.
+--- Page 9 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Syllabus overview  
+9
+www.cambridgeinternational.org/alevelBack to contents page
+Content overview
+AS Level candidates study topics 1–11.
+1 Data processing and information
+2 Hardware and software
+3 Monitoring and control
+4 Algorithms and flowcharts
+5 eSecurity
+6 The digital divide
+7 Expert systems
+8 Spreadsheets
+9 Modelling
+10 Database and file concepts
+11 Video and audio editing
+A Level candidates study topics 1–11 and topics 12–21.
+12 IT in society
+13 New and emerging technologies
+14 Communications technology
+15 Project management
+16 System life cycle
+17 Data analysis and visualisation
+18 Mail merge
+19 Graphics creation
+20 Animation
+21 Programming for the web
+Cambridge International does not specify hardware requirements or suppliers for the different software 
+applications. Teachers may choose which software to use for practical tasks. The software used must fully 
+support the practical requirements of the syllabus. This should include the use of file conversion software to 
+ensure files are saved in the required formats.
+School feedback: ‘Cambridge International AS & A Levels prepare students well for university 
+because they’ve learnt to go into a subject in considerable depth. There’s that ability to really 
+understand the depth and richness and the detail of a subject. It’s a wonderful preparation for 
+what they are going to face at university.’
+Feedback from: US Higher Education Advisory Council
+--- Page 10 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Syllabus overview  
+10
+www.cambridgeinternational.org/alevelBack to contents page
+Assessment overview
+Paper 1 Paper 3
+Theory 1 hour 45 minutes
+70 marks
+Candidates answer all questions. Questions 
+will be based on sections 1–11 of the subject 
+content.
+Externally assessed
+50% of the AS Level
+25% of the A Level
+Advanced Theory 1 hour 45 minutes
+70 marks
+Candidates answer all questions. Questions 
+will be based on sections 12–21 of the subject 
+content. 
+Externally assessed
+25% of the A Level
+Paper 2 Paper 4
+Practical 2 hours 30 minutes
+90 marks
+Candidates answer all questions. Tasks will be 
+based on sections 8–11 of the subject content. 
+Candidates apply knowledge and understanding 
+from sections 1–7 of the subject content.
+Externally assessed
+50% of the AS Level
+25% of the A Level
+Advanced Practical 2 hours 30 minutes
+90 marks
+Candidates answer all questions. Tasks will be 
+based on sections 17–21 of the subject content. 
+Candidates apply knowledge and understanding 
+of all subject content. The exam may also include 
+practical tasks from sections 8–10 within a 
+problem-solving context.
+Externally assessed
+25% of the A Level
+Information on availability is in the Before you start section. 
+Check the timetable at www.cambridgeinternational.org/timetables  for the one-day window to conduct the 
+practical tests, Papers 2 and 4.
+Check the samples database at www.cambridgeinternational.org/samples  for submission information, 
+forms and deadlines for Papers 2 and 4.
+--- Page 11 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Syllabus overview  
+11
+www.cambridgeinternational.org/alevelBack to contents page
+There are three routes for Cambridge International AS & A Level Information 
+Technology:
+Route Paper 1 Paper 2 Paper 3 Paper 4
+1 AS Level only
+(Candidates take all AS 
+components in the same exam 
+series) 
+ 
+yes
+ 
+yes
+ 
+no
+ 
+no
+2 A Level (staged over two years)
+Year 1 AS Level*
+ 
+yes
+ 
+yes
+ 
+no
+ 
+no
+Year 2 Complete the A Level yes yes
+3 A Level 
+(Candidates take all components in 
+the same exam series)
+ 
+yes
+ 
+yes
+ 
+yes
+ 
+yes
+* Candidates carry forward their AS Level result subject to the rules and time limits described in the Cambridge 
+Handbook. See Making entries  for more information on carry forward of results.
+Candidates following an AS Level route are eligible for grades a–e. Candidates following an A Level route are 
+eligible for grades A*–E.
+--- Page 12 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Syllabus overview  
+12
+www.cambridgeinternational.org/alevelBack to contents page
+Assessment objectives
+The assessment objectives (AOs) are:
+AO1 
+Recall, select and communicate knowledge and understanding of IT.
+AO2 
+Apply knowledge, understanding, skills and judgement to produce IT-based solutions.
+AO3 
+Analyse, evaluate, and present reasoned conclusions.
+Weighting for assessment objectives
+The approximate weightings allocated to each of the assessment objectives (AOs) are summarised below.
+Assessment objectives as a percentage of each qualification
+Assessment objective Weighting in AS Level % Weighting in A Level %
+AO1  Recall, select and communicate 
+knowledge and understanding of IT
+40 35
+AO2  Apply knowledge, understanding, 
+skills and judgement to produce 
+IT-based solutions.
+50 50
+AO3  Analyse, evaluate, and present 
+reasoned conclusions.
+10 15
+Total 100 100
+Assessment objectives as a percentage of each component
+Assessment objective Weighting in components %
+Paper 1 Paper 2 Paper 3 Paper 4
+AO1  Recall, select and 
+communicate knowledge and 
+understanding of IT
+75 0 70 0
+AO2  Apply knowledge, 
+understanding, skills and 
+judgement to produce IT-
+based solutions.
+0 100 0 100
+AO3  Analyse, evaluate, 
+and present reasoned 
+conclusions.
+25 0 30 0
+Total 100 100 100 100
+--- Page 13 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027.
+13
+www.cambridgeinternational.org/alevelBack to contents page
+3 Subject content 
+This syllabus gives you the flexibility to design a course that will interest, challenge and engage your learners. 
+Where appropriate you are responsible for selecting subject contexts, resources and examples to support your 
+learners’ study. These should be appropriate for the learners’ age, cultural background and learning context as 
+well as complying with your school policies and local legal requirements.
+Annual technical updates
+Technical updates will be published each year to take account of emerging technologies relevant to 
+the syllabus content. Please refer to the AS & A Level Information Technology page on our website 
+www.cambridgeinternational.org/alevel
+Topics
+Candidates should be able to demonstrate and apply their knowledge and understanding of all content within 
+each topic in the theory and practical assessments. 
+Where the term ‘including’ or ‘for example’ is used, everything listed must be studied. ‘Including’ refers to 
+content which is being considered as part of that topic point. ‘For example’ illustrates a typical case. The lists 
+are not exhaustive and other relevant and related aspects should also be studied.
+AS Level candidates study topics 1–11.
+A Level candidates study all topics 1–21.
+The A Level components (Papers 3 and 4) assume candidates have knowledge and understanding of the 
+content in the AS Level topics 1–11.
+--- Page 14 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+14
+www.cambridgeinternational.org/alevelBack to contents page
+AS Level topics
+Candidates should be able to demonstrate and apply their knowledge and understanding of all content within 
+each topic in the theory and practical assessments. 
+1 Data processing and information
+1.1 Data and information
+ • Differences between data and information, including:
+ – identifying that data becomes information through context and meaning
+ • Uses of direct and indirect data and their suitability for given purposes
+ • Sources of direct data, for example:
+ – questionnaires
+ – interviews
+ – data logging
+ – observation
+ • Sources of indirect data, for example:
+ – weather data
+ – census data
+ – electoral register
+ – businesses collecting personal information when used by third parties
+ – research from textbooks, journals and websites
+ • Advantages and disadvantages of direct and indirect data
+1.2 Quality of information
+ • Factors that affect the quality of information, for example:
+ – accuracy
+ – relevance
+ – age
+ – level of detail 
+ – completeness of information
+--- Page 15 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+15
+www.cambridgeinternational.org/alevelBack to contents page
+1 Data processing and information (continued)
+1.3 Encryption
+ • The need for encryption
+ • Methods of encryption, including:
+ – symmetric (using private key only)
+ – asymmetric (using private and public keys)
+ • Encryption protocols, including:
+ – the purpose of Transport Layer Security (TLS)/Secure Socket Layer (SSL) and Internet Protocol 
+Security (IPsec)
+ – the use of TLS/SSL and IPsec in client server communication
+ • Uses of encryption, including:
+ – protection of data
+ – systems encryption 
+ • Advantages and disadvantages of different protocols and methods of encryption
+1.4 Checking the accuracy of data
+ • Methods and uses of validation and verification, including:
+ – validation:
+ ○ presence check
+ ○ range check
+ ○ type check
+ ○ length check
+ ○ format check
+ ○ check digit
+ ○ lookup check
+ ○ consistency check
+ ○ limit check
+ – verification:
+ ○ visual checking and double data entry
+ ○ parity check
+ ○ checksum
+ ○ hash total
+ ○ control total
+ • The difference between validation and verification
+ • The need for both validation and verification
+ • Advantages and disadvantages of validation and verification
+--- Page 16 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+16
+www.cambridgeinternational.org/alevelBack to contents page
+1 Data processing and information (continued)
+1.5 Data processing
+ • Methods and uses of batch processing, including: 
+ – utility bills
+ – credit card and debit card accounts
+ – customer accounts
+ – master and transaction files and their use in payroll and customer orders
+ – the steps involved in sequentially updating a master file using a transaction file
+ • Methods and uses of online processing, including the steps involved in carrying out:
+ – electronic funds transfer
+ – automatic stock control
+ – electronic data interchange (exchange)
+ – business-to-business buying and selling
+ – online shopping
+ • Methods and uses of real-time processing systems where the output affects the input, including:
+ – microprocessor-controlled/computer-controlled systems, including:
+ ○ greenhouses
+ ○ central heating systems
+ ○ air conditioning systems 
+ ○ burglar alarms
+ ○ control of traffic/pedestrian flow/smart motorways
+ ○ car park barriers
+ ○ traffic lights
+ – wireless sensor and actuator networks, including:
+ ○ smart homes
+ ○ guidance systems (for space rockets, etc.)
+ ○ autonomous vehicles (including aircraft, cars/automobiles, drones and ships)
+ • Write an algorithm to show the steps involved in different methods of processing (see 4.1)
+ • Advantages and disadvantages of different methods of data processing
+--- Page 17 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+17
+www.cambridgeinternational.org/alevelBack to contents page
+2 Hardware and software
+2.1 Mainframe computers and supercomputers
+ • Characteristics of mainframe computers and supercomputers, including:
+ – longevity
+ – reliability, availability and serviceability (RAS) 
+ – security
+ – performance metrics (MIPS and FLOPS)
+ – volume of input, output and throughput
+ – fault tolerance 
+ – operating system
+ – number of processors
+ – heat maintenance
+ • Uses of mainframe computers, including:
+ – census
+ – transaction processing
+ – industry statistics
+ – consumer statistics
+ • Uses of supercomputers, including:
+ – weather forecasting
+ – climate research
+ – quantum mechanics 
+ • Advantages and disadvantages of mainframe computers and supercomputers
+2.2 System software
+ • Types and functions of system software, including:
+ – compilers
+ – interpreters
+ – linkers
+ – device drivers
+ – operating systems 
+ – utilities
+ • Uses of system software, including:
+ – how a high-level language is translated to run on different computer systems using:
+ ○ interpreters
+ ○ cross compilers
+ • Advantages and disadvantages of different types of system software
+--- Page 18 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+18
+www.cambridgeinternational.org/alevelBack to contents page
+2 Hardware and software (continued)
+2.3 Utility software
+ • The need for utility software, including:
+ – anti-virus
+ – back-up
+ – data compression
+ – disk defragmentation (including understanding the structure of hard disk storage)
+ – formatting (including low-level, partitioning and high-level)
+ – file copying 
+ – deleting files
+ • Types of utility software, including:
+ – file management systems
+ – disk management systems
+ – data compression utilities
+ • Uses of the different types of utility software
+ • Advantages and disadvantages of different types of utility software
+2.4 Custom-written software and off-the-shelf software
+ • Custom-written software
+ – uses by individuals and organisations
+ • Off-the-shelf software
+ – uses by individuals and organisations
+ • Advantages and disadvantages of different types of custom-written and off-the-shelf software, including:
+ – degree of testing
+ – level of support
+ – cost
+ – adaptability
+ • Proprietary and open-source software
+2.5 User interfaces
+ • Types of user interfaces, including:
+ – command line interface
+ – graphical user interface
+ – dialogue interface
+ – gesture-based interface
+ • Uses of the different types of user interfaces
+ • Advantages and disadvantages of different types of user interfaces
+--- Page 19 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+19
+www.cambridgeinternational.org/alevelBack to contents page
+3 Monitoring and control
+3.1 Monitoring and measurement technologies
+ • Sensors, including:
+ – light/UV
+ – temperature
+ – pressure
+ – humidity
+ – pH
+ – gas sensors (including oxygen, carbon dioxide, carbon monoxide and oxides of nitrogen)
+ – sound
+ – infrared
+ – touch sensors
+ – (electro)magnetic field sensors 
+ – proximity sensors
+ • Uses of monitoring and measurement technologies, including:
+ – environmental monitoring 
+ ○ monitoring water pollution
+ ○ weather stations, including the use of sensors by weather stations
+ ○ temperature sensors to measure ambient temperature
+ ○ pressure sensors to measure atmospheric pressure
+ ○ humidity sensors to measure absolute and relative humidity 
+ ○ light sensors to measure sunlight
+ – monitoring patients
+ • Calibration, including:
+ – the importance of calibration
+ – the various methods used to calibrate devices, including when to use:
+ ○ one-point calibration
+ ○ two-point calibration 
+ ○ multipoint calibration
+ ○ methods of calibrating readings from sensors, for example, temperature sensors
+--- Page 20 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+20
+www.cambridgeinternational.org/alevelBack to contents page
+3 Monitoring and control (continued)
+3.2 Control technologies
+ • Sensors and their uses, including:
+ – touch sensors incorporated within detection devices used to measure fluid levels (for example, 
+cooling water level in nuclear power plants)
+ – temperature sensors
+ – light sensors to measure light level 
+ – light sensors to detect light source, for example, in a car park barrier system
+ – moisture sensors to measure water content of soil
+ – pH sensors to measure the acidity of soil
+ – gas sensors
+ – infrared sensors to detect movement of human bodies which emit heat, for example, in burglar alarm 
+systems
+ – (electro)magnetic field sensors
+ – ultrasonic sensors
+ – the use of induction (inductive) loops in car parking and car park barrier systems 
+ – sound sensors in burglar alarm systems
+ – proximity sensor in smartphones to switch off screen display when phone is held near to the ear
+ • Actuators and their uses, including:
+ – carrying out an action/movement, including:
+ ○ linear
+ ○ rotary
+ ○ soft
+ ○ hydraulic
+ ○ pneumatic
+ ○ electric
+ ○ thermal
+ ○ magnetic
+ ○ mechanic
+ • Microprocessor-controlled/computer-controlled technology, including:
+ – greenhouses
+ – central heating systems
+ – air conditioning systems
+ – burglar alarms
+ – control of traffic/pedestrian flow (including smart motorways)
+ – car park barriers
+ – traffic lights
+ – Wireless Sensor and Actuator Networks 
+ – smart homes
+ • Advantages and disadvantages of different control technologies
+ • Write an algorithm or draw a flowchart to represent the processing involved in the control technologies 
+listed above (see 4.1)
+--- Page 21 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+21
+www.cambridgeinternational.org/alevelBack to contents page
+4 Algorithms and flowcharts
+4.1 Algorithms
+ • Writing and editing a given algorithm that demonstrates a decision-making process, including:
+ – conditional branching
+ – looping
+ – nested loops
+ – procedures/subroutines
+ • Writing an algorithm using pseudocode to solve a given problem, including:
+ – INPUT/READ
+ – WRITE/PRINT
+ – FOR…NEXT
+ – FOR…NE X T…STEP
+ – IF...ELSE...ENDIF
+ – WHILE...ENDWHILE
+ – REPEAT...UNTIL
+ – CASE...ENDCASE
+ – Comparison operators >, <, =
+ – Arithmetic operators +, -, *, /
+4.2 Flowcharts
+ • Drawing a basic program flowchart to solve a given problem 
+ • Drawing a basic program flowchart that demonstrates a decision-making process (see symbols at the 
+end of the ‘Subject content’ section), including:
+ – input/output
+ – decision (using comparison operators)
+ – terminator (start, stop)
+ – process boxes (using arithmetic operators)
+ – subroutine 
+ – connector
+ – flowline
+ • Editing a given basic program flowchart that demonstrates a decision-making process
+ • Identifying errors in an algorithm/program flowchart for a given scenario
+--- Page 22 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+22
+www.cambridgeinternational.org/alevelBack to contents page
+5 eSecurity
+5.1 Personal data
+ • What personal data is
+ • Keeping personal data secure and confidential, including:
+ – why personal data should be kept confidential
+ – how personal data can be kept confidential, including the removal of geotags from photos/videos, 
+anonymising and aggregating information and duty of confidence measures
+ • Preventing misuse of personal data, including:
+ – how personal data can be kept secure, including network security measures
+ – how personal data can be gathered by unauthorised persons (smishing, vishing, phishing and 
+pharming) and how this might be prevented, including firewalls (hardware and software)
+ • Advantages and disadvantages of the different methods of preventing misuse of personal data
+5.2 Malware
+ • Types of malware, including:
+ – trojan
+ – worms
+ – spyware
+ – adware
+ – rootkit
+ – malicious bots
+ – ransomware
+ • Uses of malware, including:
+ – fraud
+ – theft
+ – industrial espionage
+ – sabotage
+ • Consequences of malware for organisations and individuals
+ • Malware prevention software and physical malware prevention methods
+ • Advantages and disadvantages of the methods of malware prevention
+--- Page 23 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+23
+www.cambridgeinternational.org/alevelBack to contents page
+6 The digital divide
+6.1 The digital divide
+ • What the digital divide is, including:
+ – between people and regions that have access to modern technology and information (for example, 
+smart phones, television, personal computers, tablet computers, laptop computers and internet 
+access) and those with restricted or no access
+ • Causes of the digital divide, including:
+ – the availability of high and low performance computers
+ – wireless connections
+ • Effects of the digital divide, including:
+ – inequality of access to all types of internet services and technology
+ – reducing the effects, including digital literacy teaching
+ • Groups affected by the digital divide, including:
+ – people in different age groups
+ – people in cities and people in rural areas
+ – people with differing levels of education
+ – people in different socioeconomic groups
+ – people with accessibility barriers due to learning difficulties or physical or sensory impairments
+ – people in more and less industrially developed nations, with different levels of technological 
+awareness/infrastructure
+--- Page 24 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+24
+www.cambridgeinternational.org/alevelBack to contents page
+7 Expert systems
+7.1 Expert systems
+ • How expert systems are used to produce possible solutions for different scenarios
+ • Components, including:
+ – user interface
+ – inference engine
+ – knowledge base (as a database of facts and rules base)
+ – explanation system
+ – knowledge base editor
+ • Scenarios, including:
+ – mineral prospecting
+ – investment analysis
+ – financial planning
+ – insurance planning
+ – car engine fault diagnosis
+ – medical diagnosis
+ – route scheduling for delivery vehicles
+ – plant and animal identification
+ • The concepts of backward chaining and forward chaining, including the use of the IF…THEN constructs
+ • The terms data driven and goal driven, including their use in:
+ – diagnoses
+ – gaming
+ – artificial intelligence (for use in manipulating social media)
+ • Advantages and disadvantages of expert systems
+--- Page 25 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+25
+www.cambridgeinternational.org/alevelBack to contents page
+8 Spreadsheets
+8.1 Creating a spreadsheet
+ • Creating page/screen structures to meet the requirements of an audience and/or task specification/
+house style, including:
+ – page orientation
+ – page size
+ – fit to page 
+ – margins 
+ – header and footer
+ • Creating/editing spreadsheet structures, including:
+ – insert rows and columns
+ – delete rows and columns
+ – hide rows and columns
+ – resize rows and columns
+ – merge cells
+ • Controlling data input using validation techniques, for example, drop-down menu
+ • Protecting cells and their content, including:
+ – cells
+ – rows
+ – columns 
+ – worksheets 
+ – workbooks
+ • Freezing and unfreezing panes and windows
+ • Creating and using formulas that include/contain:
+ – addition
+ – subtraction
+ – multiplication
+ – division 
+ – indices
+ • Using absolute, relative and mixed referencing to replicate formulas, including: 
+ – named cells (across several worksheets or workbooks)
+ – named ranges (across several worksheets or workbooks)
+ • Understanding why absolute, relative and mixed referencing are used
+ • Using functions that:
+ – perform calculations, for example: SUM, AVERAGE, MIN, MAX, MAXA, INT, ROUND, SUBTOTAL
+ – count the number of cells that meet a criterion, for example: COUNT, COUNTIF, COUNTIFS, 
+COUNTA, COUNTBLANK
+ – look up data, for example: LOOKUP , VLOOKUP , HLOOKUP , XLOOKUP , INDEX, MATCH
+ – make decisions based on certain criteria, for example: IF, IFS, nested IF, AND, OR
+ – insert, extract and calculate with date and time, for example: DATE, TIME, WEEKDAY, DAY, MONTH, 
+YEAR 
+--- Page 26 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+26
+www.cambridgeinternational.org/alevelBack to contents page
+8 Spreadsheets (continued)
+8.1 Creating a spreadsheet (continued)
+ – extract numeric values from strings, concatenate strings, test cell contents, including text values, 
+numeric values, blank cells
+ – extract characters from strings, for example: LEFT, RIGHT, MID, FIND
+ – apply conditional formulas, for example: SUMIF, SUMIFS, COUNTIF, COUNTIFS, AVERAGEIF, 
+AVERAGEIFS, MAXIF, MAXIFS and MINIF, MINIFS
+ – perform error trapping, for example: ISERROR, IFERROR
+ – insert nested functions
+ – rotate data from columns to rows or vice versa, for example: TRANSPOSE 
+The functions  listed above are examples only. Candidates must be familiar with functions to apply all of the 
+skills listed above. If candidates are asked to perform a task and the skill required is not  listed above, the 
+question paper will specify the function candidates should use to complete the task. For example, ‘Use the 
+DEC2BIN function to ... ’.
+ • Using appropriate input and error messages
+ • Formatting cells, including:
+ – date and time
+ – text
+ – numeric
+ – currency
+ – percentage
+ – fractions
+ – text orientation 
+ – alignment
+ • Formatting cell emphasis, including:
+ – size 
+ – style
+ – colour
+ – shading 
+ – merge
+ – borders
+ – comments
+ – conditional formatting
+ • Appreciation of the spreadsheet requirements, purpose and use for a variety of audiences, including 
+people from different age groups and with different specialisms, for example, scientists, administrators, 
+artists
+--- Page 27 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+27
+www.cambridgeinternational.org/alevelBack to contents page
+8 Spreadsheets (continued)
+8.2 Testing a spreadsheet
+ • Testing a spreadsheet structure 
+ – creating and applying a test plan to test spreadsheet elements, including:
+ ○ functions
+ ○ validation rules
+ ○ conditional formatting
+ • Testing data
+ – the need to choose appropriate test data 
+ – select appropriate test data to use in the test plan, including using:
+ ○ normal data
+ ○ extreme data
+ ○ abnormal data
+8.3 Using a spreadsheet
+ • Extracting data, including searching using:
+ – text
+ – numeric 
+ – date and time 
+ – Boolean operators (AND, OR, NOT) 
+ – >, <, =, >=, <=
+ – contains
+ – starts with, ends with
+ • Sorting data, including:
+ – ascending and descending 
+ – applied to single or multiple columns
+ • Summarising and displaying data using:
+ – pivot tables
+ – pivot charts 
+ – subtotals 
+ – groups 
+ • Importing and exporting data, including:
+ – csv
+ – txt
+ – pdf
+ – graphs and charts
+--- Page 28 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+28
+www.cambridgeinternational.org/alevelBack to contents page
+8 Spreadsheets (continued)
+8.4 Graphs and charts
+ • Creating a graph or chart appropriate to a specific purpose, including:
+ – appropriate data series
+ – from contiguous data
+ – from non-contiguous data
+ – specified range(s)
+ – bar chart
+ – pie chart
+ – line graph
+ – comparative bar chart
+ – comparative line graph
+ – combination chart
+ • Apply chart formatting, including:
+ – title
+ – legend
+ – segment labels
+ – segment values
+ – percentages
+ – category axis labels
+ – series labels
+ – field selection buttons
+ – value axis labels
+ – scales
+ – axis scale (maximum and minimum) 
+ – data intervals
+ – add secondary axis
+ – extract pie chart sector
+--- Page 29 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+29
+www.cambridgeinternational.org/alevelBack to contents page
+9 Modelling
+9.1 Modelling and simulations
+ • What-if analysis, including: 
+ – predict the result of changing data 
+ – change data to model different scenarios
+ – goal seek
+ – uses, including:
+ ○ financial forecasting
+ ○ population growth
+ ○ climate change
+ ○ weather systems
+ ○ queue management
+ ○ traffic flow
+ ○ construction
+ • The characteristics of modelling software
+ • The need for computer models
+ • The effectiveness of spreadsheet models
+ • The use of a model to create and run simulations, including:
+ – natural disaster planning
+ – pilot training
+ – learning to drive a car
+ – nuclear science research
+--- Page 30 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+30
+www.cambridgeinternational.org/alevelBack to contents page
+10 Database and file concepts
+10.1 Creating a database
+ • Assigning a data type and an appropriate field size to a field, including:
+ – text
+ – alphanumeric
+ – numeric (integer, decimal)
+ – date
+ – time
+ – Boolean
+ • The three relationships: one-to-one, one-to-many and many-to-many
+ • The function of key fields, including:
+ – primary key
+ – compound key
+ – foreign key
+ – composite key
+ • Referential integrity and its importance
+ • The difference between a flat file and a relational database and why one might be more appropriate in 
+certain situations
+ • Creating and using relationships, including:
+ – one-to-one
+ – one-to-many
+ • Creating and interpreting an Entity Relationship Diagram (ERD), including:
+ – conceptual entity relationship diagrams
+ – logical entity relationship diagrams
+ – physical entity relationship diagrams
+ • Creating a relational database
+ • Setting key fields
+ • Validate and verify data entry:
+ – using validation rules 
+ – testing validation applied to a database
+ – verifying data entry 
+ • Selecting appropriate query types, including:
+ – when static and dynamic parameters should be used
+ – when simple, complex, nested and summary queries (including cross-tab queries/pivot tables) 
+should be used
+ • Performing searches, including:
+ – simple query on a single criterion
+ – complex queries using multiple criteria
+ – static parameter queries
+ – dynamic parameter queries
+ – nested queries
+ – using queries to find and remove duplicate records
+--- Page 31 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+31
+www.cambridgeinternational.org/alevelBack to contents page
+10 Database and file concepts (continued)
+10.1 Creating a database (continued)
+ – using queries to create new tables, append records to tables, delete records in tables and update 
+data in tables
+ – summarising data (including using cross-tab queries)
+ – using text, numeric, date, time, wildcard, Boolean operators (AND, OR, NOT), >, <, =, >=, <=
+ • Performing calculations with arithmetic operations and numeric and logical functions, including:
+ – calculated controls and calculated fields
+ • Sorting data, including:
+ – ascending, descending, sorting on more than one criteria
+ • Designing and creating an appropriate data entry form, including appropriate:
+ – font styles and sizes
+ – spacing between fields
+ – object width and height to display data 
+ – use of white space
+ – radio buttons
+ – drop-down menus
+ – highlighting key fields
+ – form controls
+ – linked subforms
+ • Designing, creating and editing a database report, including: 
+ – grouped report
+ – controls
+ – calculated controls
+ • Designing and creating a switchboard/menu within a database
+ • Importing data, including:
+ – csv
+ – txt
+ • Exporting data, including:
+ – table
+ – query
+ – report 
+ – csv
+ – txt
+ – rtf
+--- Page 32 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+32
+www.cambridgeinternational.org/alevelBack to contents page
+10 Database and file concepts (continued)
+10.2 Normalisation to third normal form (3NF)
+ • The characteristics of data in: 
+ – unnormalised form (UNF) 
+ – first normal form (1NF) 
+ – second normal form (2NF)  
+ – third normal form (3NF)
+ • The normalisation of data including the advantages and disadvantages
+ • Normalise a database to:
+ – first normal form (1NF)
+ – second normal form (2NF)
+ – third normal form (3NF)
+10.3 Data dictionary
+ • Identifying different data types, including: 
+ – text, alphanumeric
+ – numeric (integer, decimal, currency)
+ – percentage
+ – date and time
+ – Boolean/logical (yes/no, true/false)
+ • Components of a data dictionary
+ • Creating a data dictionary and selecting appropriate data types for a given set of data and a given 
+situation
+10.4 File and data management
+ • Different file types and their use
+ • Why generic file formats are needed
+ • Proprietary and open-source file formats, including why open-source file formats are needed
+ • Using indexed sequential access
+ • Using direct file access
+ • Using database management systems, including:
+ – hierarchical
+ – network 
+ – object-oriented 
+ – relational
+ • The features of a management information system (MIS)
+ • How a management information system (MIS) can be used by organisations
+ • Advantages and disadvantages of the different types of database management systems
+--- Page 33 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+33
+www.cambridgeinternational.org/alevelBack to contents page
+11 Video and audio editing
+11.1 Video editing
+ • Editing a video clip to meet the requirements of its intended application and audience, including:
+ – setting an aspect ratio
+ – trimming a video clip to remove unwanted footage
+ – splicing/joining together video clips
+ – adding titles, subtitles and captions
+ – adding credits with appropriate source information 
+ – using scrolling credits with appropriate blank lines 
+ – ensuring readability of text 
+ – adding fading effects
+ – adding pan and zoom effects
+ – adding transitions
+ – extracting a still image from a video clip
+ – resizing and cropping a still image to match a video’s aspect ratio
+ – inserting a still image
+ – adding audio to a video clip
+ – editing audio within a video clip
+ – removing audio from a video clip
+ – altering the speed of a video clip
+ – using filters and colour correction
+ – exporting a video clip in different file formats (including: MP4, AVI, MOV, WMV)
+ – compressing a video to different resolutions to suit different media (including: DVD, internet, mobile 
+devices)
+ • The effects of different methods of compression on video, including:
+ – how the different compression methods affect video quality
+ • Why typical features found in video editing software are used, including:
+ – trimming and cropping a video clip
+ – creating text-based slides
+ – creating credits
+ – adding captions and subtitles
+ – adding fading effects
+ – extracting a still image from a video clip
+ – inserting a still image
+ – editing audio within a video clip
+ – exporting a video clip in different file formats
+ – compressing a video to different resolutions
+ • Advantages and disadvantages of export file formats
+--- Page 34 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+34
+www.cambridgeinternational.org/alevelBack to contents page
+11 Video and audio editing (continued)
+11.2 Audio editing
+ • Editing an audio clip to meet the requirements of its intended application and audience, including:
+ – importing new tracks
+ – adding a track to an existing audio clip
+ – normalising an audio clip, including removing any DC offset
+ – trimming an audio clip to remove unwanted material
+ – splicing/joining together two audio clips
+ – fading in and fading out 
+ – altering the clip speed 
+ – changing the pitch 
+ – adding or adjusting delay/echo
+ – adding or adjusting reverberation
+ – changing an audio clip from stereo to mono
+ – applying equalisation, high and low pass filters 
+ – applying noise reduction 
+ – overdubbing an audio clip, including voiceover
+ – compressing an audio file to different sample rates to suit different media
+ – exporting an audio clip in different file formats, including: MP3, MP4a, WAV, AAC
+ • How and why typical features found in audio editing software are used, including:
+ – trimming
+ – splicing/joining together two audio clips
+ – fading in and fading out
+ – normalising audio
+ – applying noise reduction
+ – overdubbing an audio clip, including voiceover
+ – exporting an audio clip in different file formats
+ – compressing an audio file
+ • Advantages and disadvantages of export file formats
+ • Why file sizes depend on sampling rate and sampling resolution, including:
+ – describing sampling rate and sampling resolution
+ • The effects of different methods of compression on audio, including:
+ – how the different compression methods affect the audio quality
+ – saving in files v containers
+ – lossy and lossless
+--- Page 35 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+35
+www.cambridgeinternational.org/alevelBack to contents page
+A Level topics
+Candidates should be able to demonstrate and apply their knowledge and understanding of all content within 
+each topic in the theory and practical assessments.
+12 IT in society 
+12.1 Digital currencies
+ • Types, characteristics and uses of digital currencies, including:
+ – digital/electronic currency, virtual currency, cryptocurrency, central bank digital base money, stored 
+value cards
+ – centralised systems (debit, credit cards, electronic point of sale)
+ – decentralised systems (Bitcoin, Litecoin, peer-to-peer electronic monetary systems, mobile electronic 
+wallets)
+ • Use of blockchains as distributed ledgers for cryptocurrencies
+ • Impact and risks of digital currencies, including on:
+ – individuals
+ – businesses
+ – governments
+ – the global economy
+ • Advantages and disadvantages of different types of digital currency
+12.2 Data mining
+ • Process of data mining
+ • Stages in the data mining process
+ – 1 Business understanding
+ – 2 Data understanding
+ – 3 Data preparation
+ – 4 Data modelling
+ – 5 Evaluation
+ – 6 Deployment
+ • How and why data mining is used, including in:
+ – national security
+ – surveillance
+ – businesses
+ – scientific research
+ – healthcare
+ – the analysis of social and economic trends
+ • Advantages and disadvantages of data mining to individuals and organisations, including:
+ – all information is in one place
+ – ethical and privacy concerns
+--- Page 36 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+36
+www.cambridgeinternational.org/alevelBack to contents page
+12 IT in society (continued)
+12.3 Social networking services/platforms
+ • Types of social networking services/platforms, including:
+ – chat rooms
+ – instant messaging
+ – email
+ – social media such as forums, blogs, microblogs
+ • Uses of social networking services/platforms, including:
+ – by individuals, businesses, organisations, governments
+ – for education, finance, healthcare, news sources
+ • The impact of social networking services/platforms, including:
+ – on individuals – for example, meeting new people, keeping in contact with family and friends, 
+common interest groups, exchanging ideas, intellectual isolation, physical and mental health of 
+different age groups, ideological polarisation, stereotyping, cognitive issues
+ – on businesses – for example, advertising, product information, safety information about products, 
+customer feedback
+ – on organisations – for example, to disseminate information, weather warnings
+ – on governments – for example, distribution of useful information, updating of regulations, advice and 
+discussions on current issues, government news, feedback from citizens, censorship, false/distorted 
+information
+ • Advantages and disadvantages of different types of social networking services/platforms
+12.4 The impact of IT
+ • The impact of IT on society, including on:
+ – sport
+ – manufacturing
+ – healthcare
+ – education
+ – banking
+ – e-business and finance
+ – news
+ – entertainment and media 
+ – family and home
+ – government
+ – politics
+ – individuals and organisations
+ • The impact of IT on monitoring and surveillance in society, including on:
+ – individuals
+ – organisations
+ – security and policing
+--- Page 37 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+37
+www.cambridgeinternational.org/alevelBack to contents page
+12 IT in society (continued)
+12.5 Technology enhanced learning
+ • Methods of delivery of technology enhanced learning, including:
+ – computer-based training
+ – online tutorials
+ – networked courses
+ – massive open online courses (MOOC)
+ – video-conferencing
+ • Impact of technology enhanced learning, including on:
+ – student and teacher motivation
+ – achievement 
+ – autonomy
+ • Advantages and disadvantages of different methods of delivery
+13 New and emerging technologies
+13.1 New and emerging technologies
+ • Types of new and emerging technologies, including:
+ – artificial intelligence
+ – augmented reality
+ – virtual reality
+ – robotics
+ – computer-assisted translation
+ – holographic imaging
+ – holographic and 4th generation optical data storage
+ – 3D printing
+ – vision enhancement
+ – wearable computing
+ – blockchain technology
+ – Internet of Things (IoT)
+ – molecular data storage
+ – autonomous transport systems
+ • Impact of new and emerging technologies, including on:
+ – individuals 
+ – organisations
+ – medicine and healthcare, including patient care and monitoring, development of prosthetics and 
+medical products, tissue engineering, artificial blood vessels, the design of medical tools and 
+equipment
+ – scientific research
+ – the environment, including e-waste, recycling, power consumption, manufacturing processes, energy 
+from wireless signals
+ • Advantages and disadvantages of different types of new and emerging technologies
+--- Page 38 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+38
+www.cambridgeinternational.org/alevelBack to contents page
+14 Communications technology
+14.1 Networks
+ • Types of networks, including:
+ – local area network (LAN)
+ – wide area network (WAN)
+ – client-server
+ – peer-to-peer
+ – virtual private network (VPN)
+ – mobile networks 
+ • Characteristics of each type of network, including:
+ – topologies (physical and logical)
+ – architecture
+ – protocols
+ • Uses of each type of network, including:
+ – sharing and storage of resources
+ – sharing of peripherals
+ – exchange of data
+ – BitTorrent for transferring large files
+ – access to internet services
+ – tunneling
+ – access to telephony services
+ – access to content delivery services such as those used, for example, for streaming videos and to 
+download software
+ • Advantages and disadvantages of each type of network
+14.2 Components in a network
+ • The role of components in a network, including:
+ – network interface cards
+ – wireless network interface cards
+ – repeaters
+ – hubs
+ – switches
+ – wireless access points
+ – gateways
+ – bridges
+ – routers
+ • The operations of networking components, including:
+ – how each component carries out its role
+ – how each component works with the others in a network
+--- Page 39 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+39
+www.cambridgeinternational.org/alevelBack to contents page
+14 Communications technology (continued)
+14.3 Network servers
+ • Types of network servers, including:
+ – file server
+ – web server
+ – mail server
+ – applications server
+ – print server
+ – FTP server
+ – proxy server
+ – virtual server
+ • The role of servers in a network, including:
+ – the function of servers in a network
+ • The operations of servers in a network, including:
+ – the ‘request and response’ method of communication between servers and clients 
+ – within server farms
+ • Advantages and disadvantages of each type of server for a given scenario
+14.4 Cloud computing
+ • Characteristics of cloud computing, including:
+ – sharing computing resources
+ • Uses of cloud computing, including:
+ – by individuals and organisations
+ • Advantages and disadvantages of cloud computing for individuals and organisations
+--- Page 40 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+40
+www.cambridgeinternational.org/alevelBack to contents page
+14 Communications technology (continued)
+14.5 Data transmission across networks
+ • Speed of transmission, including:
+ – how bandwidth is defined
+ – how bit rates are defined
+ – the bandwidths made available by different transmission media and different internet access 
+technologies, for example, ethernet, fibre optic, wireless, mobile communications 
+ • Data streaming, including: 
+ – real time and on demand media streams
+ – the impact of bit rate and bandwidth on the streaming of audio and video data
+ • The properties, features and characteristics of different transmission methods, including: 
+ – fibre optic
+ – copper cables (coaxial and twisted pair)
+ – lasers
+ • Typical applications of each method of data transmission across networks
+ • The effect of the medium on the available bandwidth for:
+ – data transmission
+ – audio and video streaming services
+ – ultra-high definition television systems
+ • Advantages and disadvantages of each method of data transmission across networks
+--- Page 41 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+41
+www.cambridgeinternational.org/alevelBack to contents page
+14 Communications technology (continued)
+14.6 Network protocols
+ • The definition of a protocol
+ • Explain the term protocol, as used in networking, and why protocols are necessary
+ • The purposes and uses of protocols in the preparation, addressing, sending and receiving of data across 
+networks, including:
+ – Transmission Control Protocol (TCP)
+ – Internet Protocol (IP)
+ – Internet Control Message Protocol (ICMP)
+ – Address Resolution Protocol (ARP) and inverse address
+ – Resolution Protocol (InARP)
+ – Dynamic Host Configuration Protocol (DHCP)
+ – User Datagram Protocol (UDP)
+ – Hypertext Transfer Protocols (HTTP and HTTPS)
+ – File Transfer Protocol (FTP)
+ – tunneling protocol, for example, L2TP
+ – Simple Mail Transfer Protocol (SMTP)
+ – Post Office Protocols, for example, POP3
+ – Internet Message Access Protocol (IMAP)
+ – Telnet
+ – SSH
+ – Internet Protocol Security (IPsec)
+ – TLS/SSL
+ • Methods of sending data over a network, including:
+ – packet switching
+ ○ the structure of packets, including what is contained in the packets
+ ○ the modes of connection – how and why they are used, including:
+• connection mode, for example, frame relay, Transmission Control Protocol (TCP)
+• connectionless (datagram) mode, for example, ethernet, Internet Protocol (IP), User Datagram 
+Protocol (UDP)
+ – circuit switching, including:
+ ○ the use of communication channels in circuit switching
+ – message switching, including:
+ ○ the store of and forward method of sending messages across networks
+ • The purpose and use of network addressing systems, including:
+ – Media Access Control (MAC) addressing
+ – IP addressing (IPv4 and IPv6)
+ • Static and dynamic routing, including:
+ – the selection of paths for network traffic and the use of routing tables
+ – advantages and disadvantages of static and dynamic routing
+--- Page 42 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+42
+www.cambridgeinternational.org/alevelBack to contents page
+14 Communications technology (continued)
+14.6 Network protocols (continued)
+ • Function of routing protocols, including:
+ – interior gateway protocols
+ – exterior gateway protocols
+ – border gateway protocols
+ • Use of protocol layering, including:
+ – TCP/IP and Open Systems Interconnection model (OSI model)
+ – the function of each layer in the TCP/IP suite
+ – the function of each layer in the OSI model
+ – comparison of the schemes
+ • Firewalls, including:
+ – their use and configuration in controlling access to networks
+14.7 Wireless technology
+ • Methods of wireless transmission of data, including: 
+ – Wi-Fi
+ – Bluetooth
+ – infrared
+ – microwave
+ – radio
+ – NFC (Near Field Communication)
+ • The operation of wireless transmission methods, including:
+ – methods of data transfer
+ – wireless protocols
+ – wireless power transfer
+ • Uses of wireless transmission methods, including:
+ – data exchange
+ – mobile communications
+ – the Internet of Things (IoT) 
+ • Security issues associated with wireless transmission, including:
+ – methods of prevention
+ – the use of wireless security protocols, for example, WEP, WPA and their variants
+ • Advantages and disadvantages of wireless transmission methods
+--- Page 43 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+43
+www.cambridgeinternational.org/alevelBack to contents page
+14 Communications technology (continued)
+14.8 Mobile communication systems
+ • Cellular networks, including:
+ – structure of a cellular network
+ – use of 3G, 4G and 5G systems for mobile communications
+ • How satellite communication systems are used for transferring data, including:
+ – how communications data is prepared, sent and received by satellite communication systems
+ – global positioning systems (GPS)
+ – global mapping systems
+ – surveillance, telecommunications (for example, television and radio broadcasting, telephones)  
+ – ultra-high definition television systems
+14.9 Network security
+ • Network security threats, including:
+ – brute force
+ – denial of service (DoS)
+ – botnets
+ – malware
+ – malicious actors (perpetrators)
+ – Structured Query Language (SQL) injection
+ – (poor) network policies
+ • Impact of network security threats on individuals and organisations, including:
+ – data destruction
+ – manipulation and modification and theft by unauthorised users
+ – identity theft
+ • Methods of preventing network security issues, including:
+ – use of barriers, locks, surveillance, alarm systems, security guards
+ – how software methods can prevent unauthorised access, including:
+ ○ biometric methods 
+ ○ anti-malware
+ ○ anti-virus and anti-spyware software for protecting data, files and systems
+ ○ encryption
+ ○ access rights/permissions for protecting data and files
+ – how firewalls can be configured to control access to networks
+ • Advantages and disadvantages of the various methods of network security for preventing networking 
+security threats
+--- Page 44 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+44
+www.cambridgeinternational.org/alevelBack to contents page
+14 Communications technology (continued)
+14.10 Disaster recovery management
+ • Identification of threats and risks, including:
+ – types of disaster that cause data loss and business disruption, including:
+ ○ natural disasters 
+ ○ equipment and power failures
+ ○ cybercrime
+ ○ malware
+ ○ criminal activity 
+ ○ accidental disruptive events 
+ – risk analysis
+ – perpetrator analysis
+ – risk testing
+ – quantifying the risk
+ • Control of threats, including:
+ – how to detect threats and prevent a disaster
+ – how to restore after a disaster
+ • Strategies to minimise risks, including:
+ – use of protection for power supplies
+ – use of password and access controls for data and file protection
+ – protection of data and software from malware, unauthorised access
+ – use of back-up strategies
+--- Page 45 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+45
+www.cambridgeinternational.org/alevelBack to contents page
+15 Project management
+15.1 The stages of the project life cycle
+ • Project initiation, including:
+ – identifying objectives
+ – resources required
+ – success criteria
+ – stakeholders and their needs
+ – project scope and developing high-level schedules
+ • Project planning, including:
+ – detailed planning of resources 
+ – scheduling of tasks
+ • Project execution and monitoring, including:
+ – implementing the plan
+ – monitoring progress against time
+ – cost and quality
+ – reporting to stakeholders
+ • Project close, including:
+ – project completion and review
+ – why project reviews are conducted
+15.2 Project management software
+ • Types of project management software, including:
+ – desktop, web-based, mobile
+ – personal, single-user, collaborative
+ • Uses for supporting projects, including:
+ – supporting planning
+ – scheduling of tasks
+ – allocation of resources
+ – costings
+ – communication
+ – collaborative working and decisions
+ • Advantages and disadvantages of:
+ – the types of project management software
+ – the use of project management software for supporting projects
+--- Page 46 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+46
+www.cambridgeinternational.org/alevelBack to contents page
+15 Project management (continued)
+15.3 Tools and techniques for project management tasks
+ • Gantt charts, including:
+ – creating Gantt charts
+ – using and interpreting Gantt charts
+ • Performance Evaluation and Review Technique (PERT) and Critical Path Method (CPM), including:
+ – creating PERT charts
+ – using and interpreting PERT charts for the analysis and management of projects
+ – components such as:
+ ○ activities/tasks/work breakdown structures (WBS)
+ ○ timings
+ ○ float
+ ○ end points
+ ○ milestones
+ ○ dependencies
+ ○ deliverables
+ – critical path calculations and determinations to identify the longest path of dependent activities 
+ – the use of critical path analysis for, for example, work flow control such as authorising work, costings, 
+allocating resources
+ • Advantages and disadvantages of Gantt charts, PERT charts and CPM
+16 System life cycle
+16.1 The stages in the system life cycle
+ • The definition of a system, i.e. a collection of components to form a whole system, including:
+ – a hardware system
+ – a software system
+ – a combination of hardware and software
+ • The different stages of developing a system
+ • The relationship between the different stages of the system life cycle
+--- Page 47 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+47
+www.cambridgeinternational.org/alevelBack to contents page
+16 System life cycle (continued)
+16.2 Analysis
+ • Methods of researching for a given situation, including:
+ – questionnaires
+ – interviews
+ – observation
+ – document analysis
+ • Content and purpose of specifications, including:
+ – user requirements specification
+ – system specification
+ – design specification
+ • Advantages and disadvantages of the different methods of researching a given situation
+16.3 Design
+ • System processing and flow of data through a system, including:
+ – Data flow diagrams (DFD), level 0 (context-level), level 1 and level 2 diagrams
+ – construct a system flowchart and a data flow diagram (DFD) using correct symbols (see symbols at 
+the end of the ‘Subject content’ section)
+ • Data storage, including:
+ – databases
+ – files (input and output)
+ • Input forms, including:
+ – features and elements of forms
+ – appropriate use of forms for data collection
+ – validation and checking of data collected by forms
+ – input screen layouts
+ • Output reports, including:
+ – output screen layouts
+ – printed copy layouts
+--- Page 48 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+48
+www.cambridgeinternational.org/alevelBack to contents page
+16 System life cycle (continued)
+16.4 Development and testing
+ • Test plans, including:
+ – the need for testing and the purpose of a test plan
+ – contents of a test plan
+ – create a test plan for a given situation
+ • Test data, including:
+ – the types and purpose of test data
+ • Alpha and beta testing, including:
+ – differences between alpha and beta testing
+ • White box and black box testing, including:
+ – differences between white box and black box testing
+ • Advantages and disadvantages of the different types of testing
+16.5 Implementation
+ • Methods of implementing a system, including:
+ – parallel running
+ – direct changeover
+ – phased implementation
+ – pilot implementation
+ • Advantages and disadvantages of each implementation method for a given situation, including:
+ – how each method is implemented in a given situation
+ – the suitability of an implementation method for a given situation
+16.6 Documentation
+ • Types of documentation and why each is needed, including:
+ – requirements and design documentation
+ – technical documentation
+ – user and marketing documentation
+ • Contents of the different types of documentation
+ • Advantages and disadvantages of the different types of documentation
+16.7 Evaluation
+ • Evaluating a new system, including the efficiency, ease of use and appropriateness for intended use 
+ • Evaluation techniques, including:
+ – checking against specifications
+ – meeting user requirements
+ – feedback from users
+--- Page 49 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027.
+49
+www.cambridgeinternational.org/alevelBack to contents page
+16 System life cycle (continued)
+16.8 Methods of software development
+ • Stages and processes of each method, including:
+ – agile
+ – iterative
+ – incremental
+ – rapid application development (RAD)
+ – waterfall
+ • Advantages and disadvantages of each method
+16.9 Prototyping
+ • Types of prototyping and why each is needed, including:
+ – evolutionary
+ – incremental
+ – throwaway
+ – rapid
+ • Advantages and disadvantages of each type of prototyping
+16.10 Maintenance
+ • Types of maintenance and why each is needed, including:
+ – perfective
+ – adaptive
+ – preventive
+ – corrective maintenance
+ • How each type of maintenance is carried out
+ • Advantages and disadvantages of different types of maintenance
+--- Page 50 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+50
+www.cambridgeinternational.org/alevelBack to contents page
+17 Data Analysis and Visualisation
+17.1 Data Analysis and Visualisation
+Using skills, knowledge and understanding described in sections 8 Spreadsheets, 9 Modelling and 10 
+Database and file concepts of the AS Level subject content to analyse, interpret and display data to visually 
+communicate information to users in a clear and efficient manner.
+ • Transforming and cleaning data to extract meaningful information
+ • Getting data from different sources, including:
+ – comparing and consolidating data from two data sources
+ – splitting data into discrete fields
+ – merging and combining data into required fields
+ • Displaying data to communicate information, including:
+ – pivot table reports
+ – pivot charts
+--- Page 51 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+51
+www.cambridgeinternational.org/alevelBack to contents page
+18 Mail merge
+18.1 Mail merge
+ • When and why mail merge is used
+ • The need for data sources and master documents
+ • Creating/editing and using source data using appropriate software
+ • Creating a master document for:
+ – letters
+ – labels (including custom labels)
+ – a directory
+ • Link a master document to a source file, including:
+ – identifying and using correct field names
+ – embedding a chart/table
+ • Inserting:
+ – specified merge fields
+ – document properties
+ – document fields
+ – date/time fields
+ • Setting up fields:
+ – for manual completion, including:
+ ○ using Fill-in and Ask fields 
+ ○ creating appropriate prompts to the user for manual completion
+ ○ for automatic completion calculations, including inserting formulas
+ – when and why fields need to be set up
+ • Specifying rules:
+ – for selecting recipients, including:
+ ○ editing
+ ○ sorting
+ ○ filtering
+ – for excluding recipients
+ – for excluding recipients by inserting conditional fields, including the use of:
+ ○ If Then Else 
+ ○ Skip Record If 
+ ○ Next Record If
+ – when and why rules need to be specified
+--- Page 52 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027.
+52
+www.cambridgeinternational.org/alevelBack to contents page
+19 Graphics creation
+19.1 Common graphics skills
+ • Using software tools for the creation and editing of digital graphics, including:
+ – graphics tools, including:
+ ○ add layers
+ ○ remove layers
+ ○ select active layer
+ ○ order
+ ○ toggle visibility
+ ○ lock/unlock layers
+ ○ change opacity/transparency
+ ○ blend/flatten/merge layers
+ – transform tools, including:
+ ○ resize
+ ○ skew
+ ○ reflect
+ ○ rotate
+ ○ move
+ ○ scale
+ ○ shear
+ ○ apply envelope and perspective
+ – grouping or merging tools, including:
+ ○ group
+ ○ ungroup
+ ○ combine/join
+ ○ add/subtract
+ ○ intersect
+ – alignment and distribution tools, including:
+ ○ left
+ ○ right 
+ ○ top
+ ○ bottom
+ ○ centre alignment
+ ○ vertical and horizontal distribution
+ ○ order 
+ ○ raise 
+ ○ lower
+ ○ bring to front
+ ○ send to back
+--- Page 53 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+53
+www.cambridgeinternational.org/alevelBack to contents page
+19 Graphics creation (continued)
+19.1 Common graphics skills (continued)
+ – layout tools, including:
+ ○ rulers 
+ ○ grids
+ ○ guidelines
+ ○ snapping
+ – colour picker tools, including select a colour or colour range within an image or from other sources
+ – crop tools, including crop/clip to objects
+ – colour systems, including:
+ ○ RGB
+ ○ HSL
+ ○ CMYK 
+ ○ CMS 
+ ○ how each produces colour
+ ○ their properties, purpose and uses
+ – the need for different image resolutions, including the impact of having too low/high resolution for an 
+image on screen or in print
+ – different bitmap and vector file formats, including their suitability and selection for use in a given 
+scenario
+ – exporting an image in different file formats, including:
+ ○ SVG
+ ○ BMP 
+ ○ JPG/JPEG 
+ ○ PNG 
+ ○ GIF 
+ ○ TIF
+ ○ PDF
+ – changing solid and gradient fills
+--- Page 54 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+54
+www.cambridgeinternational.org/alevelBack to contents page
+19 Graphics creation (continued)
+19.2 Vector graphics
+ • Using software tools for the creation and editing of vector graphics, including:
+ – creating a vector graphic that meets the requirements of its intended application and audience
+ – vector drawing tools:
+ ○ freehand drawing
+ ○ Bezier curves 
+ ○ straight lines
+ ○ shape tools – creation of rectangles, ellipses, circles, arcs, stars, polygons and spirals
+ ○ application of envelopes and perspectives
+ – selection tools to select and manipulate parts of a vector graphic, including:
+ ○ convert to curves
+ ○ replication 
+ ○ transformation tools
+ – fill tools to colour elements, including:
+ ○ solid 
+ ○ gradient 
+ – node and path editing, including:
+ ○ adding, moving and deleting nodes to simplify paths
+ ○ using Bezier handles
+ ○ working with symmetrical, asymmetrical, cusp, and smooth nodes
+ ○ align and distribute nodes
+ • Converting bitmap images into editable vector shapes, including trace bitmaps
+ • Advantages and disadvantages of converting a bitmap image into an editable vector shape
+--- Page 55 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+55
+www.cambridgeinternational.org/alevelBack to contents page
+19 Graphics creation (continued)
+19.3 Bitmap images
+ • Using software tools for the creation and editing of bitmap graphics, including:
+ – creating and editing bitmap images that meet the requirements of their intended application and 
+audience
+ – selection tools to select, remove or hide parts of a bitmap image, including:
+ ○ lasso
+ ○ magic wand
+ ○ colour select
+ ○ cut-out
+ ○ crop 
+ ○ masking tools
+ – working with colour, including:
+ ○ solid and gradient fills
+ ○ convert to black and white, greyscale
+ ○ adjust brightness, contrast, colour balance, shadows and highlights
+ – brush, pencil and pen tools, including:
+ ○ pre-set and customised options
+ – tools/filters to alter parts of an image, including:
+ ○ distort
+ ○ clone
+ ○ erase
+ ○ blur
+ ○ smudge
+ ○ sharpen 
+ ○ red eye removal
+ – resizing the image/canvas, including the use of:
+ ○ changing colour depth 
+ ○ changing resolution
+--- Page 56 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+56
+www.cambridgeinternational.org/alevelBack to contents page
+19 Graphics creation (continued)
+19.4 Compression
+ • What compression is
+ • Methods of compression
+ – lossless compression
+ – lossy compression
+ • Effects of different methods of compression on images
+19.5 Text
+ • Selecting font style, including:
+ – font face
+ – size
+ – kerning
+ – letter spacing
+ – line spacing
+ • Fitting text to path or shape
+ – aligning text along a line or around a shape
+ • Setting text in a shape
+ • Converting text to curves
+ – converting fonts into editable vector shapes
+ • Use of text and its manipulation within graphics software
+--- Page 57 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+57
+www.cambridgeinternational.org/alevelBack to contents page
+20 Animation
+20.1 Animation
+ • Using software tools for the creation and editing of computer animations, including:
+ – creating an animation (stop motion and key frame) that meets the requirements of its intended 
+application and audience
+ – configuring the stage/frame/canvas for an animation, including setting:
+ ○ colour
+ ○ size 
+ ○ the aspect ratio using rulers, guides and grid settings 
+ ○ snapping options
+ – importing and creating vector objects, including:
+ ○ tracing bitmaps 
+ ○ adding text
+ – controlling object properties, including:
+ ○ stroke and fill settings
+ ○ size position and orientation
+ ○ transparency
+ – setting paths
+ – using layers
+ – applying masks
+ – controlling animations by:
+ ○ adjusting frame rates
+ ○ looping or stopping animations
+ • The basic principles of animation, including:
+ – frames
+ – key frames 
+ – property key frames
+ – timings
+ – coordinates
+ – inbetweening (‘tweening’) tools to change:
+ ○ motion
+ ○ shape
+ ○ size 
+ ○ colour
+ – morphing and the effect it creates
+ • Different animation types and methods, including:
+ – cel animation
+ – stop motion
+ – time lapse
+ – flip book
+ – CGI
+ – 2D
+ – 3D
+--- Page 58 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+58
+www.cambridgeinternational.org/alevelBack to contents page
+20 Animation (continued)
+20.1 Animation (continued)
+ • Components of an animation:
+ – the primary, for example, the main focus of the animation, such as main characters 
+ – the secondary, for example:
+ ○ sound
+ ○ background
+ – other components of animation
+ • The use of animation variables when creating animations, including:
+ – to control the position of an animated object or parts of an animated object
+ • Advantages and disadvantages of different animation types
+--- Page 59 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+59
+www.cambridgeinternational.org/alevelBack to contents page
+21 Programming for the web
+21.1 Programming for the web
+For this section of the syllabus, we recommend that candidates have a working knowledge of HTML and 
+css (for example, have studied website authoring in Cambridge IGCSE Information and Communication 
+Technology, syllabus code 0417/0983).
+ • Using JavaScript to:
+ – add interactivity to web pages, including by:
+ ○ inserting JavaScript in HTML
+ ○ creating and using external scripts
+ – change HTML content:
+ ○ text/number, including calculations and string manipulation
+ ○ images and image properties
+ – change HTML styles:
+ ○ change style of HTML elements using document.getElementById(id).style.property = new style
+ – show/hide HTML elements using:
+ ○ document.getElementById(id).style.visibility=
+ ○ document.getElementById(id).style.display=
+ – display data in different ways, including by writing into:
+ ○ an HTML element, using innerHTML
+ ○ the HTML output using document.write()
+ ○ an alert box, using window.alert()
+ ○ the browser console, using console.log()
+ – react to common HTML Events, including:
+ ○ onload
+ ○ onchange
+ ○ onclick
+ ○ onmouseover
+ ○ onmouseout
+ ○ onkeydown
+ – provide user interaction using:
+ ○ confirm() and prompt() popups
+ • The structure and syntax of JavaScript code, including:
+ – JavaScript statements composed of:
+ ○ values (literals and variables)
+ ○ operators (assignment, arithmetic, algebraic, string)
+ ○ comparison (logical, conditional, type)
+ ○ expressions
+ ○ keywords
+ ○ comments
+ – functions to be executed:
+ ○ when an event occurs
+ ○ when invoked from code
+ ○ automatically (self-invoked)
+ – JavaScript timing events, including:
+ ○ execution interval methods setTimeout() and setInterval()
+--- Page 60 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+60
+www.cambridgeinternational.org/alevelBack to contents page
+21 Programming for the web (continued)
+21.1 Programming for the web (continued)
+ – comments to annotate and explain code, including:
+ ○ single line and multi-line
+ – JavaScript loops for iterative methods, including:
+ ○ for loop
+ ○ for/in loop
+ ○ while loop
+ ○ do/while loop
+ • Object-based JavaScript programming techniques and terms, including:
+ ○ JavaScript statements 
+ ○ data types (including: number, string, Boolean, array, object)
+ ○ type conversions
+ ○ variables and arrays
+ ○ JavaScript operators
+ ○ logical operators (AND, OR, NOT)
+ ○  comparison operators (Logical, Ternary, equal to, equal value and equal type, not equal to, not 
+equal value and not equal type, greater than, less than, greater than or equal to, less than or 
+equal to)
+ ○ conditional operators (if, else, else if, switch)
+ ○ loops 
+ ○ break
+ ○ interaction: alert(), prompt(), confirm()
+ ○ functions
+ ○ execution interval methods: setTimeout(), setInterval()
+--- Page 61 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027.
+61
+www.cambridgeinternational.org/alevelBack to contents page
+Flowchart, system flowchart and data flow diagram symbols
+Flowchart symbols
+Element Symbol
+Input/output
+Decision
+Terminator (Start/Stop)
+Process box
+Subroutine
+Connector A
+Flow line
+--- Page 62 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+62
+www.cambridgeinternational.org/alevelBack to contents page
+System flowchart symbols
+Element Symbol
+Input/output
+Process 
+Single document output
+Multiple document output
+Magnetic disk file
+Magnetic tape file
+Display
+Data flow diagram symbols
+Element Symbol
+Process 
+Data store
+Data source or destination 
+(inputs and outputs)
+--- Page 63 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Subject content  
+63
+www.cambridgeinternational.org/alevelBack to contents page
+Duplication data source or 
+destination
+--- Page 64 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Details of the assessment 
+64
+www.cambridgeinternational.org/alevelBack to contents page
+4 Details of the assessment 
+Paper 1 – Theory
+Written paper, 1 hour 45 minutes, 70 marks
+Candidates answer all questions. The paper consists of short-answer and structured questions of variable mark 
+value. Calculators are not allowed in Paper 1. Candidates answer on the question paper.
+This written paper tests sections 1–11 of the syllabus content. The paper assesses AO1 Recall, select 
+and communicate knowledge and understanding of IT and AO3 Analyse, evaluate, and present reasoned 
+conclusions.
+Paper 2 – Practical
+Practical paper, 2 hours 30 minutes, 90 marks
+Candidates answer all questions. This practical paper tests sections 8–11 of the syllabus content. Candidates 
+also need to apply their knowledge from sections 1–7 of the syllabus content. They must not have access 
+to the internet or email. The paper assesses AO2 Apply knowledge, understanding, skills and judgement to 
+produce IT-based solutions.
+Candidates perform practical tasks within a structured problem-solving context and submit their work 
+electronically. Candidates select the most appropriate software and must use the most efficient methods to 
+solve each task. 
+Candidates work with electronic resource files provided by Cambridge International. These files must be loaded 
+onto the candidate’s computer system before the start of the exam.
+Candidates must save their work in the format specified in the tasks. If work is saved in an incorrect file format, 
+candidates will not receive marks for that task. To ensure candidates are able to convert/export files in any 
+format during the practical tests, file conversion software must be available to candidates on their computers. 
+They should have experience of using this software during the teaching of the syllabus.
+Details of how to administer the practical paper can be found in the Cambridge Handbook , which is available 
+from the exams officer section of our website: www.cambridgeinternational.org/examsofficers
+--- Page 65 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Details of the assessment 
+65
+www.cambridgeinternational.org/alevelBack to contents page
+Paper 3 – Advanced Theory
+Written paper, 1 hour 45 minutes, 70 marks
+Candidates answer all questions. The paper consists of short-answer and structured questions of variable mark 
+value. Calculators are not allowed in Paper 3. Candidates answer on the question paper.
+This written paper tests sections 12–21 of the syllabus content. The content of sections 1–11 is assumed 
+knowledge. The paper assesses AO1 Recall, select and communicate knowledge and understanding of IT and 
+AO3 Analyse, evaluate, and present reasoned conclusions.
+Paper 4 – Advanced Practical
+Practical paper, 2 hours 30 minutes, 90 marks
+Candidates answer all questions. This practical paper tests sections 17–21 of the syllabus content. The exam 
+may also include practical tasks from sections 8–10 within a problem-solving context. Candidates must not 
+have access to the internet or email. The paper assesses AO2 Apply knowledge, understanding, skills and 
+judgement to produce IT-based solutions.
+Candidates perform practical tasks and submit their work electronically. Candidates apply their knowledge from 
+all sections of the syllabus. Candidates select the most appropriate software and must use the most efficient 
+methods to solve each task.
+Candidates work with electronic resource files provided by Cambridge International . These files must be loaded 
+onto the candidate’s computer system before the start of the examination.
+Candidates must save their work in the format specified in the tasks. If work is saved in an incorrect file format, 
+candidates will not receive marks for that task. To ensure candidates are able to convert/export files in any 
+format during the practical tests, file conversion software must be available to candidates on their computers. 
+They should have experience of using this software during the teaching of the syllabus.
+Details of how to administer the practical paper can be found in the Cambridge Handbook, which is available 
+from the exams officer section of our website: www.cambridgeinternational.org/examsofficers
+--- Page 66 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. Details of the assessment 
+66
+www.cambridgeinternational.org/alevelBack to contents page
+Command words
+Command words and their meanings help candidates know what is expected from them in the exam. The table 
+below includes command words used in the assessment for this syllabus. The use of the command word will 
+relate to the subject context. 
+Command word What it means
+Analyse examine in detail to show meaning, identify elements and the relationship between 
+them
+Assess make an informed judgement
+Compare identify/comment on similarities and/or differences
+Contrast identify/comment on differences
+Define give precise meaning
+Describe state the points of a topic/give characteristics and main features
+Discuss write about issue(s) or topic(s) in depth in a structured way
+Evaluate judge or calculate the quality, importance, amount, or value of something
+Explain set out purposes or reasons/make the relationships between things clear/say why 
+and/or how and support with relevant evidence
+Identify name/select/recognise
+Justify support a case with evidence/argument
+State express in clear terms
+Suggest apply knowledge and understanding to situations where there are a range of valid 
+responses in order to make proposals/put forward considerations
+--- Page 67 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. What else you need to know 
+67
+www.cambridgeinternational.org/alevelBack to contents page
+5 What else you need to know 
+This section is an overview of other information you need to know about this syllabus. It will help to share the 
+administrative information with your exams officer so they know when you will need their support. Find more 
+information about our administrative processes at www.cambridgeinternational.org/eoguide
+Before you start
+Previous study
+We recommend that learners starting this course should have completed a course in Information Technology 
+equivalent to Cambridge IGCSE™  or Cambridge O Level. The topics covered by Cambridge IGCSE Information 
+and Communication Technology (0417/0983) are assumed knowledge for this syllabus. 
+Guided learning hours
+We design Cambridge International AS & A Level syllabuses to require about 180 guided learning hours for 
+each Cambridge International AS Level and about 360 guided learning hours for a Cambridge International  
+A Level. The number of hours a learner needs to achieve the qualification may vary according to each school 
+and the learners’ previous experience of the subject.
+Availability and timetables 
+All Cambridge schools are allocated to an administrative zone. Each zone has a specific timetable. 
+You can view the timetable for your administrative zone at www.cambridgeinternational.org/timetables
+You can enter candidates in the June and November exam series. If your school is in India, you can also enter 
+your candidates in the March exam series.
+Check you are using the syllabus for the year the candidate is taking the exam.
+Private candidates can enter for this syllabus. For more information, please refer to the Cambridge Guide to 
+Making Entries.
+Combining with other syllabuses
+Candidates can take this syllabus alongside other Cambridge International syllabuses in a single exam series. 
+The only exceptions are:
+ • Cambridge International AS & A Level Computer Science (9618)
+ • syllabuses with the same title at the same level.
+Group awards: Cambridge AICE 
+Cambridge AICE (Advanced International Certificate of Education) is a group award for Cambridge International  
+AS & A Level. It allows schools to offer a broad and balanced curriculum by recognising the achievements of 
+learners who pass exams in a range of different subjects. 
+Learn more about Cambridge AICE at www.cambridgeinternational.org/aice
+--- Page 68 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. What else you need to know 
+68
+www.cambridgeinternational.org/alevelBack to contents page
+Making entries
+Exams officers are responsible for submitting entries to Cambridge International. We encourage them to work 
+closely with you to make sure they enter the right number of candidates for the right combination of syllabus 
+components. Entry option codes and instructions for submitting entries are in the Cambridge Guide to Making 
+Entries. Your exams officer has a copy of this guide.
+Exam administration
+To keep our exams secure, we produce question papers for different areas of the world, known as 
+administrative zones. We allocate all Cambridge schools to one administrative zone determined by their 
+location. Each zone has a specific timetable. Some of our syllabuses offer candidates different assessment 
+options. An entry option code is used to identify the components the candidate will take relevant to the 
+administrative zone and the available assessment options.
+Support for exams officers
+We know how important exams officers are to the successful running of exams. We provide them with the 
+support they need to make your entries on time. Your exams officer will find this support, and guidance for all 
+other phases of the Cambridge Exams Cycle, at www.cambridgeinternational.org/eoguide
+Retakes and carrying forward marks
+Candidates can retake Cambridge International AS Level and Cambridge International A Level as many times 
+as they want to. Information on retake entries is at www.cambridgeinternational.org/retakes  
+Candidates can carry forward the result of their Cambridge International AS Level assessment from one series 
+to complete the Cambridge International A Level in a following series. The rules, time limits and regulations for 
+carry-forward entries for staged assessment can be found in the Cambridge Handbook  for the relevant year of 
+assessment at www.cambridgeinternational.org/eoguide
+To confirm what entry options are available for this syllabus, refer to the Cambridge Guide to Making Entries  for 
+the relevant series.
+Language
+This syllabus and the related assessment materials are available in English only.
+Accessibility and equality
+Syllabus and assessment design 
+Cambridge International works to avoid direct or indirect discrimination. We develop and design syllabuses and 
+assessment materials to maximise inclusivity for candidates of all national, cultural or social backgrounds and 
+candidates with protected characteristics; these protected characteristics include special educational needs 
+and disability, religion and belief, and characteristics related to gender and identity. In addition, the language 
+and layout used are designed to make our materials as accessible as possible. This gives all candidates the 
+fairest possible opportunity to demonstrate their knowledge, skills and understanding and helps to minimise the 
+requirement to make reasonable adjustments during the assessment process.
+--- Page 69 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. What else you need to know 
+69
+www.cambridgeinternational.org/alevelBack to contents page
+Access arrangements 
+Access arrangements (including modified papers) are the principal way in which Cambridge International 
+complies with our duty, as guided by the UK Equality Act (2010), to make ‘reasonable adjustments’ for 
+candidates with special educational needs (SEN), disability, illness or injury. Where a candidate would otherwise 
+be at a substantial disadvantage in comparison to a candidate with no SEN, disability, illness or injury, we 
+may be able to agree pre-examination access arrangements. These arrangements help a candidate by 
+minimising accessibility barriers and maximising their opportunity to demonstrate their knowledge, skills and 
+understanding in an assessment. 
+Important: 
+ • Requested access arrangements should be based on evidence of the candidate’s barrier to assessment 
+and should also reflect their normal way of working at school; this is in line with the Cambridge Handbook  
+www.cambridgeinternational.org/eoguide  
+ • For Cambridge International to approve an access arrangement, we will need to agree that it constitutes 
+a reasonable adjustment, involves reasonable cost and timeframe and does not affect the security and 
+integrity of the assessment. 
+ • Availability of access arrangements should be checked by centres at the start of the course. Details of our 
+standard access arrangements and modified question papers are available in  the Cambridge Handbook 
+www.cambridgeinternational.org/eoguide  
+ • Please contact us at the start of the course to find out if we are able to approve an arrangement that is not 
+included in the list of standard access arrangements. 
+ • Candidates who cannot access parts of the assessment may be able to receive an award based on the 
+parts they have completed. 
+After the exam
+Grading and reporting
+Grades A*, A, B, C, D or E indicate the standard a candidate achieved at Cambridge International A Level. A* is the 
+highest and E is the lowest grade. 
+Grades a, b, c, d or e indicate the standard a candidate achieved at Cambridge International AS Level. ‘a’ is the 
+highest and ‘e’ is the lowest grade.
+‘Ungraded’ means that the candidate’s performance did not meet the standard required for the lowest grade  
+(E or e). ‘Ungraded’ is reported on the statement of results but not on the certificate. In specific circumstances  
+your candidates may see one of the following letters on their statement of results:
+ • Q (PENDING)
+ • X (NO RESULT).
+These letters do not appear on the certificate.
+--- Page 70 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. What else you need to know 
+70
+www.cambridgeinternational.org/alevelBack to contents page
+If a candidate takes a Cambridge International A Level and fails to achieve grade E or higher, a Cambridge 
+International AS Level grade will be awarded if both of the following apply:
+ • the components taken for the Cambridge International A Level by the candidate in that series included all 
+the components making up a Cambridge International AS Level
+ • the candidate’s performance on the AS Level components was sufficient to merit the award of a Cambridge 
+International AS Level grade.
+On the statement of results and certificates, Cambridge International AS & A Levels are shown as General 
+Certificates of Education, GCE Advanced Subsidiary Level (GCE AS Level) and GCE Advanced Level (GCE A 
+Level).
+School feedback: ‘Cambridge International A Levels are the ‘gold standard’ qualification. They 
+are based on rigorous, academic syllabuses that are accessible to students from a wide range 
+of abilities yet have the capacity to stretch our most able.’
+Feedback from:  Director of Studies, Auckland Grammar School, New Zealand
+How students, teachers and higher education can use the grades
+Cambridge International A Level
+Assessment at Cambridge International A Level has two purposes:
+1 to measure learning and achievement
+ The assessment confirms achievement and performance in relation to the knowledge, understanding and 
+skills specified in the syllabus.
+2 to show likely future success
+ The outcomes help predict which students are well prepared for a particular course or career and/or which 
+students are more likely to be successful. 
+ The outcomes help students choose the most suitable course or career.
+Cambridge International AS Level
+Assessment at Cambridge International AS Level has two purposes:
+1 to measure learning and achievement
+ The assessment confirms achievement and performance in relation to the knowledge, understanding and 
+skills specified in the syllabus.
+2 to show likely future success
+ The outcomes help predict which students are well prepared for a particular course or career and/or which 
+students are more likely to be successful. 
+ The outcomes help students choose the most suitable course or career.
+ The outcomes help decide whether students part way through a Cambridge International A Level course 
+are making enough progress to continue.
+ The outcomes guide teaching and learning in the next stages of the Cambridge International A Level 
+course.  
+--- Page 71 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. What else you need to know 
+71
+www.cambridgeinternational.org/alevelBack to contents page
+Grade descriptions
+Grade descriptions are provided to give an indication of the standards of achievement candidates awarded 
+particular grades are likely to show. Weakness in one aspect of the examination may be balanced by a better 
+performance in some other aspect. 
+Grade descriptions for Cambridge International A Level Information Technology will be published after the first 
+assessment of the A Level in 2025.
+--- Page 72 ---
+Cambridge International AS & A Level Information Technology 9626 syllabus for 2025, 2026 and 2027. What else you need to know 
+72
+www.cambridgeinternational.org/alevelBack to contents page
+Changes to this syllabus for 2025, 2026 and 2027
+The syllabus has been reviewed and revised for first examination in 2025. 
+This is version 3 of the syllabus, published July 2025.
+You must read the whole syllabus before planning your teaching programme.
+Changes to version 3 of the syllabus, published July 2025
+Changes to syllabus 
+content
+ • 14.6 – We have changed ‘IP4’ and ‘IP6’ to ‘IPv4’ and ‘IPv6’ to meet 
+industry standards.
+ • 19.1 – We have changed the capitalisation of the file format acronyms to 
+meet standard industry practices.
+Changes to version 2 of the syllabus, published January 2023.
+Changes to syllabus 
+content
+ • We have added the below subject content to version 2:
+ – 1.1 Data and information – ‘census data’ in list of examples of 
+indirect data sources
+ – 1.4 Checking the accuracy of data – ‘Advantages and 
+disadvantages of validation and verification’ 
+ – 10.4 File and data management – ‘Proprietary and open-source file 
+formats, including why open-source file formats are needed’.
+ • We have added Assess to the list of command words on page 66 of this 
+syllabus. Assess means ‘make an informed judgement’. 
+Changes to version 1 of the syllabus, published September 2022.
+Changes to syllabus 
+content
+ • We have refreshed the subject content for examination from 2025. The 
+content to teach is largely the same. The updates to subject content 
+include:
+ – removing out-of-date content
+ – giving additional detail and examples
+ – rewording points to provide greater clarity 
+ – regrouping content within sections.
+Changes to assessment 
+(including changes to 
+specimen papers)
+ • We are publishing new specimen papers for examination from 2025. The 
+2022 specimen papers are still suitable for use with this syllabus. 
+In addition to reading the syllabus, you should refer to the updated specimen papers. The specimen papers will 
+help your students become familiar with exam requirements and command words in questions. The specimen 
+mark schemes explain how students should answer questions to meet the assessment objectives.
+Any textbooks endorsed to support the syllabus for examination from 2022  are suitable for use 
+with this syllabus.   
+--- Page 73 ---
+School feedback:  ‘While studying Cambridge IGCSE and Cambridge International A Levels, students 
+broaden their horizons through a global perspective and develop a lasting passion for learning.’
+Feedback from: Zhai Xiaoning, Deputy Principal, The High School Affiliated to Renmin University of China
+We are committed to making our documents accessible in accordance with the WCAG 2.1 Standard. We are always looking to improve 
+the accessibility of our documents. If you find any problems or you think we are not meeting accessibility requirements, contact us at 
+info@cambridgeinternational.org  with the subject heading: Digital accessibility. If you need this document in a different format, contact 
+us and supply your name, email address and requirements and we will respond within 15 working days.
+Cambridge Assessment International Education, The Triangle Building, Shaftesbury Road, Cambridge, CB2 8EA, United Kingdom
+t : +44 (0)1223 553554  email : info@cambridgeinternational.org  www.cambridgeinternational.org
+© Cambridge University Press & Assessment September 2022
