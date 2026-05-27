@@ -29,11 +29,15 @@ const statTotal = document.getElementById('stat-total');
 const statClassified = document.getElementById('stat-classified');
 const statUnclassified = document.getElementById('stat-unclassified');
 const statChapters = document.getElementById('stat-chapters');
+const statMissingMs = document.getElementById('stat-missing-ms');
+const statConfirmed = document.getElementById('stat-confirmed');
+const statUnclassifiedDetail = document.getElementById('stat-unclassified-detail');
 
 const filterPaper = document.getElementById('filter-paper');
 const filterYear = document.getElementById('filter-year');
 const filterTopic = document.getElementById('filter-topic');
 const filterStatus = document.getElementById('filter-status');
+const filterMs = document.getElementById('filter-ms');
 const qSearch = document.getElementById('q-search');
 
 const assignerList = document.getElementById('assigner-list');
@@ -67,6 +71,7 @@ function setupEventListeners() {
   filterYear.addEventListener('change', () => { currentPage = 1; applyFilters(); });
   filterTopic.addEventListener('change', () => { currentPage = 1; applyFilters(); });
   filterStatus.addEventListener('change', () => { currentPage = 1; applyFilters(); });
+  filterMs.addEventListener('change', () => { currentPage = 1; applyFilters(); });
   
   // Search input debounced
   let searchTimeout;
@@ -343,16 +348,49 @@ function updateStats() {
   
   // Calculate unclassified (those assigned to fallback topics or invalid topics)
   const validTopicIds = availableTopics.map(t => t.id);
-  const unclassified = questions.filter(q => {
+  const unclassifiedQ = questions.filter(q => {
     return FALLBACK_TOPICS.includes(q.topic_id) || !validTopicIds.includes(q.topic_id);
-  }).length;
-
+  });
+  const unclassified = unclassifiedQ.length;
   const classified = total - unclassified;
+
+  // Missing MS Images count
+  const missingMs = questions.filter(q => !(q.images_ms && q.images_ms.length > 0)).length;
+
+  // Confirmed topic count
+  const confirmed = questions.filter(q => q.topic_confirmed === true).length;
 
   statTotal.textContent = total;
   statClassified.textContent = classified;
   statUnclassified.textContent = unclassified;
+  statMissingMs.textContent = missingMs;
   statChapters.textContent = dbV2.chapters.length;
+  
+  if (statConfirmed) statConfirmed.textContent = confirmed;
+  
+  // Unclassified breakdown by fallback topic
+  const statFallbackRow = document.getElementById('stat-fallback-row');
+  
+  if (statUnclassifiedDetail) {
+    const byTopic = {};
+    unclassifiedQ.forEach(q => {
+      byTopic[q.topic_id] = (byTopic[q.topic_id] || 0) + 1;
+    });
+    
+    const sorted = Object.entries(byTopic).sort((a, b) => b[1] - a[1]);
+    if (sorted.length > 0) {
+      statUnclassifiedDetail.innerHTML = sorted.slice(0, 5).map(([tid, count]) => 
+        `<span class="stat-fallback-chip">${tid}: ${count}</span>`
+      ).join(' ');
+      statUnclassifiedDetail.style.display = 'block';
+      if (statFallbackRow) statFallbackRow.style.display = 'flex';
+    } else {
+      statUnclassifiedDetail.style.display = 'none';
+      if (statFallbackRow) statFallbackRow.style.display = 'none';
+    }
+  } else if (statFallbackRow) {
+    statFallbackRow.style.display = 'none';
+  }
 }
 
 // Tab Switching
@@ -418,6 +456,7 @@ function applyFilters() {
   const yearVal = filterYear.value;
   const topicVal = filterTopic.value;
   const statusVal = filterStatus.value;
+  const msVal = filterMs.value;
 
   const validTopicIds = availableTopics.map(t => t.id);
 
@@ -448,6 +487,15 @@ function applyFilters() {
       const isUnassigned = FALLBACK_TOPICS.includes(q.topic_id) || !validTopicIds.includes(q.topic_id);
       if (statusVal === 'unassigned' && !isUnassigned) return false;
       if (statusVal === 'assigned' && isUnassigned) return false;
+      if (statusVal === 'confirmed' && q.topic_confirmed !== true) return false;
+      if (statusVal === 'unconfirmed' && q.topic_confirmed === true) return false;
+    }
+
+    // MS Status Filter
+    if (msVal !== 'all') {
+      const hasMs = q.images_ms && q.images_ms.length > 0;
+      if (msVal === 'present' && !hasMs) return false;
+      if (msVal === 'missing' && hasMs) return false;
     }
 
     return true;
@@ -593,6 +641,19 @@ function renderQuestions() {
     const validTopicIds = availableTopics.map(t => t.id);
     const isFallback = FALLBACK_TOPICS.includes(q.topic_id) || !validTopicIds.includes(q.topic_id);
     const selectClass = isFallback ? 'fallback-selected' : 'custom-selected';
+    
+    // Determine confirm status
+    const isConfirmed = q.topic_confirmed === true;
+    const confirmBtnClass = isConfirmed ? 'confirm-btn confirmed' : 'confirm-btn';
+    const confirmBtnHtml = isConfirmed 
+      ? `<span class="confirm-btn confirmed" title="Topic confirmed - click to unconfirm">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Confirmed
+         </span>`
+      : `<button class="confirm-btn" onclick="confirmTopic('${q.id}')" title="Mark this topic assignment as confirmed">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Confirm Topic
+         </button>`;
 
     card.innerHTML = `
       <div class="card-header">
@@ -618,6 +679,7 @@ function renderQuestions() {
           <select class="topic-select-picker ${selectClass}" data-qid="${q.id}" onchange="changeQuestionTopic(this)">
             ${dropdownOptionsHtml}
           </select>
+          ${confirmBtnHtml}
         </div>
       </div>
     `;
@@ -685,6 +747,11 @@ function changeQuestionTopic(selectElement) {
   
   const originalTopicId = originalDbV2.questions.find(q => q.id === qid).topic_id;
   questionV2.topic_id = newTopicId;
+  
+  // Auto-clear confirmation when topic changes
+  if (questionV2.topic_confirmed === true) {
+    questionV2.topic_confirmed = false;
+  }
 
   // 2. Synchronize to dbV1 matching by metadata
   // Get identifying credentials of the question
@@ -715,6 +782,29 @@ function changeQuestionTopic(selectElement) {
   }
 
   updateStats();
+}
+
+// ==========================================================================
+// TOPIC CONFIRMATION SYSTEM
+// ==========================================================================
+
+// Confirm a question's topic assignment
+function confirmTopic(qid) {
+  const q = dbV2.questions.find(x => x.id === qid);
+  if (!q) return;
+  
+  q.topic_confirmed = true;
+  
+  // Sync to dbV1
+  const v1q = dbV1.questions.find(x => {
+    return x.year === q.year && x.session === q.session && x.paper === q.paper &&
+           x.variant === q.variant && x.num_label === q.num_label;
+  });
+  if (v1q) v1q.topic_confirmed = true;
+  
+  markDirty();
+  applyFilters();
+  showToast('Topic Confirmed', 'Topic assignment marked as confirmed.', 'success');
 }
 
 // ==========================================================================
@@ -860,7 +950,7 @@ function checkIfStateIsDirty() {
     dirty = true;
   }
   
-  // Check question properties (topic_id and images)
+  // Check question properties (topic_id, images, paper links, and confirmation)
   if (!dirty) {
     for (let i = 0; i < dbV2.questions.length; i++) {
       const curr = dbV2.questions[i];
@@ -871,7 +961,8 @@ function checkIfStateIsDirty() {
           curr.qp_path !== orig.qp_path ||
           curr.qp_page !== orig.qp_page ||
           curr.ms_path !== orig.ms_path ||
-          curr.ms_page !== orig.ms_page) {
+          curr.ms_page !== orig.ms_page ||
+          curr.topic_confirmed !== orig.topic_confirmed) {
         dirty = true;
         break;
       }
@@ -896,6 +987,12 @@ function renderSyllabus() {
     const chapterCard = document.createElement('div');
     chapterCard.className = 'chapter-node';
     chapterCard.dataset.index = chIdx;
+
+    // Count missing MS images for this chapter
+    const chapterTopicIds = (ch.topics || []).map(t => t.id);
+    const chapterQuestions = dbV2.questions.filter(q => chapterTopicIds.includes(q.topic_id));
+    const chapterTotal = chapterQuestions.length;
+    const chapterMissingMs = chapterQuestions.filter(q => !(q.images_ms && q.images_ms.length > 0)).length;
 
     // Topics list container HTML
     let topicsHtml = '';
@@ -947,6 +1044,10 @@ function renderSyllabus() {
           <input type="text" class="chapter-title-input" value="${ch.chapter_title}" onchange="editChapterTitle(${chIdx}, this)" placeholder="Chapter Title...">
         </div>
         <div class="chapter-actions-inline" onclick="event.stopPropagation()">
+          ${chapterMissingMs > 0 ? `<span class="chapter-ms-stat">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            ${chapterMissingMs}/${chapterTotal} missing MS
+          </span>` : ''}
           <button class="action-btn secondary-btn" style="padding: 4px 8px; font-size:0.75rem;" onclick="addNewTopic(${chIdx})" title="Add Topic inside this Chapter">
             + Add Topic
           </button>

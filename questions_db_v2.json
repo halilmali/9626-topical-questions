@@ -1099,7 +1099,7 @@
       "num_label": "Task 2",
       "text": "2 hours 30 minutes",
       "marks": null,
-      "topic_id": "1.99",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\2021_june_02_q_Task 2_p0.jpg",
         "questions_images\\2021_june_02_q_Task 2_p1.jpg"
@@ -1113,7 +1113,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  2.pdf",
       "qp_page": 1,
-      "ms_page": 5
+      "ms_page": 5,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_02_qTask 1",
@@ -1124,7 +1125,7 @@
       "num_label": "Task 1",
       "text": "1 Open and examine the file j21ccc.csv in a spreadsheet. Edit and format the spreadsheet so it looks like this:",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\2021_june_02_q_Task 1_p0.jpg"
       ],
@@ -1132,7 +1133,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  2.pdf",
       "qp_page": 2,
-      "ms_page": null
+      "ms_page": null,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_02_qTask 2",
@@ -1168,7 +1170,7 @@
       "num_label": "Task 3",
       "text": "3 Enter formulae in cells B15 to B19 to display a blank cell, rather than a value, if strip foundations are not suitable for a site. The formula in cell:",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\2021_june_02_q_Task 3_p0.jpg"
       ],
@@ -1176,7 +1178,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  2.pdf",
       "qp_page": 3,
-      "ms_page": null
+      "ms_page": null,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_02_qTask 4",
@@ -1187,7 +1190,7 @@
       "num_label": "Task 4",
       "text": "4 Enter a formula in cell B20 to calculate the weight of the wall. Each brick weighs 3.5 kilograms and there are 55 bricks per square metre. These figures are not variables and will not change. [7]",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\2021_june_02_q_Task 4_p0.jpg"
       ],
@@ -1195,7 +1198,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  2.pdf",
       "qp_page": 3,
-      "ms_page": null
+      "ms_page": null,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_02_qTask 5",
@@ -1457,8 +1461,7 @@
         "questions_images\\2021_june_11_q_2_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\2021_june_11_ms_2_p0.jpg",
-        "questions_images\\2021_june_11_ms_2_p1.jpg"
+        "questions_images\\2021_june_11_ms_2_p0.jpg"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
@@ -1478,7 +1481,9 @@
       "images_q": [
         "questions_images\\2021_june_11_q_2_a_p0.jpg"
       ],
-      "images_ms": [],
+      "images_ms": [
+        "http:\\\\localhost:8080\\questions_images\\2021_june_11_ms_2_p0.jpg"
+      ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
       "qp_page": 4,
@@ -1512,7 +1517,7 @@
       "num_label": "2(c)",
       "text": "Evaluate, by weighing up the advantages and disadvantages, the use of MICR for inputting text.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "2.1",
       "images_q": [
         "questions_images\\2021_june_11_q_2_c_p0.jpg"
       ],
@@ -1520,7 +1525,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
       "qp_page": 5,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2021_june_11_q3",
@@ -1552,18 +1558,18 @@
       "num_label": "4",
       "text": "Describe how the data from an air pollution monitoring system is collected and prepared, ready for processing by a computer.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\2021_june_11_q_4_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\2021_june_11_ms_4_p0.jpg",
-        "questions_images\\2021_june_11_ms_4_p1.jpg"
+        "questions_images\\2021_june_11_ms_4_p0.jpg"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
       "qp_page": 7,
-      "ms_page": 6
+      "ms_page": 6,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_11_q5",
@@ -1595,7 +1601,7 @@
       "num_label": "6",
       "text": "The World Wide Web is a service provided by the internet.",
       "marks": null,
-      "topic_id": "8.4",
+      "topic_id": "6.1",
       "images_q": [
         "questions_images\\2021_june_11_q_6_p0.jpg"
       ],
@@ -1606,7 +1612,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
       "qp_page": 8,
-      "ms_page": 7
+      "ms_page": 7,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_11_q7",
@@ -1643,8 +1650,7 @@
         "questions_images\\2021_june_11_q_8_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\2021_june_11_ms_8_p0.jpg",
-        "questions_images\\2021_june_11_ms_8_p1.jpg"
+        "questions_images\\2021_june_11_ms_8_p0.jpg"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
@@ -1679,7 +1685,7 @@
       "num_label": "8(b)",
       "text": "In Fig. 8.1, the formula in cell G3 is =SUMIF(A$2:A$17,F3,D$2:D$17).",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\2021_june_11_q_8_b_p0.jpg"
       ],
@@ -1687,7 +1693,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
       "qp_page": 11,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2021_june_11_q8_c",
@@ -1755,7 +1762,7 @@
       "num_label": "8(d)",
       "text": "Evaluate, by weighing up the advantages and disadvantages, the use of the spreadsheet in Fig. 8.1 for financial forecasting.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "9.1",
       "images_q": [
         "questions_images\\2021_june_11_q_8_d_p0.jpg"
       ],
@@ -2643,8 +2650,7 @@
         "questions_images\\2021_june_13_q_1_c_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\2021_june_13_ms_1_c_p0.jpg",
-        "questions_images\\2021_june_13_ms_1_c_p1.jpg"
+        "questions_images\\2021_june_13_ms_1_c_p0.jpg"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  13.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  13.pdf",
@@ -2780,7 +2786,7 @@
       "num_label": "3(b)",
       "text": "disk formatting",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "2.2",
       "images_q": [
         "questions_images\\2021_june_13_q_3_b_p0.jpg"
       ],
@@ -2788,7 +2794,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  13.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  13.pdf",
       "qp_page": 6,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2021_june_13_q3_c",
@@ -3231,8 +3238,7 @@
         "questions_images\\2021_june_31_q_2_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\2021_june_31_ms_2_p0.jpg",
-        "questions_images\\2021_june_31_ms_2_p1.jpg"
+        "questions_images\\2021_june_31_ms_2_p0.jpg"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  31.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  31.pdf",
@@ -3258,7 +3264,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  31.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  31.pdf",
       "qp_page": 4,
-      "ms_page": 5
+      "ms_page": 5,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_31_q4",
@@ -3513,7 +3520,7 @@
       "num_label": "10",
       "text": "Jasmine is using JavaScript on her web pages to provide interactivity. She has encountered some runtime errors during the testing of her JavaScript code.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "8.2",
       "images_q": [
         "questions_images\\2021_june_31_q_10_p0.jpg"
       ],
@@ -3828,7 +3835,7 @@
       "num_label": "8(a)",
       "text": "Describe three components of a biometric payment system that might be used.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "5.1",
       "images_q": [
         "questions_images\\2021_june_32_q_8_a_p0.jpg"
       ],
@@ -3847,7 +3854,7 @@
       "num_label": "8(b)",
       "text": "Describe how the biometric payment system is used by students to pay for meals.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "5.1",
       "images_q": [
         "questions_images\\2021_june_32_q_8_b_p0.jpg"
       ],
@@ -4402,7 +4409,7 @@
       "num_label": "10",
       "text": "Jasmine is using JavaScript on her web pages to provide interactivity. She has encountered some runtime errors during the testing of her JavaScript code.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "8.2",
       "images_q": [
         "questions_images\\2021_june_33_q_10_p0.jpg"
       ],
@@ -4739,7 +4746,7 @@
       "num_label": "Task 13",
       "text": "13 Test the spreadsheet model with the following data:",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "9.1",
       "images_q": [
         "questions_images\\2022_june_02_q_Task 13_p0.jpg"
       ],
@@ -4758,7 +4765,7 @@
       "num_label": "Task 14",
       "text": "14 Test the spreadsheet model with the following data:",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "9.1",
       "images_q": [
         "questions_images\\2022_june_02_q_Task 14_p0.jpg"
       ],
@@ -4926,7 +4933,7 @@
       "num_label": "5(b)",
       "text": "Explain what is meant by disk defragmentation and why it is needed when using hard disks.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "2.3",
       "images_q": [
         "questions_images\\2022_june_11_q_5_b_p0.jpg"
       ],
@@ -4988,7 +4995,7 @@
       "num_label": "8",
       "text": "Ruritania has just passed a law which will allow supermarkets to purchase customer information from banks, providing they anonymise it. Joanne, the owner of a supermarket, wishes to analyse the spending habits of people in the area very near to the supermarket. She can either use direct data sources or obtain the information indirectly from local banks.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2022_june_11_q_8_p0.jpg"
       ],
@@ -5074,7 +5081,7 @@
       "num_label": "1",
       "text": "Some students have been asked by their teacher to carry out a study. They will collect data about the families living in five streets close to their school. They will carry out the study using direct data sources and will not use records from the 2020 census which are kept at the city hall.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2022_june_12_q_1_p0.jpg"
       ],
@@ -5482,7 +5489,7 @@
       "num_label": "1(b)",
       "text": "Describe how Paulo could use direct data sources for his study.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2022_june_13_q_1_b_p0.jpg"
       ],
@@ -7114,7 +7121,7 @@
       "num_label": "Task 2",
       "text": "2 Create a report showing details of cars made in 2019 that have LED lighting (they may also have other extras), where the colour of the car contains the words black, grey or blue. The report must be grouped by colour and model. It must be formatted to look like this:",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "10.1",
       "images_q": [
         "questions_images\\2023_june_02_q_Task 2_p0.jpg"
       ],
@@ -7122,7 +7129,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2023 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2023 Mark Scheme  2.pdf",
       "qp_page": 4,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2023_june_02_qTask 3",
@@ -10129,7 +10137,7 @@
       "num_label": "6",
       "text": "Describe these types of malware.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "5.2",
       "images_q": [
         "questions_images\\2024_june_12_q_6_p0.jpg"
       ],
@@ -10140,7 +10148,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2024 Question paper  12.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2024 Mark Scheme  12.pdf",
       "qp_page": 6,
-      "ms_page": 6
+      "ms_page": 6,
+      "_classified": true
     },
     {
       "id": "2024_june_12_q6_a",
@@ -10427,7 +10436,7 @@
       "num_label": "2",
       "text": "Unauthorised people can access personal data in different ways.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "5.1",
       "images_q": [
         "questions_images\\2024_june_13_q_2_p0.jpg"
       ],
@@ -10774,7 +10783,7 @@
       "num_label": "1(a)",
       "text": "Describe what is meant by an Iterative method.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "16.8",
       "images_q": [
         "questions_images\\2024_june_31_q_1_a_p0.jpg"
       ],
@@ -10782,7 +10791,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2024 Question paper  31.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2024 Mark Scheme  31.pdf",
       "qp_page": 2,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2024_june_31_q1_b",
@@ -11049,7 +11059,7 @@
       "num_label": "6",
       "text": "Describe how a system flowchart is constructed.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\2024_june_31_q_6_p0.jpg"
       ],
@@ -11254,7 +11264,7 @@
       "num_label": "4",
       "text": "JavaScript code has been developed for an interactive website. White box testing is carried out by the developers.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "8.2",
       "images_q": [
         "questions_images\\2024_june_32_q_4_p0.jpg"
       ],
@@ -11434,7 +11444,7 @@
       "num_label": "6(b)",
       "text": "Explain how PMS can help in decision making during a project.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\2024_june_32_q_6_b_p0.jpg"
       ],
@@ -11578,7 +11588,7 @@
       "num_label": "1(a)",
       "text": "Describe what is meant by an Iterative method.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "16.8",
       "images_q": [
         "questions_images\\2024_june_33_q_1_a_p0.jpg"
       ],
@@ -11586,7 +11596,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2024 Question paper  33.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2024 Mark Scheme  33.pdf",
       "qp_page": 2,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2024_june_33_q1_b",
@@ -11853,7 +11864,7 @@
       "num_label": "6",
       "text": "Describe how a system flowchart is constructed.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\2024_june_33_q_6_p0.jpg"
       ],
@@ -12385,7 +12396,7 @@
       "num_label": "3",
       "text": "Describe four ways a firewall increases security of personal data.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "5.1",
       "images_q": [
         "questions_images\\2025_june_11_q_3_p0.jpg"
       ],
@@ -12454,8 +12465,7 @@
         "questions_images\\2025_june_11_q_6_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\2025_june_11_ms_6_p0.jpg",
-        "questions_images\\2025_june_11_ms_6_p1.jpg"
+        "questions_images\\2025_june_11_ms_6_p0.jpg"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2025 Question Paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2025 Mark Scheme  11.pdf",
@@ -12557,8 +12567,7 @@
         "questions_images\\2025_june_11_q_9_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\2025_june_11_ms_9_p0.jpg",
-        "questions_images\\2025_june_11_ms_9_p1.jpg"
+        "questions_images\\2025_june_11_ms_9_p0.jpg"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2025 Question Paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2025 Mark Scheme  11.pdf",
@@ -12579,8 +12588,7 @@
         "questions_images\\2025_june_11_q_10_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\2025_june_11_ms_10_p0.jpg",
-        "questions_images\\2025_june_11_ms_10_p1.jpg"
+        "questions_images\\2025_june_11_ms_10_p0.jpg"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2025 Question Paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2025 Mark Scheme  11.pdf",
@@ -12696,7 +12704,7 @@
       "num_label": "1",
       "text": "A company is going to carry out an investigation into shopping habits. The company will get data from indirect data sources.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2025_june_12_q_1_p0.jpg"
       ],
@@ -12717,7 +12725,7 @@
       "num_label": "1(a)",
       "text": "Describe the benefits of getting data from indirect data sources.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2025_june_12_q_1_a_p0.jpg"
       ],
@@ -12736,7 +12744,7 @@
       "num_label": "1(b)",
       "text": "Describe the drawbacks of getting data from indirect data sources.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2025_june_12_q_1_b_p0.jpg"
       ],
@@ -12777,7 +12785,7 @@
       "num_label": "2(a)",
       "text": "The formula in cell F12 is =E12-(VLOOKUP(D12,$D$5:$E$8,2,FALSE)*E12)",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\2025_june_12_q_2_a_p0.jpg",
         "questions_images\\2025_june_12_q_2_a_p1.jpg"
@@ -12786,7 +12794,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2025 Question Paper  12.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2025 Mark Scheme  12.pdf",
       "qp_page": 3,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2025_june_12_q2_b",
@@ -13284,7 +13293,7 @@
       "num_label": "8(a)",
       "text": "Describe the functions of device drivers.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "2.2",
       "images_q": [
         "questions_images\\2025_june_13_q_8_a_p0.jpg"
       ],
@@ -13365,7 +13374,7 @@
       "num_label": "10(a)",
       "text": "Describe the benefits of defragmentation.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "2.3",
       "images_q": [
         "questions_images\\2025_june_13_q_10_a_p0.jpg"
       ],
@@ -13384,7 +13393,7 @@
       "num_label": "10(b)",
       "text": "Describe the drawbacks of defragmentation.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "2.3",
       "images_q": [
         "questions_images\\2025_june_13_q_10_b_p0.jpg"
       ],
@@ -13781,7 +13790,7 @@
       "num_label": "5(b)",
       "text": "Explain why most animations are drawn ‘on twos’.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\2025_june_31_q_5_b_p0.jpg"
       ],
@@ -14607,7 +14616,7 @@
       "num_label": "5(a)",
       "text": "Blockchains contain the records and the cryptographic hashes used to secure the records.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "12.1",
       "images_q": [
         "questions_images\\2025_june_33_q_5_a_p0.jpg"
       ],
@@ -15478,7 +15487,7 @@
       "num_label": "7",
       "text": "Explain the relationship between the World Wide Web and the internet.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "10.1",
       "images_q": [
         "questions_images\\2021_march_12_q_7_p0.jpg"
       ],
@@ -15521,7 +15530,7 @@
       "num_label": "9",
       "text": "Describe the format of a mobile phone (cell) network and how it enables the transmission of voice and data.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "14.5",
       "images_q": [
         "questions_images\\2021_march_12_q_9_p0.jpg"
       ],
@@ -16101,7 +16110,7 @@
       "num_label": "6(b)",
       "text": "a car manufacturing process",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\2021_march_32_q_6_b_p0.jpg"
       ],
@@ -17031,7 +17040,7 @@
       "num_label": "6",
       "text": "Microwave transmission is used to send data between devices at different locations.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "14.5",
       "images_q": [
         "questions_images\\2022_march_32_q_6_p0.jpg"
       ],
@@ -17150,7 +17159,7 @@
       "num_label": "8",
       "text": "Online tutorials are a method of providing training courses to learners.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "12.5",
       "images_q": [
         "questions_images\\2022_march_32_q_8_p0.jpg"
       ],
@@ -17445,7 +17454,7 @@
       "num_label": "Task 10",
       "text": "10 Test this spreadsheet with the following test data and save each test as a spreadsheet with the given file name followed by your centre number_candidate number e.g. Tiles2_ZZ999_9999",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "8.2",
       "images_q": [
         "questions_images\\2023_march_02_q_Task 10_p0.jpg"
       ],
@@ -17453,7 +17462,9 @@
       "qp_path": "9626 Past Papers/9626 Information Technology March 2023 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology March 2023 Mark Scheme  2.pdf",
       "qp_page": 4,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true,
+      "topic_id_orig": "8.2"
     },
     {
       "id": "2023_march_02_qTask 11",
@@ -17666,7 +17677,7 @@
       "num_label": "1(b)",
       "text": "Describe how the use of interviews and questionnaires for collecting data may affect the accuracy of the resulting information.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\2023_march_12_q_1_b_p0.jpg",
         "questions_images\\2023_march_12_q_1_b_p1.jpg"
@@ -18296,7 +18307,7 @@
       "num_label": "7",
       "text": "A Work Breakdown Structure (WBS), included in the Performance Evaluation and Review Technique (PERT), is created during the planning of a project.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "16.7",
       "images_q": [
         "questions_images\\2023_march_32_q_7_p0.jpg"
       ],
@@ -19130,7 +19141,7 @@
       "num_label": "1",
       "text": "Near Field Communication (NFC) is a communication method.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "14.5",
       "images_q": [
         "questions_images\\2024_march_32_q_1_p0.jpg"
       ],
@@ -20922,7 +20933,7 @@
       "num_label": "1(c)",
       "text": "Describe the benefits of gathering data from direct data sources in this scenario.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2021_november_11_q_1_c_p0.jpg"
       ],
@@ -20941,7 +20952,7 @@
       "num_label": "1(d)",
       "text": "Describe the drawbacks of gathering data from direct data sources in this scenario.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2021_november_11_q_1_d_p0.jpg"
       ],
@@ -21492,7 +21503,7 @@
       "num_label": "1(b)",
       "text": "Tick the most accurate statement regarding device drivers in general.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "2.2",
       "images_q": [
         "questions_images\\2021_november_12_q_1_b_p0.jpg"
       ],
@@ -21713,7 +21724,7 @@
       "num_label": "5",
       "text": "A company is investigating converting its paper files into computer data files. The company must choose between its existing staff entering the data manually or using an Optical Character Reader (OCR).",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "2.1",
       "images_q": [
         "questions_images\\2021_november_12_q_5_p0.jpg"
       ],
@@ -21723,7 +21734,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology November 2021 Question paper  12.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2021 Mark Scheme  12.pdf",
       "qp_page": 9,
-      "ms_page": 6
+      "ms_page": 6,
+      "_classified": true
     },
     {
       "id": "2021_november_12_q6",
@@ -22496,7 +22508,7 @@
       "num_label": "1(a)",
       "text": "Describe the features of online questionnaires that make them suitable for gathering feedback from customers.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\2021_november_31_q_1_a_p0.jpg"
       ],
@@ -22515,7 +22527,7 @@
       "num_label": "1(b)",
       "text": "Describe two drawbacks of using online questionnaires to gather feedback.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\2021_november_31_q_1_b_p0.jpg"
       ],
@@ -22615,7 +22627,7 @@
       "num_label": "3(a)",
       "text": "Describe how peer-to-peer networking uses BitTorrent to transfer large data files between several users.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "14.1",
       "images_q": [
         "questions_images\\2021_november_31_q_3_a_p0.jpg"
       ],
@@ -22623,7 +22635,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology November 2021 Question paper  31.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2021 Mark Scheme  31.pdf",
       "qp_page": 4,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2021_november_31_q3_b",
@@ -22634,7 +22647,7 @@
       "num_label": "3(b)",
       "text": "Describe how the use of BitTorrent for peer-to-peer networking can cause security issues to arise.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "14.1",
       "images_q": [
         "questions_images\\2021_november_31_q_3_b_p0.jpg"
       ],
@@ -22642,7 +22655,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology November 2021 Question paper  31.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2021 Mark Scheme  31.pdf",
       "qp_page": 5,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2021_november_31_q4",
@@ -23278,7 +23292,7 @@
       "num_label": "1(a)",
       "text": "Describe the features of online questionnaires that make them suitable for gathering feedback from customers.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\2021_november_33_q_1_a_p0.jpg"
       ],
@@ -23297,7 +23311,7 @@
       "num_label": "1(b)",
       "text": "Describe two drawbacks of using online questionnaires to gather feedback.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\2021_november_33_q_1_b_p0.jpg"
       ],
@@ -23397,7 +23411,7 @@
       "num_label": "3(a)",
       "text": "Describe how peer-to-peer networking uses BitTorrent to transfer large data files between several users.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "14.1",
       "images_q": [
         "questions_images\\2021_november_33_q_3_a_p0.jpg"
       ],
@@ -23405,7 +23419,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology November 2021 Question paper  33.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2021 Mark Scheme  33.pdf",
       "qp_page": 4,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2021_november_33_q3_b",
@@ -23416,7 +23431,7 @@
       "num_label": "3(b)",
       "text": "Describe how the use of BitTorrent for peer-to-peer networking can cause security issues to arise.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "14.1",
       "images_q": [
         "questions_images\\2021_november_33_q_3_b_p0.jpg"
       ],
@@ -23424,7 +23439,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology November 2021 Question paper  33.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2021 Mark Scheme  33.pdf",
       "qp_page": 5,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2021_november_33_q4",
@@ -24255,7 +24271,7 @@
       "num_label": "3",
       "text": "Phishing, smishing and vishing are methods of fraudulently obtaining personal data.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "5.1",
       "images_q": [
         "questions_images\\2022_november_12_q_3_p0.jpg"
       ],
@@ -24336,7 +24352,7 @@
       "num_label": "4(a)",
       "text": "Explain how the organisers could use what-if analysis to see the effects of these three factors on their profit. You should refer to specific cells from the spreadsheet in your answer.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "9.1",
       "images_q": [
         "questions_images\\2022_november_12_q_4_a_p0.jpg"
       ],
@@ -24344,7 +24360,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology November 2022 Question paper  12.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2022 Mark Scheme  12.pdf",
       "qp_page": 4,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2022_november_12_q4_b",
@@ -25236,7 +25253,7 @@
       "num_label": "3(b)",
       "text": "data modelling",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\2022_november_31_q_3_b_p0.jpg"
       ],
@@ -25766,7 +25783,7 @@
       "num_label": "8",
       "text": "Draw the correct symbol around each of the elements shown in the DFD in Fig. 8.1. One element, Teacher, has been done for you.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\2022_november_32_q_8_p0.jpg"
       ],
@@ -25848,7 +25865,7 @@
       "num_label": "9(c)",
       "text": "JavaScript programmers often wish to control when sections of their code are executed.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "3.2",
       "images_q": [
         "questions_images\\2022_november_32_q_9_c_p0.jpg"
       ],
@@ -26104,7 +26121,7 @@
       "num_label": "3(b)",
       "text": "data modelling",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\2022_november_33_q_3_b_p0.jpg"
       ],
@@ -26714,7 +26731,7 @@
       "num_label": "Task 16",
       "text": "16 Test your spreadsheet with the following test data. Save each test as a spreadsheet with the given file name followed by your centre number_candidate number, e.g. QSA2_ZZ999_9999",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "8.2",
       "images_q": [
         "questions_images\\2023_november_02_q_Task 16_p0.jpg"
       ],
@@ -26722,7 +26739,9 @@
       "qp_path": "9626 Past Papers/9626 Information Technology November 2023 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2023 Mark Scheme  2.pdf",
       "qp_page": 4,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true,
+      "topic_id_orig": "8.2"
     },
     {
       "id": "2023_november_02_qTask 17",
@@ -27120,7 +27139,7 @@
       "num_label": "9(a)",
       "text": "Describe the benefits of using simulations in this scenario.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "9.1",
       "images_q": [
         "questions_images\\2023_november_11_q_9_a_p0.jpg"
       ],
@@ -27139,7 +27158,7 @@
       "num_label": "9(b)",
       "text": "Describe the drawbacks of using simulations in this scenario.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "9.1",
       "images_q": [
         "questions_images\\2023_november_11_q_9_b_p0.jpg"
       ],
@@ -27873,7 +27892,7 @@
       "num_label": "4(b)",
       "text": "The transmission of the transaction file is verified using a hash total.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "14.5",
       "images_q": [
         "questions_images\\2023_november_13_q_4_b_p0.jpg"
       ],
@@ -28014,7 +28033,7 @@
       "num_label": "7(b)",
       "text": "lossless compression",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "19.4",
       "images_q": [
         "questions_images\\2023_november_13_q_7_b_p0.jpg"
       ],
@@ -28033,7 +28052,7 @@
       "num_label": "7(c)",
       "text": "lossy compression.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "19.4",
       "images_q": [
         "questions_images\\2023_november_13_q_7_c_p0.jpg"
       ],
@@ -28181,7 +28200,7 @@
       "num_label": "2(a)",
       "text": "Explain why source documents are proof read manually to try to ensure that the final versions are accurate and error-free.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2023_november_31_q_2_a_p0.jpg"
       ],
@@ -29086,7 +29105,7 @@
       "num_label": "2(a)",
       "text": "Explain why source documents are proof read manually to try to ensure that the final versions are accurate and error-free.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2023_november_33_q_2_a_p0.jpg"
       ],
@@ -29889,7 +29908,7 @@
       "num_label": "1(a)",
       "text": "disk formatting",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "2.2",
       "images_q": [
         "questions_images\\2024_november_11_q_1_a_p0.jpg"
       ],
@@ -29897,7 +29916,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology November 2024 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2024 Mark Scheme  11.pdf",
       "qp_page": 2,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2024_november_11_q1_b",
@@ -29927,7 +29947,7 @@
       "num_label": "1(c)",
       "text": "disk defragmentation",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "2.3",
       "images_q": [
         "questions_images\\2024_november_11_q_1_c_p0.jpg"
       ],
@@ -30146,7 +30166,7 @@
       "num_label": "5(a)",
       "text": "Explain what is meant by direct data sources. Your answer must include examples linked to the scenario.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2024_november_11_q_5_a_p0.jpg"
       ],
@@ -30165,7 +30185,7 @@
       "num_label": "5(b)",
       "text": "Explain what is meant by indirect data sources. Your answer must include examples linked to the scenario.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\2024_november_11_q_5_b_p0.jpg"
       ],
@@ -30640,7 +30660,7 @@
       "num_label": "9",
       "text": "A reporter will use telephone interviews to gather information for an article.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\2024_november_12_q_9_p0.jpg"
       ],
@@ -31378,7 +31398,7 @@
       "num_label": "7(a)",
       "text": "Using the information in the table, draw a PERT (Performance Evaluation and Review Technique) chart for the project in the space below:",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "16.7",
       "images_q": [
         "questions_images\\2024_november_32_q_7_a_p0.jpg"
       ],
@@ -32035,7 +32055,7 @@
       "num_label": "7(a)",
       "text": "State the use of each of the following symbols in a system flowchart.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\2024_november_33_q_7_a_p0.jpg"
       ],
@@ -32054,7 +32074,7 @@
       "num_label": "7(b)",
       "text": "Draw one other system flowchart symbol and describe how it is used.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\2024_november_33_q_7_b_p0.jpg"
       ],
@@ -33234,7 +33254,7 @@
       "num_label": "8(a)",
       "text": "Describe what is meant by Lossy compression.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "19.4",
       "images_q": [
         "questions_images\\2025_november_12_q_8_a_p0.jpg"
       ],
@@ -33253,7 +33273,7 @@
       "num_label": "8(b)",
       "text": "Describe what is meant by Lossless compression.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "19.4",
       "images_q": [
         "questions_images\\2025_november_12_q_8_b_p0.jpg"
       ],
@@ -34278,7 +34298,7 @@
       "num_label": "9(b)",
       "text": "Describe how the IP address is used when exchanging data with other devices.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "14.6",
       "images_q": [
         "questions_images\\2025_november_32_q_9_b_p0.jpg"
       ],
@@ -34286,7 +34306,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology November 2025 Question Paper  32.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2025 Mark Scheme  32.pdf",
       "qp_page": 10,
-      "ms_page": null
+      "ms_page": null,
+      "_classified": true
     },
     {
       "id": "2025_november_32_q10",
@@ -34338,7 +34359,7 @@
       "num_label": "10(b)",
       "text": "Describe two other HTML events that can be used to trigger the execution of JavaScript code.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "15.1",
       "images_q": [
         "questions_images\\2025_november_32_q_10_b_p0.jpg"
       ],
@@ -34357,7 +34378,7 @@
       "num_label": "11",
       "text": "Evaluate the use of email by governments.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "13.1",
       "images_q": [
         "questions_images\\2025_november_32_q_11_p0.jpg"
       ],
@@ -34521,7 +34542,7 @@
       "num_label": "4(b)",
       "text": "Describe the benefits of using pivot tables to analyse data.",
       "marks": null,
-      "topic_id": "12.4",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\2025_november_33_q_4_b_p0.jpg"
       ],
@@ -34644,7 +34665,7 @@
       "num_label": "8",
       "text": "In computer animation, objects can be made to appear to move at different speeds.",
       "marks": null,
-      "topic_id": "21.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\2025_november_33_q_8_p0.jpg"
       ],

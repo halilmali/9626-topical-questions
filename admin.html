@@ -90,8 +90,20 @@
             <strong id="stat-unclassified" class="text-warning">0</strong>
           </div>
           <div class="stat-row">
+            <span>Missing MS Images:</span>
+            <strong id="stat-missing-ms" class="text-warning">0</strong>
+          </div>
+          <div class="stat-row">
+            <span>Topics Confirmed:</span>
+            <strong id="stat-confirmed" class="text-success">0</strong>
+          </div>
+          <div class="stat-row">
             <span>Total Chapters:</span>
             <strong id="stat-chapters">0</strong>
+          </div>
+          <div class="stat-row stat-fallback-breakdown" id="stat-fallback-row" style="display:none;">
+            <div class="stat-fallback-header">Unclassified by topic:</div>
+            <div id="stat-unclassified-detail" class="stat-fallback-chips"></div>
           </div>
         </div>
       </aside>
@@ -138,6 +150,16 @@
                   <option value="all">All Statuses</option>
                   <option value="unassigned">Fallback / Review Required</option>
                   <option value="assigned">Custom Assigned</option>
+                  <option value="confirmed">Topic Confirmed</option>
+                  <option value="unconfirmed">Not Yet Confirmed</option>
+                </select>
+              </div>
+
+              <div class="select-wrapper">
+                <select id="filter-ms">
+                  <option value="all">MS: All</option>
+                  <option value="present">MS: Has Images</option>
+                  <option value="missing">MS: Missing Images</option>
                 </select>
               </div>
             </div>

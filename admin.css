@@ -339,6 +339,15 @@ body.dark-mode {
 .text-warning { color: var(--accent-warning) !important; }
 .text-danger { color: var(--accent-danger) !important; }
 
+/* Missing MS stat row accent */
+.stat-row:has(#stat-missing-ms) {
+  border-bottom: 1px solid rgba(245, 158, 11, 0.15);
+  background-color: rgba(245, 158, 11, 0.03);
+  border-radius: 4px;
+  padding: 6px 8px;
+  margin: 0 -8px;
+}
+
 /* Main Workspace Content area */
 .admin-main {
   flex: 1;
@@ -866,6 +875,26 @@ body.dark-mode {
   transform: rotate(-90deg);
 }
 
+/* Chapter missing MS stat badge */
+.chapter-ms-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-warning);
+  background-color: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 6px;
+  padding: 3px 8px;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+.chapter-ms-stat svg {
+  flex-shrink: 0;
+}
+
 .chapter-content {
   padding: 20px;
   border-top: 1px solid var(--border-color);
@@ -1261,6 +1290,84 @@ body.dark-mode {
 .toast.success { border-left-color: var(--accent-success); }
 .toast.warning { border-left-color: var(--accent-warning); }
 .toast.danger { border-left-color: var(--accent-danger); }
+
+/* ==========================================================================
+   CONFIRM TOPIC BUTTON
+   ========================================================================== */
+
+.confirm-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  background-color: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: var(--accent-success);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.confirm-btn:hover {
+  background-color: rgba(16, 185, 129, 0.18);
+  border-color: var(--accent-success);
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.15);
+}
+
+.confirm-btn.confirmed {
+  background-color: rgba(16, 185, 129, 0.15);
+  border-color: var(--accent-success);
+  color: var(--accent-success);
+  cursor: default;
+  opacity: 0.85;
+}
+
+.confirm-btn svg {
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   SIDEBAR FALLBACK BREAKDOWN
+   ========================================================================== */
+
+.stat-fallback-breakdown {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 8px;
+  margin: 4px -8px -4px -8px;
+  background-color: rgba(245, 158, 11, 0.03);
+  border: 1px solid rgba(245, 158, 11, 0.1);
+  border-radius: 6px;
+}
+
+.stat-fallback-header {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent-warning);
+}
+
+.stat-fallback-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.stat-fallback-chip {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+}
 
 /* ==========================================================================
    PAPER LINKS & EDIT SECTION

@@ -1099,14 +1099,15 @@
       "num_label": "Task 2",
       "text": "hours 30 minutes You will need: Candidate source files (listed on page 2) INSTRUCTIONS ● Carry out every instruction in each task. ● Save your work using the file names given in the task as and when instructed. ● You must not have access to the internet or any email system during this examination. ● You must save your work in the correct file format as stated in the tasks. If you save work in an incorrect file format, you will not receive marks for that task. INFORMATION ● The total mark for this paper is 110. ● The number of marks for each task or part task is shown in brackets [ ]. You have been supplied with the following source files: j21ccc.csv j21music.mp3 j21voice.mp3 You work for Christine’s Construction Company and will develop a spreadsheet to plan foundations for walls and buildings. You must use the most efficient method to solve each task. All documents produced must be of a professional standard and suit the business context. All currency values must be in dollars with 2 decimal places.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "answers": [
         "Task 2 C14 =IF( … ) with correct syntax 1 mark OR( … , … ) 1 mark B10=E13 B10=”W” 1 mark B10=E17 B10=”P” 1 mark ,\"Strip foundations are not suitable for this site\" 1 mark ,\"\" Blank cell 1 mark Conditional formatting applied 1 mark … when not blank 1 mark … white, centre aligned, bold text on a red background 1 mark PUBLISHED May/June 2021 Tasks 3 and 4 B15 =IF(C14<>\"\", … , … ) 1 mark ,\"\" 1 mark VLOOKUP(B10, 1 mark E8:K18, 1 mark 6+ 1 mark IF(B12=\"W\",1,0) =IF(B12=”D”,0,1) 1 mark ,FALSE) ,0) 1 mark Whole VLOOKUP /1000 1 mark Alternative for lookup: VLOOKUP(B10, 1 mark E8:K18, 1 mark IF(B12=\"W\",7,6) IF(B12=\"D\",6,7) 2 marks ,FALSE) 1 mark B16 =IF(C$14<>\"\",\"\", … ) 1 mark VLOOKUP(B10,E8:K18 1 mark ,4+IF(B12=\"W\",1,0),0) 1 mark /1000 1 mark B17 =IF(C$14<>\"\",\"\", … ) 1 mark B8 1 mark PUBLISHED May/June 2021 B18 =IF(C$14<>\"\",\"\", … ) 1 mark B15 1 mark *B16 1 mark *B17 4 1 mark B19 =IF(C$14<>\"\",\"\", … ) 1 mark ROUNDUP( … ) 1 mark B18*1.07 1 mark ,2 4 1 mark B20 =IF(B7=\"B\", … , …) =IF(B7=\"W\", … , …) 1 mark … 1.5 … 1 1 mark … 1 … 1.5 1 mark * 1 mark =IF(B11=\"S\", … , … ) =IF(B11=\"D\", … , … ) 1 mark … ,B8*B9*55*3.5 … ,B8*B9*55*3.5*2 1 mark … ,B8*B9*55*3.5*2 … ,B8*B9*55*3.5 1 mark PUBLISHED May/June 2021"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  2.pdf",
       "qp_page": 1,
-      "ms_page": 5
+      "ms_page": 5,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_02_task_1",
@@ -1117,12 +1118,13 @@
       "num_label": "Task 1",
       "text": "Open and examine the file j21ccc.csv in a spreadsheet. Edit and format the spreadsheet so it looks like this: Cells A1 to C1 and A3 to C3 are merged, have an orange background and have black text. The text in row 1 is 28 points high. The text in the merged cell in row 3 is 18 points high. Centre align cells B6 to B20. Insert on the left in the footer the text Created at followed by a space, then the time, then a space, the text on, a space, followed by the date. Insert on the right in the footer an automated filename with the file path. Save your spreadsheet as ccc1_ followed by your centre number_candidate number e.g. ccc1_ZZ999_9999",
       "marks": 15,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "answers": [],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  2.pdf",
       "qp_page": 2,
-      "ms_page": null
+      "ms_page": null,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_02_task_2",
@@ -1151,12 +1153,13 @@
       "num_label": "Task 3",
       "text": "Enter formulae in cells B15 to B19 to display a blank cell, rather than a value, if strip foundations are not suitable for a site. The formula in cell: • B15 must calculate the depth of the foundation, in metres, using the soil code and soil moisture level (entered by the user in column B). To convert from millimetres (mm) to metres (m) you divide by 1000. • B16 must calculate the width of the foundation, in metres, using the soil code and soil moisture level (entered by the user in column B). • B17 must display the length of the foundation in metres. • B18 must calculate the volume of the foundation. The volume of the foundation is calculated as: foundation depth × foundation width × foundation length. • B19 must calculate the volume of concrete required. This must be the volume of the foundation plus an extra 7% to allow for spillage, rounded up to 2 decimal places. [22] If the thickness of the wall is a single brick, its weight is calculated as: Length of wall × Height of wall × Number of bricks per square metre × Weight of a single brick. If the thickness of the wall is a double brick, its weight is calculated as twice the weight of a single wall. If the structure is going to be a building rather than a wall, its weight will be increased by a further 50%.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "answers": [],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  2.pdf",
       "qp_page": 3,
-      "ms_page": null
+      "ms_page": null,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_02_task_4",
@@ -1167,12 +1170,13 @@
       "num_label": "Task 4",
       "text": "Enter a formula in cell B20 to calculate the weight of the wall. Each brick weighs 3.5 kilograms and there are 55 bricks per square metre. These figures are not variables and will not change.",
       "marks": 7,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "answers": [],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  2.pdf",
       "qp_page": 3,
-      "ms_page": null
+      "ms_page": null,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_02_task_5",
@@ -1384,7 +1388,10 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
       "qp_page": 4,
-      "ms_page": null
+      "ms_page": null,
+      "images_ms": [
+        "questions_images\\2021_june_11_ms_2_p0.jpg"
+      ]
     },
     {
       "id": "2021_june_11_q2_a",
@@ -1402,7 +1409,10 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
       "qp_page": 4,
-      "ms_page": 5
+      "ms_page": 5,
+      "images_ms": [
+        "http:\\\\localhost:8080\\questions_images\\2021_june_11_ms_2_p0.jpg"
+      ]
     },
     {
       "id": "2021_june_11_q2_b",
@@ -1431,7 +1441,7 @@
       "num_label": "2(c)",
       "text": "Evaluate, by weighing up the advantages and disadvantages, the use of MICR for inputting text.",
       "marks": 8,
-      "topic_id": "1.1",
+      "topic_id": "2.1",
       "answers": [
         "Eight from: Advantages MICR characters are readable even if a document is obscured by marks or overprinted MICR systems provide a high level of security… …since MICR documents are difficult to forge The error rate for reading MICR characters is small compared to other character recognition systems Data entry is quicker than typing the details Disadvantages Printing of MICR is demanding, requiring difficult-to-achieve standards… …which causes it to be slower to print MICR readers are expensive to purchase… …whereas manual input of text can be used with a very cheap keyboard MICR readers can only recognise MICR fonts/cannot read text with normal fonts/ink… …which are written in a specific format There are a limited number of characters available for use in documents MICR printers run on cartridges that cost far more than other toner cartridges Because of cost, it is often impractical for small businesses to use MICR At least two of each required to obtain full marks Must be a proper evaluation to obtain full marks Max. six marks if bullets/list of points Must have expansions or comparisons to be a proper evaluation 8 PUBLISHED May/June 2021 Question Answer Marks"
       ],
@@ -1474,7 +1484,11 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
       "qp_page": 7,
-      "ms_page": 6
+      "ms_page": 6,
+      "images_ms": [
+        "questions_images\\2021_june_11_ms_4_p0.jpg"
+      ],
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_11_q5",
@@ -1503,14 +1517,15 @@
       "num_label": "6",
       "text": "The World Wide Web is a service provided by the internet. Describe, without referring to how it is accessed, what is meant by the World Wide Web.",
       "marks": 6,
-      "topic_id": "1.1",
+      "topic_id": "6.1",
       "answers": [
         "Six from: It was invented by (English scientist) Tim Berners-Lee (in 1989) Hypertext Markup Language (HTML) is the markup (formatting) language for the world wide web Web pages are primarily text documents formatted and annotated using Hypertext Markup Language (HTML) The world Wide Web uses Uniform Resource Locators (URLs) A URL is an address that is unique and used to identify each resource on the World Wide Web The World Wide Web uses HTTP(S), allowing for the retrieval of linked resources from across the World Wide Web HTTPS provides secure websites Web pages may contain formatted text, images, video and software components Hyperlinks allow users to navigate between web pages The World Wide Web comprises websites made up of several webpages (with a common theme) The World Wide Web is basically a system of web servers (that support specially formatted documents) 6 PUBLISHED May/June 2021 Question Answer Marks"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
       "qp_page": 8,
-      "ms_page": 7
+      "ms_page": 7,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_11_q7",
@@ -1544,7 +1559,10 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  11.pdf",
       "qp_page": 10,
-      "ms_page": null
+      "ms_page": null,
+      "images_ms": [
+        "questions_images\\2021_june_11_ms_8_p0.jpg"
+      ]
     },
     {
       "id": "2021_june_11_q8_a",
@@ -1573,7 +1591,7 @@
       "num_label": "8(b)",
       "text": "In Fig. 8.1, the formula in cell G3 is =SUMIF(A$2:A$17,F3,D$2:D$17). Explain, without using cell references, what this formula does.",
       "marks": 4,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "answers": [
         "It looks at all the Months in the Month column For the Sales Month Jan It adds up all the corresponding Prices It displays the answer as a Monthly Total as $1964 4"
       ],
@@ -1643,7 +1661,7 @@
       "num_label": "8(d)",
       "text": "Evaluate, by weighing up the advantages and disadvantages, the use of the spreadsheet in Fig. 8.1 for financial forecasting.",
       "marks": 6,
-      "topic_id": "8.1",
+      "topic_id": "9.1",
       "answers": [
         "Six from: Advantages What if statements can be asked without rebuilding the spreadsheet… …from scratch each time a test is carried out Calculations can be performed more quickly/more easily/recalculated automatically… … than if done by pen and paper It can provide quick results for predictions of sales that may take years to actually happen Graphs of monthly sales can automatically change… …as new values are added/old values altered This spreadsheet already exists and reduces the need for technical experts The model can have formulae replicated fairly easily… …to show future trends Graphs can be produced automatically/more quickly/no manual method required Disadvantages It does not take into account every possible variable… …when calculating/forecasting sales There is no way of predicting the effect that financial crises will have on real life behaviour Many variables need to be considered and it is easy to omit some… …To improve the spreadsheet, try to account for as many variables as possible Complex sales predictions may need additional expensive software At least one of each required to obtain full marks Must be a proper evaluation to obtain full marks Max. five marks if bullets/list of points Must have expansions or comparisons to be a proper evaluation 6 Question Answer Marks"
       ],
@@ -2442,7 +2460,10 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  13.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  13.pdf",
       "qp_page": 3,
-      "ms_page": 3
+      "ms_page": 3,
+      "images_ms": [
+        "questions_images\\2021_june_13_ms_1_c_p0.jpg"
+      ]
     },
     {
       "id": "2021_june_13_q2",
@@ -2557,7 +2578,7 @@
       "num_label": "3(b)",
       "text": "disk formatting",
       "marks": 3,
-      "topic_id": "11.2",
+      "topic_id": "2.2",
       "answers": [
         "Three from: Low-level formatting divides the disk surface into tracks, sectors and cylinders This is done by magnetising the disk areas using the write heads Tracks are numbered starting from 0 When the head goes from one track to the next, it leaves a gap Each track is organised into numbered sectors, starting at 1 and separated by gaps The purpose of low-level formatting is to prepare the disk surface to receive data/allow the user to save data/files High-level formatting creates a file system on the disk This allows the operating system to use the disk space to store and access files 3"
       ],
@@ -2954,7 +2975,10 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  31.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  31.pdf",
       "qp_page": 3,
-      "ms_page": 4
+      "ms_page": 4,
+      "images_ms": [
+        "questions_images\\2021_june_31_ms_2_p0.jpg"
+      ]
     },
     {
       "id": "2021_june_31_q3",
@@ -2972,7 +2996,8 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2021 Question paper  31.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2021 Mark Scheme  31.pdf",
       "qp_page": 4,
-      "ms_page": 5
+      "ms_page": 5,
+      "topic_confirmed": true
     },
     {
       "id": "2021_june_31_q4",
@@ -3193,7 +3218,7 @@
       "num_label": "10",
       "text": "Jasmine is using JavaScript on her web pages to provide interactivity. She has encountered some runtime errors during the testing of her JavaScript code. She has written some code including window.onerror = function (msg, url, line) The onerror() event handler will trap errors. Describe how this can help Jasmine locate the mistakes in the rest of her code.",
       "marks": 6,
-      "topic_id": "21.1",
+      "topic_id": "8.2",
       "answers": [
         "Six from: Error event is triggered whenever an exception occurs in JavaScript code The onerror() function only captures the error The onerror() function stores the details of/data of error for later examination Function passes error event details to alert box for display to user Variables are used to pass parameters of the error to the program for further processing Msg is the message that the browser displays (to Jasmine) URL is the file name/path of code in which the error has occurred (so Jasmine knows which file to look in) Line is the line which contains the error (so Jasmine knows where to look in code). 6 Question Answer Marks"
       ],
@@ -3459,7 +3484,7 @@
       "num_label": "8(a)",
       "text": "Describe three components of a biometric payment system that might be used.",
       "marks": 3,
-      "topic_id": "12.4",
+      "topic_id": "5.1",
       "answers": [
         "Three from: Reader/scanning device to record the biometric factor being authenticated Software for converting the scanned biometric data into a standardised digital format Software for comparing the match points of the observed data with stored data Database to securely store biometric data for comparison Database to store student account data A payment system to transfer funds/debit account/credit school. 3 PUBLISHED May/June 2021 Question Answer Marks"
       ],
@@ -3477,7 +3502,7 @@
       "num_label": "8(b)",
       "text": "Describe how the biometric payment system is used by students to pay for meals.",
       "marks": 6,
-      "topic_id": "12.4",
+      "topic_id": "5.1",
       "answers": [
         "Six from: Student registers/is registered for a biometric program at the school by presenting valid identification Student scans (index) finger/iris/face/biometric parameter (using (school’s) appropriate scanner/reader). The school's (finger) scanner/reader encrypts multiple point-to-point measurements of the fingerprint/iris/face/biometric parameter Student's biometric data and account information is stored in a (centralised) database. Student scans finger at the checkout with the school's electronic reader Software/reader compares the data from the new scan to the encrypted data in the database System locates the student in the database Checks that there is sufficient funds available Transaction approves/declined If approved, the funds are electronically transferred from the student's account to the merchant/school Receipt issued to student (if requested)/amount displayed on screen (to show cost)/indicates how much (money) has been spent/is left in account If declined, student is informed and notice printed/asked to retry. 6 Question Answer Marks"
       ],
@@ -3955,7 +3980,7 @@
       "num_label": "10",
       "text": "Jasmine is using JavaScript on her web pages to provide interactivity. She has encountered some runtime errors during the testing of her JavaScript code. She has written some code including window.onerror = function (msg, url, line) The onerror() event handler will trap errors. Describe how this can help Jasmine locate the mistakes in the rest of her code.",
       "marks": 6,
-      "topic_id": "21.1",
+      "topic_id": "8.2",
       "answers": [
         "Six from: Error event is triggered whenever an exception occurs in JavaScript code The onerror() function only captures the error The onerror() function stores the details of/data of error for later examination Function passes error event details to alert box for display to user Variables are used to pass parameters of the error to the program for further processing Msg is the message that the browser displays (to Jasmine) URL is the file name/path of code in which the error has occurred (so Jasmine knows which file to look in) Line is the line which contains the error (so Jasmine knows where to look in code). 6 Question Answer Marks"
       ],
@@ -4447,7 +4472,7 @@
       "num_label": "8",
       "text": "Ruritania has just passed a law which will allow supermarkets to purchase customer information from banks, providing they anonymise it. Joanne, the owner of a supermarket, wishes to analyse the spending habits of people in the area very near to the supermarket. She can either use direct data sources or obtain the information indirectly from local banks. Discuss the advantages and disadvantages to Joanne of obtaining the information indirectly from local banks.",
       "marks": 8,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "answers": [
         "Eight from: Advantages It may allow a larger set of data to be examined… …direct data gathering could have limitations due to the availability of the people being interviewed… …using banks the sample could be increased giving rise to greater confidence in the findings Information can be of a higher quality as banking data will have already been collated and grouped into meaningful categories Joanne does not have to read through poorly written responses to questionnaires/her interview transcripts… …to create the data source Disadvantages It may cost a lot of money to pay the banks to obtain the data… … whereas people who are questioned will not need to be paid The various purposes for which data was collected originally may be different to the purpose of the current study… … there may be much more data than needed… …unnecessary data may need to be filtered out There may be sampling bias There may be coding difficulties … …different banks being used means there will be differences in the content …there may be a lack of standardisation across the data required …different banks will have different amounts of data If it has already been coded the coding may be difficult to understand Must have at least two of each to gain full marks Must be a proper discussion to obtain full marks Max. six marks if bullets/list of points Must have expansions or comparisons to be a proper discussion 8 PUBLISHED May/June 2022 Question Answer Marks"
       ],
@@ -4519,7 +4544,7 @@
       "num_label": "1",
       "text": "Some students have been asked by their teacher to carry out a study. They will collect data about the families living in five streets close to their school. They will carry out the study using direct data sources and will not use records from the 2020 census which are kept at the city hall. Describe the suitability of using direct data sources rather than the census data for the study.",
       "marks": 5,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "answers": [
         "mark yes/no in correct positions at 2 nd decision box – 1 mark Print max in correct box – 1 mark 7 Start count ← 0 max ← 0 yes yes Input number Is number <= max? no max ← number count ← count + 1 Is count = 10? no Print max Stop PUBLISHED May/June 2022 Question Answer Marks"
       ],
@@ -4867,7 +4892,7 @@
       "num_label": "1(b)",
       "text": "Describe how Paulo could use direct data sources for his study.",
       "marks": 4,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "answers": [
         "Four from: Questionnaires could be distributed amongst neighbours/local people asking about the level of noise Interviews could be carried out with neighbours/local people (asking about the level of noise) He could observe traffic, keeping a count of traffic coming down each street He could use sensors to detect the flow of traffic going down each street He could use sensors to measure the level of noise in each street 4 Question Answer Marks"
       ],
@@ -6769,7 +6794,7 @@
       "marks": 5,
       "topic_id": "1.3",
       "answers": [
-        "Five from:  One mark for a description of encryption (1)  Often called secret key encryption (1)  Uses a single/the same key (to decrypt/encrypt the data) (1)  Any awareness that it is a private key (1)  This (private/secret) key must be shared between the sender and the receiver (1)  The encryption key is sent to the recipient (1) 5 PUBLISHED May/June 2023 Question Answer Marks"
+        "Five from: ��� One mark for a description of encryption (1)  Often called secret key encryption (1)  Uses a single/the same key (to decrypt/encrypt the data) (1)  Any awareness that it is a private key (1)  This (private/secret) key must be shared between the sender and the receiver (1)  The encryption key is sent to the recipient (1) 5 PUBLISHED May/June 2023 Question Answer Marks"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2023 Question paper  12.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2023 Mark Scheme  12.pdf",
@@ -8283,7 +8308,7 @@
       "marks": 26,
       "topic_id": "10.1",
       "answers": [
-        "Task 3 – Relational database Candidate file jewel_ 3(a) Stock table 6 Table and field names match data dictionary Data types match data dictionary Field lengths match data dictionary Primary key matches data dictionary Input masks match data dictionary and works Validation rules match data dictionary 3(b) Order table 2 Appropriate table name selected e.g. Order Field names short, meaningful and no spaces 3(c) Order table ID 2 ID field added New field set as primary key 3(d) Order table other 3 3 numeric fields set as integers Date set as Date/Time in dd/mm/yyyy format PreparedBy and Item set as alphanumeric 3(e) Customer table 2 Appropriate table name selected e.g. Customer Field names short, meaningful, no spaces PUBLISHED May/June 2024 © Cambridge University Press & Assessment 2024 Page 6 of 8 Task Answer Marks 3(f) CustNo 2 CustNo set as primary key CustNo set as intege r 3(g) Other fields 1 Other 6 fields set as alphanumeric 3(h) Relationship StockCode to Order.Item 4 Single relationship created … … between StockCode to Order.Item … … is 1 to many relationship … … with NO referential integrity enforced 3(i) Relationship Customer.CustNo to Order.CustNo 4 Single relationship created … … between Customer.CustNo to Order.CustNo … … is 1 to many relationship … … with referential integrity enforced Task Answer Marks"
+        "Task 3 – Relational database Candidate file jewel_ 3(a) Stock table 6 Table and field names match data dictionary Data types match data dictionary Field lengths match data dictionary Primary key matches data dictionary Input masks match data dictionary and works Validation rules match data dictionary 3(b) Order table 2 Appropriate table name selected e.g. Order Field names short, meaningful and no spaces 3(c) Order table ID 2 ID field added New field set as primary key 3(d) Order table other 3 3 numeric fields set as integers Date set as Date/Time in dd/mm/yyyy format PreparedBy and Item set as alphanumeric 3(e) Customer table 2 Appropriate table name selected e.g. Customer Field names short, meaningful, no spaces PUBLISHED May/June 2024 © Cambridge University Press & Assessment 2024 Page 6 of 8 Task Answer Marks 3(f) CustNo 2 CustNo set as primary key CustNo set as intege r 3(g) Other fields 1 Other 6 fields set as alphanumeric 3(h) Relationship StockCode to Order.Item 4 Single relationship created … … between StockCode to Order.Item … … is 1 to many relationship … … with NO referential integrity enforced 3(i) Relationship Customer.CustNo to Order.CustNo 4 Single relationship created … … between Customer.CustNo to Order.CustNo … … is 1 to many relationship �� … with referential integrity enforced Task Answer Marks"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2024 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2024 Mark Scheme  2.pdf",
@@ -9467,7 +9492,7 @@
       "num_label": "1(a)",
       "text": "Describe what is meant by an Iterative method.",
       "marks": 2,
-      "topic_id": "12.4",
+      "topic_id": "16.8",
       "answers": [
         "Two from:  Repeatedly/repeats/over and over (1st) One from: works through the elements (of an array/block) (1) Operates/performs an operation on every element of an array/block (1) Works on the elements (of an array/block) one at a time (1). 2"
       ],
@@ -9715,7 +9740,7 @@
       "num_label": "6",
       "text": "Describe how a system flowchart is constructed.",
       "marks": 5,
-      "topic_id": "12.4",
+      "topic_id": "4.2",
       "answers": [
         "Five from:  A graphical/diagram/drawing representation of a system  Inputs/outputs in/of a system  Processes in/of a system  Lines/arrows used to show route(s) through the system  Symbols to represent/show the inputs/outputs and processes in/of a system  Sequence of events/processes that occur in a system  Steps/tasks/events within a process in a system  Relationships/links between the elements/stages in a system and external elements  Different routes control events  Start/end/stop of the flowchart Shown by terminators 5 PUBLISHED May/June 2024 © Cambridge University Press & Assessment 2024 Page 11 of 14 Question Answer Marks"
       ],
@@ -9893,7 +9918,7 @@
       "num_label": "4",
       "text": "JavaScript code has been developed for an interactive website. White box testing is carried out by the developers.",
       "marks": null,
-      "topic_id": "16.4",
+      "topic_id": "8.2",
       "answers": [],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2024 Question paper  32.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2024 Mark Scheme  32.pdf",
@@ -10049,7 +10074,7 @@
       "num_label": "6(b)",
       "text": "Explain how PMS can help in decision making during a project.",
       "marks": 4,
-      "topic_id": "16.2",
+      "topic_id": "4.2",
       "answers": [
         "Four from:  Links/organises the data/information/whole of the project (1 st)… so its readily/easily accessible/available to decision makers (1)  Displays data/information in various formats (1 st)…so that they can be readily/easily understood by project managers/members/stakeholders/clients (1)  Exports data/information to other documents (if required) (1 st) or use in reports/presentations/analysis (during meetings/discussions) (1). 4 PUBLISHED May/June 2024 © Cambridge University Press & Assessment 2024 Page 8 of 11 Question Answer Marks"
       ],
@@ -10171,7 +10196,7 @@
       "num_label": "1(a)",
       "text": "Describe what is meant by an Iterative method.",
       "marks": 2,
-      "topic_id": "12.4",
+      "topic_id": "16.8",
       "answers": [
         "Two from:  Repeatedly/repeats/over and over (1st) One from: works through the elements (of an array/block) (1) Operates/performs an operation on every element of an array/block (1) Works on the elements (of an array/block) one at a time (1). 2"
       ],
@@ -10419,7 +10444,7 @@
       "num_label": "6",
       "text": "Describe how a system flowchart is constructed.",
       "marks": 5,
-      "topic_id": "12.4",
+      "topic_id": "4.2",
       "answers": [
         "Five from:  A graphical/diagram/drawing representation of a system  Inputs/outputs in/of a system  Processes in/of a system  Lines/arrows used to show route(s) through the system  Symbols to represent/show the inputs/outputs and processes in/of a system  Sequence of events/processes that occur in a system  Steps/tasks/events within a process in a system  Relationships/links between the elements/stages in a system and external elements  Different routes control events  Start/end/stop of the flowchart Shown by terminators 5 PUBLISHED May/June 2024 © Cambridge University Press & Assessment 2024 Page 11 of 14 Question Answer Marks"
       ],
@@ -10930,7 +10955,10 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2025 Question Paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2025 Mark Scheme  11.pdf",
       "qp_page": 7,
-      "ms_page": 5
+      "ms_page": 5,
+      "images_ms": [
+        "questions_images\\2025_june_11_ms_6_p0.jpg"
+      ]
     },
     {
       "id": "2025_june_11_q7",
@@ -11018,7 +11046,10 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2025 Question Paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2025 Mark Scheme  11.pdf",
       "qp_page": 11,
-      "ms_page": 7
+      "ms_page": 7,
+      "images_ms": [
+        "questions_images\\2025_june_11_ms_9_p0.jpg"
+      ]
     },
     {
       "id": "2025_june_11_q10",
@@ -11034,7 +11065,10 @@
       "qp_path": "9626 Past Papers/9626 Information Technology June 2025 Question Paper  11.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2025 Mark Scheme  11.pdf",
       "qp_page": 12,
-      "ms_page": null
+      "ms_page": null,
+      "images_ms": [
+        "questions_images\\2025_june_11_ms_10_p0.jpg"
+      ]
     },
     {
       "id": "2025_june_11_q10_a",
@@ -11135,7 +11169,7 @@
       "num_label": "1",
       "text": "A company is going to carry out an investigation into shopping habits. The company will get data from indirect data sources.",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "answers": [],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2025 Question Paper  12.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2025 Mark Scheme  12.pdf",
@@ -11151,7 +11185,7 @@
       "num_label": "1(a)",
       "text": "Describe the benefits of getting data from indirect data sources.",
       "marks": 4,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "answers": [
         "Four marks from: • A larger sample size (1) • A larger/large set of data to be examined (1) • It allows data to be gathered from subjects to whom the data gatherer • does not have physical access (allow concept) (1) • Using less time (to collect the data)//data is readily available//already exists (1) • Data collected indirectly has already been collated/grouped (1) • Data collected indirectly has already been processed (1) • Information can be of a higher quality. (1) • Costs of (e.g.) travel//printing//employing interviewers avoided (must state the cost saved) (1) 4"
       ],
@@ -11169,7 +11203,7 @@
       "num_label": "1(b)",
       "text": "Describe the drawbacks of getting data from indirect data sources.",
       "marks": 4,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "answers": [
         "One mark per bullet point to a maximum of four marks. • The data may be out of date (1) • The data may be costly to purchase (1) • Inappropriate//irrelevant sample (who is asked//size) (1) • Irrelevant questions asked//methods used//data gathered (1) • The data may not meet the company’s needs//different purpose (1) • The data may not be specific enough//lacking detail. (1) 4 Question Answer Marks"
       ],
@@ -11203,7 +11237,7 @@
       "num_label": "2(a)",
       "text": "The formula in cell F12 is =E12-(VLOOKUP(D12,$D$5:$E$8,2,F ALSE)*E12) Describe how this formula works.",
       "marks": 5,
-      "topic_id": "8.1",
+      "topic_id": "8.3",
       "answers": [
         "Max 4 from: VLOOKUP • It takes the B from cell D12 (1) • It looks for B in cells D5:E8 (1) • Returns/finds the corresponding value//20%//discount percentage (1st) – from column E/2nd column from the range (1) • It looks for an exact match//If it does not find an exact match it will return an error (1) Max 2 from: CALCULATION • It multiplies the percentage discount by the Price (1) • Subtracts discount from the original price. (1) 5"
       ],
@@ -11701,7 +11735,7 @@
       "num_label": "10(a)",
       "text": "Describe the benefits of defragmentation.",
       "marks": 3,
-      "topic_id": "1.1",
+      "topic_id": "2.3",
       "answers": [
         "One mark per bullet point to a maximum of three marks. • Optimises space on the disk (1) • Files are better organised (1) • Increases reading and writing speeds (1) • Related files are kept together (1) • Files are contiguous (1) • Data retrieval is quicker//files are opened more quickly (1) • Reduces the movement of the read/write heads (1) • Increases longevity/life span of the disk. (1) 3"
       ],
@@ -11719,7 +11753,7 @@
       "num_label": "10(b)",
       "text": "Describe the drawbacks of defragmentation.",
       "marks": 3,
-      "topic_id": "4.2",
+      "topic_id": "2.3",
       "answers": [
         "One mark per bullet point to a maximum of three marks. • It can take time to do (1) • It can use a lot of computer memory (1) • It can use a lot of computer processing (1) • It can make the computer less responsive (1) • It can lead to file corruption (1) • The power must be on/uninterrupted throughout the whole process. (1) • Shortens the life of SSDs (1) 3 PUBLISHED May/June 2025 © Cambridge University Press & Assessment 2025 Page 9 of 10 Question Answer Marks"
       ],
@@ -13595,7 +13629,7 @@
       "num_label": "9",
       "text": "Describe the format of a mobile phone (cell) network and how it enables the transmission of voice and data.",
       "marks": 6,
-      "topic_id": "8.1",
+      "topic_id": "14.5",
       "answers": [
         "Six from: A mobile phone network allows mobile phones to connect/transmit data through cell towers/base stations… …and is divided into thousands of overlapping geographic areas/cells A typical cellular network can be thought of as a mesh of hexagonal cells Each cell has its own base station at the centre The base stations provide the cell with the network coverage which can be used for transmission of voice, data and other types of content The cells slightly overlap at the edges to ensure that users always remain within range of a base station RF signals are transmitted by an individual phone to a base station RF signals are then re-transmitted from the base station to another base station/mobile phone Transmitting and receiving are done over different frequencies Base stations are connected to one another via central switching centres The central switching centres track calls and transfer them from one base station to another as callers move between cells A mobile phone is a two-way radio containing both a low-power transmitter and a receiver A cell typically uses a different set of frequencies from neighbouring cells 6 PUBLISHED March 2021 Question Answer Marks"
       ],
@@ -14095,7 +14129,7 @@
       "num_label": "6(b)",
       "text": "a car manufacturing process",
       "marks": 2,
-      "topic_id": "12.4",
+      "topic_id": "4.2",
       "answers": [
         "Two from: Use of laser light to create images/holograms/highly accurate images of items during production Compare dimensions of items with required dimensions For real-time/instantaneous quality control. 2"
       ],
@@ -15013,7 +15047,7 @@
       "num_label": "8",
       "text": "Online tutorials are a method of providing training courses to learners. Explain how online tutorials can be used to train learners.",
       "marks": 5,
-      "topic_id": "16.4",
+      "topic_id": "12.5",
       "answers": [
         "Five from: Use of recorded tutorials showing screenshots/videos of topics presenting expert ideas/views Can include a narration to explain the topics as the images are displayed Tutorial can be designed to create a conversation/dialogue between the student and the teacher Tutorials can be interactive with navigable pages of content so student can choose which route to take The route through is decided by answers to questions/following links to different topics Topics should flow from generalised ideas to specific as the tutorial progress The tutorial’s structure should manage the flow of the topic to allow the student to work through the topic Tutorials can be used to create/impart factual knowledge as the basis for advanced learning Tutorials can be used instead of lectures/classes to free up classroom time/space for other studies Tutorials can allow students to learn at their own pace/in their own time. Tutorials can be used to reinforce class learning/for revision Tutorials can be used to provide interactive testing/to give immediate feedback to students Online tutorials can allow for note taking, including adding notes to certain parts of the tutorial 5 PUBLISHED February/March 2022 Question Answer Marks"
       ],
@@ -15259,7 +15293,7 @@
       "num_label": "Task 10",
       "text": "Test this spreadsheet with the following test data and save each test as a spreadsheet with the given file name followed by your centre number_candidate number e.g. Tiles2_ZZ999_9999 File name Tiles2_ A wall 3 metres long and 2 metres high with no window. The tile size is 50 x 25 centimetres. The tiles will be set in landscape orientation. Tiles3_ A wall 3 metres long and 2 metres high with no window. The tile size is 30 x 30 centimetres. Tiles4_ A wall 5 metres long and 2.4 metres high with a window 1 metre long and 1.2 metres high. The tile size is 60 x 30 centimetres. The tiles will be set in landscape orientation. Tiles5_ The same wall as Tiles4_ with the same tiles set in portrait orientation. [12] You work for Tracy’s Tilers who are creating a number of instructional video clips showing how to tile a room. You will create one of these short video clips. All video and audio clips must be of a professional standard.",
       "marks": null,
-      "topic_id": "8.1",
+      "topic_id": "8.2",
       "answers": [],
       "qp_path": "9626 Past Papers/9626 Information Technology March 2023 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology March 2023 Mark Scheme  2.pdf",
@@ -15593,7 +15627,7 @@
       "num_label": "1(b)",
       "text": "Describe how the use of interviews and questionnaires for collecting data may affect the accuracy of the resulting information.",
       "marks": 6,
-      "topic_id": "1.1",
+      "topic_id": "16.2",
       "answers": [
         "SIX from: • People might not answer the questionnaire truthfully (1) • People might answer the interview truthfully (1) • People may be biased (1) • The questions might be badly phrased (1) • Interviews can clarify the answer (1) • Interviews can ask questions based on previous answers (1) • Questionnaires cannot expand on what the question means (1) • Interviews include open ended questions that are hard to quantify (1) • In a multi choice type question there may not be a sufficient number of alternatives//answers restricted to those provided (1) • There is the possibility that the people collecting the data may make errors when collecting it (1) 6"
       ],
@@ -16155,7 +16189,7 @@
       "num_label": "7",
       "text": "A Work Breakdown Structure (WBS), included in the Performance Evaluation and Review Technique (PERT), is created during the planning of a project.",
       "marks": null,
-      "topic_id": "15.1",
+      "topic_id": "16.7",
       "answers": [],
       "qp_path": "9626 Past Papers/9626 Information Technology March 2023 Question paper  32.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology March 2023 Mark Scheme  32.pdf",
@@ -16875,7 +16909,7 @@
       "num_label": "1",
       "text": "Near Field Communication (NFC) is a communication method. Describe how NFC can be used by mobile devices.",
       "marks": 6,
-      "topic_id": "14.8",
+      "topic_id": "14.5",
       "answers": [
         "Six from e.g.: • Used to bootstrap other wireless connections/Wi-Fi/Bluetooth (by exchanging setup credentials) • Used in games to customise objects/figures/characters (with e.g. personal data/enter online games) • Used in tags to automatically program/amend settings/command smartphones to carry out tasks/access a website • Used as identity tags/documentation in e.g. passports/ID cards • Used in access/login cards/car key systems • Used in social networking to share contacts/images/messages • Used in contactless payment systems in mobile devices/smartphones. 6 Question Answer Marks"
       ],
@@ -18419,7 +18453,7 @@
       "num_label": "1(c)",
       "text": "Phoebe will use sensors as direct data sources to collect the data. She will place sensors in the river and collect the readings from a computer. Describe the benefits of gathering data from direct data sources in this scenario.",
       "marks": 4,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "answers": [
         "Four from: It ensures the data is relevant to the study The size of the data sample can be as big or small as needed Phoebe has full control over the method used to collect the data There may be an opportunity to sell the data to other people for them to use The source of the data is known, exactly making it easier to judge its reliability 4"
       ],
@@ -18437,7 +18471,7 @@
       "num_label": "1(d)",
       "text": "Describe the drawbacks of gathering data from direct data sources in this scenario.",
       "marks": 4,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "answers": [
         "Four from: Buying data loggers may be very expensive Compared to indirect data sources using direct data sources may be very expensive in preparing and carrying out the gathering of data. It takes longer to gather data than to acquire data from an indirect data source The amount of data gathered may be inadequate and not give representative results The pollution could be seasonal and the time of year readings are taken may not provide the required results 4 Question Answer Marks"
       ],
@@ -19107,7 +19141,7 @@
       "num_label": "5",
       "text": "A company is investigating converting its paper files into computer data files. The company must choose between its existing staff entering the data manually or using an Optical Character Reader (OCR). Evaluate, by weighing up the advantages and disadvantages, the use of an OCR compared to manual data entry.",
       "marks": 6,
-      "topic_id": "1.1",
+      "topic_id": "2.1",
       "answers": [
         "Six from: Advantages OCR is much faster than someone manually entering large amounts of text OCR is cheaper than paying someone to manually enter large amounts of text OCR will read documents consistently … … whereas humans become tired over time and mistakes increase Disadvantages Initial cost of buying a fast-reading optical character reader is expensive … … whereas existing staff are already paid for With OCR all documents need to be checked over carefully and then manually corrected OCR has difficulty distinguishing between 1 and I, O and 0 … … whereas humans can interpret these from the context OCR can have greater difficulty reading handwriting … … whereas humans are used to reading handwriting At least one of each required to obtain full marks Must be a proper evaluation to obtain full marks Max. five marks if bullets/list of points Must have an expansion or comparison to be a proper evaluation 6 Question Answer Marks"
       ],
@@ -19797,7 +19831,7 @@
       "num_label": "1(b)",
       "text": "Describe two drawbacks of using online questionnaires to gather feedback.",
       "marks": 2,
-      "topic_id": "14.1",
+      "topic_id": "16.2",
       "answers": [
         "Two from: Sample of respondents can be too small to provide meaningful results/statistics Sample of respondents may not be representative of customers/not all customers will respond No interviewer involved so no ‘follow-up’ questions possible Customers may not give honest answers if invited by email with incentives (e.g. free sample/discount when responding) Difficult to check that a respondent is a genuine customer Only customers with internet access can be questioned. 2 PUBLISHED October/November 2021 Question Answer Marks"
       ],
@@ -19883,7 +19917,7 @@
       "num_label": "3(a)",
       "text": "Describe how peer-to-peer networking uses BitTorrent to transfer large data files between several users.",
       "marks": 6,
-      "topic_id": "14.3",
+      "topic_id": "14.1",
       "answers": [
         "Six from: Peers/nodes share/partition workloads/processing power without the need for a central server Nodes work as both client and server for other nodes Nodes can connect randomly/unstructured or in specific topology/structured mode Unstructured mode is robust when nodes join/drop out frequently but makes finding a specific file more difficult Structured mode is organised (using hash tables) and files can be found/searched for easily Peer-to-peer software is run on computer/node Software queries other nodes/computers to find required file Search request has ‘time to live’ (TTL) after which it ceases to search Search request propagates from queried machines/nodes to others When found, software downloads/copies file from node to node Other nodes/computers can copy downloaded file from each node Sections/fragments of file can be copied from different nodes at once, increasing the overall speed of whole file transfer to a node. 6 PUBLISHED October/November 2021 Question Answer Marks"
       ],
@@ -20469,7 +20503,7 @@
       "num_label": "1(b)",
       "text": "Describe two drawbacks of using online questionnaires to gather feedback.",
       "marks": 2,
-      "topic_id": "14.1",
+      "topic_id": "16.2",
       "answers": [
         "Two from: Sample of respondents can be too small to provide meaningful results/statistics Sample of respondents may not be representative of customers/not all customers will respond No interviewer involved so no ‘follow-up’ questions possible Customers may not give honest answers if invited by email with incentives (e.g. free sample/discount when responding) Difficult to check that a respondent is a genuine customer Only customers with internet access can be questioned. 2 PUBLISHED October/November 2021 Question Answer Marks"
       ],
@@ -20555,7 +20589,7 @@
       "num_label": "3(a)",
       "text": "Describe how peer-to-peer networking uses BitTorrent to transfer large data files between several users.",
       "marks": 6,
-      "topic_id": "14.3",
+      "topic_id": "14.1",
       "answers": [
         "Six from: Peers/nodes share/partition workloads/processing power without the need for a central server Nodes work as both client and server for other nodes Nodes can connect randomly/unstructured or in specific topology/structured mode Unstructured mode is robust when nodes join/drop out frequently but makes finding a specific file more difficult Structured mode is organised (using hash tables) and files can be found/searched for easily Peer-to-peer software is run on computer/node Software queries other nodes/computers to find required file Search request has ‘time to live’ (TTL) after which it ceases to search Search request propagates from queried machines/nodes to others When found, software downloads/copies file from node to node Other nodes/computers can copy downloaded file from each node Sections/fragments of file can be copied from different nodes at once, increasing the overall speed of whole file transfer to a node. 6 PUBLISHED October/November 2021 Question Answer Marks"
       ],
@@ -21345,7 +21379,7 @@
       "num_label": "4(a)",
       "text": "Explain how the organisers could use what-if analysis to see the effects of these three factors on their profit. You should refer to specific cells from the spreadsheet in your answer.",
       "marks": 3,
-      "topic_id": "8.1",
+      "topic_id": "9.1",
       "answers": [
         "Three from: • They could increase/change (the number of customers by increasing/changing) the value in cell D1 ... (1) • They could increase/change (the number of snacks by increasing/changing) the value in cell C6 ... (1) (accept decrease answer) ... • They could increase/change (the number of drinks by increasing) the value in cell C5 ... (1) (accept decrease answer) ... • They could increase/change (the cost of souvenir supplies by increasing) the value in cell D17 ... (1) (accept decrease answer) ... ... The value in D21/profit would change (showing the new profit/loss//profit would change) (1) 3"
       ],
@@ -22117,7 +22151,7 @@
       "num_label": "3(b)",
       "text": "data modelling",
       "marks": 4,
-      "topic_id": "12.2",
+      "topic_id": "8.3",
       "answers": [
         "Four from: Gathering the data required for the process Documenting/describing the data e.g. location of source/how acquired Listing the source of the data that has been gathered Populate the analysis tool/software with the data Reviewing/exploring the data to check e.g. completeness/anomalies/outliers Visually checking the data for patterns/trends/groupings within the data set(s) Verifying the quality of the data that has been gathered. 4 Question Answer Marks"
       ],
@@ -22661,7 +22695,7 @@
       "num_label": "9(c)",
       "text": "JavaScript programmers often wish to control when sections of their code are executed. Compare the use of setTimeout() and setInterval() for delaying the execution of JavaScript code.",
       "marks": 5,
-      "topic_id": "21.1",
+      "topic_id": "3.2",
       "answers": [
         "Five from: Similarities: Both are part of the HTML Window object/Document Object Model controlling display of documents/parts of documents/both can be prefixed with window. Both takes/require two parameters inside the () separated by , First parameter in both references the function to be executed Second parameter in both sets is a time in milliseconds Both can be interrupted by clear Interval() function Differences: setTimeout() delays the execution of code which runs only once setInterval() allows/provides for repeated execution of the code at (pre-set) intervals clearInterval() can prevent function in setTimeout() from ever being executed/stop the timeout timer setInterval() loop only stops when the window is closed/clear Interval() is invoked/used setTimeout() minimum value is 0/zero (milliseconds) setInterval() minimum value is 10 (milliseconds)/if set to less than 10 then"
       ],
@@ -22891,7 +22925,7 @@
       "num_label": "3(b)",
       "text": "data modelling",
       "marks": 4,
-      "topic_id": "12.2",
+      "topic_id": "8.3",
       "answers": [
         "Four from: Gathering the data required for the process Documenting/describing the data e.g. location of source/how acquired Listing the source of the data that has been gathered Populate the analysis tool/software with the data Reviewing/exploring the data to check e.g. completeness/anomalies/outliers Visually checking the data for patterns/trends/groupings within the data set(s) Verifying the quality of the data that has been gathered. 4 Question Answer Marks"
       ],
@@ -23409,7 +23443,7 @@
       "num_label": "Task 16",
       "text": "Test your spreadsheet with the following test data. Save each test as a spreadsheet with the given file name followed by your centre number_candidate number, e.g. QSA2_ZZ999_9999 File name and respective Test data QSA2_ A freestanding wall 12 metres long built on gravel in a climate that is never frosty. QSA3_ A building 4 metres long and 3 metres wide built on soft chalk in a climate that is never frosty. QSA4_ A building 4 metres long and 3 metres wide built on granite in a climate that is never frosty. QSA5_ A building 4 metres long and 3 metres wide built on granite in a climate that is sometimes frosty.",
       "marks": 11,
-      "topic_id": "8.1",
+      "topic_id": "8.2",
       "answers": [],
       "qp_path": "9626 Past Papers/9626 Information Technology November 2023 Question paper  02.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2023 Mark Scheme  2.pdf",
@@ -24407,7 +24441,7 @@
       "num_label": "4(b)",
       "text": "When customers open new accounts, the details are gathered together in a transaction file. At the end of the day a branch transmits the transaction file to head office, using the internet. The transmission of the transaction file is verified using a hash total. Describe this process, explaining why a hash total is used rather than a control total.",
       "marks": 4,
-      "topic_id": "3.2",
+      "topic_id": "14.5",
       "answers": [
         "Three from: • A key number would be calculated (1) • All the account numbers/numbers in the account number would be added together (1st) • To create a single number (1) • The data/file would be transmitted along with the hash total/key number (1) • The hash total is recalculated once received (1) • The original hash total is compared with the new one (1) • If they do not match an error has been made (1) One from: • A control total checks fields that are used for calculations whereas a hash total is used for fields that hold information (1) • The field holds data, and will not be used for calculations (1) 4 PUBLISHED October/November 2023 Question Answer Marks"
       ],
@@ -24529,7 +24563,7 @@
       "num_label": "7(b)",
       "text": "lossless compression",
       "marks": 2,
-      "topic_id": "1.1",
+      "topic_id": "19.4",
       "answers": [
         "Two from: • Lossless compression retains the quality of the original/does not reduce the quality of the audio file (1) • Data is not lost (1) • When lossless compression software sees a repeated sequence of bits it replaces the repeated sequences with a character (1st) • which indicates what is being repeated and how many times (1) 2"
       ],
@@ -24547,7 +24581,7 @@
       "num_label": "7(c)",
       "text": "lossy compression.",
       "marks": 2,
-      "topic_id": "1.1",
+      "topic_id": "19.4",
       "answers": [
         "Two from: • Removes some of the audio file’s data (1) • Reduces the quality of the audio file (1) • Removes sounds at very low and high frequencies (which are outside the range of human hearing) (1) • Creates smaller file sizes than lossless compression (1) • Once this data has been removed from the files it can never be replaced (1) 2 PUBLISHED October/November 2023 Question Answer Marks"
       ],
@@ -24671,7 +24705,7 @@
       "num_label": "2(a)",
       "text": "Explain why source documents are proof read manually to try to ensure that the final versions are accurate and error-free.",
       "marks": 3,
-      "topic_id": "12.4",
+      "topic_id": "18.1",
       "answers": [
         "Three from: • Software tools do not check for artistic/author styles (Manual proof-reading) checks for: • for content issues/check that all necessary content is present • no unnecessary content is included • confusion between homophones • correct use of indefinite/definite articles/prepositions • misplaced punctuations/commas/hyphens/apostrophes • consistency in styles/conventions/number notation/date format • correct formatting of quotations and citations • inconsistent paragraph indentation and spacing • missing or misplaced page numbers, headers and footers • no unnecessary duplication of content • correct regional spelling/grammar/syntax is being used • correct context. 3 PUBLISHED October/November 2023 Question Answer Marks"
       ],
@@ -25447,7 +25481,7 @@
       "num_label": "2(a)",
       "text": "Explain why source documents are proof read manually to try to ensure that the final versions are accurate and error-free.",
       "marks": 3,
-      "topic_id": "12.4",
+      "topic_id": "18.1",
       "answers": [
         "Three from: • Software tools do not check for artistic/author styles (Manual proof-reading) checks for: • for content issues/check that all necessary content is present • no unnecessary content is included • confusion between homophones • correct use of indefinite/definite articles/prepositions • misplaced punctuations/commas/hyphens/apostrophes • consistency in styles/conventions/number notation/date format • correct formatting of quotations and citations • inconsistent paragraph indentation and spacing • missing or misplaced page numbers, headers and footers • no unnecessary duplication of content • correct regional spelling/grammar/syntax is being used • correct context. 3 PUBLISHED October/November 2023 Question Answer Marks"
       ],
@@ -26159,7 +26193,7 @@
       "num_label": "1(c)",
       "text": "disk defragmentation",
       "marks": 3,
-      "topic_id": "1.1",
+      "topic_id": "2.3",
       "answers": [
         "THREE marks available: Max TWO marks: • It speeds up the access time to a file (1). • To create larger regions of (contiguous) free space (1) Max TWO marks: • Organises the contents of the disk into the smallest number of contiguous regions/fragments (1) • The data blocks of a file/defragmented files are moved around to bring whole/all the parts of a file together (1) 3 PUBLISHED October/November 2024 © Cambridge University Press & Assessment 2024 Page 4 of 9 Question Answer Marks"
       ],
@@ -26349,7 +26383,7 @@
       "num_label": "5(a)",
       "text": "Explain what is meant by direct data sources. Your answer must include examples linked to the scenario.",
       "marks": 3,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "answers": [
         "THREE marks available: Max TWO • Data is collected for a specific purpose/task (1) • Provides original data/first hand data (1) Max TWO e.g. • Observation could be used, by the scientist going to the farmland and looking (1) • Questionnaires could be distributed amongst farmers/3rd party linked to scenario (1) • Interviews could be carried out with farmers/3rd party linked to scenario (1) • Data logging/sensors could be used to gather pollution data (1). 3"
       ],
@@ -26367,7 +26401,7 @@
       "num_label": "5(b)",
       "text": "Explain what is meant by indirect data sources. Your answer must include examples linked to the scenario.",
       "marks": 3,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "answers": [
         "THREE marks available: Max TWO • An indirect data source is when data is obtained from a third party/is second hand (1) • Means data that was collected for a particular reason but is then used for another purpose (award concept of data being used for a different purpose) (1) Max TWO • Could collect data from local government agencies (1) • Could use information presented in scientific journals (1) 3 PUBLISHED October/November 2024 © Cambridge University Press & Assessment 2024 Page 6 of 9 Question Answer Marks"
       ],
@@ -26781,7 +26815,7 @@
       "num_label": "9",
       "text": "* 0000800000009 * ,\u0001\u0001\u0001\u0001 \u0001\u0001\u0001\u0001\u0001\u0001\u0001 , ĬÛú¾Ġ´íÈõÏĪÅĊàùµĀ× ĬèÏòØġĄģÎøüĘ÷ĠĀĜĠĂ ĥõąĕµõąÕµĕõąÅĕĥÕåÕ DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN A reporter will use telephone interviews to gather information for an article. Discuss the benefits and drawbacks of using telephone interviews.",
       "marks": 8,
-      "topic_id": "1.1",
+      "topic_id": "16.2",
       "answers": [
         "EIGHT from: • This method gathers direct data, which is more up to date (1) Benefits max 6: • There is no significant time delay between question and answer (1) • Reporter can more easily ask extension questions based on answers (1st) that can add to the verbal answer from the interviewee (1) • People from (e.g.) all over the country (any awareness of wide location between two parties) can be interviewed (1) • Enables interviewers/reporters to contact people in restricted/remote areas (1) • No need to travel/no travel costs for reporter (1) • No time wasted/used by reporter in travelling to interview (1) • Interview can easily be recorded for later transcription/reference (1) Drawbacks max 6: • The reduction of social cues/cannot see interviewee (1st) so e.g. body language/eye contact cannot be used as a source of extra information (1) • The interviewer/reporter has no knowledge of the situation in which the interviewee is situated (1st) so less able to create a good interview ambience (1) • Telephone line/mobile signal quality can affect responses/interview (1) • Easier for interviewee to find excuse/make up excuse/find reasons to terminate the interview (1) • Can only interview one person at a time (1) • Interviewee may not pick up the phone (1) • Sample is restricted to those people who have a telephone (1) • No way to visually verify who you are interviewing (1) 8 Question Answer Marks"
       ],
@@ -27405,7 +27439,7 @@
       "num_label": "7(a)",
       "text": "Using the information in the table, draw a PERT (Performance Evaluation and Review Technique) chart for the project in the space below:",
       "marks": 5,
-      "topic_id": "15.3",
+      "topic_id": "16.7",
       "answers": [
         "Four from: • Selection of the data to be mined with reference to its relevance to the requirements of the client • Selection by reference to quality / technical restrictions e.g. type / quantity / size of data set / number of data sets • Detection and removal of corrupt / inaccurate records in the data sets • Data is ’cleaned’ by removal of irrelevant parts of the data / data set • Creation / construction of new records derived from existing records in the data / data set • Merging data / records with common features / summarising data / aggregating data. 4"
       ],
@@ -27983,7 +28017,7 @@
       "num_label": "7(a)",
       "text": "State the use of each of the following symbols in a system flowchart. (i)",
       "marks": 1,
-      "topic_id": "12.4",
+      "topic_id": "4.2",
       "answers": [],
       "qp_path": "9626 Past Papers/9626 Information Technology November 2024 Question paper  33.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology November 2024 Mark Scheme  33.pdf",
@@ -29007,7 +29041,7 @@
       "num_label": "8(a)",
       "text": "Describe what is meant by Lossy compression.",
       "marks": 1,
-      "topic_id": "1.1",
+      "topic_id": "19.4",
       "answers": [
         "One from: • Compressed data cannot be reconstructed (1) • It permanently removes data (1) 1"
       ],
@@ -29025,7 +29059,7 @@
       "num_label": "8(b)",
       "text": "Describe what is meant by Lossless compression.",
       "marks": 1,
-      "topic_id": "1.1",
+      "topic_id": "19.4",
       "answers": [
         "One from: • Compressed data can be reconstructed (1) • Does not permanently remove data (1) 1 PUBLISHED October/November 2025 © Cambridge University Press & Assessment 2025 Page 8 of 10 Question Answer Marks"
       ],
@@ -29909,7 +29943,7 @@
       "num_label": "9(b)",
       "text": "Describe how the IP address is used when exchanging data with other devices.",
       "marks": 4,
-      "topic_id": "14.5",
+      "topic_id": "14.6",
       "answers": [
         "Four from: • Uniquely identifies NIC / device on the network • Has two parts identifying the network and the specific device / network address and device address • Destination / source IP address is in the packets (1st) in the header (1) • NIC recognises packet with its IP address (1st) it receives it / passes it to / up network stack of device for processing (1) discards / ignores all other packets (1) • Used by routers to send packets between devices on other networks / in routing of packets. 4 Question Answer Marks"
       ],
@@ -29961,7 +29995,7 @@
       "num_label": "10(b)",
       "text": "Describe two other HTML events that can be used to trigger the execution of JavaScript code.",
       "marks": 2,
-      "topic_id": "21.1",
+      "topic_id": "15.1",
       "answers": [
         "Two from: Examples of HTML events include, e.g.: • When a web page has loaded • When an image has been loaded • When the mouse moves over an HTML element • When an input field is changed • When an HTML form is submitted • When a user strokes / touches / presses a key 2 Question Answer Marks"
       ],
@@ -29979,7 +30013,7 @@
       "num_label": "11",
       "text": "* 0000800000011 * ,\u0001\u0001\u0001\u0001 \u0001\u0001\u0001\u0001\u0001\u0001\u0002\u0002, ĬÛú¾Ġ´íÈõÏĪÅĊàü·þ× ĬĠËóÕĞöđÓąČ°áĢ·ºďĂ ĥõĥĕõõåµĥõąÅÅõĥõĥÕ DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DFD Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will be pleased to make amends at the earliest possible opportunity. To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live examination series. Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge. Evaluate the use of email by governments.",
       "marks": 8,
-      "topic_id": "16.2",
+      "topic_id": "13.1",
       "answers": [
         "Eight from: Command word: Evaluate: judge or calculate the quality, importance, amount, or value of something. Max eight from: Content areas could include e.g.: • Distribution of useful information to citizens e.g. mass mailings − so can reach many citizens efficiently / quickly − but not all have email addresses / accounts − so not all receive the information • Updating of regulations − to targeted individuals / organisations • Advice and discussions on current issues − government news − feedback from citizens • Tracking of citizens − monitoring citizens emails − infringement of privacy / rights of citizens − tracking illegal activities • Sending false / distorted / biased information − dissemination of government views Max one from: Conclusion: • One mark for a reasoned conclusion / overall judgement 8"
       ],
@@ -30119,7 +30153,7 @@
       "num_label": "4(b)",
       "text": "Describe the benefits of using pivot tables to analyse data.",
       "marks": 4,
-      "topic_id": "16.2",
+      "topic_id": "8.3",
       "answers": [
         "Four from: • Manageable / same time / all in one go / simultaneous analysis of large quantities of data • Interactive analysis of data / can ‘see’ into / have insights into large amounts of data • Can generate multiple reports from single / same data set • Simple / easy / little training / specialist knowledge needed to carry out the analysis • Rapid discovery of patterns in complex data • Can work with external files / SQL generated exports of data in reports. 4 Question Answer Marks"
       ],
