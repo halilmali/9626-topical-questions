@@ -955,7 +955,17 @@ body.dark-mode .shimmer-wrapper {
 .lightbox-img.zoomed {
   max-width: none !important;
   max-height: none !important;
-  cursor: zoom-out;
+  cursor: grab;
+}
+
+.lightbox-content.dragging {
+  cursor: grabbing;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.lightbox-content.dragging .lightbox-img.zoomed {
+  cursor: grabbing;
 }
 
 .lightbox-caption {

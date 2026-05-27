@@ -165,10 +165,15 @@ function updateBookmarkCountBadge() {
 // LIGHTBOX VIEWER FUNCTIONS
 // ==========================================================================
 let zoomState = { mode: 'fit', scale: 1.0 };
+let isDragging = false;
+let startX, startY;
+let scrollLeft, scrollTop;
 
-function openLightbox(src) {
+function openLightbox(src, title) {
   const lightbox = document.getElementById('lightbox');
   const img = document.getElementById('lightbox-img');
+  const content = document.getElementById('lightbox-content');
+  const caption = document.getElementById('lightbox-caption');
   if (!lightbox || !img) return;
   
   // Reset zoom state on open
@@ -176,7 +181,23 @@ function openLightbox(src) {
   zoomState.scale = 1.0;
   updateLightboxZoom();
   
+  if (content) {
+    content.scrollLeft = 0;
+    content.scrollTop = 0;
+    content.classList.remove('dragging');
+  }
+  isDragging = false;
+  
   img.src = src;
+  
+  if (caption) {
+    if (title) {
+      caption.innerHTML = `<strong>${title}</strong> • Click image to toggle zoom • Drag to pan`;
+    } else {
+      caption.textContent = 'Click image to toggle zoom • Drag to pan';
+    }
+  }
+  
   lightbox.style.display = 'flex';
   
   // Small delay to trigger smooth transition
@@ -634,8 +655,13 @@ function renderQuestions() {
     `;
     
     // Add event handlers directly to images inside the card for lightbox opening
-    card.querySelectorAll('.q-screenshot, .ms-screenshot').forEach(img => {
-      img.onclick = () => openLightbox(img.src);
+    card.querySelectorAll('.q-screenshot').forEach((img, idx, arr) => {
+      const partText = arr.length > 1 ? ` (Part ${idx + 1})` : '';
+      img.onclick = () => openLightbox(img.src, `${q.year} ${q.session} ${q.paper} (Var ${q.variant}) - Q${q.num_label} - Question${partText}`);
+    });
+    card.querySelectorAll('.ms-screenshot').forEach((img, idx, arr) => {
+      const partText = arr.length > 1 ? ` (Part ${idx + 1})` : '';
+      img.onclick = () => openLightbox(img.src, `${q.year} ${q.session} ${q.paper} (Var ${q.variant}) - Q${q.num_label} - Mark Scheme${partText}`);
     });
     
     container.appendChild(card);
@@ -693,9 +719,97 @@ function setupEventListeners() {
     closeBtn.onclick = closeLightbox;
   }
   
+  let wasDragged = false;
+  let downX = 0, downY = 0;
+  const content = document.getElementById('lightbox-content');
+
+  if (content && lightboxImg) {
+    content.addEventListener('mousedown', (e) => {
+      if (zoomState.mode === 'fit') return;
+      e.preventDefault();
+      
+      isDragging = true;
+      wasDragged = false;
+      content.classList.add('dragging');
+      
+      downX = e.pageX;
+      downY = e.pageY;
+      startX = e.pageX - content.offsetLeft;
+      startY = e.pageY - content.offsetTop;
+      scrollLeft = content.scrollLeft;
+      scrollTop = content.scrollTop;
+    });
+
+    content.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      
+      const x = e.pageX - content.offsetLeft;
+      const y = e.pageY - content.offsetTop;
+      const walkX = x - startX;
+      const walkY = y - startY;
+      
+      content.scrollLeft = scrollLeft - walkX;
+      content.scrollTop = scrollTop - walkY;
+      
+      const dist = Math.hypot(e.pageX - downX, e.pageY - downY);
+      if (dist > 5) {
+        wasDragged = true;
+      }
+    });
+
+    content.addEventListener('mouseup', () => {
+      isDragging = false;
+      content.classList.remove('dragging');
+    });
+
+    content.addEventListener('mouseleave', () => {
+      isDragging = false;
+      content.classList.remove('dragging');
+    });
+
+    // Touch events for mobile/tablet panning
+    content.addEventListener('touchstart', (e) => {
+      if (zoomState.mode === 'fit') return;
+      isDragging = true;
+      wasDragged = false;
+      const touch = e.touches[0];
+      downX = touch.pageX;
+      downY = touch.pageY;
+      startX = touch.pageX - content.offsetLeft;
+      startY = touch.pageY - content.offsetTop;
+      scrollLeft = content.scrollLeft;
+      scrollTop = content.scrollTop;
+    });
+
+    content.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const touch = e.touches[0];
+      const x = touch.pageX - content.offsetLeft;
+      const y = touch.pageY - content.offsetTop;
+      const walkX = x - startX;
+      const walkY = y - startY;
+      
+      content.scrollLeft = scrollLeft - walkX;
+      content.scrollTop = scrollTop - walkY;
+      
+      const dist = Math.hypot(touch.pageX - downX, touch.pageY - downY);
+      if (dist > 5) {
+        wasDragged = true;
+      }
+    });
+
+    content.addEventListener('touchend', () => {
+      isDragging = false;
+    });
+
+
+  }
+  
   if (lightboxImg) {
     lightboxImg.onclick = (e) => {
       e.stopPropagation();
+      if (wasDragged) return; // Prevent zooming if we just finished a drag
       toggleImageZoom();
     };
   }
@@ -711,6 +825,7 @@ function setupEventListeners() {
 
   if (lightbox) {
     lightbox.onclick = (e) => {
+      if (wasDragged) return; // Ignore drag clicks
       // Close only if clicking the background, NOT on image, toolbar, or caption
       const clickedImage = e.target.closest('#lightbox-img');
       const clickedToolbar = e.target.closest('#lightbox-toolbar');

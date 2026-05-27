@@ -195,10 +195,25 @@
 
   <!-- Zoom/Image Lightbox -->
   <div class="lightbox" id="lightbox" style="display: none;">
-    <button class="lightbox-close" id="lightbox-close" onclick="closeLightbox()">&times;</button>
-    <div class="lightbox-content">
+    <button class="lightbox-close" id="lightbox-close-btn" title="Close image">&times;</button>
+    
+    <!-- Zoom Toolbar -->
+    <div class="lightbox-toolbar" id="lightbox-toolbar">
+      <button class="toolbar-btn" id="zoom-out-btn" title="Zoom Out">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      </button>
+      <span class="zoom-level" id="zoom-level-text">Fit</span>
+      <button class="toolbar-btn" id="zoom-in-btn" title="Zoom In">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      </button>
+      <button class="toolbar-btn" id="zoom-reset-btn" title="Fit Screen">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
+      </button>
+    </div>
+
+    <div class="lightbox-content" id="lightbox-content">
       <img src="" id="lightbox-img" alt="Zoomed View">
-      <div class="lightbox-caption" id="lightbox-caption">Zoomed view. Click outside or ESC to close.</div>
+      <div class="lightbox-caption" id="lightbox-caption">Click image to toggle zoom • Drag to pan</div>
     </div>
   </div>
 

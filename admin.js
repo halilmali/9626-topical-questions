@@ -51,6 +51,7 @@ const lightboxImg = document.getElementById('lightbox-img');
 
 // Define default fallback topics for papers
 const FALLBACK_TOPICS = ['1.1', '12.4', '8.1', '21.1'];
+const VALID_IMAGE_EXTS = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp', '.svg'];
 
 // Initialize App
 window.addEventListener('DOMContentLoaded', async () => {
@@ -96,17 +97,131 @@ function setupEventListeners() {
 
   // ESC key for lightbox
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
+    if (e.key === 'Escape' && lightbox && lightbox.style.display === 'flex') {
       closeLightbox();
     }
   });
 
-  // Close lightbox click
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox || e.target.id === 'lightbox-close') {
-      closeLightbox();
-    }
-  });
+  // Lightbox dragging and wheel scroll zoom
+  let wasDragged = false;
+  let downX = 0, downY = 0;
+  const content = document.getElementById('lightbox-content');
+
+  if (content && lightboxImg) {
+    content.addEventListener('mousedown', (e) => {
+      if (zoomState.mode === 'fit') return;
+      e.preventDefault();
+      
+      isDragging = true;
+      wasDragged = false;
+      content.classList.add('dragging');
+      
+      downX = e.pageX;
+      downY = e.pageY;
+      startX = e.pageX - content.offsetLeft;
+      startY = e.pageY - content.offsetTop;
+      scrollLeft = content.scrollLeft;
+      scrollTop = content.scrollTop;
+    });
+
+    content.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      
+      const x = e.pageX - content.offsetLeft;
+      const y = e.pageY - content.offsetTop;
+      const walkX = x - startX;
+      const walkY = y - startY;
+      
+      content.scrollLeft = scrollLeft - walkX;
+      content.scrollTop = scrollTop - walkY;
+      
+      const dist = Math.hypot(e.pageX - downX, e.pageY - downY);
+      if (dist > 5) {
+        wasDragged = true;
+      }
+    });
+
+    content.addEventListener('mouseup', () => {
+      isDragging = false;
+      content.classList.remove('dragging');
+    });
+
+    content.addEventListener('mouseleave', () => {
+      isDragging = false;
+      content.classList.remove('dragging');
+    });
+
+    // Touch events for mobile/tablet panning
+    content.addEventListener('touchstart', (e) => {
+      if (zoomState.mode === 'fit') return;
+      isDragging = true;
+      wasDragged = false;
+      const touch = e.touches[0];
+      downX = touch.pageX;
+      downY = touch.pageY;
+      startX = touch.pageX - content.offsetLeft;
+      startY = touch.pageY - content.offsetTop;
+      scrollLeft = content.scrollLeft;
+      scrollTop = content.scrollTop;
+    });
+
+    content.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const touch = e.touches[0];
+      const x = touch.pageX - content.offsetLeft;
+      const y = touch.pageY - content.offsetTop;
+      const walkX = x - startX;
+      const walkY = y - startY;
+      
+      content.scrollLeft = scrollLeft - walkX;
+      content.scrollTop = scrollTop - walkY;
+      
+      const dist = Math.hypot(touch.pageX - downX, touch.pageY - downY);
+      if (dist > 5) {
+        wasDragged = true;
+      }
+    });
+
+    content.addEventListener('touchend', () => {
+      isDragging = false;
+    });
+
+
+  }
+
+  if (lightboxImg) {
+    lightboxImg.onclick = (e) => {
+      e.stopPropagation();
+      if (wasDragged) return; // Prevent zooming if we just finished a drag
+      toggleImageZoom();
+    };
+  }
+
+  // Floating Zoom Toolbar Handlers
+  const zoomInBtn = document.getElementById('zoom-in-btn');
+  const zoomOutBtn = document.getElementById('zoom-out-btn');
+  const zoomResetBtn = document.getElementById('zoom-reset-btn');
+  const closeBtn = document.getElementById('lightbox-close-btn');
+
+  if (zoomInBtn) zoomInBtn.onclick = (e) => { e.stopPropagation(); zoomIn(); };
+  if (zoomOutBtn) zoomOutBtn.onclick = (e) => { e.stopPropagation(); zoomOut(); };
+  if (zoomResetBtn) zoomResetBtn.onclick = (e) => { e.stopPropagation(); zoomReset(); };
+  if (closeBtn) closeBtn.onclick = (e) => { e.stopPropagation(); closeLightbox(); };
+
+  if (lightbox) {
+    lightbox.onclick = (e) => {
+      if (wasDragged) return; // Ignore drag clicks
+      // Close only if clicking the background, NOT on image, toolbar, or caption
+      const clickedImage = e.target.closest('#lightbox-img');
+      const clickedToolbar = e.target.closest('#lightbox-toolbar');
+      const clickedCaption = e.target.closest('#lightbox-caption');
+      
+      if (!clickedImage && !clickedToolbar && !clickedCaption) {
+        closeLightbox();
+      }
+    };
+  }
 }
 
 // Check if Node.js server is available
@@ -372,25 +487,107 @@ function renderQuestions() {
   // Pre-generate dropdown options HTML for efficiency
   const dropdownOptionsHtml = buildTopicDropdownHtml();
 
+  // Helper to escape strings for HTML attribute use
+  const escAttr = (str) => str.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+
   pageQuestions.forEach(q => {
     const card = document.createElement('div');
     card.className = 'question-card';
     card.dataset.id = q.id;
 
-    // Images parsing
+    // Images parsing - with edit controls for both question and mark scheme images
     let imagesHtml = '';
+    
+    // Question Images
     if (q.images_q && q.images_q.length > 0) {
-      q.images_q.forEach(img => {
-        // Replace backslashes
+      imagesHtml += `<div class="img-edit-group"><div class="img-edit-label">Question Images:</div><div class="img-edit-grid">`;
+      q.images_q.forEach((img, idx) => {
         const normalizedImg = img.replace(/\\/g, '/');
         imagesHtml += `
-          <div class="img-container" onclick="openLightbox('${normalizedImg}', '${q.id} - ${q.num_label}')">
-            <img src="${normalizedImg}" alt="Question Image">
-            <span class="img-zoom-hint">Click to Zoom</span>
+          <div class="img-edit-item">
+            <div class="img-container" onclick="openLightbox('${escAttr(normalizedImg)}', '${escAttr(q.year + ' ' + q.session + ' ' + q.paper + ' (Var ' + q.variant + ') - Q' + q.num_label)}')">
+              <img src="${escAttr(normalizedImg)}" alt="Question Image">
+              <span class="img-zoom-hint">Click to Zoom</span>
+            </div>
+            <button class="img-remove-btn" onclick="removeImage('${q.id}','images_q',${idx})" title="Remove this image">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
           </div>
         `;
       });
+      imagesHtml += `</div></div>`;
     }
+    
+    // Mark Scheme Images
+    if (q.images_ms && q.images_ms.length > 0) {
+      imagesHtml += `<div class="img-edit-group"><div class="img-edit-label">Mark Scheme Images:</div><div class="img-edit-grid">`;
+      q.images_ms.forEach((img, idx) => {
+        const normalizedImg = img.replace(/\\/g, '/');
+        imagesHtml += `
+          <div class="img-edit-item">
+            <div class="img-container" onclick="openLightbox('${escAttr(normalizedImg)}', '${escAttr(q.year + ' ' + q.session + ' ' + q.paper + ' (Var ' + q.variant + ') - Q' + q.num_label + ' - MS')}')">
+              <img src="${escAttr(normalizedImg)}" alt="Mark Scheme Image">
+              <span class="img-zoom-hint">Click to Zoom</span>
+            </div>
+            <button class="img-remove-btn" onclick="removeImage('${q.id}','images_ms',${idx})" title="Remove this image">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+        `;
+      });
+      imagesHtml += `</div></div>`;
+    }
+    
+    // Add image controls
+    imagesHtml += `
+      <div class="img-add-controls">
+        <div class="img-add-row">
+          <span class="img-add-label">Add Question Image:</span>
+          <input type="text" class="img-add-input" placeholder="Path to image file..." data-qid="${q.id}" data-type="images_q">
+          <button class="img-add-btn" onclick="addImageFromInput(this.previousElementSibling)">Add</button>
+        </div>
+        <div class="img-add-row">
+          <span class="img-add-label">Add Mark Scheme Image:</span>
+          <input type="text" class="img-add-input" placeholder="Path to image file..." data-qid="${q.id}" data-type="images_ms">
+          <button class="img-add-btn" onclick="addImageFromInput(this.previousElementSibling)">Add</button>
+        </div>
+      </div>
+    `;
+
+    // Paper links (QP & MS PDF)
+    const qpUrl = q.qp_path ? (q.qp_path + (q.qp_page ? `#page=${q.qp_page}` : '')) : null;
+    const msUrl = q.ms_path ? (q.ms_path + (q.ms_page ? `#page=${q.ms_page}` : '')) : null;
+    
+    let paperLinksHtml = `
+      <div class="paper-links-section">
+        <div class="paper-links-bar">
+          ${qpUrl ? `<a href="${escAttr(qpUrl)}" target="_blank" class="paper-link" title="Open question paper PDF">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            QP PDF</a>` : `<span class="paper-link disabled">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            QP PDF</span>`}
+          ${msUrl ? `<a href="${escAttr(msUrl)}" target="_blank" class="paper-link" title="Open mark scheme PDF">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            MS PDF</a>` : `<span class="paper-link disabled">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            MS PDF</span>`}
+        </div>
+        <div class="paper-edit-fields">
+          <div class="paper-field-row">
+            <span class="paper-field-label">QP Path:</span>
+            <input type="text" class="paper-field-input" value="${escAttr(q.qp_path || '')}" placeholder="Path to QP PDF..." data-qid="${q.id}" data-field="qp_path" onchange="updatePaperLink(this)">
+            <span class="paper-field-label">Page:</span>
+            <input type="number" class="paper-field-input paper-field-page" value="${q.qp_page !== null && q.qp_page !== undefined ? q.qp_page : ''}" placeholder="-" data-qid="${q.id}" data-field="qp_page" onchange="updatePaperLink(this)" min="1">
+          </div>
+          <div class="paper-field-row">
+            <span class="paper-field-label">MS Path:</span>
+            <input type="text" class="paper-field-input" value="${escAttr(q.ms_path || '')}" placeholder="Path to MS PDF..." data-qid="${q.id}" data-field="ms_path" onchange="updatePaperLink(this)">
+            <span class="paper-field-label">Page:</span>
+            <input type="number" class="paper-field-input paper-field-page" value="${q.ms_page !== null && q.ms_page !== undefined ? q.ms_page : ''}" placeholder="-" data-qid="${q.id}" data-field="ms_page" onchange="updatePaperLink(this)" min="1">
+          </div>
+        </div>
+      </div>
+    `;
 
     // Determine current assignment style class
     const validTopicIds = availableTopics.map(t => t.id);
@@ -412,9 +609,12 @@ function renderQuestions() {
         ${imagesHtml ? `<div class="question-images">${imagesHtml}</div>` : ''}
       </div>
       <div class="card-footer">
-        <span class="card-qid">Label: <strong>${q.num_label}</strong></span>
+        <div class="footer-left">
+          <span class="card-qid">Label: <strong>${q.num_label}</strong></span>
+          ${paperLinksHtml}
+        </div>
         <div class="assignment-controls">
-          <label>Topical Chapter & Topic:</label>
+          <label>Topic:</label>
           <select class="topic-select-picker ${selectClass}" data-qid="${q.id}" onchange="changeQuestionTopic(this)">
             ${dropdownOptionsHtml}
           </select>
@@ -517,6 +717,140 @@ function changeQuestionTopic(selectElement) {
   updateStats();
 }
 
+// ==========================================================================
+// PAPER LINK MANAGEMENT
+// ==========================================================================
+
+// Update a paper link field (qp_path, qp_page, ms_path, ms_page)
+function updatePaperLink(inputEl) {
+  const qid = inputEl.getAttribute('data-qid');
+  const field = inputEl.getAttribute('data-field');
+  const value = inputEl.value.trim();
+  
+  const question = dbV2.questions.find(q => q.id === qid);
+  if (!question) return;
+  
+  const oldValue = question[field];
+  
+  // Parse numeric fields appropriately
+  if (field === 'qp_page' || field === 'ms_page') {
+    const parsed = value ? parseInt(value, 10) : null;
+    if (parsed !== null && isNaN(parsed)) {
+      showToast('Invalid Page', 'Page number must be a numeric value.', 'warning');
+      inputEl.value = oldValue !== null && oldValue !== undefined ? oldValue : '';
+      return;
+    }
+    question[field] = parsed;
+  } else {
+    question[field] = value || null;
+  }
+  
+  // Skip if value didn't actually change
+  if (question[field] === oldValue) return;
+  
+  // Sync to dbV1
+  const { year, session, paper, variant, num_label } = question;
+  const questionV1 = dbV1.questions.find(q => {
+    return q.year === year &&
+           q.session === session &&
+           q.paper === paper &&
+           q.variant === variant &&
+           q.num_label === num_label;
+  });
+  if (questionV1) {
+    questionV1[field] = question[field];
+  }
+  
+  markDirty();
+  
+  // Only show toast for path changes (page number changes are minor)
+  if (field === 'qp_path' || field === 'ms_path') {
+    showToast('Link Updated', `${field} has been updated for this question.`, 'info');
+  }
+}
+
+// ==========================================================================
+// IMAGE MANAGEMENT
+// ==========================================================================
+
+// Remove an image from a question's image array
+function removeImage(qid, type, index) {
+  if (!confirm('Remove this image from the question?')) return;
+  
+  const question = dbV2.questions.find(q => q.id === qid);
+  if (!question || !question[type]) return;
+  
+  // Remove the image
+  question[type].splice(index, 1);
+  
+  // Sync to dbV1
+  const { year, session, paper, variant, num_label } = question;
+  const questionV1 = dbV1.questions.find(q => {
+    return q.year === year &&
+           q.session === session &&
+           q.paper === paper &&
+           q.variant === variant &&
+           q.num_label === num_label;
+  });
+  if (questionV1) {
+    questionV1[type] = [...question[type]];
+  }
+  
+  markDirty();
+  applyFilters(); // Re-render to update UI
+  showToast('Image Removed', 'Image has been removed from the question.', 'info');
+}
+
+// Add a new image from the input field
+function addImageFromInput(inputEl) {
+  const qid = inputEl.getAttribute('data-qid');
+  const type = inputEl.getAttribute('data-type');
+  const path = inputEl.value.trim();
+  
+  if (!path) {
+    showToast('No Path', 'Please enter a file path for the image.', 'warning');
+    return;
+  }
+  
+  // Validate file extension
+  const hasValidExtension = VALID_IMAGE_EXTS.some(ext => path.toLowerCase().endsWith(ext));
+  if (!hasValidExtension) {
+    showToast('Invalid Path', 'Please enter a path to an image file (jpg, png, gif, webp, etc.).', 'warning');
+    return;
+  }
+  
+  const question = dbV2.questions.find(q => q.id === qid);
+  if (!question) return;
+  
+  // Initialize array if needed
+  if (!question[type]) question[type] = [];
+  
+  // Normalize path separators to backslashes (consistent with existing data)
+  const normalizedPath = path.replace(/\//g, '\\');
+  
+  // Add the image path
+  question[type].push(normalizedPath);
+  
+  // Sync to dbV1
+  const { year, session, paper, variant, num_label } = question;
+  const questionV1 = dbV1.questions.find(q => {
+    return q.year === year &&
+           q.session === session &&
+           q.paper === paper &&
+           q.variant === variant &&
+           q.num_label === num_label;
+  });
+  if (questionV1) {
+    if (!questionV1[type]) questionV1[type] = [];
+    questionV1[type] = [...question[type]];
+  }
+  
+  markDirty();
+  inputEl.value = ''; // Clear input
+  applyFilters(); // Re-render to update UI
+  showToast('Image Added', 'Image path has been added to the question.', 'success');
+}
+
 // Check if memory matches original copy to toggle dirty buttons
 function checkIfStateIsDirty() {
   let dirty = false;
@@ -526,10 +860,18 @@ function checkIfStateIsDirty() {
     dirty = true;
   }
   
-  // Check question topic assignments
+  // Check question properties (topic_id and images)
   if (!dirty) {
     for (let i = 0; i < dbV2.questions.length; i++) {
-      if (dbV2.questions[i].topic_id !== originalDbV2.questions[i].topic_id) {
+      const curr = dbV2.questions[i];
+      const orig = originalDbV2.questions[i];
+      if (curr.topic_id !== orig.topic_id ||
+          JSON.stringify(curr.images_q) !== JSON.stringify(orig.images_q) ||
+          JSON.stringify(curr.images_ms) !== JSON.stringify(orig.images_ms) ||
+          curr.qp_path !== orig.qp_path ||
+          curr.qp_page !== orig.qp_page ||
+          curr.ms_path !== orig.ms_path ||
+          curr.ms_page !== orig.ms_page) {
         dirty = true;
         break;
       }
@@ -913,14 +1255,100 @@ function downloadFile(jsonObject, filename) {
 // LIGHTBOX / IMAGES ZOOM SYSTEM
 // ==========================================================================
 
+let zoomState = { mode: 'fit', scale: 1.0 };
+let isDragging = false;
+let startX, startY;
+let scrollLeft, scrollTop;
+
 function openLightbox(src, title) {
+  const content = document.getElementById('lightbox-content');
+  const caption = document.getElementById('lightbox-caption');
+  
+  // Reset zoom state on open
+  zoomState.mode = 'fit';
+  zoomState.scale = 1.0;
+  updateLightboxZoom();
+  
+  if (content) {
+    content.scrollLeft = 0;
+    content.scrollTop = 0;
+    content.classList.remove('dragging');
+  }
+  isDragging = false;
+  
   lightboxImg.src = src;
-  document.getElementById('lightbox-caption').textContent = title;
+  if (caption) {
+    if (title) {
+      caption.innerHTML = `<strong>${title}</strong> • Click image to toggle zoom • Drag to pan`;
+    } else {
+      caption.textContent = 'Click image to toggle zoom • Drag to pan';
+    }
+  }
   lightbox.style.display = 'flex';
+  
+  // Small delay to trigger smooth transition
+  setTimeout(() => {
+    lightbox.classList.add('active');
+  }, 10);
 }
 
 function closeLightbox() {
-  lightbox.style.display = 'none';
+  lightbox.classList.remove('active');
+  setTimeout(() => {
+    lightbox.style.display = 'none';
+  }, 250);
+}
+
+function updateLightboxZoom() {
+  const img = document.getElementById('lightbox-img');
+  const levelText = document.getElementById('zoom-level-text');
+  if (!img || !levelText) return;
+  
+  if (zoomState.mode === 'fit') {
+    img.classList.remove('zoomed');
+    img.style.width = '';
+    img.style.height = '';
+    levelText.textContent = 'Fit';
+  } else {
+    img.classList.add('zoomed');
+    const baseWidth = img.naturalWidth || 1000;
+    const targetWidth = baseWidth * zoomState.scale;
+    img.style.width = targetWidth + 'px';
+    img.style.height = 'auto';
+    levelText.textContent = Math.round(zoomState.scale * 100) + '%';
+  }
+}
+
+function toggleImageZoom() {
+  if (zoomState.mode === 'fit') {
+    zoomState.mode = 'actual';
+    zoomState.scale = 1.0;
+  } else {
+    zoomState.mode = 'fit';
+  }
+  updateLightboxZoom();
+}
+
+function zoomIn() {
+  if (zoomState.mode === 'fit') {
+    zoomState.mode = 'actual';
+    zoomState.scale = 1.0;
+  } else {
+    zoomState.scale = Math.min(3.0, zoomState.scale + 0.25);
+  }
+  updateLightboxZoom();
+}
+
+function zoomOut() {
+  if (zoomState.mode === 'fit') return;
+  zoomState.scale = Math.max(0.25, zoomState.scale - 0.25);
+  updateLightboxZoom();
+}
+
+function zoomReset() {
+  zoomState.mode = 'fit';
+  zoomState.scale = 1.0;
+  updateLightboxZoom();
 }
 
 // ==========================================================================
