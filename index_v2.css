@@ -137,6 +137,38 @@ button {
   margin-top: 4px;
 }
 
+/* Subject Switcher */
+.subject-switcher {
+  display: flex;
+  padding: 16px 16px 4px 16px;
+  gap: 8px;
+}
+
+.subject-tab {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: var(--text-muted);
+  background-color: var(--bg-app);
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.subject-tab:hover {
+  background-color: var(--accent-light);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.subject-tab.active {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+}
+
 /* Level Tabs */
 .level-tabs {
   display: flex;
@@ -238,8 +270,9 @@ button {
 
 .topic-item {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
   padding: 10px 12px;
   border-radius: 8px;
   font-size: 13px;
@@ -247,6 +280,7 @@ button {
   color: var(--text-muted);
   text-align: left;
   transition: all 0.2s;
+  width: 100%;
 }
 
 .topic-item:hover {
@@ -1176,5 +1210,224 @@ body:not(.dark-mode) .ms-screenshot {
   margin: 0 !important;
   opacity: 0;
   pointer-events: none;
+}
+
+/* ==========================================================================
+   DONE BUTTON
+   ========================================================================== */
+.done-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  background: var(--bg-app);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.done-btn svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.done-btn:hover {
+  border-color: #10b981;
+  color: #10b981;
+  background-color: rgba(16, 185, 129, 0.08);
+}
+
+.done-btn:hover svg {
+  opacity: 1;
+}
+
+.done-btn.active {
+  background-color: rgba(16, 185, 129, 0.1);
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.done-btn.active svg {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   DONE CARD STATE
+   ========================================================================== */
+.q-card.is-done {
+  border-left: 3px solid #10b981;
+  opacity: 0.72;
+}
+
+.q-card.is-done:hover {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   TOPIC PROGRESS BAR (SIDEBAR)
+   ========================================================================== */
+.topic-item {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.topic-item-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.topic-item-label {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.topic-progress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+
+.progress-bar-track {
+  flex: 1;
+  height: 4px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.topic-progress.complete .progress-fill {
+  background-color: #10b981;
+}
+
+.progress-text {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  min-width: 28px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.topic-progress.complete .progress-text {
+  color: #10b981;
+}
+
+/* Topic item active overrides for progress */
+.topic-item.active .progress-bar-track {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.topic-item.active .progress-fill {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.topic-item.active .progress-text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Chapter progress text */
+.chapter-summary-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.chapter-progress-text {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background-color: var(--bg-app);
+  border: 1px solid var(--border-color);
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+/* ==========================================================================
+   SIDE-BY-SIDE VIEW
+   ========================================================================== */
+
+/* In SBS mode, expand card max-width to fill more space */
+.questions-container.side-by-side-active .questions-list {
+  max-width: 100%;
+}
+
+.sbs-body {
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+  min-height: 200px;
+}
+
+.sbs-col {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sbs-divider {
+  width: 1px;
+  align-self: stretch;
+  background-color: var(--border-color);
+  flex-shrink: 0;
+  margin: 0 16px;
+}
+
+.sbs-col-label {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--accent-color);
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 4px;
+}
+
+.sbs-col-label.ms-label {
+  color: var(--ms-checkmark);
+}
+
+/* SBS mark scheme content: always visible, no collapsible wrapper */
+.sbs-ms-content {
+  margin-top: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--ms-bg);
+  border: 1px solid var(--ms-border);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+/* In SBS mode, screenshots can be taller since they're in columns */
+.sbs-body .q-screenshot,
+.sbs-body .ms-screenshot {
+  max-height: 340px;
 }
 
