@@ -14,8 +14,38 @@ let currentFilters = {
   level: 'all', // 'all', 'as', 'a'
   years: new Set(),
   session: 'all', // 'all', 'June', 'November', 'March'
-  type: 'all' // 'all', 'theory', 'practical'
+  type: 'all', // 'all', 'theory', 'practical'
+  subject: '9618' // '9618' or '9626'
 };
+
+function is9626Chapter(ch) {
+  return ch.subject === '9626' || ch.chapter_num >= 21;
+}
+
+function getSubjectChapters(subject, level = 'all') {
+  return appData.chapters.filter(ch => {
+    const is9626 = is9626Chapter(ch);
+    if (subject === '9626' ? !is9626 : is9626) return false;
+
+    const chapterNum = ch.chapter_num;
+    if (subject === '9618') {
+      if (level === 'as' && chapterNum > 12) return false;
+      if (level === 'a' && chapterNum <= 12) return false;
+    } else if (subject === '9626') {
+      if (level === 'as' && chapterNum > 31) return false;
+      if (level === 'a' && chapterNum <= 31) return false;
+    }
+    return true;
+  });
+}
+
+function getFirstTopicId(subject, level = 'all') {
+  const chapters = getSubjectChapters(subject, level);
+  for (const ch of chapters) {
+    if (ch.topics.length > 0) return ch.topics[0].id;
+  }
+  return null;
+}
 
 // ==========================================================================
 // INITIALIZATION
@@ -177,13 +207,18 @@ function fetchData() {
       
       loadingState.style.display = 'none';
       
-      // Auto-initialize filters
-      initYearFilters();
-      renderSidebar();
+      const savedSubject = localStorage.getItem('selected_subject') || '9618';
+      currentFilters.subject = savedSubject;
+      updateSubjectSwitcherUI();
+      updateHeaderTitles();
       
-      // Auto-select first topic on startup
-      if (appData.chapters.length > 0 && appData.chapters[0].topics.length > 0) {
-        selectTopic(appData.chapters[0].topics[0].id);
+      initYearFilters();
+
+      const firstTopicId = getFirstTopicId(currentFilters.subject, 'all');
+      currentFilters.selectedTopicId = firstTopicId;
+      renderSidebar();
+      if (firstTopicId) {
+        renderQuestions();
       }
     })
     .catch(error => {
@@ -201,8 +236,8 @@ function initYearFilters() {
   const yearsContainer = document.getElementById('year-filters');
   yearsContainer.innerHTML = '';
   
-  // Extract unique years in sorted order
-  const years = [...new Set(appData.questions.map(q => q.year))].sort((a, b) => b - a);
+  const subjectQuestions = appData.questions.filter(q => q.subject === currentFilters.subject);
+  const years = [...new Set(subjectQuestions.map(q => q.year))].sort((a, b) => b - a);
   
   // "All" chip
   const allChip = document.createElement('button');
@@ -266,6 +301,60 @@ function selectTypeFilter(typeVal, activeChip) {
   renderQuestions();
 }
 
+function selectSubject(subjectVal) {
+  currentFilters.subject = subjectVal;
+  localStorage.setItem('selected_subject', subjectVal);
+
+  updateSubjectSwitcherUI();
+  updateHeaderTitles();
+
+  currentFilters.searchQuery = '';
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) searchInput.value = '';
+  const clearSearchBtn = document.getElementById('clear-search-btn');
+  if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+
+  currentFilters.level = 'all';
+  document.querySelectorAll('.level-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.level === 'all');
+  });
+
+  currentFilters.years.clear();
+  initYearFilters();
+
+  currentFilters.showBookmarksOnly = false;
+  document.getElementById('show-bookmarks-btn').classList.remove('active');
+
+  const firstTopicId = getFirstTopicId(subjectVal, 'all');
+  currentFilters.selectedTopicId = firstTopicId;
+  renderSidebar();
+  renderQuestions();
+}
+
+function updateSubjectSwitcherUI() {
+  document.querySelectorAll('.subject-tab').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.subject === currentFilters.subject);
+  });
+}
+
+function updateHeaderTitles() {
+  const is9626 = currentFilters.subject === '9626';
+
+  document.title = is9626
+    ? '9626 IT Topical Past Papers Explorer'
+    : '9618 Computer Science Topical Past Papers Explorer';
+
+  const sidebarTitle = document.getElementById('sidebar-title');
+  if (sidebarTitle) {
+    sidebarTitle.textContent = is9626 ? '9626 IT Explorer' : '9618 Computer Science Explorer';
+  }
+
+  const sidebarSubtitle = document.getElementById('sidebar-subtitle');
+  if (sidebarSubtitle) {
+    sidebarSubtitle.textContent = is9626 ? '2025–2027 Syllabus Guide' : '2026 Syllabus Guide';
+  }
+}
+
 function selectLevelTab(levelVal, activeTab) {
   currentFilters.level = levelVal;
   document.querySelectorAll('.level-tab').forEach(t => t.classList.remove('active'));
@@ -282,13 +371,9 @@ function renderSidebar() {
   const nav = document.getElementById('syllabus-nav');
   nav.innerHTML = '';
   
-  appData.chapters.forEach(ch => {
-    // Filter chapters based on level tab selection
-    // AS: 1-11, A Level: 12-21
+  getSubjectChapters(currentFilters.subject, currentFilters.level).forEach(ch => {
     const chapterNum = ch.chapter_num;
-    if (currentFilters.level === 'as' && chapterNum > 11) return;
-    if (currentFilters.level === 'a' && chapterNum <= 11) return;
-    
+
     const details = document.createElement('details');
     details.className = 'chapter-details';
     details.id = `ch-${chapterNum}`;
@@ -393,6 +478,8 @@ function toggleBookmarksOnly() {
 // ==========================================================================
 function getFilteredQuestions() {
   return appData.questions.filter(q => {
+    if (q.subject !== currentFilters.subject) return false;
+
     // 1. Topical or Bookmark base constraint
     if (currentFilters.showBookmarksOnly) {
       if (!appData.bookmarks.has(q.id)) return false;
@@ -553,6 +640,10 @@ function setupEventListeners() {
   
   // Bookmarks Toggle display
   document.getElementById('show-bookmarks-btn').onclick = toggleBookmarksOnly;
+
+  document.querySelectorAll('.subject-tab').forEach(tab => {
+    tab.onclick = () => selectSubject(tab.dataset.subject);
+  });
   
   // Search & Filters Toggle
   initSearchFiltersToggle();

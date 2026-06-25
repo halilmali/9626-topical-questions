@@ -4,7 +4,8 @@
 let appData = {
   chapters: [],
   questions: [],
-  bookmarks: new Set()
+  bookmarks: new Set(),
+  doneQuestions: new Set()
 };
 
 let currentFilters = {
@@ -14,8 +15,39 @@ let currentFilters = {
   level: 'all', // 'all', 'as', 'a'
   years: new Set(),
   session: 'all', // 'all', 'June', 'November', 'March'
-  type: 'all' // 'all', 'theory', 'practical'
+  type: 'all', // 'all', 'theory', 'practical'
+  sideBySide: false, // false = stacked (default), true = side-by-side
+  subject: '9618' // '9618' or '9626'
 };
+
+function is9626Chapter(ch) {
+  return ch.subject === '9626' || ch.chapter_num >= 21;
+}
+
+function getSubjectChapters(subject, level = 'all') {
+  return appData.chapters.filter(ch => {
+    const is9626 = is9626Chapter(ch);
+    if (subject === '9626' ? !is9626 : is9626) return false;
+
+    const chapterNum = ch.chapter_num;
+    if (subject === '9618') {
+      if (level === 'as' && chapterNum > 12) return false;
+      if (level === 'a' && chapterNum <= 12) return false;
+    } else if (subject === '9626') {
+      if (level === 'as' && chapterNum > 31) return false;
+      if (level === 'a' && chapterNum <= 31) return false;
+    }
+    return true;
+  });
+}
+
+function getFirstTopicId(subject, level = 'all') {
+  const chapters = getSubjectChapters(subject, level);
+  for (const ch of chapters) {
+    if (ch.topics.length > 0) return ch.topics[0].id;
+  }
+  return null;
+}
 
 // ==========================================================================
 // INITIALIZATION
@@ -23,6 +55,8 @@ let currentFilters = {
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   loadBookmarks();
+  loadDoneQuestions();
+  initSideBySideToggle();
   fetchData();
   setupEventListeners();
 });
@@ -162,6 +196,100 @@ function updateBookmarkCountBadge() {
 }
 
 // ==========================================================================
+// DONE / PROGRESS TRACKING
+// ==========================================================================
+function loadDoneQuestions() {
+  const saved = localStorage.getItem('done_questions_v2');
+  if (saved) {
+    try {
+      appData.doneQuestions = new Set(JSON.parse(saved));
+    } catch (e) {
+      console.error('Error loading done questions:', e);
+    }
+  }
+}
+
+function toggleDone(questionId) {
+  const wasDone = appData.doneQuestions.has(questionId);
+  if (wasDone) {
+    appData.doneQuestions.delete(questionId);
+  } else {
+    appData.doneQuestions.add(questionId);
+  }
+  localStorage.setItem('done_questions_v2', JSON.stringify([...appData.doneQuestions]));
+
+  // Update just this card's done button without a full re-render
+  const card = document.querySelector(`.q-card[data-id="${questionId}"]`);
+  if (card) {
+    const btn = card.querySelector('.done-btn');
+    if (btn) {
+      btn.classList.toggle('active', !wasDone);
+      btn.title = !wasDone ? 'Mark as Not Done' : 'Mark as Done';
+      btn.querySelector('span').textContent = !wasDone ? 'Done' : 'Mark Done';
+    }
+    card.classList.toggle('is-done', !wasDone);
+  }
+
+  // Refresh sidebar progress bars for the current topic
+  updateSidebarProgress();
+}
+
+function updateSidebarProgress() {
+  // Efficiently update just the progress bars without rebuilding the whole sidebar
+  appData.chapters.forEach(ch => {
+    ch.topics.forEach(topic => {
+      const topicQuestions = appData.questions.filter(q => q.topic_id === topic.id);
+      const total = topicQuestions.length;
+      const done = topicQuestions.filter(q => appData.doneQuestions.has(q.id)).length;
+
+      const progressEl = document.querySelector(`.topic-progress[data-topic-id="${topic.id}"]`);
+      if (progressEl) {
+        const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+        progressEl.querySelector('.progress-fill').style.width = pct + '%';
+        progressEl.querySelector('.progress-text').textContent = `${done}/${total}`;
+        progressEl.classList.toggle('complete', done === total && total > 0);
+      }
+    });
+  });
+}
+
+// ==========================================================================
+// SIDE-BY-SIDE VIEW TOGGLE
+// ==========================================================================
+function initSideBySideToggle() {
+  const saved = localStorage.getItem('side_by_side_v2');
+  currentFilters.sideBySide = saved === 'true';
+  applySideBySideClass();
+}
+
+function toggleSideBySide() {
+  currentFilters.sideBySide = !currentFilters.sideBySide;
+  localStorage.setItem('side_by_side_v2', currentFilters.sideBySide ? 'true' : 'false');
+  applySideBySideClass();
+  updateSideBySideBtn();
+  renderQuestions();
+}
+
+function applySideBySideClass() {
+  document.getElementById('questions-list').classList.toggle('side-by-side-mode', currentFilters.sideBySide);
+  document.querySelector('.questions-container').classList.toggle('side-by-side-active', currentFilters.sideBySide);
+}
+
+function updateSideBySideBtn() {
+  const btn = document.getElementById('side-by-side-btn');
+  if (!btn) return;
+  if (currentFilters.sideBySide) {
+    btn.classList.add('collapsed-active');
+    btn.querySelector('span').textContent = 'Stacked View';
+    btn.title = 'Switch to Stacked View';
+  } else {
+    btn.classList.remove('collapsed-active');
+    btn.querySelector('span').textContent = 'Side-by-Side';
+    btn.title = 'Switch to Side-by-Side View';
+  }
+}
+
+// ==========================================================================
 // LIGHTBOX VIEWER FUNCTIONS
 // ==========================================================================
 let zoomState = { mode: 'fit', scale: 1.0 };
@@ -288,12 +416,18 @@ function fetchData() {
       
       loadingState.style.display = 'none';
       
-      initYearFilters();
-      renderSidebar();
+      const savedSubject = localStorage.getItem('selected_subject_v2') || '9618';
+      currentFilters.subject = savedSubject;
+      updateSubjectSwitcherUI();
+      updateHeaderTitles();
       
-      // Auto-select first topic on startup
-      if (appData.chapters.length > 0 && appData.chapters[0].topics.length > 0) {
-        selectTopic(appData.chapters[0].topics[0].id);
+      initYearFilters();
+
+      const firstTopicId = getFirstTopicId(currentFilters.subject, 'all');
+      currentFilters.selectedTopicId = firstTopicId;
+      renderSidebar();
+      if (firstTopicId) {
+        renderQuestions();
       }
     })
     .catch(error => {
@@ -314,7 +448,8 @@ function initYearFilters() {
   const yearsContainer = document.getElementById('year-filters');
   yearsContainer.innerHTML = '';
   
-  const years = [...new Set(appData.questions.map(q => q.year))].sort((a, b) => b - a);
+  const subjectQuestions = appData.questions.filter(q => q.subject === currentFilters.subject);
+  const years = [...new Set(subjectQuestions.map(q => q.year))].sort((a, b) => b - a);
   
   const allChip = document.createElement('button');
   allChip.className = 'filter-chip active';
@@ -374,6 +509,66 @@ function selectTypeFilter(typeVal, activeChip) {
   renderQuestions();
 }
 
+function selectSubject(subjectVal) {
+  currentFilters.subject = subjectVal;
+  localStorage.setItem('selected_subject_v2', subjectVal);
+  
+  updateSubjectSwitcherUI();
+  updateHeaderTitles();
+  
+  // Clear search and other filters to prevent cross-subject filter pollution
+  currentFilters.searchQuery = '';
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) searchInput.value = '';
+  const clearSearchBtn = document.getElementById('clear-search-btn');
+  if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+  
+  // Reset active level tab to 'all' on subject change
+  currentFilters.level = 'all';
+  document.querySelectorAll('.level-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.level === 'all');
+  });
+
+  // Reset year filter
+  currentFilters.years.clear();
+  initYearFilters();
+  
+  currentFilters.showBookmarksOnly = false;
+  document.getElementById('show-bookmarks-btn').classList.remove('active');
+
+  // Select first topic of All Levels for the chosen subject
+  const firstTopicId = getFirstTopicId(subjectVal, 'all');
+  currentFilters.selectedTopicId = firstTopicId;
+  renderSidebar();
+  renderQuestions();
+}
+
+function updateSubjectSwitcherUI() {
+  document.querySelectorAll('.subject-tab').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.subject === currentFilters.subject);
+  });
+}
+
+function updateHeaderTitles() {
+  const is9626 = currentFilters.subject === '9626';
+  
+  // Update browser document title
+  document.title = is9626 
+    ? '9626 IT Topical Past Papers Explorer (V2)' 
+    : '9618 Computer Science Topical Past Papers Explorer (V2)';
+    
+  // Update sidebar titles
+  const sidebarTitle = document.getElementById('sidebar-title');
+  if (sidebarTitle) {
+    sidebarTitle.textContent = is9626 ? '9626 IT Explorer v2' : '9618 Computer Science Explorer v2';
+  }
+  
+  const sidebarSubtitle = document.getElementById('sidebar-subtitle');
+  if (sidebarSubtitle) {
+    sidebarSubtitle.textContent = is9626 ? '2025–2027 Syllabus Guide' : '2026 Syllabus Guide';
+  }
+}
+
 function selectLevelTab(levelVal, activeTab) {
   currentFilters.level = levelVal;
   document.querySelectorAll('.level-tab').forEach(t => t.classList.remove('active'));
@@ -389,11 +584,9 @@ function renderSidebar() {
   const nav = document.getElementById('syllabus-nav');
   nav.innerHTML = '';
   
-  appData.chapters.forEach(ch => {
+  getSubjectChapters(currentFilters.subject, currentFilters.level).forEach(ch => {
     const chapterNum = ch.chapter_num;
-    if (currentFilters.level === 'as' && chapterNum > 11) return;
-    if (currentFilters.level === 'a' && chapterNum <= 11) return;
-    
+
     const details = document.createElement('details');
     details.className = 'chapter-details';
     details.id = `ch-${chapterNum}`;
@@ -403,11 +596,22 @@ function renderSidebar() {
       details.open = true;
     }
     
+    // Chapter-level progress summary
+    const chapterQuestions = appData.questions.filter(q =>
+      ch.topics.some(t => t.id === q.topic_id)
+    );
+    const chapterDone = chapterQuestions.filter(q => appData.doneQuestions.has(q.id)).length;
+    const chapterTotal = chapterQuestions.length;
+    const chapterPct = chapterTotal > 0 ? Math.round((chapterDone / chapterTotal) * 100) : 0;
+    
     const summary = document.createElement('summary');
     summary.className = 'chapter-summary';
     summary.innerHTML = `
       <span class="chapter-title-text" title="${chapterNum}. ${ch.chapter_title}">${chapterNum}. ${ch.chapter_title}</span>
-      <svg class="chapter-icon" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      <div class="chapter-summary-right">
+        ${chapterTotal > 0 ? `<span class="chapter-progress-text">${chapterDone}/${chapterTotal}</span>` : ''}
+        <svg class="chapter-icon" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </div>
     `;
     
     details.appendChild(summary);
@@ -416,7 +620,11 @@ function renderSidebar() {
     topicsList.className = 'topics-list';
     
     ch.topics.forEach(topic => {
-      const count = appData.questions.filter(q => q.topic_id === topic.id).length;
+      const topicQuestions = appData.questions.filter(q => q.topic_id === topic.id);
+      const total = topicQuestions.length;
+      const done = topicQuestions.filter(q => appData.doneQuestions.has(q.id)).length;
+      const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+      const isComplete = done === total && total > 0;
       
       const topicBtn = document.createElement('button');
       topicBtn.className = 'topic-item';
@@ -430,8 +638,17 @@ function renderSidebar() {
       };
       
       topicBtn.innerHTML = `
-        <span>${topic.id} ${topic.title}</span>
-        <span class="topic-badge">${count}</span>
+        <div class="topic-item-main">
+          <span class="topic-item-label">${topic.id} ${topic.title}</span>
+          <span class="topic-badge">${total}</span>
+        </div>
+        ${total > 0 ? `
+        <div class="topic-progress ${isComplete ? 'complete' : ''}" data-topic-id="${topic.id}">
+          <div class="progress-bar-track">
+            <div class="progress-fill" style="width: ${pct}%"></div>
+          </div>
+          <span class="progress-text">${done}/${total}</span>
+        </div>` : ''}
       `;
       
       topicsList.appendChild(topicBtn);
@@ -486,6 +703,9 @@ function toggleBookmarksOnly() {
 // ==========================================================================
 function getFilteredQuestions() {
   return appData.questions.filter(q => {
+    // 0. Subject filter
+    if (q.subject !== currentFilters.subject) return false;
+    
     // 1. Topic/Bookmark filter
     if (currentFilters.showBookmarksOnly) {
       if (!appData.bookmarks.has(q.id)) return false;
@@ -572,15 +792,18 @@ function renderQuestions() {
   filtered.forEach((q) => {
     const card = document.createElement('article');
     card.className = 'q-card';
+    if (appData.doneQuestions.has(q.id)) card.classList.add('is-done');
     card.dataset.id = q.id;
     
     const isBookmarked = appData.bookmarks.has(q.id);
+    const isDone = appData.doneQuestions.has(q.id);
     const marksDisplay = q.marks ? `${q.marks} Mark${q.marks > 1 ? 's' : ''}` : 'Practical Task';
     
     const qpUrl = q.qp_path ? (q.qp_path + (q.qp_page ? `#page=${q.qp_page}` : '')) : null;
     const msUrl = q.ms_path ? (q.ms_path + (q.ms_page ? `#page=${q.ms_page}` : '')) : null;
     
     const panelId = `ms-panel-${q.id}`;
+    const isSideBySide = currentFilters.sideBySide;
     
     // Generate markup for question image stack
     let questionImagesHtml = '';
@@ -611,48 +834,97 @@ function renderQuestions() {
     } else {
       msImagesHtml = `<p>No mark scheme image crop available for this question. Refer to MS PDF.</p>`;
     }
-    
-    card.innerHTML = `
-      <div class="q-card-header">
-        <div class="q-meta-tags">
-          <span class="meta-tag paper-tag">${q.year} ${q.session}</span>
-          <span class="meta-tag paper-tag">${q.paper} (Var ${q.variant})</span>
-          <span class="meta-tag">Q${q.num_label}</span>
-          <span class="meta-tag marks-tag">${marksDisplay}</span>
-          ${currentFilters.showBookmarksOnly ? `<span class="meta-tag topic-tag">Topic ${q.topic_id}</span>` : ''}
-        </div>
-        <div class="card-actions">
-          <button class="bookmark-btn ${isBookmarked ? 'active' : ''}" onclick="toggleBookmark('${q.id}')" title="Bookmark Question">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          </button>
-        </div>
-      </div>
-      
-      <!-- Visually rendered crops stack -->
-      <div class="q-card-images">
-        ${questionImagesHtml}
-      </div>
-      
-      <div class="q-card-footer">
-        <button class="view-ms-btn" onclick="toggleMarkScheme(this, '${panelId}')">
-          <span>View Mark Scheme</span>
-          <svg class="chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="pdf-links">
-          ${qpUrl ? `<a href="${qpUrl}" target="_blank" class="pdf-link"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>QP PDF</a>` : ''}
-          ${msUrl ? `<a href="${msUrl}" target="_blank" class="pdf-link"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>MS PDF</a>` : ''}
-        </div>
-      </div>
-      
-      <!-- Expandable Mark Scheme Panel -->
-      <div class="ms-panel" id="${panelId}">
-        <div class="ms-content-wrapper">
-          <div class="ms-content">
-            ${msImagesHtml}
+
+    // In side-by-side mode, render a two-column layout with MS always visible
+    if (isSideBySide) {
+      card.innerHTML = `
+        <div class="q-card-header">
+          <div class="q-meta-tags">
+            <span class="meta-tag paper-tag">${q.year} ${q.session}</span>
+            <span class="meta-tag paper-tag">${q.paper} (Var ${q.variant})</span>
+            <span class="meta-tag">Q${q.num_label}</span>
+            <span class="meta-tag marks-tag">${marksDisplay}</span>
+            ${currentFilters.showBookmarksOnly ? `<span class="meta-tag topic-tag">Topic ${q.topic_id}</span>` : ''}
+          </div>
+          <div class="card-actions">
+            <button class="done-btn ${isDone ? 'active' : ''}" onclick="toggleDone('${q.id}')" title="${isDone ? 'Mark as Not Done' : 'Mark as Done'}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>${isDone ? 'Done' : 'Mark Done'}</span>
+            </button>
+            <button class="bookmark-btn ${isBookmarked ? 'active' : ''}" onclick="toggleBookmark('${q.id}')" title="Bookmark Question">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </button>
           </div>
         </div>
-      </div>
-    `;
+        
+        <!-- Side-by-side body: question | mark scheme -->
+        <div class="sbs-body">
+          <div class="sbs-col sbs-question">
+            <div class="sbs-col-label">Question</div>
+            <div class="q-card-images">${questionImagesHtml}</div>
+          </div>
+          <div class="sbs-divider"></div>
+          <div class="sbs-col sbs-ms">
+            <div class="sbs-col-label ms-label">Mark Scheme</div>
+            <div class="ms-content sbs-ms-content">${msImagesHtml}</div>
+          </div>
+        </div>
+
+        <div class="q-card-footer">
+          <div class="pdf-links">
+            ${qpUrl ? `<a href="${qpUrl}" target="_blank" class="pdf-link"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>QP PDF</a>` : ''}
+            ${msUrl ? `<a href="${msUrl}" target="_blank" class="pdf-link"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>MS PDF</a>` : ''}
+          </div>
+        </div>
+      `;
+    } else {
+      // Default stacked layout
+      card.innerHTML = `
+        <div class="q-card-header">
+          <div class="q-meta-tags">
+            <span class="meta-tag paper-tag">${q.year} ${q.session}</span>
+            <span class="meta-tag paper-tag">${q.paper} (Var ${q.variant})</span>
+            <span class="meta-tag">Q${q.num_label}</span>
+            <span class="meta-tag marks-tag">${marksDisplay}</span>
+            ${currentFilters.showBookmarksOnly ? `<span class="meta-tag topic-tag">Topic ${q.topic_id}</span>` : ''}
+          </div>
+          <div class="card-actions">
+            <button class="done-btn ${isDone ? 'active' : ''}" onclick="toggleDone('${q.id}')" title="${isDone ? 'Mark as Not Done' : 'Mark as Done'}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>${isDone ? 'Done' : 'Mark Done'}</span>
+            </button>
+            <button class="bookmark-btn ${isBookmarked ? 'active' : ''}" onclick="toggleBookmark('${q.id}')" title="Bookmark Question">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Visually rendered crops stack -->
+        <div class="q-card-images">
+          ${questionImagesHtml}
+        </div>
+        
+        <div class="q-card-footer">
+          <button class="view-ms-btn" onclick="toggleMarkScheme(this, '${panelId}')">
+            <span>View Mark Scheme</span>
+            <svg class="chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="pdf-links">
+            ${qpUrl ? `<a href="${qpUrl}" target="_blank" class="pdf-link"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>QP PDF</a>` : ''}
+            ${msUrl ? `<a href="${msUrl}" target="_blank" class="pdf-link"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>MS PDF</a>` : ''}
+          </div>
+        </div>
+        
+        <!-- Expandable Mark Scheme Panel -->
+        <div class="ms-panel" id="${panelId}">
+          <div class="ms-content-wrapper">
+            <div class="ms-content">
+              ${msImagesHtml}
+            </div>
+          </div>
+        </div>
+      `;
+    }
     
     // Add event handlers directly to images inside the card for lightbox opening
     card.querySelectorAll('.q-screenshot').forEach((img, idx, arr) => {
@@ -674,6 +946,18 @@ function renderQuestions() {
 function setupEventListeners() {
   document.getElementById('theme-toggle-btn').onclick = toggleTheme;
   document.getElementById('show-bookmarks-btn').onclick = toggleBookmarksOnly;
+
+  // Subject tabs
+  document.querySelectorAll('.subject-tab').forEach(tab => {
+    tab.onclick = () => selectSubject(tab.dataset.subject);
+  });
+
+  // Side-by-side toggle
+  const sbsBtn = document.getElementById('side-by-side-btn');
+  if (sbsBtn) {
+    sbsBtn.onclick = toggleSideBySide;
+    updateSideBySideBtn();
+  }
   
   // Search & Filters Toggle
   initSearchFiltersToggle();
