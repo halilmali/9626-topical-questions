@@ -776,6 +776,20 @@ function renderQuestions() {
   
   const filtered = getFilteredQuestions();
   
+  // Sort by year descending (recent first), then by session, paper, variant
+  filtered.sort((a, b) => {
+    if (a.year !== b.year) return b.year - a.year;
+    const sessionOrder = { 'November': 3, 'June': 2, 'March': 1 };
+    const sa = sessionOrder[a.session] || 0;
+    const sb = sessionOrder[b.session] || 0;
+    if (sa !== sb) return sb - sa;
+    const paperOrder = { 'Paper 4': 4, 'Paper 3': 3, 'Paper 2': 2, 'Paper 1': 1 };
+    const pa = paperOrder[a.paper] || 0;
+    const pb = paperOrder[b.paper] || 0;
+    if (pa !== pb) return pb - pa;
+    return parseInt(a.variant) - parseInt(b.variant);
+  });
+  
   if (filtered.length > 0) {
     emptyState.style.display = 'none';
     document.getElementById('stat-total-q').textContent = filtered.length;
