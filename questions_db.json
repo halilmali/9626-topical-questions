@@ -2109,10 +2109,8 @@
       "num_label": "1",
       "text": "Anya scans an image into her computer for a school project.\n\n1(a): The scanned image is a bitmapped image.\n1(a)(i): Complete the following table to describe the two terms about graphics.\n1(a)(ii): The image is scanned with an image resolution of 1024 × 512 pixels, and a colour depth of 8 bits per pixel.\n1(b): The image is compressed using lossless compression.\n1(c): One of the colours used in the image has the hexadecimal colour code:\n1(c)(i): Convert the hexadecimal code FC into denary.\n1(c)(ii): The amount of green in binary is 00100011. This has the denary number 15 added to it to create a second colour.\n1(c)(iii): Hexadecimal 23 in two’s complement representation is 00100011. The denary number 10 needs to be subtracted from this value.\n1(d): Anya made sure that the image was not subject to any copyright before scanning it.",
       "marks": 17,
-      "topic_id": "1.1",
+      "topic_id": "1.2",
       "images_q": [
-        "questions_images\\9618_2021_june_11_q_1_p0.jpg",
-        "questions_images\\9618_2021_june_11_q_1_a_p0.jpg",
         "questions_images\\9618_2021_june_11_q_1_a_i_p0.jpg",
         "questions_images\\9618_2021_june_11_q_1_a_ii_p0.jpg",
         "questions_images\\9618_2021_june_11_q_1_b_p0.jpg",
@@ -2129,7 +2127,6 @@
         "questions_images\\9618_2021_june_11_ms_1_c_i_p0.jpg",
         "questions_images\\9618_2021_june_11_ms_1_c_ii_p0.jpg",
         "questions_images\\9618_2021_june_11_ms_1_c_iii_p0.jpg",
-        "questions_images\\9618_2021_june_11_ms_1_c_iii_p1.jpg",
         "questions_images\\9618_2021_june_11_ms_1_d_p0.jpg"
       ],
       "answers": [
@@ -2160,8 +2157,7 @@
       ],
       "images_ms": [
         "questions_images\\9618_2021_june_11_ms_2_a_p0.jpg",
-        "questions_images\\9618_2021_june_11_ms_2_b_p0.jpg",
-        "questions_images\\9618_2021_june_11_ms_2_b_p1.jpg"
+        "questions_images\\9618_2021_june_11_ms_2_b_p0.jpg"
       ],
       "answers": [
         "9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 4 of 10 Question Answer Marks 1(d) 1 mark per bullet point to max 2 • The formal and legal rights to ownership // intellectual property rights • Protects against unauthorised reproduction of work • Provides for legal right of redress 2 Question Answer Marks 2(a) 1 mark for each correct line 4 2(b) 1 mark per bullet point to max 4 • memory management • file management • security management • hardware / device / peripheral / resources management • input/output management • process management • error checking and recovery • provision of a platform for software • provision of a user interface 4",
@@ -2195,7 +2191,6 @@
       "images_ms": [
         "questions_images\\9618_2021_june_11_ms_3_a_p0.jpg",
         "questions_images\\9618_2021_june_11_ms_3_b_p0.jpg",
-        "questions_images\\9618_2021_june_11_ms_3_b_p1.jpg",
         "questions_images\\9618_2021_june_11_ms_3_c_i_p0.jpg",
         "questions_images\\9618_2021_june_11_ms_3_c_ii_p0.jpg"
       ],
@@ -2232,15 +2227,13 @@
       "images_ms": [
         "questions_images\\9618_2021_june_11_ms_4_a_p0.jpg",
         "questions_images\\9618_2021_june_11_ms_4_b_p0.jpg",
-        "questions_images\\9618_2021_june_11_ms_4_b_p1.jpg",
         "questions_images\\9618_2021_june_11_ms_4_c_i_p0.jpg",
         "questions_images\\9618_2021_june_11_ms_4_c_ii_p0.jpg",
-        "questions_images\\9618_2021_june_11_ms_4_d_p0.jpg",
-        "questions_images\\9618_2021_june_11_ms_4_d_p1.jpg"
+        "questions_images\\9618_2021_june_11_ms_4_d_p0.jpg"
       ],
       "answers": [
         "9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 6 of 10 Question Answer Marks 3(c)(i) 1 1 0 1 0 1 0 0 1 3(c)(ii) 1 mark for correct answer The number is divided by 8 (and only whole number retained) 1 Question Answer Marks 4(a) 1 mark per bullet point to max 2 • All computers are of equal status • Each computer provides access to resources and data // data is distributed • Computers can communicate and share resources • Each computer is responsible for its own security 2 4(b) 1 mark per bullet point to max 2 per drawback • Reduced security // no central management of security • … only as secure as the weakest computer on the network • … each computer is at risk from viruses from other computers • No central management of backup • ... if the data from one computer is not backed up it is lost to all of them • No central management of files/software • … consistency may be difficult to maintain • … each computer may have different software from the others • Individual computers may respond slower • … because they are being accessed by other computers • In order to share files etc. all the computers involved need to be switched on • ... so the files etc. may not be always available 4",
-        "9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 6 of 10 Question Answer Marks 3(c)(i) 1 1 0 1 0 1 0 0 1 3(c)(ii) 1 mark for correct answer The number is divided by 8 (and only whole number retained) 1 Question Answer Marks 4(a) 1 mark per bullet point to max 2 • All computers are of equal status • Each computer provides access to resources and data // data is distributed • Computers can communicate and share resources • Each computer is responsible for its own security 2 4(b) 1 mark per bullet point to max 2 per drawback • Reduced security // no central management of security • … only as secure as the weakest computer on the network • … each computer is at risk from viruses from other computers • No central management of backup • ... if the data from one computer is not backed up it is lost to all of them • No central management of files/software • … consistency may be difficult to maintain • … each computer may have different software from the others • Individual computers may respond slower • … because they are being accessed by other computers • In order to share files etc. all the computers involved need to be switched on • ... so the files etc. may not be always available 4 9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 7 of 10 Question Answer Marks 4(c)(i) 1 mark for first 2 ticks, 1 mark for last 2 (shaded) Task Performed by router Not performed by router Receives packets from devices  Finds the IP address of a Uniform Resource Locator (URL)  Directs each packet to all devices attached to it  Stores the IP and/or MAC address of all devices attached to it  2 4(c)(ii) 1 mark per bullet point for justification up to max 3 No mark for identification of wired/wireless Wired • Faster connection // higher bandwidth • …. needed as she is downloading/streaming large files • … less time waiting / less latency / fewer delays • More reliable / stable connection • … is less susceptible to issues with distance/walls/interference • More secure Wireless • Freedom of movement • … can move between different rooms with a mobile device and still receive/transmit data • … no need of a physical connection • Easily expanded if friends want to access the same network • Less cabling / expertise is needed • ... making the initial setup less expensive 3 4(d) 1 mark for identifying that she is using both. 1 mark per bullet point for justification • using internet because sending data on the infrastructure • using WWW because accessing a website (that is stored on a web server operated by the webmail) that is part of the WWW 3",
+        "9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 6 of 10 Question Answer Marks 3(c)(i) 1 1 0 1 0 1 0 0 1 3(c)(ii) 1 mark for correct answer The number is divided by 8 (and only whole number retained) 1 Question Answer Marks 4(a) 1 mark per bullet point to max 2 • All computers are of equal status • Each computer provides access to resources and data // data is distributed • Computers can communicate and share resources • Each computer is responsible for its own security 2 4(b) 1 mark per bullet point to max 2 per drawback • Reduced security // no central management of security • … only as secure as the weakest computer on the network • … each computer is at risk from viruses from other computers • No central management of backup • ... if the data from one computer is not backed up it is lost to all of them • No central management of files/software • … consistency may be difficult to maintain • … each computer may have different software from the others • Individual computers may respond slower • … because they are being accessed by other computers • In order to share files etc. all the computers involved need to be switched on • ... so the files etc. may not be always available 4 9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 7 of 10 Question Answer Marks 4(c)(i) 1 mark for first 2 ticks, 1 mark for last 2 (shaded) Task Performed by router Not performed by router Receives packets from devices  Finds the IP address of a Uniform Resource Locator (URL)  Directs each packet to all devices attached to it  Stores the IP and/or MAC address of all devices attached to it  2 4(c)(ii) 1 mark per bullet point for justification up to max 3 No mark for identification of wired/wireless Wired • Faster connection // higher bandwidth • …. needed as she is downloading/streaming large files • … less time waiting / less latency / fewer delays • More reliable / stable connection • … is less susceptible to issues with distance/walls/interference ��� More secure Wireless • Freedom of movement • … can move between different rooms with a mobile device and still receive/transmit data • … no need of a physical connection • Easily expanded if friends want to access the same network • Less cabling / expertise is needed • ... making the initial setup less expensive 3 4(d) 1 mark for identifying that she is using both. 1 mark per bullet point for justification • using internet because sending data on the infrastructure • using WWW because accessing a website (that is stored on a web server operated by the webmail) that is part of the WWW 3",
         "9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 7 of 10 Question Answer Marks 4(c)(i) 1 mark for first 2 ticks, 1 mark for last 2 (shaded) Task Performed by router Not performed by router Receives packets from devices  Finds the IP address of a Uniform Resource Locator (URL)  Directs each packet to all devices attached to it  Stores the IP and/or MAC address of all devices attached to it  2 4(c)(ii) 1 mark per bullet point for justification up to max 3 No mark for identification of wired/wireless Wired • Faster connection // higher bandwidth • …. needed as she is downloading/streaming large files • … less time waiting / less latency / fewer delays • More reliable / stable connection • … is less susceptible to issues with distance/walls/interference • More secure Wireless • Freedom of movement • … can move between different rooms with a mobile device and still receive/transmit data • … no need of a physical connection • Easily expanded if friends want to access the same network • Less cabling / expertise is needed • ... making the initial setup less expensive 3 4(d) 1 mark for identifying that she is using both. 1 mark per bullet point for justification • using internet because sending data on the infrastructure • using WWW because accessing a website (that is stored on a web server operated by the webmail) that is part of the WWW 3",
         "9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 7 of 10 Question Answer Marks 4(c)(i) 1 mark for first 2 ticks, 1 mark for last 2 (shaded) Task Performed by router Not performed by router Receives packets from devices  Finds the IP address of a Uniform Resource Locator (URL)  Directs each packet to all devices attached to it  Stores the IP and/or MAC address of all devices attached to it  2 4(c)(ii) 1 mark per bullet point for justification up to max 3 No mark for identification of wired/wireless Wired • Faster connection // higher bandwidth • …. needed as she is downloading/streaming large files • … less time waiting / less latency / fewer delays • More reliable / stable connection • … is less susceptible to issues with distance/walls/interference • More secure Wireless • Freedom of movement • … can move between different rooms with a mobile device and still receive/transmit data • … no need of a physical connection • Easily expanded if friends want to access the same network • Less cabling / expertise is needed • ... making the initial setup less expensive 3 4(d) 1 mark for identifying that she is using both. 1 mark per bullet point for justification • using internet because sending data on the infrastructure • using WWW because accessing a website (that is stored on a web server operated by the webmail) that is part of the WWW 3 9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 8 of 10 Question Answer Marks 5(a) 1 mark per bullet point to max 2 • Definition: Microprocessor/microcontroller within a larger system // microprocessor/microcontroller that performs one specific task • Example: e.g. Embedded system in washing machine only controls the programs for the washing cycle // it is part of the washing machine but does not perform any other function within it 2 5(b) 1 mark for RAM, 1 mark for ROM RAM: • Store the choices/wash program the user has entered // stores the data read from the sensors // stores the time left in the program // by example ROM: • Store the start-up instructions (for the washing cycles) 2 5(c) 1 mark per bullet point • The system uses feedback • The system causes the temperature to change // produces an action 2 Question Answer Marks 6(a) Range (check) 1 6(b) Presence (check) 1 6(c) Existence (check) 1"
       ],
@@ -2294,8 +2287,7 @@
         "questions_images\\9618_2021_june_11_q_6_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\9618_2021_june_11_ms_6_p0.jpg",
-        "questions_images\\9618_2021_june_11_ms_6_p1.jpg"
+        "questions_images\\9618_2021_june_11_ms_6_p0.jpg"
       ],
       "answers": [
         "9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 8 of 10 Question Answer Marks 5(a) 1 mark per bullet point to max 2 • Definition: Microprocessor/microcontroller within a larger system // microprocessor/microcontroller that performs one specific task • Example: e.g. Embedded system in washing machine only controls the programs for the washing cycle // it is part of the washing machine but does not perform any other function within it 2 5(b) 1 mark for RAM, 1 mark for ROM RAM: • Store the choices/wash program the user has entered // stores the data read from the sensors // stores the time left in the program // by example ROM: • Store the start-up instructions (for the washing cycles) 2 5(c) 1 mark per bullet point • The system uses feedback • The system causes the temperature to change // produces an action 2 Question Answer Marks 6(a) Range (check) 1 6(b) Presence (check) 1 6(c) Existence (check) 1 9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 9 of 10 Question Answer Marks 7(a) 1 mark per bullet point to max 3 • Flat-file has more data redundancy • … because the same data is stored many times // data is stored in different tables which are linked • There is program-data dependence with flat-files • ... because any changes to the structure of the data means the programs that access that data have to be re-written • Flat-file has more data inconsistency // worse data integrity • ... because duplicated data might be stored differently //…because when data is updated in one place, it is not updated everywhere • It is not easy to perform complex searches /queries • … because a new program has to be written each time • Flat files could have a lack of privacy • … as user views cannot easily be implemented 3 7(b)(i) 1 mark for each correct example one-to-one • e.g. customer to payment details // customer to login details one-to-many • e.g. customer to order many-to-many • e.g. order to product // customer to product 3 7(b)(ii) 1 mark Relationship Tick () one-to-one one-to-many many-to-many  1 7(b)(iii) 1 mark CREATE DATABASE SHOPORDERS; 1 7(c) 1 mark per item to max 3 • table name • field name // attribute • data type • type of validation • Primary Key • Foreign Key • relationships 3"
@@ -2330,8 +2322,7 @@
         "questions_images\\9618_2021_june_11_ms_7_b_i_p0.jpg",
         "questions_images\\9618_2021_june_11_ms_7_b_ii_p0.jpg",
         "questions_images\\9618_2021_june_11_ms_7_b_iii_p0.jpg",
-        "questions_images\\9618_2021_june_11_ms_7_c_p0.jpg",
-        "questions_images\\9618_2021_june_11_ms_7_c_p1.jpg"
+        "questions_images\\9618_2021_june_11_ms_7_c_p0.jpg"
       ],
       "answers": [
         "9618/11 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 9 of 10 Question Answer Marks 7(a) 1 mark per bullet point to max 3 • Flat-file has more data redundancy • … because the same data is stored many times // data is stored in different tables which are linked • There is program-data dependence with flat-files • ... because any changes to the structure of the data means the programs that access that data have to be re-written • Flat-file has more data inconsistency // worse data integrity • ... because duplicated data might be stored differently //…because when data is updated in one place, it is not updated everywhere • It is not easy to perform complex searches /queries • … because a new program has to be written each time • Flat files could have a lack of privacy • … as user views cannot easily be implemented 3 7(b)(i) 1 mark for each correct example one-to-one • e.g. customer to payment details // customer to login details one-to-many • e.g. customer to order many-to-many • e.g. order to product // customer to product 3 7(b)(ii) 1 mark Relationship Tick () one-to-one one-to-many many-to-many  1 7(b)(iii) 1 mark CREATE DATABASE SHOPORDERS; 1 7(c) 1 mark per item to max 3 • table name • field name // attribute • data type • type of validation • Primary Key • Foreign Key • relationships 3",
@@ -2377,7 +2368,7 @@
       "num_label": "1",
       "text": "Raj owns houses that other people rent from him. He has a database that stores details about the people who rent houses, and the houses they rent. The database, HOUSE_RENTALS, has the following structure:\n\n1(a): Give the definition of the following database terms, using an example from the database HOUSE_RENTALS for each definition.\n1(b): Tick (3) one box to identify whether the database HOUSE_RENTALS is in Third Normal Form (3NF) or not in 3NF. Justify your choice using one or more examples from the database HOUSE_RENTALS.\n1(c): Example data from the table RENTAL are given:\n1(c)(i): Complete the following Data Definition Language (DDL) statement to define the table RENTAL.\n1(c)(ii): Write a Data Manipulation Language (DML) script to return the first name and last name of all customers who have not paid their deposit.",
       "marks": 16,
-      "topic_id": "4.3",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\9618_2021_june_12_q_1_p0.jpg",
         "questions_images\\9618_2021_june_12_q_1_a_p0.jpg",
@@ -2390,8 +2381,7 @@
         "questions_images\\9618_2021_june_12_ms_1_a_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_1_b_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_1_c_i_p0.jpg",
-        "questions_images\\9618_2021_june_12_ms_1_c_ii_p0.jpg",
-        "questions_images\\9618_2021_june_12_ms_1_c_ii_p1.jpg"
+        "questions_images\\9618_2021_june_12_ms_1_c_ii_p0.jpg"
       ],
       "answers": [
         "9618/12 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 3 of 10 Question Answer Marks 1(a) 1 mark for definition, 1 mark for appropriate example in each Term Definition and example Field A column/attribute in a table e.g. CustomerID in the table CUSTOMER Entity Anything that data can be stored about e.g. A customer or a house Foreign Key A field in one table that is linked to a Primary Key in another table e.g. CustomerID / HouseID in table RENTAL 6 1(b) 1 mark per bullet point to max 2 • All fields in all tables are dependant fully on the PK and on no other fields • for example all fields in Customer table are fully dependent on CustomerID 2 1(c)(i) 1 mark for each correctly completed line CREATE TABLE RENTAL( RentalID INTEGER NOT NULL, CustomerID INTEGER NOT NULL, HouseID VARCHAR (5) NOT NULL, MonthlyCost REAL/CURRENCY NOT NULL, DepositPaid BOOLEAN NOT NULL, PRIMARY KEY (RentalID) ); 4 1(c)(ii) 1 mark per bullet point • Select FirstName and LastName • From both tables • Where DepositPaid = No • Joining tables (either AND, or INNER JOIN) Example script: SELECT FirstName, LastName FROM CUSTOMER, RENTAL WHERE DepositPaid = No AND RENTAL.CustomerID = CUSTOMER.CustomerID; 4",
@@ -2412,7 +2402,7 @@
       "num_label": "2",
       "text": "Aisha manages a team of software developers.\n\n2(a): Explain the reasons why it is important that Aisha acts ethically in relation to her team members.\n2(b): The team are developing a computer game where the user plays a board game (such as chess) against the computer.\n2(c): The final game will be released under a licence.",
       "marks": 9,
-      "topic_id": "1.1",
+      "topic_id": "7.1",
       "images_q": [
         "questions_images\\9618_2021_june_12_q_2_p0.jpg",
         "questions_images\\9618_2021_june_12_q_2_a_p0.jpg",
@@ -2422,8 +2412,7 @@
       "images_ms": [
         "questions_images\\9618_2021_june_12_ms_2_a_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_2_b_p0.jpg",
-        "questions_images\\9618_2021_june_12_ms_2_c_p0.jpg",
-        "questions_images\\9618_2021_june_12_ms_2_c_p1.jpg"
+        "questions_images\\9618_2021_june_12_ms_2_c_p0.jpg"
       ],
       "answers": [
         "9618/12 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 4 of 10 Question Answer Marks 2(a) 1 mark per bullet point to max 2 • To make sure the team members feel valued • To get the best work out of the team • To enable them to work well together • To enable them to create the best product for the client 2 2(b) 1 mark per bullet point to max 3 • The rules / past moves / decision making algorithms of the game will be stored • The AI program is trained, by playing many times • AI will look (ahead) at possible moves • ... and/or analyse the pattern of past choices • … and choose the move most likely to be successful • Computer could learn how to improve // learn from previous mistakes • … by storing the positive/negative result of choices • ... and changing its future choices 3 2(c) 1 mark for each correct column Statement Free Software Foundation Open Source Initiative Shareware Commercial Software The user can edit the source code   The user must always pay before being able to use the software  The user can redistribute the software    The user always gets a trial period  4",
@@ -2444,7 +2433,7 @@
       "num_label": "3",
       "text": "A logic expression is given:\n\n3(a): Draw the logic circuit for the given expression.\n3(b): Complete the truth table for the logic expression:",
       "marks": 6,
-      "topic_id": "1.1",
+      "topic_id": "3.2",
       "images_q": [
         "questions_images\\9618_2021_june_12_q_3_p0.jpg",
         "questions_images\\9618_2021_june_12_q_3_a_p0.jpg",
@@ -2452,8 +2441,7 @@
       ],
       "images_ms": [
         "questions_images\\9618_2021_june_12_ms_3_a_p0.jpg",
-        "questions_images\\9618_2021_june_12_ms_3_b_p0.jpg",
-        "questions_images\\9618_2021_june_12_ms_3_b_p1.jpg"
+        "questions_images\\9618_2021_june_12_ms_3_b_p0.jpg"
       ],
       "answers": [
         "9618/12 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 5 of 10 Question Answer Marks 3(a) 1 mark for each correct gate, with correct inputs 4 3(b) 1 mark for each half (shaded) A B C Working space S 0 0 0 0 0 0 1 1 0 1 0 1 0 1 1 0 1 0 0 0 1 0 1 1 1 1 0 1 1 1 1 1 2",
@@ -2487,7 +2475,6 @@
         "questions_images\\9618_2021_june_12_ms_4_a_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_4_b_i_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_4_b_ii_p0.jpg",
-        "questions_images\\9618_2021_june_12_ms_4_b_ii_p1.jpg",
         "questions_images\\9618_2021_june_12_ms_4_b_iii_p0.jpg"
       ],
       "answers": [
@@ -2510,7 +2497,7 @@
       "num_label": "5",
       "text": "Seth uses a computer for work.\n\n5(a): Complete the following descriptions of internal components of a computer by writing the missing terms.\n5(b): Describe the ways in which the following factors can affect the performance of his laptop computer.\n5(c): Seth accesses both software and data using cloud computing.\n5(c)(i): Give two benefits of storing data using cloud computing.\n5(c)(ii): Give two drawbacks of Seth using cloud computing.\n5(d): Draw one line from each term to its most appropriate description.",
       "marks": 17,
-      "topic_id": "1.1",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\9618_2021_june_12_q_5_p0.jpg",
         "questions_images\\9618_2021_june_12_q_5_a_p0.jpg",
@@ -2524,7 +2511,6 @@
         "questions_images\\9618_2021_june_12_ms_5_a_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_5_b_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_5_c_i_p0.jpg",
-        "questions_images\\9618_2021_june_12_ms_5_c_i_p1.jpg",
         "questions_images\\9618_2021_june_12_ms_5_c_ii_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_5_d_p0.jpg"
       ],
@@ -2560,7 +2546,6 @@
       "images_ms": [
         "questions_images\\9618_2021_june_12_ms_6_a_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_6_b_p0.jpg",
-        "questions_images\\9618_2021_june_12_ms_6_b_p1.jpg",
         "questions_images\\9618_2021_june_12_ms_6_c_i_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_6_c_ii_p0.jpg"
       ],
@@ -2584,7 +2569,7 @@
       "num_label": "7",
       "text": "Jennifer is writing a computer program for her A Level homework.\n\n7(a): Jennifer uses a program library to help her write her computer program.\n7(b): Jennifer uses an Integrated Development Environment (IDE) to write her computer program.\n7(b)(i): The IDE allows Jennifer to use both an interpreter and a compiler while creating her computer program.\n7(b)(ii): Identify two debugging tools that a typical IDE can provide.",
       "marks": 8,
-      "topic_id": "1.1",
+      "topic_id": "5.2",
       "images_q": [
         "questions_images\\9618_2021_june_12_q_7_p0.jpg",
         "questions_images\\9618_2021_june_12_q_7_a_p0.jpg",
@@ -2625,7 +2610,6 @@
       "images_ms": [
         "questions_images\\9618_2021_june_12_ms_8_a_p0.jpg",
         "questions_images\\9618_2021_june_12_ms_8_b_p0.jpg",
-        "questions_images\\9618_2021_june_12_ms_8_b_p1.jpg",
         "questions_images\\9618_2021_june_12_ms_8_c_p0.jpg"
       ],
       "answers": [
@@ -2648,10 +2632,8 @@
       "num_label": "1",
       "text": "Anya scans an image into her computer for a school project.\n\n1(a): The scanned image is a bitmapped image.\n1(a)(i): Complete the following table to describe the two terms about graphics.\n1(a)(ii): The image is scanned with an image resolution of 1024 × 512 pixels, and a colour depth of 8 bits per pixel.\n1(b): The image is compressed using lossless compression.\n1(c): One of the colours used in the image has the hexadecimal colour code:\n1(c)(i): Convert the hexadecimal code FC into denary.\n1(c)(ii): The amount of green in binary is 00100011. This has the denary number 15 added to it to create a second colour.\n1(c)(iii): Hexadecimal 23 in two’s complement representation is 00100011. The denary number 10 needs to be subtracted from this value.\n1(d): Anya made sure that the image was not subject to any copyright before scanning it.",
       "marks": 17,
-      "topic_id": "1.1",
+      "topic_id": "1.2",
       "images_q": [
-        "questions_images\\9618_2021_june_13_q_1_p0.jpg",
-        "questions_images\\9618_2021_june_13_q_1_a_p0.jpg",
         "questions_images\\9618_2021_june_13_q_1_a_i_p0.jpg",
         "questions_images\\9618_2021_june_13_q_1_a_ii_p0.jpg",
         "questions_images\\9618_2021_june_13_q_1_b_p0.jpg",
@@ -2668,7 +2650,6 @@
         "questions_images\\9618_2021_june_13_ms_1_c_i_p0.jpg",
         "questions_images\\9618_2021_june_13_ms_1_c_ii_p0.jpg",
         "questions_images\\9618_2021_june_13_ms_1_c_iii_p0.jpg",
-        "questions_images\\9618_2021_june_13_ms_1_c_iii_p1.jpg",
         "questions_images\\9618_2021_june_13_ms_1_d_p0.jpg"
       ],
       "answers": [
@@ -2699,8 +2680,7 @@
       ],
       "images_ms": [
         "questions_images\\9618_2021_june_13_ms_2_a_p0.jpg",
-        "questions_images\\9618_2021_june_13_ms_2_b_p0.jpg",
-        "questions_images\\9618_2021_june_13_ms_2_b_p1.jpg"
+        "questions_images\\9618_2021_june_13_ms_2_b_p0.jpg"
       ],
       "answers": [
         "9618/13 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 4 of 10 Question Answer Marks 1(d) 1 mark per bullet point to max 2 • The formal and legal rights to ownership // intellectual property rights • Protects against unauthorised reproduction of work • Provides for legal right of redress 2 Question Answer Marks 2(a) 1 mark for each correct line 4 2(b) 1 mark per bullet point to max 4 • memory management • file management • security management • hardware / device / peripheral / resources management • input/output management • process management • error checking and recovery • provision of a platform for software • provision of a user interface 4",
@@ -2734,7 +2714,6 @@
       "images_ms": [
         "questions_images\\9618_2021_june_13_ms_3_a_p0.jpg",
         "questions_images\\9618_2021_june_13_ms_3_b_p0.jpg",
-        "questions_images\\9618_2021_june_13_ms_3_b_p1.jpg",
         "questions_images\\9618_2021_june_13_ms_3_c_i_p0.jpg",
         "questions_images\\9618_2021_june_13_ms_3_c_ii_p0.jpg"
       ],
@@ -2771,11 +2750,9 @@
       "images_ms": [
         "questions_images\\9618_2021_june_13_ms_4_a_p0.jpg",
         "questions_images\\9618_2021_june_13_ms_4_b_p0.jpg",
-        "questions_images\\9618_2021_june_13_ms_4_b_p1.jpg",
         "questions_images\\9618_2021_june_13_ms_4_c_i_p0.jpg",
         "questions_images\\9618_2021_june_13_ms_4_c_ii_p0.jpg",
-        "questions_images\\9618_2021_june_13_ms_4_d_p0.jpg",
-        "questions_images\\9618_2021_june_13_ms_4_d_p1.jpg"
+        "questions_images\\9618_2021_june_13_ms_4_d_p0.jpg"
       ],
       "answers": [
         "9618/13 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 6 of 10 Question Answer Marks 3(c)(i) 1 1 0 1 0 1 0 0 1 3(c)(ii) 1 mark for correct answer The number is divided by 8 (and only whole number retained) 1 Question Answer Marks 4(a) 1 mark per bullet point to max 2 • All computers are of equal status • Each computer provides access to resources and data // data is distributed • Computers can communicate and share resources • Each computer is responsible for its own security 2 4(b) 1 mark per bullet point to max 2 per drawback • Reduced security // no central management of security • … only as secure as the weakest computer on the network • … each computer is at risk from viruses from other computers • No central management of backup • ... if the data from one computer is not backed up it is lost to all of them • No central management of files/software • … consistency may be difficult to maintain • … each computer may have different software from the others • Individual computers may respond slower • … because they are being accessed by other computers • In order to share files etc. all the computers involved need to be switched on • ... so the files etc. may not be always available 4",
@@ -2833,8 +2810,7 @@
         "questions_images\\9618_2021_june_13_q_6_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\9618_2021_june_13_ms_6_p0.jpg",
-        "questions_images\\9618_2021_june_13_ms_6_p1.jpg"
+        "questions_images\\9618_2021_june_13_ms_6_p0.jpg"
       ],
       "answers": [
         "9618/13 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 8 of 10 Question Answer Marks 5(a) 1 mark per bullet point to max 2 • Definition: Microprocessor/microcontroller within a larger system // microprocessor/microcontroller that performs one specific task • Example: e.g. Embedded system in washing machine only controls the programs for the washing cycle // it is part of the washing machine but does not perform any other function within it 2 5(b) 1 mark for RAM, 1 mark for ROM RAM: • Store the choices/wash program the user has entered // stores the data read from the sensors // stores the time left in the program // by example ROM: • Store the start-up instructions (for the washing cycles) 2 5(c) 1 mark per bullet point • The system uses feedback • The system causes the temperature to change // produces an action 2 Question Answer Marks 6(a) Range (check) 1 6(b) Presence (check) 1 6(c) Existence (check) 1 9618/13 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 9 of 10 Question Answer Marks 7(a) 1 mark per bullet point to max 3 • Flat-file has more data redundancy • … because the same data is stored many times // data is stored in different tables which are linked • There is program-data dependence with flat-files • ... because any changes to the structure of the data means the programs that access that data have to be re-written • Flat-file has more data inconsistency // worse data integrity • ... because duplicated data might be stored differently //…because when data is updated in one place, it is not updated everywhere • It is not easy to perform complex searches /queries • … because a new program has to be written each time • Flat files could have a lack of privacy • … as user views cannot easily be implemented 3 7(b)(i) 1 mark for each correct example one-to-one • e.g. customer to payment details // customer to login details one-to-many • e.g. customer to order many-to-many • e.g. order to product // customer to product 3 7(b)(ii) 1 mark Relationship Tick () one-to-one one-to-many many-to-many  1 7(b)(iii) 1 mark CREATE DATABASE SHOPORDERS; 1 7(c) 1 mark per item to max 3 • table name • field name // attribute • data type • type of validation • Primary Key • Foreign Key • relationships 3"
@@ -2869,8 +2845,7 @@
         "questions_images\\9618_2021_june_13_ms_7_b_i_p0.jpg",
         "questions_images\\9618_2021_june_13_ms_7_b_ii_p0.jpg",
         "questions_images\\9618_2021_june_13_ms_7_b_iii_p0.jpg",
-        "questions_images\\9618_2021_june_13_ms_7_c_p0.jpg",
-        "questions_images\\9618_2021_june_13_ms_7_c_p1.jpg"
+        "questions_images\\9618_2021_june_13_ms_7_c_p0.jpg"
       ],
       "answers": [
         "9618/13 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 9 of 10 Question Answer Marks 7(a) 1 mark per bullet point to max 3 • Flat-file has more data redundancy • … because the same data is stored many times // data is stored in different tables which are linked • There is program-data dependence with flat-files • ... because any changes to the structure of the data means the programs that access that data have to be re-written • Flat-file has more data inconsistency // worse data integrity • ... because duplicated data might be stored differently //…because when data is updated in one place, it is not updated everywhere • It is not easy to perform complex searches /queries • … because a new program has to be written each time • Flat files could have a lack of privacy • … as user views cannot easily be implemented 3 7(b)(i) 1 mark for each correct example one-to-one • e.g. customer to payment details // customer to login details one-to-many • e.g. customer to order many-to-many • e.g. order to product // customer to product 3 7(b)(ii) 1 mark Relationship Tick () one-to-one one-to-many many-to-many  1 7(b)(iii) 1 mark CREATE DATABASE SHOPORDERS; 1 7(c) 1 mark per item to max 3 • table name • field name // attribute • data type • type of validation • Primary Key • Foreign Key • relationships 3",
@@ -2921,8 +2896,7 @@
         "questions_images\\9618_2021_june_21_q_4_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\9618_2021_june_21_ms_4_p0.jpg",
-        "questions_images\\9618_2021_june_21_ms_4_p1.jpg"
+        "questions_images\\9618_2021_june_21_ms_4_p0.jpg"
       ],
       "answers": [
         "9618/21 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 9 of 16 Question Answer Marks 4(a) Name Flag Index NewName ThisChar \"∇in∇a∇∇Cup\" TRUE 1 \"\" '∇' \"∇\" 2 'i' FALSE \"∇I\" 3 'n' \"∇In\" 4 '∇' TRUE \"∇In∇\" 5 'a' FALSE \"∇In∇A\" 6 '∇' TRUE \"∇In∇A∇\" 7 '∇' \"∇In∇A∇∇\" 8 'C' FALSE \"∇In∇A∇∇C\" 9 'u' \"∇In∇A∇∇Cu\" 10 'p' \"∇In∇A∇∇Cup\" FALSE 11 \"∇In∇A∇∇Cup\" 'p' Mark as follows: • One mark for each of columns 2 to 5 (condone missing final 11) • One mark for final row all correct (including final 11) 5 9618/21 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 10 of 16 Question Answer Marks 4(b) Loop structure: A count-controlled loop Justification: The number of iterations is known One mark per point 2 4(c)(i) A couple of solutions: 24 ThisChar ← LCASE(MID(Name, Index, 1) ALTERNATIVE: 31 NewName ← NewName & LCASE(ThisChar) Ignore line number 1 4(c)(ii) One mark for each: Line number: 26 New position: Move to after line 27 / line 28 2"
@@ -3002,9 +2976,7 @@
       ],
       "images_ms": [
         "questions_images\\9618_2021_june_21_ms_6_a_p0.jpg",
-        "questions_images\\9618_2021_june_21_ms_6_a_p1.jpg",
-        "questions_images\\9618_2021_june_21_ms_6_b_p0.jpg",
-        "questions_images\\9618_2021_june_21_ms_6_b_p1.jpg"
+        "questions_images\\9618_2021_june_21_ms_6_b_p0.jpg"
       ],
       "answers": [
         "9618/21 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 11 of 16 Question Answer Marks 5 PROCEDURE Sort() DECLARE Temp : INTEGER DECLARE NoSwaps : BOOLEAN DECLARE Boundary, Row, Col : INTEGER Boundary ← 999 REPEAT NoSwaps ← TRUE FOR Row ← 1 TO Boundary IF Result[Row, 2] > Result[Row + 1, 2] THEN FOR Col ← 1 TO 2 Temp ← Result [Row, Col] Result [Row, Col] ← Result [Row + 1, Col] Result [Row + 1, Col] ← Temp NEXT Col NoSwaps ← FALSE ENDIF NEXT J Boundary ← Boundary - 1 UNTIL NoSwaps = TRUE ENDPROCEDURE Mark as follows: 1 Outer loop 2 Inner loop 3 Correct comparison in a loop 4 Correct swap of col1 array elements in a loop 5 Correct swap of col2 array elements in a loop (via loop or separate statements) 6 'NoSwap' mechanism: Conditional outer loop including flag reset 7 'NoSwap' mechanism: Set flag in inner loop to indicate swap 8 Reducing Boundary in the outer loop 8 Question Answer Marks 6(a) One mark per point: 1 Check for a free node 2 Search for correct insertion point 3 Assign data value B to first node in free list / node pointed to by start pointer of free list 4 Pointer from A will be changed to point to node containing B (instead of C) 5 Pointer from B will be changed to point to node containing C 6 Start pointer in free list moved to point to next free node Note: max 4 marks 4 9618/21 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 12 of 16 Question Answer Marks 6(b) One mark per point: • An array (1D) to store the data and a second array (1D) to store the pointers • An (integer) variable to hold the start pointer and an (integer) variable to store the next free pointer ALTERNATIVE: • Define a record type comprising a data element and a pointer and declare an array (1D) of this type • An integer variable to hold the start pointer and an integer variable to store the next free pointer 2",
@@ -3035,11 +3007,8 @@
       ],
       "images_ms": [
         "questions_images\\9618_2021_june_21_ms_7_a_p0.jpg",
-        "questions_images\\9618_2021_june_21_ms_7_a_p1.jpg",
         "questions_images\\9618_2021_june_21_ms_7_b_p0.jpg",
-        "questions_images\\9618_2021_june_21_ms_7_b_p1.jpg",
-        "questions_images\\9618_2021_june_21_ms_7_c_p0.jpg",
-        "questions_images\\9618_2021_june_21_ms_7_c_p1.jpg"
+        "questions_images\\9618_2021_june_21_ms_7_c_p0.jpg"
       ],
       "answers": [
         "9618/21 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 13 of 16 Question Answer Marks 7(a) FUNCTION GetStart (WordNum : INTEGER) RETURNS INTEGER DECLARE Index, ThisPos, NumFound : INTEGER DECLARE ThisChar : Char CONSTANT SPACECHAR = ' ' Index ← -1 Numfound ← 0 ThisPos ← 1 IF WordNum = 1 THEN // if looking for word 1... Index ← 1 // Word 1 always starts at index // position 1 ELSE // Otherwise start counting spaces... WHILE ThisPos <= LENGTH(FNString) AND Index = -1 ThisChar ← MID(FNString, ThisPos, 1) IF ThisChar = SPACECHAR THEN NumFound ← NumFound + 1 IF NumFound = WordNum - 1 THEN Index ← ThisPos + 1 // the start of the // required word ENDIF ENDIF ThisPos ← ThisPos + 1 ENDWHILE ENDIF RETURN Index ENDFUNCTION 1 mark for each of the following: 1 Function heading, including return type and function end 2 Loop counting spaces until word found or end of FNString 3 extract a character from FNString in a loop 4 compare with SPACECHAR and increment count if equal in a loop 5 compare count with WordNum - 1 (depending on initialisation value) in a loop 6 if equal then set flag or Index to ThisPos + 1 in a loop 7 Return Index (correctly in all cases / following a reasonable attempt) 8 Works for special case when looking for word 1 Note: Max 7 marks 7 9618/21 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 14 of 16 Question Answer Marks 7(b) Marks awarded for any reference to each of the following steps of the algorithm: 1 Mention of variable for use as array index 2 Use of a loop (to check through the array) 3 If word is the same as the current array element then return FALSE / set flag 4 If word not already in array, loop to find unused element (second loop) 5 Store word in unused element and return TRUE, otherwise return FALSE VARIATION: 1 Mention of variable for use as array index 2 Use of a loop (to check through the array) 3 Save index of (first) unused element found 4 If word is the same as the current array element then return FALSE / set flag 5 If word not already in array and unused element available, store word in unused element and return TRUE otherwise return FALSE Note: Max 4 marks 4",
@@ -3131,8 +3100,7 @@
         "questions_images\\9618_2021_june_22_q_4_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\9618_2021_june_22_ms_4_p0.jpg",
-        "questions_images\\9618_2021_june_22_ms_4_p1.jpg"
+        "questions_images\\9618_2021_june_22_ms_4_p0.jpg"
       ],
       "answers": [
         "9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 5 of 10 Question Answer Marks 3(d) One mark for: • Start Pointer pointing to ‘Cat’ node • Remaining arrows: Cat → Dolphin → Elk → Fish 2 Question Answer Marks 4 Marks awarded for a description of each of the following steps of the algorithm: 1 Reference variables for Count of students and Total marks 2 Loop through all students (Count) 3 Input individual mark (in loop) 4 Compare mark with threshold / boundary values to determine grade (in loop) 5 Output the grade for a student (in loop) 6 Maintain a Total (and Count if required) (in loop) 7 Calculate average by dividing Total by Count and Output (after loop) Note: Max 6 marks 6 9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 6 of 10 Question Answer Marks 5(a)(i) DECLARE RNum : ARRAY[1:100] OF INTEGER DECLARE Index, Count : INTEGER Count ← 0 FOR Index ← 1 TO 100 RNum[Index] ← INT(RAND(200)) + 1 IF RNum[Index] >= 66 AND RNum[Index] <= 173 THEN Count ← Count + 1 ENDIF NEXT Index OUTPUT Count Mark as follows: 1 Array declaration 2 Loop for 100 iterations 3 Array element index 'syntax' (left-hand side of assignment expression) in a loop 4 Use of RAND() to generate value in range (and assign to array element) in a loop 5 Check if random number within range and if so, increment count in a loop 6 Output of count (following a reasonable attempt) after the loop 6 5(a)(ii) One mark per bullet / sub-bullet point 1 Initialise the array to a rogue value (to indicate 'unassigned' element) 2 Add a conditional loop to: 3 Generate and store a random number (in the correct range) 4 Check the stored number against values already in the array 5 If the stored number is found then generate another random value 6 Otherwise add it to the array (and exit loop) Note: Max 3 marks 3 5(b)(i) Answer Give a line number containing an example of an initialisation statement. 07 Give a line number containing the start of a repeating block of code. 09 / 10 Give a line number containing a logic statement. 12 Give the number of parameters of function MID(). 3 One mark for each row 4 5(b)(ii) IF (NextChar >= 'a') AND (NextChar <= 'z') THEN One mark for IF ... AND ... One mark for both conditions 2"
@@ -3158,8 +3126,7 @@
         "questions_images\\9618_2021_june_22_q_6_p1.jpg"
       ],
       "images_ms": [
-        "questions_images\\9618_2021_june_22_ms_6_p0.jpg",
-        "questions_images\\9618_2021_june_22_ms_6_p1.jpg"
+        "questions_images\\9618_2021_june_22_ms_6_p0.jpg"
       ],
       "answers": [
         "9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 7 of 10 Question Answer Marks 6 PROCEDURE CountVowels(ThisString : STRING) DECLARE Index : INTEGER DECLARE ThisChar : CHAR FOR Index ← 1 to 6 CharCount[Index] ← 0 //initialise elements NEXT Index Index ← 1 FOR Index ← 1 TO LENGTH(ThisString) ThisChar ← LCASE(MID(ThisString, Index, 1)) CASE OF ThisChar 'a' : CharCount[1] ← CharCount[1] + 1 'e' : CharCount[2] ← CharCount[2] + 1 'i' : CharCount[3] ← CharCount[3] + 1 'o' : CharCount[4] ← CharCount[4] + 1 'u' : CharCount[5] ← CharCount[5] + 1 'a' TO 'z': CharCount[6] ← CharCount[6] + 1 ENDCASE NEXT Index FOR Index ← 1 to 6 OUTPUT CharCount[Index] //output results NEXT Index ENDPROCEDURE 1 mark for each of the following: 1 Procedure heading (with parameter) and ending 2 Declare local variable for Index as loop counter but not CharCount array 3 Initialise elements of CharCount array to zero 4 Loop through all characters in ThisString 5 Use of MID() to extract single character 6 Test for each vowel and increment associated count 7 Test for consonants and increment associated count 8 Output the results (supporting text not necessary) after the loop Note: Max 7 if CharCount not used to store count 8 9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 8 of 10 Question Answer Marks 7(a) Test string should contain: • At least one leading space (before the first word) • at least one trailing space (after the last word) • at least one instance of multiple spaces between words • At least one upper case character Mark as follows: One mark for one correct Two marks for three correct Three marks for all correct 3 7(b) One mark for each: • Dry run / produce a trace table / walk through the code • Add output statements to allow the code to be tracked • Insert a Breakpoint into the program // use single-stepping to execute instructions // monitor variables using a watch window • Try different test values to see which ones fail Note: Max 2 marks 2"
@@ -3187,8 +3154,7 @@
       ],
       "images_ms": [
         "questions_images\\9618_2021_june_22_ms_7_a_p0.jpg",
-        "questions_images\\9618_2021_june_22_ms_7_b_p0.jpg",
-        "questions_images\\9618_2021_june_22_ms_7_b_p1.jpg"
+        "questions_images\\9618_2021_june_22_ms_7_b_p0.jpg"
       ],
       "answers": [
         "9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 8 of 10 Question Answer Marks 7(a) Test string should contain: • At least one leading space (before the first word) • at least one trailing space (after the last word) • at least one instance of multiple spaces between words • At least one upper case character Mark as follows: One mark for one correct Two marks for three correct Three marks for all correct 3 7(b) One mark for each: • Dry run / produce a trace table / walk through the code • Add output statements to allow the code to be tracked • Insert a Breakpoint into the program // use single-stepping to execute instructions // monitor variables using a watch window • Try different test values to see which ones fail Note: Max 2 marks 2",
@@ -3217,7 +3183,6 @@
       ],
       "images_ms": [
         "questions_images\\9618_2021_june_22_ms_8_a_p0.jpg",
-        "questions_images\\9618_2021_june_22_ms_8_a_p1.jpg",
         "questions_images\\9618_2021_june_22_ms_8_b_p0.jpg"
       ],
       "answers": [
@@ -3244,8 +3209,7 @@
         "questions_images\\9618_2021_june_23_q_4_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\9618_2021_june_23_ms_4_p0.jpg",
-        "questions_images\\9618_2021_june_23_ms_4_p1.jpg"
+        "questions_images\\9618_2021_june_23_ms_4_p0.jpg"
       ],
       "answers": [
         "9618/23 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 9 of 16 Question Answer Marks 4(a) Name Flag Index NewName ThisChar \"∇in∇a∇∇Cup\" TRUE 1 \"\" '∇' \"∇\" 2 'i' FALSE \"∇I\" 3 'n' \"∇In\" 4 '∇' TRUE \"∇In∇\" 5 'a' FALSE \"∇In∇A\" 6 '∇' TRUE \"∇In∇A∇\" 7 '∇' \"∇In∇A∇∇\" 8 'C' FALSE \"∇In∇A∇∇C\" 9 'u' \"∇In∇A∇∇Cu\" 10 'p' \"∇In∇A∇∇Cup\" FALSE 11 \"∇In∇A∇∇Cup\" 'p' Mark as follows: • One mark for each of columns 2 to 5 (condone missing final 11) • One mark for final row all correct (including final 11) 5 9618/23 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 10 of 16 Question Answer Marks 4(b) Loop structure: A count-controlled loop Justification: The number of iterations is known One mark per point 2 4(c)(i) A couple of solutions: 24 ThisChar ← LCASE(MID(Name, Index, 1) ALTERNATIVE: 31 NewName ← NewName & LCASE(ThisChar) Ignore line number 1 4(c)(ii) One mark for each: Line number: 26 New position: Move to after line 27 / line 28 2"
@@ -3267,7 +3231,6 @@
       "marks": 10,
       "topic_id": "10.1",
       "images_q": [
-        "questions_images\\9618_2021_june_23_q_10_p0.jpg",
         "questions_images\\9618_2021_june_23_q_10_a_p0.jpg",
         "questions_images\\9618_2021_june_23_q_10_b_p0.jpg",
         "questions_images\\9618_2021_june_23_q_10_c_p0.jpg",
@@ -3325,9 +3288,7 @@
       ],
       "images_ms": [
         "questions_images\\9618_2021_june_23_ms_6_a_p0.jpg",
-        "questions_images\\9618_2021_june_23_ms_6_a_p1.jpg",
-        "questions_images\\9618_2021_june_23_ms_6_b_p0.jpg",
-        "questions_images\\9618_2021_june_23_ms_6_b_p1.jpg"
+        "questions_images\\9618_2021_june_23_ms_6_b_p0.jpg"
       ],
       "answers": [
         "9618/23 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 11 of 16 Question Answer Marks 5 PROCEDURE Sort() DECLARE Temp : INTEGER DECLARE NoSwaps : BOOLEAN DECLARE Boundary, Row, Col : INTEGER Boundary ← 999 REPEAT NoSwaps ← TRUE FOR Row ← 1 TO Boundary IF Result[Row, 2] > Result[Row + 1, 2] THEN FOR Col ← 1 TO 2 Temp ← Result [Row, Col] Result [Row, Col] ← Result [Row + 1, Col] Result [Row + 1, Col] ← Temp NEXT Col NoSwaps ← FALSE ENDIF NEXT J Boundary ← Boundary - 1 UNTIL NoSwaps = TRUE ENDPROCEDURE Mark as follows: 1 Outer loop 2 Inner loop 3 Correct comparison in a loop 4 Correct swap of col1 array elements in a loop 5 Correct swap of col2 array elements in a loop (via loop or separate statements) 6 'NoSwap' mechanism: Conditional outer loop including flag reset 7 'NoSwap' mechanism: Set flag in inner loop to indicate swap 8 Reducing Boundary in the outer loop 8 Question Answer Marks 6(a) One mark per point: 1 Check for a free node 2 Search for correct insertion point 3 Assign data value B to first node in free list / node pointed to by start pointer of free list 4 Pointer from A will be changed to point to node containing B (instead of C) 5 Pointer from B will be changed to point to node containing C 6 Start pointer in free list moved to point to next free node Note: max 4 marks 4 9618/23 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 12 of 16 Question Answer Marks 6(b) One mark per point: • An array (1D) to store the data and a second array (1D) to store the pointers • An (integer) variable to hold the start pointer and an (integer) variable to store the next free pointer ALTERNATIVE: • Define a record type comprising a data element and a pointer and declare an array (1D) of this type • An integer variable to hold the start pointer and an integer variable to store the next free pointer 2",
@@ -3358,11 +3319,8 @@
       ],
       "images_ms": [
         "questions_images\\9618_2021_june_23_ms_7_a_p0.jpg",
-        "questions_images\\9618_2021_june_23_ms_7_a_p1.jpg",
         "questions_images\\9618_2021_june_23_ms_7_b_p0.jpg",
-        "questions_images\\9618_2021_june_23_ms_7_b_p1.jpg",
-        "questions_images\\9618_2021_june_23_ms_7_c_p0.jpg",
-        "questions_images\\9618_2021_june_23_ms_7_c_p1.jpg"
+        "questions_images\\9618_2021_june_23_ms_7_c_p0.jpg"
       ],
       "answers": [
         "9618/23 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 13 of 16 Question Answer Marks 7(a) FUNCTION GetStart (WordNum : INTEGER) RETURNS INTEGER DECLARE Index, ThisPos, NumFound : INTEGER DECLARE ThisChar : Char CONSTANT SPACECHAR = ' ' Index ← -1 Numfound ← 0 ThisPos ← 1 IF WordNum = 1 THEN // if looking for word 1... Index ← 1 // Word 1 always starts at index // position 1 ELSE // Otherwise start counting spaces... WHILE ThisPos <= LENGTH(FNString) AND Index = -1 ThisChar ← MID(FNString, ThisPos, 1) IF ThisChar = SPACECHAR THEN NumFound ← NumFound + 1 IF NumFound = WordNum - 1 THEN Index ← ThisPos + 1 // the start of the // required word ENDIF ENDIF ThisPos ← ThisPos + 1 ENDWHILE ENDIF RETURN Index ENDFUNCTION 1 mark for each of the following: 1 Function heading, including return type and function end 2 Loop counting spaces until word found or end of FNString 3 extract a character from FNString in a loop 4 compare with SPACECHAR and increment count if equal in a loop 5 compare count with WordNum - 1 (depending on initialisation value) in a loop 6 if equal then set flag or Index to ThisPos + 1 in a loop 7 Return Index (correctly in all cases / following a reasonable attempt) 8 Works for special case when looking for word 1 Note: Max 7 marks 7 9618/23 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 14 of 16 Question Answer Marks 7(b) Marks awarded for any reference to each of the following steps of the algorithm: 1 Mention of variable for use as array index 2 Use of a loop (to check through the array) 3 If word is the same as the current array element then return FALSE / set flag 4 If word not already in array, loop to find unused element (second loop) 5 Store word in unused element and return TRUE, otherwise return FALSE VARIATION: 1 Mention of variable for use as array index 2 Use of a loop (to check through the array) 3 Save index of (first) unused element found 4 If word is the same as the current array element then return FALSE / set flag 5 If word not already in array and unused element available, store word in unused element and return TRUE otherwise return FALSE Note: Max 4 marks 4",
@@ -3399,7 +3357,6 @@
         "questions_images\\9618_2021_june_31_ms_1_b_p0.jpg",
         "questions_images\\9618_2021_june_31_ms_1_c_p0.jpg",
         "questions_images\\9618_2021_june_31_ms_1_d_i_p0.jpg",
-        "questions_images\\9618_2021_june_31_ms_1_d_i_p1.jpg",
         "questions_images\\9618_2021_june_31_ms_1_d_ii_p0.jpg"
       ],
       "answers": [
@@ -3427,8 +3384,7 @@
         "questions_images\\9618_2021_june_31_q_6_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\9618_2021_june_31_ms_6_p0.jpg",
-        "questions_images\\9618_2021_june_31_ms_6_p1.jpg"
+        "questions_images\\9618_2021_june_31_ms_6_p0.jpg"
       ],
       "answers": [
         "9618/31 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 7 of 10 Question Answer Marks 5(b) One mark for each correct marking point (Max 3) • Artificial Neural Networks can be represented using graphs • Graphs provide structures for relationships // graphs provide relationships between nodes • AI problems can be defined/solved as finding a path in a graph • Graphs may be analysed/ingested by a range of algorithms • …e.g. A* / Dijksta’s algorithm • …used in machine learning. • Example of method e.g. Back propagation of errors / regression methods 3 Question Answer Marks 6 One mark for each correct benefit (Max 2) • Accuracy – Ensures accurate delivery of the message • Completeness – Missing packets can be easily detected and a re-send request sent so the message arrives complete • Resilience – if a network changes the router can detect this and send the data another way to ensure it arrives • Path also available to other users // Doesn’t use whole bandwidth // allows simultaneous use of channel by multiple users • Better security as packets hashed and sent by different routes. One mark for each correct drawback (Max 2) • Time delays to correct errors // Network problems may introduce errors in packets • Requires complex protocols for delivery • Unsuitable for real time transmission applications 4 9618/31 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 8 of 10 Question Answer Marks 7(a) One mark for working, (all three columns P, Q and R) One mark for each correct column Y, Z A B C P Q R Y Z 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 1 0 0 1 0 0 1 1 1 0 1 0 1 1 0 0 1 0 0 1 0 1 0 1 1 0 1 0 1 1 1 0 0 1 0 0 1 1 1 1 0 1 0 1 1 3 7(b) Full adder 1 7(c) One mark for each point _ _ _ _ _ _ Y = A B C + A B C + A B C + A B C Purpose: Sum bit _ _ _ Z = A B C + A B C + A B C + A B C Purpose: Carry output 4 Question Answer Marks 8(a) One mark for each correct marking point (Max 2) • The initial order of the data • The number of data items to be sorted • The efficiency of the sorting algorithm 2"
@@ -3448,7 +3404,7 @@
       "num_label": "7",
       "text": "The diagram shows a logic circuit.\n\n7(a): Complete the truth table for the given logic circuit. Show your working.\n7(b): State the name of the logic circuit.\n7(c): Write the Boolean expressions for the two outputs Y and Z in the truth table as sum-of-products and state the purpose of each output.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2021_june_31_q_7_p0.jpg",
         "questions_images\\9618_2021_june_31_q_7_a_p0.jpg",
@@ -3493,7 +3449,6 @@
         "questions_images\\9618_2021_june_32_ms_1_b_p0.jpg",
         "questions_images\\9618_2021_june_32_ms_1_c_p0.jpg",
         "questions_images\\9618_2021_june_32_ms_1_d_i_p0.jpg",
-        "questions_images\\9618_2021_june_32_ms_1_d_i_p1.jpg",
         "questions_images\\9618_2021_june_32_ms_1_d_ii_p0.jpg"
       ],
       "answers": [
@@ -3521,8 +3476,7 @@
         "questions_images\\9618_2021_june_32_q_6_p0.jpg"
       ],
       "images_ms": [
-        "questions_images\\9618_2021_june_32_ms_6_p0.jpg",
-        "questions_images\\9618_2021_june_32_ms_6_p1.jpg"
+        "questions_images\\9618_2021_june_32_ms_6_p0.jpg"
       ],
       "answers": [
         "9618/32 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 7 of 10 Question Answer Marks 5(b) One mark for each correct marking point (Max 3) • Artificial Neural Networks can be represented using graphs • Graphs provide structures for relationships // graphs provide relationships between nodes • AI problems can be defined/solved as finding a path in a graph • Graphs may be analysed/ingested by a range of algorithms • …e.g. A* / Dijksta’s algorithm • …used in machine learning. • Example of method e.g. Back propagation of errors / regression methods 3 Question Answer Marks 6 One mark for each correct benefit (Max 2) • Accuracy – Ensures accurate delivery of the message • Completeness – Missing packets can be easily detected and a re-send request sent so the message arrives complete • Resilience – if a network changes the router can detect this and send the data another way to ensure it arrives • Path also available to other users // Doesn’t use whole bandwidth // allows simultaneous use of channel by multiple users • Better security as packets hashed and sent by different routes. One mark for each correct drawback (Max 2) • Time delays to correct errors // Network problems may introduce errors in packets • Requires complex protocols for delivery • Unsuitable for real time transmission applications 4 9618/32 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2021 © UCLES 2021 Page 8 of 10 Question Answer Marks 7(a) One mark for working, (all three columns P, Q and R) One mark for each correct column Y, Z A B C P Q R Y Z 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 1 0 0 1 0 0 1 1 1 0 1 0 1 1 0 0 1 0 0 1 0 1 0 1 1 0 1 0 1 1 1 0 0 1 0 0 1 1 1 1 0 1 0 1 1 3 7(b) Full adder 1 7(c) One mark for each point _ _ _ _ _ _ Y = A B C + A B C + A B C + A B C Purpose: Sum bit _ _ _ Z = A B C + A B C + A B C + A B C Purpose: Carry output 4 Question Answer Marks 8(a) One mark for each correct marking point (Max 2) • The initial order of the data • The number of data items to be sorted • The efficiency of the sorting algorithm 2"
@@ -3542,7 +3496,7 @@
       "num_label": "7",
       "text": "The diagram shows a logic circuit.\n\n7(a): Complete the truth table for the given logic circuit. Show your working.\n7(b): State the name of the logic circuit.\n7(c): Write the Boolean expressions for the two outputs Y and Z in the truth table as sum-of-products and state the purpose of each output.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2021_june_32_q_7_p0.jpg",
         "questions_images\\9618_2021_june_32_q_7_a_p0.jpg",
@@ -3636,7 +3590,7 @@
       "num_label": "7",
       "text": "The diagram shows a logic circuit.\n\n7(a): Complete the truth table for the given logic circuit. Show your working.\n7(b): State the name of the logic circuit.\n7(c): Write the Boolean expressions for the two outputs Y and Z in the truth table as sum-of-products and state the purpose of each output.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2021_june_33_q_7_p0.jpg",
         "questions_images\\9618_2021_june_33_q_7_a_p0.jpg",
@@ -4121,7 +4075,7 @@
       "num_label": "2",
       "text": "A computer has hardware and software.\n\n2(a): The hardware includes different types of memory.\n2(a)(i): Complete the description of computer memory.\n2(a)(ii): Explain the difference between Programmable ROM (PROM), Erasable Programmable ROM (EPROM) and Electrically Erasable Programmable ROM (EEPROM).\n2(b): A magnetic hard disk is used to store data on the computer.\n2(c): Computers consist of logic gates.\n2(c)(i): Complete the table by writing one set of values (input 1 and input 2) for each gate that will give the output 1.\n2(c)(ii): Write the logic expression for the given logic circuit.",
       "marks": 20,
-      "topic_id": "4.3",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\9618_2022_june_11_q_2_p0.jpg",
         "questions_images\\9618_2022_june_11_q_2_a_p0.jpg",
@@ -4266,7 +4220,7 @@
       "num_label": "14",
       "text": "P10 60\n\n14(d): The mark a student is awarded in a test will be entered into the database. This mark needs to be a whole number between 0 and the maximum number of marks for that test (inclusive).",
       "marks": 7,
-      "topic_id": "1.1",
+      "topic_id": "8.1",
       "images_q": [
         "questions_images\\9618_2022_june_11_q_14_p0.jpg",
         "questions_images\\9618_2022_june_11_q_14_d_p0.jpg"
@@ -4288,7 +4242,7 @@
       "num_label": "5",
       "text": "A programmer uses an Integrated Development Environment (IDE) to develop a program.\n\n5(a): Draw one line from each IDE feature to its correct description.\n5(b): The programmer wants to allow users to edit, improve and redistribute the program.\n5(c): Explain the benefits to the programmer of using program libraries.",
       "marks": 9,
-      "topic_id": "1.1",
+      "topic_id": "5.2",
       "images_q": [
         "questions_images\\9618_2022_june_11_q_5_p0.jpg",
         "questions_images\\9618_2022_june_11_q_5_a_p0.jpg",
@@ -4320,7 +4274,7 @@
       "num_label": "2",
       "text": "A car has several features.\n\n2(a): One feature is a lane detection system. This system monitors the lines on either side of the lane. If the car gets too close to one line, the system automatically moves the car away from the line.\n2(b): Two other features:\n2(c): The car has a resistive touchscreen for the user to select options.",
       "marks": 5,
-      "topic_id": "1.1",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\9618_2022_june_12_q_2_p0.jpg",
         "questions_images\\9618_2022_june_12_q_2_a_p0.jpg",
@@ -4419,7 +4373,7 @@
       "num_label": "5",
       "text": "A database, FILMS, stores information about films and actors.\n\n5(a): Complete the entity-relationship (E-R) diagram.\n5(b): A composite primary key consists of two or more attributes that together form the primary key.\n5(c): Complete the SQL script to return the IDs of all the actors in the film with the title Cinderella.\n5(d): Write an SQL script to count the number of films that were released in January 2022.\n5(e): A Database Management System (DBMS) is used to create and manipulate the database.",
       "marks": 17,
-      "topic_id": "4.3",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\9618_2022_june_12_q_5_p0.jpg",
         "questions_images\\9618_2022_june_12_q_5_a_p0.jpg",
@@ -4456,7 +4410,7 @@
       "num_label": "6",
       "text": "A programmer uses language translators when writing and testing a program.\n\n6(a): Describe the operation of a compiler.\n6(b): Describe the operation of an interpreter.\n6(c): Explain how a programmer can make use of a typical Integrated Development Environment (IDE) when writing and testing a program.",
       "marks": 8,
-      "topic_id": "4.3",
+      "topic_id": "5.2",
       "images_q": [
         "questions_images\\9618_2022_june_12_q_6_p0.jpg",
         "questions_images\\9618_2022_june_12_q_6_a_p0.jpg",
@@ -4513,7 +4467,7 @@
       "num_label": "8",
       "text": "Describe one application of Artificial Intelligence (AI).",
       "marks": 3,
-      "topic_id": "2.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\9618_2022_june_12_q_8_p0.jpg"
       ],
@@ -4539,7 +4493,7 @@
       "num_label": "1",
       "text": "Text and numbers are examples of data stored in a computer.\n\n1(a): A character set is used to represent characters in a computer.\n1(a)(i): Describe what is meant by a character set.\n1(a)(ii): Identify two character sets and state one difference between them.\n1(a)(iii): Describe how lossless compression can be used to reduce the file size of a text file.\n1(a)(iv): Explain why lossy compression should not be used on a text file.\n1(b): A computer can represent numerical data in different forms.",
       "marks": 14,
-      "topic_id": "4.3",
+      "topic_id": "1.1",
       "images_q": [
         "questions_images\\9618_2022_june_13_q_1_p0.jpg",
         "questions_images\\9618_2022_june_13_q_1_a_p0.jpg",
@@ -4649,7 +4603,7 @@
       "num_label": "6",
       "text": "A relational database, TECHNOLOGY, stores data about the staff in a company and the computer devices used by the staff.\n\n6(a): Describe the relationship between the two tables. Refer to the primary and foreign keys in your answer.\n6(b): The database uses a Data Definition Language (DDL) and Data Manipulation Language (DML).\n6(b)(i): Complete the SQL script to return the number of devices stored in the database for the staff member with the first name ‘Ali’ and last name ‘Khan’.\n6(b)(ii): The table DEVICE needs a new attribute to store whether the device has been returned by the staff member, or not.\n6(c): The database is in Third Normal Form (3NF).",
       "marks": 13,
-      "topic_id": "4.2",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\9618_2022_june_13_q_6_p0.jpg",
         "questions_images\\9618_2022_june_13_q_6_a_p0.jpg",
@@ -4682,7 +4636,7 @@
       "num_label": "8",
       "text": "A company uses cloud computing.\n\n8(a): Define cloud computing.\n8(b): State what is meant by a public cloud and a private cloud.\n8(c): Give two benefits and one drawback of using cloud computing.",
       "marks": 6,
-      "topic_id": "1.1",
+      "topic_id": "2.1",
       "images_q": [
         "questions_images\\9618_2022_june_13_q_8_p0.jpg",
         "questions_images\\9618_2022_june_13_q_8_a_p0.jpg",
@@ -5390,7 +5344,7 @@
       "num_label": "16",
       "text": "A savannah has spots.\n\n16(a): More facts are to be included. A caracal is a wild cat with short hair.\n16(b): Using the variable Cat, the goal:\n16(c)(i): (i) Write the goal, using the variable Pet, to find all the domestic cats.\n16(c)(ii): Write the goal, using the variable WildSpotty, to find all the wild cats with spots.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2022_june_31_q_16_p0.jpg",
         "questions_images\\9618_2022_june_31_q_16_a_p0.jpg",
@@ -5415,7 +5369,7 @@
       "num_label": "3",
       "text": "Data can be sent over networks using either circuit switching or packet switching.",
       "marks": 8,
-      "topic_id": "15.1",
+      "topic_id": "14.2",
       "images_q": [
         "questions_images\\9618_2022_june_31_q_3_p0.jpg"
       ],
@@ -5468,7 +5422,7 @@
       "num_label": "5",
       "text": "Part of a program’s calculations uses the integer variables j, k, m, n and p.\n\n5(a): Write the Reverse Polish Notation (RPN) for the expression:\n5(b)(i): (i) Show the changing contents of the stack as the value for p is calculated from its RPN expression: m m j k * - *\n5(b)(ii): Describe the main steps in the evaluation of this RPN expression using a stack.\n5(c): State two other uses of a stack.",
       "marks": 12,
-      "topic_id": "13.1",
+      "topic_id": "10.4",
       "images_q": [
         "questions_images\\9618_2022_june_31_q_5_p0.jpg",
         "questions_images\\9618_2022_june_31_q_5_a_p0.jpg",
@@ -5524,7 +5478,7 @@
       "num_label": "7",
       "text": "A program is to be written using Object-Oriented Programming (OOP) for a shop that sells knitting yarn. There are three types of yarn: acrylic, wool or mix.\n\n7(a): Complete this class inheritance diagram to show the properties, methods and inheritance.\n7(b): Describe what is meant by the terms properties, methods and inheritance.",
       "marks": 11,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2022_june_31_q_7_p0.jpg",
         "questions_images\\9618_2022_june_31_q_7_a_p0.jpg",
@@ -5552,7 +5506,7 @@
       "num_label": "9",
       "text": "The table shows assembly language instructions for a processor that has one general purpose register, the Accumulator (ACC).\n\n9(a): The address 500 contains the value 100 and the address 100 contains the value 20.\n9(b): Use only the given instruction set to write assembly language code to: • use the constant 20 which needs to be stored • add this constant to the value stored in the address contained in the variable Y • store the result in variable Z.",
       "marks": 10,
-      "topic_id": "13.1",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\9618_2022_june_31_q_9_p0.jpg",
         "questions_images\\9618_2022_june_31_q_9_a_p0.jpg",
@@ -5631,7 +5585,7 @@
       "num_label": "6",
       "text": "A logic circuit has two inputs A and B, and two outputs E and F.\n\n6(a): Complete the truth table for this logic circuit.\n6(b)(i): (i) State the name of this logic circuit.\n6(b)(ii): State the purpose of each output E and F.",
       "marks": 5,
-      "topic_id": "15.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2022_june_32_q_6_p0.jpg",
         "questions_images\\9618_2022_june_32_q_6_a_p0.jpg",
@@ -5659,7 +5613,7 @@
       "num_label": "14",
       "text": "Alan is Kim’s tutor.\n\n14(a): More facts are to be included. Sam studies history and Nina is his tutor.\n14(b): Using the variable Student, the goal:\n14(c): Write the goal, using the variable X, to find all the students who have a tutor that teaches them. For example, Hua has Alan for a tutor and is also taught mathematics by Alan.",
       "marks": 7,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2022_june_32_q_14_p0.jpg",
         "questions_images\\9618_2022_june_32_q_14_a_p0.jpg",
@@ -5695,7 +5649,7 @@
       ],
       "answers": [
         "9618/32 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2022 © UCLES 2022 Page 6 of 9 Question Answer Marks 4(c)(i) One mark adding both boxes… One mark for correct position(s) and connector(s) … One mark … rest correct 3 4(c)(ii) Max three One mark for <assignment_statement>::=<variable>= One mark two or three correct options or two marks if all four options correct <variable><operator><variable> |<variable><operator><unsigned_integer> |<unsigned_integer><operator><variable> |<unsigned_integer><operator><unsigned_integer> <assignment_statement>::=<variable>= <variable><operator><variable>|<variable><operator> <unsigned_integer>|<unsigned_integer><operator><variable> |<unsigned_integer><operator><unsigned_integer> or One mark for each section <operand>::=<variable>|<unsigned_integer> <assignment_statement>::=<variable>= <operand><operator><operand> <operand>::=<variable>|<unsigned_integer> <assignment_statement>::=<variable>=<operand><operator><operand> 3 (assignment statement) variable = operator unsigned integer variable variable unsigned integer unsigned integer unsigned integer",
-        "9618/32 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2022 © UCLES 2022 Page 5 of 9 Question Answer Marks 3(a) Protocol one mark, description one mark, max four Any two from  HTTP(S) (1) for sending and receiving web pages / hypertext documents (1)  FTP (1) for sending and receiving files over a network / between devices (1)  SMTP (1) for sending/uploading emails /push protocol (1)  POP(3) (1) for receiving/downloading emails /pull protocol (1)  IMAP (1) for receiving/downloading emails /pull protocol (1) 4 3(b) Layer one mark, matching function one mark, max four Any two from  Transport (1) handles packets (1)  Internet (1) handles transmission of data using IP addresses // provides (optimal) route (1)  Network Access (Interface) // (Data) Link // Physical (1) Handles how data is physically sent (1) 4 Question Answer Marks 4(a)  An unsigned integer,12, is used instead of the last variable // 12 is not a valid variable  The variable Z is not a valid variable / missing an unsigned integer after the Z 2 4(b) One mark per bullet point  <variable> ::= <letter><unsigned_integer>  <unsigned_integer> ::= <digit>|<digit><digit>  <digit> ::= 1 | 2 | 3 and <operator> ::= + | - | *  <assignment_statement> ::= <variable> =  <variable><operator><variable> 5 9618/32 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2022 © UCLES 2022 Page 6 of 9 Question Answer Marks 4(c)(i) One mark adding both boxes… One mark for correct position(s) and connector(s) … One mark … rest correct 3 4(c)(ii) Max three One mark for <assignment_statement>::=<variable>= One mark two or three correct options or two marks if all four options correct <variable><operator><variable> |<variable><operator><unsigned_integer> |<unsigned_integer><operator><variable> |<unsigned_integer><operator><unsigned_integer> <assignment_statement>::=<variable>= <variable><operator><variable>|<variable><operator> <unsigned_integer>|<unsigned_integer><operator><variable> |<unsigned_integer><operator><unsigned_integer> or One mark for each section <operand>::=<variable>|<unsigned_integer> <assignment_statement>::=<variable>= <operand><operator><operand> <operand>::=<variable>|<unsigned_integer> <assignment_statement>::=<variable>=<operand><operator><operand> 3 (assignment statement) variable = operator unsigned integer variable variable unsigned integer unsigned integer unsigned integer"
+        "9618/32 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2022 © UCLES 2022 Page 5 of 9 Question Answer Marks 3(a) Protocol one mark, description one mark, max four Any two from  HTTP(S) (1) for sending and receiving web pages / hypertext documents (1)  FTP (1) for sending and receiving files over a network / between devices (1) ��� SMTP (1) for sending/uploading emails /push protocol (1)  POP(3) (1) for receiving/downloading emails /pull protocol (1)  IMAP (1) for receiving/downloading emails /pull protocol (1) 4 3(b) Layer one mark, matching function one mark, max four Any two from  Transport (1) handles packets (1)  Internet (1) handles transmission of data using IP addresses // provides (optimal) route (1)  Network Access (Interface) // (Data) Link // Physical (1) Handles how data is physically sent (1) 4 Question Answer Marks 4(a)  An unsigned integer,12, is used instead of the last variable // 12 is not a valid variable �� The variable Z is not a valid variable / missing an unsigned integer after the Z 2 4(b) One mark per bullet point  <variable> ::= <letter><unsigned_integer>  <unsigned_integer> ::= <digit>|<digit><digit>  <digit> ::= 1 | 2 | 3 and <operator> ::= + | - | *  <assignment_statement> ::= <variable> =  <variable><operator><variable> 5 9618/32 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2022 © UCLES 2022 Page 6 of 9 Question Answer Marks 4(c)(i) One mark adding both boxes… One mark for correct position(s) and connector(s) … One mark … rest correct 3 4(c)(ii) Max three One mark for <assignment_statement>::=<variable>= One mark two or three correct options or two marks if all four options correct <variable><operator><variable> |<variable><operator><unsigned_integer> |<unsigned_integer><operator><variable> |<unsigned_integer><operator><unsigned_integer> <assignment_statement>::=<variable>= <variable><operator><variable>|<variable><operator> <unsigned_integer>|<unsigned_integer><operator><variable> |<unsigned_integer><operator><unsigned_integer> or One mark for each section <operand>::=<variable>|<unsigned_integer> <assignment_statement>::=<variable>= <operand><operator><operand> <operand>::=<variable>|<unsigned_integer> <assignment_statement>::=<variable>=<operand><operator><operand> 3 (assignment statement) variable = operator unsigned integer variable variable unsigned integer unsigned integer unsigned integer"
       ],
       "qp_path": "9618 Past Papers/9618 Computer Science June 2022 Question paper  32.pdf",
       "ms_path": "9618 Past Papers/9618 Computer Science June 2022 Mark Scheme  32.pdf",
@@ -5712,7 +5666,7 @@
       "num_label": "4",
       "text": "The following syntax diagrams show the syntax of:\n\n4(a): The following assignment statements are invalid. State the reason in each case.\n4(b): Complete the Backus-Naur Form (BNF) for the syntax diagrams shown.\n4(c): The syntax of an assignment statement is changed to allow each of the variables on the right-hand side of the ‘=’ symbol to be either a variable or an unsigned integer.\n4(c)(i): Draw a syntax diagram for the new syntax of the assignment statement.\n4(c)(ii): Write the Backus-Naur Form (BNF) for your syntax diagram.",
       "marks": 13,
-      "topic_id": "14.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2022_june_32_q_4_p0.jpg",
         "questions_images\\9618_2022_june_32_q_4_a_p0.jpg",
@@ -5827,7 +5781,7 @@
       "num_label": "9",
       "text": "State the reasons for including exception handling routines when writing a program.",
       "marks": 4,
-      "topic_id": "13.1",
+      "topic_id": "20.2",
       "images_q": [
         "questions_images\\9618_2022_june_32_q_9_p0.jpg"
       ],
@@ -5933,7 +5887,7 @@
       "num_label": "16",
       "text": "A savannah has spots.\n\n16(a): More facts are to be included. A caracal is a wild cat with short hair.\n16(b): Using the variable Cat, the goal:\n16(c)(i): (i) Write the goal, using the variable Pet, to find all the domestic cats.\n16(c)(ii): Write the goal, using the variable WildSpotty, to find all the wild cats with spots.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2022_june_33_q_16_p0.jpg",
         "questions_images\\9618_2022_june_33_q_16_a_p0.jpg",
@@ -5958,7 +5912,7 @@
       "num_label": "3",
       "text": "Data can be sent over networks using either circuit switching or packet switching.",
       "marks": 8,
-      "topic_id": "15.1",
+      "topic_id": "14.2",
       "images_q": [
         "questions_images\\9618_2022_june_33_q_3_p0.jpg"
       ],
@@ -6011,7 +5965,7 @@
       "num_label": "5",
       "text": "Part of a program’s calculations uses the integer variables j, k, m, n and p.\n\n5(a): Write the Reverse Polish Notation (RPN) for the expression:\n5(b)(i): (i) Show the changing contents of the stack as the value for p is calculated from its RPN expression: m m j k * - *\n5(b)(ii): Describe the main steps in the evaluation of this RPN expression using a stack.\n5(c): State two other uses of a stack.",
       "marks": 12,
-      "topic_id": "13.1",
+      "topic_id": "10.4",
       "images_q": [
         "questions_images\\9618_2022_june_33_q_5_p0.jpg",
         "questions_images\\9618_2022_june_33_q_5_a_p0.jpg",
@@ -6067,7 +6021,7 @@
       "num_label": "7",
       "text": "A program is to be written using Object-Oriented Programming (OOP) for a shop that sells knitting yarn. There are three types of yarn: acrylic, wool or mix.\n\n7(a): Complete this class inheritance diagram to show the properties, methods and inheritance.\n7(b): Describe what is meant by the terms properties, methods and inheritance.",
       "marks": 11,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2022_june_33_q_7_p0.jpg",
         "questions_images\\9618_2022_june_33_q_7_a_p0.jpg",
@@ -6095,7 +6049,7 @@
       "num_label": "9",
       "text": "The table shows assembly language instructions for a processor that has one general purpose register, the Accumulator (ACC).\n\n9(a): The address 500 contains the value 100 and the address 100 contains the value 20.\n9(b): Use only the given instruction set to write assembly language code to: • use the constant 20 which needs to be stored • add this constant to the value stored in the address contained in the variable Y • store the result in variable Z.",
       "marks": 10,
-      "topic_id": "13.1",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\9618_2022_june_33_q_9_p0.jpg",
         "questions_images\\9618_2022_june_33_q_9_a_p0.jpg",
@@ -6568,7 +6522,7 @@
       "num_label": "1",
       "text": "Images are being created to advertise holidays.\n\n1(a): Complete the table by defining the image terms.\n1(b): The bitmap images are photographs of the holiday locations.\n1(b)(i): Colour depth and image resolution are both included in the file header of a bitmap image.\n1(b)(ii): One of the photographs has a bit depth of 8 bytes and an image resolution of 1500 pixels wide and 3000 pixels high.\n1(c): The photographs are compressed before they are uploaded to a web server. Customers download the photographs from this web server.\n1(c)(i): Explain the reasons why compressing the photographs will benefit the customers.\n1(c)(ii): An image can be compressed using run‑length encoding (RLE).",
       "marks": 13,
-      "topic_id": "1.1",
+      "topic_id": "1.2",
       "images_q": [
         "questions_images\\9618_2023_june_11_q_1_p0.jpg",
         "questions_images\\9618_2023_june_11_q_1_a_p0.jpg",
@@ -6606,7 +6560,7 @@
       "num_label": "2",
       "text": "An organisation uses a database to store data about the types of bird that people have seen.\n\n2(a): The database is managed using a Database Management System (DBMS).\n2(a)(i): State what is meant by a data dictionary and give one example of an item typically found in a data dictionary.\n2(a)(ii): State what is meant by data integrity and give one example of how this is implemented in a database.\n2(b): The database, Birds, stores information about the types of bird and the people who have seen them.\n2(b)(i): Complete the table by identifying two foreign keys and the database table where each is found.\n2(b)(ii): The database Birds has been normalised.\n2(b)(iii): Part of the database table BIRD_TYPE is shown:",
       "marks": 7,
-      "topic_id": "4.3",
+      "topic_id": "8.2",
       "images_q": [
         "questions_images\\9618_2023_june_11_q_2_p0.jpg",
         "questions_images\\9618_2023_june_11_q_2_a_p0.jpg",
@@ -6646,7 +6600,7 @@
       "num_label": "4",
       "text": "A networked closed‑circuit television (CCTV) system in a house uses sensors and cameras to detect the presence of a person. It then tracks the person and records a video of their movements.\n\n4(a): This computer has both Read Only Memory (ROM) and Random Access Memory (RAM).\n4(a)(i): Describe the contents of the ROM in the central computer.\n4(a)(ii): The central computer has Dynamic RAM (DRAM).\n4(b): The central computer stores the video files on secondary storage.\n4(c): The CCTV system uses Artificial Intelligence (AI) to identify the presence of a person in the house and to track their movements.\n4(d): The CCTV cameras are connected to a network and transfer their data wirelessly to the central computer.\n4(d)(i): Each device on the network has an IP address.\n4(d)(ii): The network makes use of subnetting.",
       "marks": 25,
-      "topic_id": "1.1",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\9618_2023_june_11_q_4_p0.jpg",
         "questions_images\\9618_2023_june_11_q_4_p1.jpg",
@@ -6797,7 +6751,7 @@
       "num_label": "2",
       "text": "A horse riding school uses a database, Lessons, to store data about lesson bookings.\n\n2(a): The table contains names and descriptions of DBMS features and tools.\n2(b): Explain the reasons why referential integrity is important in a database.\n2(c): The database Lessons has the following tables:\n2(c)(i): Describe two methods of validating the field RiderLevel.\n2(c)(ii): Write a Structured Query Language (SQL) script to return the names of all the horses that have the horse level intermediate or beginner.\n2(c)(iii): The following SQL script should return the number of riders that have the rider level beginner and have a lesson booked on 09/09/2023.",
       "marks": 17,
-      "topic_id": "1.1",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\9618_2023_june_12_q_2_p0.jpg",
         "questions_images\\9618_2023_june_12_q_2_a_p0.jpg",
@@ -6900,7 +6854,7 @@
       "num_label": "5",
       "text": "A student has purchased a new laptop.\n\n5(a): The laptop is designed using the Von Neumann model for a computer system.\n5(b): Describe two ways the hardware of a laptop can be upgraded to improve the performance and explain how each upgrade improves the performance.\n5(c): Peripherals are connected to the laptop using ports.\n5(c)(i): A printer is connected to a Universal Serial Bus (USB) port.\n5(c)(ii): A monitor is connected to the laptop using a different type of port.\n5(d): The laptop has systems software.\n5(d)(i): Describe how the Operating System (OS) manages processes in the computer.\n5(d)(ii): Describe the purpose of utility software in a computer.",
       "marks": 15,
-      "topic_id": "1.1",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\9618_2023_june_12_q_5_p0.jpg",
         "questions_images\\9618_2023_june_12_q_5_a_p0.jpg",
@@ -7161,7 +7115,7 @@
       "num_label": "7",
       "text": "A computer stores data in binary form.\n\n7(a): Draw one line from each description to its matching denary value.\n7(b): The computer has a Control Unit (CU), system clock and control bus.\n7(c): Complete the table by writing the register transfer notation for each stage of the Fetch-Execute (F-E) cycle given in the table.",
       "marks": 9,
-      "topic_id": "1.1",
+      "topic_id": "4.1",
       "images_q": [
         "questions_images\\9618_2023_june_13_q_7_p0.jpg",
         "questions_images\\9618_2023_june_13_q_7_a_p0.jpg",
@@ -8057,7 +8011,7 @@
       "num_label": "6",
       "text": "Several syntax diagrams are shown.\n\n6(a): State whether each of the following passwords is valid or invalid and give a reason for your choice.\n6(b): Complete the Backus-Naur Form (BNF) for the syntax diagrams shown.\n6(c): An identifier begins with one or more letters, followed by zero digits or one digit or more digits.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2023_june_31_q_6_p0.jpg",
         "questions_images\\9618_2023_june_31_q_6_a_p0.jpg",
@@ -8172,7 +8126,7 @@
       "num_label": "1",
       "text": "Numbers are stored in a computer using floating point representation with:\n\n1(a): Write the normalised floating‑point representation of the following binary number using this system:\n1(b): Describe the reason why the normalised form of the following binary number cannot be represented accurately using this system.",
       "marks": 5,
-      "topic_id": "13.1",
+      "topic_id": "13.3",
       "images_q": [
         "questions_images\\9618_2023_june_32_q_1_p0.jpg",
         "questions_images\\9618_2023_june_32_q_1_a_p0.jpg",
@@ -8200,7 +8154,7 @@
       "num_label": "3",
       "text": "Several syntax diagrams are shown.\n\n3(a): State whether each variable is valid or invalid and give a reason for your choice in each case.\n3(b): <word> contains one or more letters.\n3(c): Vehicle registrations must begin with two letters and be followed by one, two or three digits.\n3(c)(i): State an example of a valid vehicle registration.\n3(c)(ii): Draw a syntax diagram for a vehicle registration.",
       "marks": 9,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2023_june_32_q_3_p0.jpg",
         "questions_images\\9618_2023_june_32_q_3_a_p0.jpg",
@@ -8235,7 +8189,7 @@
       "num_label": "4",
       "text": "Draw one line from each Object‑Oriented Programming (OOP) term to its most appropriate description.",
       "marks": 4,
-      "topic_id": "17.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2023_june_32_q_4_p0.jpg"
       ],
@@ -8260,7 +8214,7 @@
       "num_label": "9",
       "text": "This truth table represents a logic circuit.\n\n9(a): Write the Boolean logic expression that corresponds to the given truth table as the sum‑of‑products.\n9(b): Complete the Karnaugh map (K‑map) for the given truth table.\n9(c): Draw loop(s) around appropriate group(s) in the K‑map to produce an optimal sum‑of‑products.\n9(d): Write the Boolean logic expression from your answer to part (c) as a simplified sum‑of‑products.\n9(e): Use Boolean algebra to give your answer to part (d) in its simplest form.",
       "marks": 10,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2023_june_32_q_9_p0.jpg",
         "questions_images\\9618_2023_june_32_q_9_a_p0.jpg",
@@ -8355,7 +8309,7 @@
       "num_label": "6",
       "text": "Several syntax diagrams are shown.\n\n6(a): State whether each of the following passwords is valid or invalid and give a reason for your choice.\n6(b): Complete the Backus-Naur Form (BNF) for the syntax diagrams shown.\n6(c): An identifier begins with one or more letters, followed by zero digits or one digit or more digits.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2023_june_33_q_6_p0.jpg",
         "questions_images\\9618_2023_june_33_q_6_a_p0.jpg",
@@ -8948,7 +8902,7 @@
       "num_label": "1",
       "text": "LDD 20 ADD #2\n\n1(a): Tick (✓) one box to identify the correct logic statement for this truth table.\n1(b): Draw a logic circuit for the logic expression:",
       "marks": 3,
-      "topic_id": "4.2",
+      "topic_id": "3.2",
       "images_q": [
         "questions_images\\9618_2024_june_11_q_1_p0.jpg",
         "questions_images\\9618_2024_june_11_q_1_a_p0.jpg",
@@ -9023,7 +8977,7 @@
       "num_label": "3",
       "text": "A software developer is writing a computer program.\n\n3(a): The developer uses an interpreter while writing the program code because it is easier for debugging.\n3(b): The program is ready to be sold to customers.",
       "marks": 5,
-      "topic_id": "1.1",
+      "topic_id": "5.2",
       "images_q": [
         "questions_images\\9618_2024_june_11_q_3_p0.jpg",
         "questions_images\\9618_2024_june_11_q_3_a_p0.jpg",
@@ -9072,7 +9026,7 @@
       "num_label": "5",
       "text": "A bank allows customers to access their accounts using an application that they can download onto a device such as a smartphone.\n\n5(a): The system that allows customers to access their accounts using the application is a client-server model.\n5(b): The bank wants to protect the integrity of its data while transferring the data to other banks. Parity check is one example of data verification.\n5(c): The bank also needs to keep its customers’ data private and secure.\n5(c)(i): The bank’s network has a firewall.\n5(c)(ii): Customers need to use biometric authentication to access their accounts. One biometric authentication method is facial recognition.",
       "marks": 16,
-      "topic_id": "1.1",
+      "topic_id": "6.1",
       "images_q": [
         "questions_images\\9618_2024_june_11_q_5_p0.jpg",
         "questions_images\\9618_2024_june_11_q_5_a_p0.jpg",
@@ -9107,7 +9061,7 @@
       "num_label": "6",
       "text": "A company is developing a website that will allow users to create an account and then play a quiz every day. The data about the users and the quizzes are stored in a database.\n\n6(a): Create a 3-table design for this database normalised to Third Normal Form (3NF).\n6(b): The company is using a Database Management System (DBMS) to set up the database.\n6(c): The company has another database, FARMING, for a different game.\n6(c)(i): The database FARMING has a second table created named PLAYER that has the primary key PlayerID.\n6(c)(ii): Write an SQL script to return the number of events that each player has completed.",
       "marks": 15,
-      "topic_id": "4.3",
+      "topic_id": "8.2",
       "images_q": [
         "questions_images\\9618_2024_june_11_q_6_p0.jpg",
         "questions_images\\9618_2024_june_11_q_6_a_p0.jpg",
@@ -9198,7 +9152,7 @@
       "num_label": "1",
       "text": "LDI 15 SUB #1\n\n1(a): Describe the operation of each of the following logic gates:\n1(b): Draw a logic circuit for this logic expression:",
       "marks": 6,
-      "topic_id": "4.2",
+      "topic_id": "3.2",
       "images_q": [
         "questions_images\\9618_2024_june_12_q_1_p0.jpg",
         "questions_images\\9618_2024_june_12_q_1_a_p0.jpg",
@@ -9228,7 +9182,7 @@
       "num_label": "2",
       "text": "A computer game is being designed that users will be able to play using a virtual reality (VR) headset.\n\n2(a): Complete the description of the principal operation of a VR headset.\n2(b): The computer uses a buffer when transmitting data to the VR headset.\n2(c): The VR headset has Electrically Erasable Programmable Read Only Memory (EEPROM).\n2(d): The computer can transmit a video made from bitmap images and vector graphic animations to the VR headset.\n2(d)(i): Describe how the data for a bitmapped image is encoded.\n2(d)(ii): Describe the contents of a vector graphic drawing list.\n2(d)(iii): The bitmap video is not compressed before transmission to the VR headset.",
       "marks": 17,
-      "topic_id": "1.1",
+      "topic_id": "1.2",
       "images_q": [
         "questions_images\\9618_2024_june_12_q_2_p0.jpg",
         "questions_images\\9618_2024_june_12_q_2_a_p0.jpg",
@@ -9592,7 +9546,7 @@
       "num_label": "5",
       "text": "A multimedia design company has an office with a LAN (local area network). The LAN can have up to 20 devices connected with cables and other devices connected using wireless access.\n\n5(a): The company has private cloud storage for its employees to store their work.\n5(a)(i): Define the term private cloud.\n5(a)(ii): Describe the benefits to the company of using private cloud storage instead of public cloud storage.\n5(b): Part of the internal structure of the wired LAN is a star topology.\n5(c): A different part of the network uses the Ethernet protocol.\n5(c)(i): A collision is detected.\n5(c)(ii): Identify two drawbacks of using CSMA/CD.\n5(d): The devices in the office have static private IP addresses.",
       "marks": 11,
-      "topic_id": "1.1",
+      "topic_id": "2.1",
       "images_q": [
         "questions_images\\9618_2024_june_13_q_5_p0.jpg",
         "questions_images\\9618_2024_june_13_q_5_a_p0.jpg",
@@ -9661,7 +9615,7 @@
       "num_label": "7",
       "text": "Robots are used to serve food and drink to customers at a restaurant.\n\n7(a): A robot navigates through the restaurant to the table it is serving.\n7(b): The robot uses Artificial Intelligence (AI) to communicate with the customers. The customers speak to the robot to order their food and drinks.\n7(c): The navigation system can be considered an example of a control system.\n7(d): The robot includes a touchscreen for the customer to make their payment.\n7(e): Program libraries were used when writing the robot’s software.\n7(e)(i): State what is meant by a program library.\n7(e)(ii): Some program libraries include Dynamic Link Library (DLL) files.\n7(f): The data from the robots is transmitted to a central computer using a wireless connection.\n7(f)(i): Complete the table by identifying and describing two methods of data verification that can be used during data transfer.\n7(f)(ii): Explain how encryption can protect the security of data during transmission.",
       "marks": 22,
-      "topic_id": "4.3",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\9618_2024_june_13_q_7_p0.jpg",
         "questions_images\\9618_2024_june_13_q_7_a_p0.jpg",
@@ -10467,7 +10421,7 @@
       "num_label": "6",
       "text": "The diagram shows a logic circuit.\n\n6(a): Complete the truth table for the given logic circuit.\n6(b): Write the Boolean expression that corresponds to the logic circuit as a sum-of-products.\n6(c)(i): (i) Complete the Karnaugh map (K-map) for the Boolean expression:\n6(c)(ii): Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.\n6(c)(iii): Write the Boolean expression from your answer to part (c)(ii) as a simplified sum-of-products.",
       "marks": 10,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2024_june_31_q_6_p0.jpg",
         "questions_images\\9618_2024_june_31_q_6_a_p0.jpg",
@@ -10524,7 +10478,7 @@
       "num_label": "10",
       "text": "Saloon is a body style.\n\n10(a): State a condition that must be true for an array to be searchable for a binary search.\n10(b): Complete the given pseudocode to find an item in a 1D array Names of type STRING using a binary search.\n10(c): Describe the performance of a binary search in relation to the number of data items in the array being searched. Refer to Big O notation in your answer.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "19.1",
       "images_q": [
         "questions_images\\9618_2024_june_31_q_10_p0.jpg",
         "questions_images\\9618_2024_june_31_q_10_a_p0.jpg",
@@ -10555,7 +10509,7 @@
       "num_label": "15",
       "text": "Sunroof is available on a hatchback.",
       "marks": null,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2024_june_31_q_15_p0.jpg"
       ],
@@ -10576,7 +10530,7 @@
       "num_label": "20",
       "text": "Sunroof is unavailable on a convertible.\n\n20(a): Sliding doors is a feature that is available on a minivan but unavailable on a hatchback.\n20(b): Using the variable Options, the goal:\n20(c): F may be available for B if F is a feature and B is a body style and F is not unavailable for that body style.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2024_june_31_q_20_p0.jpg",
         "questions_images\\9618_2024_june_31_q_20_a_p0.jpg",
@@ -10649,7 +10603,7 @@
       "num_label": "1",
       "text": "Paddle boarding is an activity.\n\n1(a): Describe the effect of changing the allocation of bits used for the mantissa and for the exponent in a floating-point number with a fixed total number of bits.\n1(b): Real numbers are stored in a computer, using floating-point representation with:",
       "marks": 5,
-      "topic_id": "13.1",
+      "topic_id": "13.3",
       "images_q": [
         "questions_images\\9618_2024_june_32_q_1_p0.jpg",
         "questions_images\\9618_2024_june_32_q_1_a_p0.jpg",
@@ -10677,7 +10631,7 @@
       "num_label": "4",
       "text": "Sheila has a customer called Fred. Fred wants to send Sheila a confidential document as part of a transaction.",
       "marks": 4,
-      "topic_id": "13.1",
+      "topic_id": "17.1",
       "images_q": [
         "questions_images\\9618_2024_june_32_q_4_p0.jpg"
       ],
@@ -10702,7 +10656,7 @@
       "num_label": "6",
       "text": "The diagram shows a logic circuit.\n\n6(a): Complete the truth table for the given logic circuit. Show your working.\n6(b): Write the Boolean expression that corresponds to the logic circuit as a sum-of-products.\n6(c)(i): (i) Complete the Karnaugh map (K-map) for this Boolean expression:\n6(c)(ii): Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.\n6(c)(iii): Write the Boolean expression from your answer to part c(ii) as a simplified sum-of-products.",
       "marks": 10,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2024_june_32_q_6_p0.jpg",
         "questions_images\\9618_2024_june_32_q_6_a_p0.jpg",
@@ -10762,7 +10716,7 @@
       "num_label": "16",
       "text": "Petra has chosen rowing.",
       "marks": null,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2024_june_32_q_16_p0.jpg"
       ],
@@ -10783,7 +10737,7 @@
       "num_label": "22",
       "text": "Henry has already done jet skiing.\n\n22(a): Jane is a client who would like to choose the activity surfing and she has already done sailing.\n22(b): Using the variable List, the goal:\n22(c): C is a client who would like to choose A if A is an activity and C has not already done A.",
       "marks": 9,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2024_june_32_q_22_p0.jpg",
         "questions_images\\9618_2024_june_32_q_22_a_p0.jpg",
@@ -10890,7 +10844,7 @@
       "num_label": "6",
       "text": "The diagram shows a logic circuit.\n\n6(a): Complete the truth table for the given logic circuit.\n6(b): Write the Boolean expression that corresponds to the logic circuit as a sum-of-products.\n6(c)(i): (i) Complete the Karnaugh map (K-map) for the Boolean expression:\n6(c)(ii): Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.\n6(c)(iii): Write the Boolean expression from your answer to part (c)(ii) as a simplified sum-of-products.",
       "marks": 10,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2024_june_33_q_6_p0.jpg",
         "questions_images\\9618_2024_june_33_q_6_a_p0.jpg",
@@ -10947,7 +10901,7 @@
       "num_label": "10",
       "text": "Saloon is a body style.\n\n10(a): State a condition that must be true for an array to be searchable for a binary search.\n10(b): Complete the given pseudocode to find an item in a 1D array Names of type STRING using a binary search.\n10(c): Describe the performance of a binary search in relation to the number of data items in the array being searched. Refer to Big O notation in your answer.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "19.1",
       "images_q": [
         "questions_images\\9618_2024_june_33_q_10_p0.jpg",
         "questions_images\\9618_2024_june_33_q_10_a_p0.jpg",
@@ -10978,7 +10932,7 @@
       "num_label": "15",
       "text": "Sunroof is available on a hatchback.",
       "marks": null,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2024_june_33_q_15_p0.jpg"
       ],
@@ -10999,7 +10953,7 @@
       "num_label": "20",
       "text": "Sunroof is unavailable on a convertible.\n\n20(a): Sliding doors is a feature that is available on a minivan but unavailable on a hatchback.\n20(b): Using the variable Options, the goal:\n20(c): F may be available for B if F is a feature and B is a body style and F is not unavailable for that body style.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2024_june_33_q_20_p0.jpg",
         "questions_images\\9618_2024_june_33_q_20_a_p0.jpg",
@@ -11520,7 +11474,7 @@
       "num_label": "2",
       "text": "Programmers in a software development company take part in live video conferences to discuss their work.\n\n2(a): Explain how data is transferred using real‑time bit streaming.\n2(b)(i): (i) Explain the reasons why a video is compressed before it is transmitted using real‑time bit streaming.\n2(b)(ii): Identify whether the lossy or lossless compression method is more appropriate for real‑time bit streaming. Justify your answer.\n2(c): The video conference is accessed over the internet.",
       "marks": 13,
-      "topic_id": "4.2",
+      "topic_id": "1.3",
       "images_q": [
         "questions_images\\9618_2025_june_11_q_2_p0.jpg",
         "questions_images\\9618_2025_june_11_q_2_a_p0.jpg",
@@ -11554,7 +11508,7 @@
       "num_label": "3",
       "text": "A computer stores images and text files.\n\n3(a): One of the images is a bitmapped image.\n3(b): The text in the files is stored using the Unicode character set.\n3(b)(i): Give two advantages of using the Unicode character set instead of using the ASCII character set.\n3(b)(ii): The Unicode character '❮' has the binary value: 0010 0111 0110 1110\n3(b)(iii): The Unicode character '⅀' has the hexadecimal value 2140",
       "marks": 7,
-      "topic_id": "4.3",
+      "topic_id": "1.1",
       "images_q": [
         "questions_images\\9618_2025_june_11_q_3_p0.jpg",
         "questions_images\\9618_2025_june_11_q_3_a_p0.jpg",
@@ -11589,7 +11543,7 @@
       "num_label": "4",
       "text": "A shop installs a new system that allows users to purchase items without going through a manual checkout.\n\n4(a): The new system uses digital cameras and Artificial Intelligence (AI) to identify the customers.\n4(b): The new system uses sensors to identify the items taken from a shelf.",
       "marks": 6,
-      "topic_id": "1.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\9618_2025_june_11_q_4_p0.jpg",
         "questions_images\\9618_2025_june_11_q_4_a_p0.jpg",
@@ -11657,7 +11611,7 @@
       "num_label": "6",
       "text": "A programmer is buying a new computer.\n\n6(a): The programmer is considering the following two computers:\n6(a)(i): Computer 1 has a magnetic hard disk.\n6(a)(ii): The two computers have different amounts of RAM.\n6(a)(iii): The two computers have different bus widths.\n6(b): Both computers have an Operating System (OS).",
       "marks": 14,
-      "topic_id": "1.1",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\9618_2025_june_11_q_6_p0.jpg",
         "questions_images\\9618_2025_june_11_q_6_a_p0.jpg",
@@ -11692,7 +11646,7 @@
       "num_label": "7",
       "text": "A banker stores personal data on their work computer.\n\n7(a): The banker needs to transfer confidential data across the internet.\n7(b): The banker receives confidential data across the internet. The data includes a digital signature.\n7(c): The data that is transferred can also be verified using a checksum.",
       "marks": 11,
-      "topic_id": "1.1",
+      "topic_id": "6.1",
       "images_q": [
         "questions_images\\9618_2025_june_11_q_7_p0.jpg",
         "questions_images\\9618_2025_june_11_q_7_a_p0.jpg",
@@ -11822,7 +11776,7 @@
       "num_label": "4",
       "text": "The Memory Data Register (MDR) transfers data to the memory address stored in the Memory Address Register (MAR).\n\n4(a): Write the logic expressions for the following logic circuit.\n4(b): Complete the truth table for the logic expression:",
       "marks": 4,
-      "topic_id": "4.1",
+      "topic_id": "3.2",
       "images_q": [
         "questions_images\\9618_2025_june_12_q_4_p0.jpg",
         "questions_images\\9618_2025_june_12_q_4_a_p0.jpg",
@@ -11852,7 +11806,7 @@
       "num_label": "5",
       "text": "The MAR stores an address from memory.\n\n5(a): Explain the purpose of the table CHARACTER_ITEM in the database.\n5(b): Underline the attribute, or attributes, that form the primary key in each of the tables.\n5(c): A Database Management System (DBMS) provides data security.\n5(c)(i): Identify two methods the DBMS can use to protect the data in the table USER from unauthorised access.\n5(c)(ii): The DBMS also supports data integrity.\n5(d)(i): (i) Write a Structured Query Language (SQL) script to count the number of items purchased by the user with the username \"KAT123\".\n5(d)(ii): The following changes need to be made to the character with the ID \"0002\":",
       "marks": 16,
-      "topic_id": "4.1",
+      "topic_id": "8.2",
       "images_q": [
         "questions_images\\9618_2025_june_12_q_5_p0.jpg",
         "questions_images\\9618_2025_june_12_q_5_a_p0.jpg",
@@ -12038,7 +11992,7 @@
       "num_label": "6",
       "text": "A shop sells pens to customers. Customers place an order with the shop and collect the items the next day. The shop uses a database to store the information about the orders.\n\n6(a): Complete the entity-relationship (E-R) diagram for the database.\n6(b): A new product needs to be entered into the database. The product has the ID 002323, the product name ‘Blue ball point 2mm’, there are 50 in a box, the product costs $5.00 and the supplier has the ID SFX223.\n6(c): The attribute Collected in the table ORDER stores the Boolean value TRUE if the order has been collected and FALSE if the order has not been collected.\n6(d): The shop uses a Database Management System (DBMS).\n6(d)(i): One feature provided by a DBMS is a data dictionary.\n6(d)(ii): The DBMS provides a developer interface.",
       "marks": 18,
-      "topic_id": "4.3",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\9618_2025_june_13_q_6_p0.jpg",
         "questions_images\\9618_2025_june_13_q_6_a_p0.jpg",
@@ -12483,7 +12437,7 @@
       ],
       "answers": [
         "9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2025 © Cambridge University Press & Assessment 2025 Page 14 of 20 Question Answer Marks 6(a)(i) Award 1 mark per region Value Start Unused New Last Current 1043 2 8 8 –1 2 Region 1 2 3 Region 2 3 1 Region 3 1 7 Region 4 7 4 4 6(a)(ii) Data Pointer 1 1018 1 7 2 1007 2 3 3 1010 3 1 4 1056 4 6 5 1092 5 –1 6 1062 6 5 7 1034 7 8 8 1043 8 4 9 0 9 10 10 0 10 –1 Mark as follows: 1 mark for global array Data row 8 containing the value 1043 1 mark for global array Pointer row 7 containing the value 8 and row 8 containing the value 4 1 mark for all other rows in both arrays 3",
-        "9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2025 © Cambridge University Press & Assessment 2025 Page 14 of 20 Question Answer Marks 6(a)(i) Award 1 mark per region Value Start Unused New Last Current 1043 2 8 8 –1 2 Region 1 2 3 Region 2 3 1 Region 3 1 7 Region 4 7 4 4 6(a)(ii) Data Pointer 1 1018 1 7 2 1007 2 3 3 1010 3 1 4 1056 4 6 5 1092 5 –1 6 1062 6 5 7 1034 7 8 8 1043 8 4 9 0 9 10 10 0 10 –1 Mark as follows: 1 mark for global array Data row 8 containing the value 1043 1 mark for global array Pointer row 7 containing the value 8 and row 8 containing the value 4 1 mark for all other rows in both arrays 3 9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2025 © Cambridge University Press & Assessment 2025 Page 15 of 20 Question Answer Marks 6(b) Example answer: The ADT is a linked list and the procedure Place()inserts / add a new node / value into it / the linked list Mark as follows: 1. 1 mark for identifying the ADT as a linked list 2. 1 mark for identifying operation as inserting / adding a value / node into a linked list 2",
+        "9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2025 © Cambridge University Press & Assessment 2025 Page 14 of 20 Question Answer Marks 6(a)(i) Award 1 mark per region Value Start Unused New Last Current 1043 2 8 8 ��1 2 Region 1 2 3 Region 2 3 1 Region 3 1 7 Region 4 7 4 4 6(a)(ii) Data Pointer 1 1018 1 7 2 1007 2 3 3 1010 3 1 4 1056 4 6 5 1092 5 –1 6 1062 6 5 7 1034 7 8 8 1043 8 4 9 0 9 10 10 0 10 –1 Mark as follows: 1 mark for global array Data row 8 containing the value 1043 1 mark for global array Pointer row 7 containing the value 8 and row 8 containing the value 4 1 mark for all other rows in both arrays 3 9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2025 © Cambridge University Press & Assessment 2025 Page 15 of 20 Question Answer Marks 6(b) Example answer: The ADT is a linked list and the procedure Place()inserts / add a new node / value into it / the linked list Mark as follows: 1. 1 mark for identifying the ADT as a linked list 2. 1 mark for identifying operation as inserting / adding a value / node into a linked list 2",
         "9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2025 © Cambridge University Press & Assessment 2025 Page 15 of 20 Question Answer Marks 6(b) Example answer: The ADT is a linked list and the procedure Place()inserts / add a new node / value into it / the linked list Mark as follows: 1. 1 mark for identifying the ADT as a linked list 2. 1 mark for identifying operation as inserting / adding a value / node into a linked list 2 9618/22 Cambridge International AS & A Level – Mark Scheme PUBLISHED May/June 2025 © Cambridge University Press & Assessment 2025 Page 16 of 20 Question Answer Marks 7(a) Example solution Conditional Loop FUNCTION FindCustomer(CustomerID : INTEGER) RETURNS INTEGER DECLARE Index : INTEGER DECLARE Found : BOOLEAN CONSTANT Unused = 99999 CONSTANT Upper = 1000 Found  FALSE Index  1 IF CustomerID < 10001 OR CustomerID > 11000 THEN RETURN –1 // Out of range value for customer ID ENDIF WHILE Found = FALSE AND Loyalty[Index, 1] <> 99999 IF Loyalty[Index,1] = CustomerID THEN Found  TRUE ELSE Index  Index + 1 ENDIF IF Index > Upper THEN RETURN –1 ENDIF ENDWHILE IF Found THEN RETURN Loyalty[Index, 2] ELSE RETURN –1 ENDIF ENDFUNCTION Mark as follows: 1. Create function header and ending with correct parameter and return type 2. Check CustomerID is in range and if not return −1 3. (Conditional) loop iterating through each element in array 4. Check for current element in array contains required customer ID in a loop 5. … If found set value to terminate loop 6. Terminating loop when customer ID found 7. Terminating loop when current customer ID is 99999 8. Return either loyalty points for the customer found or –1 if not found 8"
       ],
       "qp_path": "9618 Past Papers/9618 Computer Science June 2025 Question Paper  22.pdf",
@@ -12828,7 +12782,7 @@
       "num_label": "5",
       "text": "This truth table represents a logic circuit.\n\n5(a): Write the Boolean logic expression that corresponds to the given truth table as the sum-of-products.\n5(b)(i): (i) Complete the Karnaugh map (K-map) for the given truth table.\n5(b)(ii): Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.\n5(b)(iii): Write the Boolean logic expression from your answer to part (b)(ii) as the simplified sum-of-products.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2025_june_31_q_5_p0.jpg",
         "questions_images\\9618_2025_june_31_q_5_a_p0.jpg",
@@ -12887,7 +12841,7 @@
       "num_label": "7",
       "text": "Several syntax diagrams are shown.\n\n7(a): State why each passcode is invalid for the given syntax diagrams.\n7(b): Complete the Backus-Naur Form (BNF) for <uppercase> and <passcode>.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2025_june_31_q_7_p0.jpg",
         "questions_images\\9618_2025_june_31_q_7_a_p0.jpg",
@@ -12943,7 +12897,7 @@
       "num_label": "12",
       "text": "The pseudocode algorithm checks whether a location in a stock file StockList.dat is empty or not. The location is given by the user. If the location is empty, a suitable message is displayed, otherwise the item stored at that location is displayed.",
       "marks": 5,
-      "topic_id": "13.1",
+      "topic_id": "13.2",
       "images_q": [
         "questions_images\\9618_2025_june_31_q_12_p0.jpg"
       ],
@@ -13084,7 +13038,7 @@
       "num_label": "7",
       "text": "The diagram shows a logic circuit.\n\n7(a): Complete the truth table for the given logic circuit. Show your working.\n7(b): Write the Boolean logic expression that corresponds to the given logic circuit as the sum-of-products.\n7(c): Use Boolean algebra including De Morgan’s laws to simplify the following expression. Show all working.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2025_june_32_q_7_p0.jpg",
         "questions_images\\9618_2025_june_32_q_7_a_p0.jpg",
@@ -13142,7 +13096,7 @@
       "num_label": "9",
       "text": "Several syntax diagrams are shown.\n\n9(a): State why 9K is not a valid variable for the given syntax diagrams.\n9(b): Complete the Backus-Naur Form (BNF) for <operator>.\n9(c): An expression is defined as follows:\n9(d): A character can be a letter or a digit.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2025_june_32_q_9_p0.jpg",
         "questions_images\\9618_2025_june_32_q_9_a_p0.jpg",
@@ -13284,7 +13238,7 @@
       "num_label": "3",
       "text": "This truth table represents a logic circuit.\n\n3(a): Write the Boolean logic expression that corresponds to the given truth table as the sum-of-products.\n3(b)(i): (i) Complete the Karnaugh map (K-map) for the given truth table.\n3(b)(ii): Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.\n3(b)(iii): Write the Boolean logic expression from your answer to part (b)(ii) as the simplified sum-of-products.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2025_june_33_q_3_p0.jpg",
         "questions_images\\9618_2025_june_33_q_3_a_p0.jpg",
@@ -13319,7 +13273,7 @@
       "num_label": "5",
       "text": "Complete the table by filling in the missing object-oriented programming (OOP) terms and descriptions.",
       "marks": 4,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2025_june_33_q_5_p0.jpg"
       ],
@@ -13423,7 +13377,7 @@
       "num_label": "9",
       "text": "Several syntax diagrams are shown.\n\n9(a): State why JJ90 is not a valid passcode for the given syntax diagrams.\n9(b): Complete the Backus-Naur Form (BNF) for <upper> and <passcode>.\n9(c): A character can be an upper, a lower or a digit.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2025_june_33_q_9_p0.jpg",
         "questions_images\\9618_2025_june_33_q_9_a_p0.jpg",
@@ -14078,7 +14032,7 @@
       "num_label": "4",
       "text": "Francis is starting his first job as a software developer for a multinational company.\n\n4(a): Francis has been advised to join a professional ethical body.\n4(b): Francis is shown the software he will be working on. He is unfamiliar with the Integrated Development Environment (IDE) he is required to use.\n4(b)(i): Describe the ways in which Francis can act ethically in this situation.\n4(b)(ii): A typical IDE provides debugging tools to support the testing of a program.\n4(c): Francis is part of a team writing a program. He finds an error in part of the program that has already been tested. He decides not to tell anyone because he is worried about the consequences.\n4(d): Francis’s team use language translators.\n4(b): The following table shows part of the instruction set for a processor. The processor has one general purpose register, the Accumulator (ACC), and an Index Register (IX).",
       "marks": 14,
-      "topic_id": "1.1",
+      "topic_id": "7.1",
       "images_q": [
         "questions_images\\9618_2021_november_11_q_4_p0.jpg",
         "questions_images\\9618_2021_november_11_q_4_a_p0.jpg",
@@ -14116,7 +14070,7 @@
       "num_label": "5",
       "text": "Javier owns many shops that sell cars. He employs several managers who are each in charge of one or more shops. He uses the relational database CARS to store the data about his business.\n\n5(a): Tick () one box in each row to identify whether each field is a primary key or a foreign key.\n5(b): Describe the ways in which access rights can be used to protect the data in Javier’s database from unauthorised access.\n5(c): Javier uses Data Definition Language (DDL) and Data Manipulation Language (DML) statements in his database.\n5(c)(i): Complete the following DML statements to return the number of cars for sale in each shop.\n5(c)(ii): Complete the DML statement to include the following car in the table CAR.",
       "marks": 10,
-      "topic_id": "4.2",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\9618_2021_november_11_q_5_p0.jpg",
         "questions_images\\9618_2021_november_11_q_5_a_p0.jpg",
@@ -14263,7 +14217,7 @@
       "num_label": "3",
       "text": "Andy likes to play computer games.\n\n3(a): Andy uses several input devices to play the games. These include a keyboard and a microphone.\n3(b): Andy plays some of the computer games over the internet. He has several devices that connect wirelessly to the router in his house.\n3(b)(i): Identify the topology of Andy’s home network. Justify your choice.\n3(b)(ii): The router has a wireless access point (WAP) to allow the devices to connect wirelessly.",
       "marks": 8,
-      "topic_id": "1.1",
+      "topic_id": "2.1",
       "images_q": [
         "questions_images\\9618_2021_november_12_q_3_p0.jpg",
         "questions_images\\9618_2021_november_12_q_3_a_p0.jpg",
@@ -14406,7 +14360,7 @@
       "num_label": "7",
       "text": "A computer has system software.\n\n7(a): The Operating System handles interrupts.\n7(b): Describe the file management tasks that an Operating System performs.\n7(c): Identify two utility programs that can be used to improve the performance of a computer and state how they improve the performance.",
       "marks": 11,
-      "topic_id": "1.1",
+      "topic_id": "5.1",
       "images_q": [
         "questions_images\\9618_2021_november_12_q_7_p0.jpg",
         "questions_images\\9618_2021_november_12_q_7_a_p0.jpg",
@@ -14578,7 +14532,7 @@
       "num_label": "4",
       "text": "Francis is starting his first job as a software developer for a multinational company.\n\n4(a): Francis has been advised to join a professional ethical body.\n4(b): Francis is shown the software he will be working on. He is unfamiliar with the Integrated Development Environment (IDE) he is required to use.\n4(b)(i): Describe the ways in which Francis can act ethically in this situation.\n4(b)(ii): A typical IDE provides debugging tools to support the testing of a program.\n4(c): Francis is part of a team writing a program. He finds an error in part of the program that has already been tested. He decides not to tell anyone because he is worried about the consequences.\n4(d): Francis’s team use language translators.\n4(b): The following table shows part of the instruction set for a processor. The processor has one general purpose register, the Accumulator (ACC), and an Index Register (IX).",
       "marks": 14,
-      "topic_id": "1.1",
+      "topic_id": "7.1",
       "images_q": [
         "questions_images\\9618_2021_november_13_q_4_p0.jpg",
         "questions_images\\9618_2021_november_13_q_4_a_p0.jpg",
@@ -14616,7 +14570,7 @@
       "num_label": "5",
       "text": "Javier owns many shops that sell cars. He employs several managers who are each in charge of one or more shops. He uses the relational database CARS to store the data about his business.\n\n5(a): Tick () one box in each row to identify whether each field is a primary key or a foreign key.\n5(b): Describe the ways in which access rights can be used to protect the data in Javier’s database from unauthorised access.\n5(c): Javier uses Data Definition Language (DDL) and Data Manipulation Language (DML) statements in his database.\n5(c)(i): Complete the following DML statements to return the number of cars for sale in each shop.\n5(c)(ii): Complete the DML statement to include the following car in the table CAR.",
       "marks": 10,
-      "topic_id": "4.2",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\9618_2021_november_13_q_5_p0.jpg",
         "questions_images\\9618_2021_november_13_q_5_a_p0.jpg",
@@ -14634,7 +14588,7 @@
       ],
       "answers": [
         "9618/13 Cambridge International AS & A Level – Mark Scheme PUBLISHED October/November 2021 © UCLES 2021 Page 7 of 9 Question Answer Marks 4(d) 1 mark for each correctly completed term Compilers are usually used when a high-level language program is complete. They translate all the code at the same time and then run the program. They produce executable/.exe/object code files that can be run without the source code. Interpreters translate one line of a high-level language program at a time, and then run that line of code. They are most useful while developing the programs because errors can be corrected and then the program continues from that line. Assemblers are used to translate assembly code into binary/machine code. 4 Question Answer Marks 5(a) 1 mark for 2 or 3 correct ticks, 2 marks for 4 correct ticks Table Field name Primary Key (PK) Foreign Key (FK) MANAGER ManagerID  SHOP ManagerID  CAR RegistrationNumber  CAR ShopID  2 5(b) 1 mark per bullet point • Access rights give managers / himself access to different elements • … by having different accounts / logins • … which have different access rights e.g. read only // no access / read / write • Specific views can be assigned to himself and to the managers • … e.g. managers can only see the data for their own shop(s) 3 5(c)(i) 1 mark per correctly completed statement SELECT COUNT(RegistrationNumber) FROM CAR GROUP BY ShopID 3 5(c)(ii) 1 mark for each correct statement INSERT INTO CAR VALUES (\"123AA\",\"Tiger\",\"Lioness\",10500,\"12BSTREET\") 2",
-        "9618/13 Cambridge International AS & A Level – Mark Scheme PUBLISHED October/November 2021 © UCLES 2021 Page 7 of 9 Question Answer Marks 4(d) 1 mark for each correctly completed term Compilers are usually used when a high-level language program is complete. They translate all the code at the same time and then run the program. They produce executable/.exe/object code files that can be run without the source code. Interpreters translate one line of a high-level language program at a time, and then run that line of code. They are most useful while developing the programs because errors can be corrected and then the program continues from that line. Assemblers are used to translate assembly code into binary/machine code. 4 Question Answer Marks 5(a) 1 mark for 2 or 3 correct ticks, 2 marks for 4 correct ticks Table Field name Primary Key (PK) Foreign Key (FK) MANAGER ManagerID  SHOP ManagerID  CAR RegistrationNumber  CAR ShopID  2 5(b) 1 mark per bullet point • Access rights give managers / himself access to different elements • … by having different accounts / logins • … which have different access rights e.g. read only // no access / read / write • Specific views can be assigned to himself and to the managers • … e.g. managers can only see the data for their own shop(s) 3 5(c)(i) 1 mark per correctly completed statement SELECT COUNT(RegistrationNumber) FROM CAR GROUP BY ShopID 3 5(c)(ii) 1 mark for each correct statement INSERT INTO CAR VALUES (\"123AA\",\"Tiger\",\"Lioness\",10500,\"12BSTREET\") 2 9618/13 Cambridge International AS & A Level – Mark Scheme PUBLISHED October/November 2021 © UCLES 2021 Page 8 of 9 Question Answer Marks 6(a) 1 mark for identification of line and description of error 1 mark for the correct statement Line number Description of the error Correct statement 2 Program Counter should be incremented, not decremented PC ← [PC] + 1 3 It should be the contents of the address in the MAR MDR ← [[MAR]] 4 6(b) 1 mark for each correct row Current contents of the ACC Instruction New contents of the ACC 11111111 OR 101 11111111 00000000 XOR #15 00001111 10101010 LSR #2 00101010 01010101 AND 104 00000000 4 Question Answer Marks 7(a)(i) 1 mark per bullet point • Smaller time gaps between the samples • Makes the digital sound wave more accurate • Smaller quantisation errors 2 7(a)(ii) 1 mark per bullet point • More samples/data are taken/recorded • … so more bits are stored altogether 2 7(b)(i) 1 mark per bullet point • Reduces the file size • Faster to transmit/download • Original file is too large for email storage/attachment 2 7(b)(ii) 1 mark per bullet point to max 2 e.g. • Reduce amplitude to only the range used • … limited amplitudes mean fewer bits per sample • Run-length-encoding • … Where consecutive sounds are the same record the binary value of the sound and number of times it repeats • Record the changes instead of the actual sounds 2"
+        "9618/13 Cambridge International AS & A Level – Mark Scheme PUBLISHED October/November 2021 © UCLES 2021 Page 7 of 9 Question Answer Marks 4(d) 1 mark for each correctly completed term Compilers are usually used when a high-level language program is complete. They translate all the code at the same time and then run the program. They produce executable/.exe/object code files that can be run without the source code. Interpreters translate one line of a high-level language program at a time, and then run that line of code. They are most useful while developing the programs because errors can be corrected and then the program continues from that line. Assemblers are used to translate assembly code into binary/machine code. 4 Question Answer Marks 5(a) 1 mark for 2 or 3 correct ticks, 2 marks for 4 correct ticks Table Field name Primary Key (PK) Foreign Key (FK) MANAGER ManagerID  SHOP ManagerID  CAR RegistrationNumber  CAR ShopID  2 5(b) 1 mark per bullet point • Access rights give managers / himself access to different elements • … by having different accounts / logins • … which have different access rights e.g. read only // no access / read / write • Specific views can be assigned to himself and to the managers • … e.g. managers can only see the data for their own shop(s) 3 5(c)(i) 1 mark per correctly completed statement SELECT COUNT(RegistrationNumber) FROM CAR GROUP BY ShopID 3 5(c)(ii) 1 mark for each correct statement INSERT INTO CAR VALUES (\"123AA\",\"Tiger\",\"Lioness\",10500,\"12BSTREET\") 2 9618/13 Cambridge International AS & A Level – Mark Scheme PUBLISHED October/November 2021 © UCLES 2021 Page 8 of 9 Question Answer Marks 6(a) 1 mark for identification of line and description of error 1 mark for the correct statement Line number Description of the error Correct statement 2 Program Counter should be incremented, not decremented PC ← [PC] + 1 3 It should be the contents of the address in the MAR MDR ← [[MAR]] 4 6(b) 1 mark for each correct row Current contents of the ACC Instruction New contents of the ACC 11111111 OR 101 11111111 00000000 XOR #15 00001111 10101010 LSR #2 00101010 01010101 AND 104 00000000 4 Question Answer Marks 7(a)(i) 1 mark per bullet point • Smaller time gaps between the samples • Makes the digital sound wave more accurate • Smaller quantisation errors 2 7(a)(ii) 1 mark per bullet point • More samples/data are taken/recorded �� … so more bits are stored altogether 2 7(b)(i) 1 mark per bullet point • Reduces the file size • Faster to transmit/download • Original file is too large for email storage/attachment 2 7(b)(ii) 1 mark per bullet point to max 2 e.g. • Reduce amplitude to only the range used • … limited amplitudes mean fewer bits per sample • Run-length-encoding • … Where consecutive sounds are the same record the binary value of the sound and number of times it repeats • Record the changes instead of the actual sounds 2"
       ],
       "qp_path": "9618 Past Papers/9618 Computer Science November 2021 Question paper  13.pdf",
       "ms_path": "9618 Past Papers/9618 Computer Science November 2021 Mark Scheme  13.pdf",
@@ -15446,7 +15400,7 @@
       "num_label": "2",
       "text": "Draw one line from each programming paradigm to its most appropriate description.",
       "marks": 4,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2021_november_31_q_2_p0.jpg"
       ],
@@ -15501,7 +15455,7 @@
       "num_label": "4",
       "text": "The following syntax diagrams for a particular programming language show the syntax of:\n\n4(a): Write the Backus-Naur Form (BNF) notation of the syntax diagram for character.\n4(b): A password must begin with a character and be followed by one or more digits or capital letters.\n4(b)(i): State an example of a valid password.\n4(b)(ii): A valid password is represented by the syntax diagram:",
       "marks": 7,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2021_november_31_q_4_p0.jpg",
         "questions_images\\9618_2021_november_31_q_4_a_p0.jpg",
@@ -15532,7 +15486,7 @@
       "num_label": "2",
       "text": "Draw one line from each programming paradigm to its most appropriate description.",
       "marks": 4,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2021_november_32_q_2_p0.jpg"
       ],
@@ -15587,7 +15541,7 @@
       "num_label": "4",
       "text": "The following syntax diagrams for a particular programming language show the syntax of:\n\n4(a): Write the Backus-Naur Form (BNF) notation of the syntax diagram for character.\n4(b): A password must begin with a character and be followed by one or more digits or capital letters.\n4(b)(i): State an example of a valid password.\n4(b)(ii): A valid password is represented by the syntax diagram:",
       "marks": 7,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2021_november_32_q_4_p0.jpg",
         "questions_images\\9618_2021_november_32_q_4_a_p0.jpg",
@@ -16054,7 +16008,7 @@
       "num_label": "9",
       "text": "Many modern televisions are examples of embedded systems.\n\n9(a): Explain why these televisions are embedded systems.\n9(b): Embedded systems use Electrically Erasable Programmable ROM (EEPROM).",
       "marks": 4,
-      "topic_id": "1.1",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\9618_2022_november_11_q_9_p0.jpg",
         "questions_images\\9618_2022_november_11_q_9_a_p0.jpg",
@@ -16084,7 +16038,7 @@
       "num_label": "0",
       "text": "Acceptable\n\n0(b): Complete the truth table for the logic expression:\n0(c): Embedded systems contain Read Only Memory (ROM) and Random Access Memory (RAM).",
       "marks": 4,
-      "topic_id": "1.1",
+      "topic_id": "3.2",
       "images_q": [
         "questions_images\\9618_2022_november_12_q_0_p0.jpg",
         "questions_images\\9618_2022_november_12_q_0_b_p0.jpg",
@@ -16219,7 +16173,7 @@
       "num_label": "9",
       "text": "One use of Artificial Intelligence (AI) is for facial recognition software.",
       "marks": 2,
-      "topic_id": "2.1",
+      "topic_id": "18.1",
       "images_q": [
         "questions_images\\9618_2022_november_12_q_9_p0.jpg"
       ],
@@ -16307,7 +16261,7 @@
       "num_label": "2",
       "text": "The relational database ASTRONOMY is used to store data about telescopes, the companies that own the telescopes and the photographs taken by the telescopes.\n\n2(a): Complete the following table by writing the correct answer for each item.\n2(b): A Database Management System (DBMS) has several features.\n2(c): Complete the SQL script to return the total number of telescopes owned by the company whose ID begins with HW.\n2(d): Write the SQL script to add one field to the table PHOTOGRAPH to store the resolution of the photograph, e.g. 1920 × 1068.\n2(e): The photographs are stored as bitmap images.\n2(f): Describe the purpose of a query processor in a DBMS.",
       "marks": 14,
-      "topic_id": "4.3",
+      "topic_id": "8.2",
       "images_q": [
         "questions_images\\9618_2022_november_13_q_2_p0.jpg",
         "questions_images\\9618_2022_november_13_q_2_a_p0.jpg",
@@ -16940,7 +16894,7 @@
       "num_label": "4",
       "text": "Draw one line to connect each stage of compilation to its most appropriate description.",
       "marks": 4,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2022_november_31_q_4_p0.jpg"
       ],
@@ -17141,7 +17095,7 @@
       "num_label": "3",
       "text": "Foxglove 10\n\n3(a): Explain why a protocol is used in communication between computers.\n3(b): The TCP/IP protocol implementation can be viewed as a stack.\n3(c): Describe the purpose of the IMAP protocol.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "14.1",
       "images_q": [
         "questions_images\\9618_2022_november_32_q_3_p0.jpg",
         "questions_images\\9618_2022_november_32_q_3_a_p0.jpg",
@@ -17231,7 +17185,7 @@
       "num_label": "6",
       "text": "Dahlia 5\n\n6(a): State two differences between symmetric and asymmetric encryption.\n6(b): Explain the process by which an organisation may acquire its digital certificate.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "17.1",
       "images_q": [
         "questions_images\\9618_2022_november_32_q_6_p0.jpg",
         "questions_images\\9618_2022_november_32_q_6_a_p0.jpg",
@@ -17285,7 +17239,7 @@
       "num_label": "8",
       "text": "Lupin 2\n\n8(a): Draw a logic circuit for an SR flip-flop and label the inputs.\n8(b): State the purpose of a flip-flop.\n8(c): Simplify the following expression using Boolean algebra, including De Morgan’s laws. Show your working.",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2022_november_32_q_8_p0.jpg",
         "questions_images\\9618_2022_november_32_q_8_a_p0.jpg",
@@ -17317,7 +17271,7 @@
       "num_label": "9",
       "text": "Lily 8\n\n9(a): Explain the need for scheduling in process management.\n9(b): Describe these scheduling routines and identify a benefit for each one.",
       "marks": 9,
-      "topic_id": "13.1",
+      "topic_id": "16.1",
       "images_q": [
         "questions_images\\9618_2022_november_32_q_9_p0.jpg",
         "questions_images\\9618_2022_november_32_q_9_a_p0.jpg",
@@ -17346,7 +17300,7 @@
       "num_label": "10",
       "text": "Hydrangea 4\n\n10(a): Define these Object-Oriented Programming (OOP) terms:\n10(b): A school has a program written using OOP to maintain its staff and student records.\n10(a): Several flower names have been deleted from the linked list. These are crossed out in the following table.\n10(b): Complete the pseudocode algorithm so that it achieves the following when applied to the arrays:\n10(c): Explain how you could improve the simplified linked list structure.",
       "marks": 13,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2022_november_32_q_10_p0.jpg",
         "questions_images\\9618_2022_november_32_q_10_a_p0.jpg",
@@ -17460,7 +17414,7 @@
       "num_label": "4",
       "text": "Draw one line to connect each stage of compilation to its most appropriate description.",
       "marks": 4,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2022_november_33_q_4_p0.jpg"
       ],
@@ -18194,7 +18148,7 @@
       "num_label": "1",
       "text": "A factory makes chocolate bars.\n\n1(a): An automated system counts the number of chocolate bars made at the end of production.\n1(b): A second automated system removes chocolate bars with an incorrect weight from the production line.\n1(c): The factory has many different machines with embedded systems.\n1(c)(i): Identify two features of embedded systems.\n1(c)(ii): Identify one drawback of embedded systems.",
       "marks": 6,
-      "topic_id": "1.1",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\9618_2023_november_12_q_1_p0.jpg",
         "questions_images\\9618_2023_november_12_q_1_a_p0.jpg",
@@ -18336,7 +18290,7 @@
       "num_label": "10",
       "text": "LDR #0",
       "marks": null,
-      "topic_id": "1.1",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\9618_2023_november_12_q_10_p0.jpg"
       ],
@@ -18677,7 +18631,7 @@
       "num_label": "5",
       "text": "A programmer uses an Integrated Development Environment (IDE) to develop a program that monitors air quality.\n\n5(a): Describe the following features of a typical IDE.\n5(b): The program is distributed by downloading the source code and its library files from a web server.\n5(b)(i): Explain the reasons for compressing the files.\n5(b)(ii): The program files are stored on a new hard disk after they have been downloaded.",
       "marks": 9,
-      "topic_id": "1.1",
+      "topic_id": "5.2",
       "images_q": [
         "questions_images\\9618_2023_november_13_q_5_p0.jpg",
         "questions_images\\9618_2023_november_13_q_5_a_p0.jpg",
@@ -19592,7 +19546,7 @@
       "num_label": "6",
       "text": "This diagram represents a logic circuit.\n\n6(a): Complete the truth table for the given logic circuit.\n6(b): Simplify the given Boolean expression using Boolean algebra. Show your working. Y = A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2023_november_31_q_6_p0.jpg",
         "questions_images\\9618_2023_november_31_q_6_a_p0.jpg",
@@ -19622,7 +19576,7 @@
       "num_label": "9",
       "text": "Tomaz is a student.\n\n9(a)(i): (i) Write the infix expression for this Reverse Polish Notation (RPN) expression: 5 2 – 5 4 + * 9 /\n9(a)(ii): Show how the contents of the following stack will change as the RPN expression in part (a)(i) is evaluated.\n9(b): Explain how a stack can be used to evaluate RPN expressions.",
       "marks": 9,
-      "topic_id": "13.1",
+      "topic_id": "10.4",
       "images_q": [
         "questions_images\\9618_2023_november_31_q_9_p0.jpg",
         "questions_images\\9618_2023_november_31_q_9_a_i_p0.jpg",
@@ -19710,7 +19664,7 @@
       "num_label": "15",
       "text": "Tomaz has chosen mathematics as his first choice.",
       "marks": null,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2023_november_31_q_15_p0.jpg"
       ],
@@ -19731,7 +19685,7 @@
       "num_label": "20",
       "text": "Tomaz has chosen computer science as his second choice.\n\n20(a): Anthony is a student who would like to study history and geography.\n20(b): Using the variable X, the goal:\n20(c): Students must choose two different subjects such that:",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2023_november_31_q_20_p0.jpg",
         "questions_images\\9618_2023_november_31_q_20_a_p0.jpg",
@@ -19780,7 +19734,7 @@
       "num_label": "1",
       "text": "Music is a hobby\n\n1(a): Real numbers are stored in a computer using floating point representation with:\n1(b): Explain why a binary representation is sometimes only an approximation to the real number it represents.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2023_november_32_q_1_p0.jpg",
         "questions_images\\9618_2023_november_32_q_1_a_p0.jpg",
@@ -19888,7 +19842,7 @@
       "num_label": "7",
       "text": "Toby is a person\n\n7(a): This logic circuit represents the Boolean expression: X = A + B + C\n7(b): Apply De Morgan’s laws to the expression: X = A + B + C\n7(c): Simplify the following expression using Boolean algebra.",
       "marks": 5,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2023_november_32_q_7_p0.jpg",
         "questions_images\\9618_2023_november_32_q_7_a_p0.jpg",
@@ -19997,7 +19951,7 @@
       "num_label": "13",
       "text": "Natasha enjoys travelling",
       "marks": null,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2023_november_32_q_13_p0.jpg"
       ],
@@ -20018,7 +19972,7 @@
       "num_label": "19",
       "text": "Toby dislikes caving\n\n19(a): Carlos is a person who enjoys the hobby of cycling but does not like music.\n19(b): Using the variable P, the goal:\n19(c): N is a person who might enjoy H if H is a hobby and N does not dislike H.",
       "marks": 9,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2023_november_32_q_19_p0.jpg",
         "questions_images\\9618_2023_november_32_q_19_a_p0.jpg",
@@ -20121,7 +20075,7 @@
       "num_label": "6",
       "text": "This diagram represents a logic circuit.\n\n6(a): Complete the truth table for the given logic circuit.\n6(b): Simplify the given Boolean expression using Boolean algebra. Show your working. Y = A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2023_november_33_q_6_p0.jpg",
         "questions_images\\9618_2023_november_33_q_6_a_p0.jpg",
@@ -20151,7 +20105,7 @@
       "num_label": "9",
       "text": "Tomaz is a student.\n\n9(a)(i): (i) Write the infix expression for this Reverse Polish Notation (RPN) expression: 5 2 – 5 4 + * 9 /\n9(a)(ii): Show how the contents of the following stack will change as the RPN expression in part (a)(i) is evaluated.\n9(b): Explain how a stack can be used to evaluate RPN expressions.",
       "marks": 9,
-      "topic_id": "13.1",
+      "topic_id": "10.4",
       "images_q": [
         "questions_images\\9618_2023_november_33_q_9_p0.jpg",
         "questions_images\\9618_2023_november_33_q_9_a_i_p0.jpg",
@@ -20239,7 +20193,7 @@
       "num_label": "15",
       "text": "Tomaz has chosen mathematics as his first choice.",
       "marks": null,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2023_november_33_q_15_p0.jpg"
       ],
@@ -20260,7 +20214,7 @@
       "num_label": "20",
       "text": "Tomaz has chosen computer science as his second choice.\n\n20(a): Anthony is a student who would like to study history and geography.\n20(b): Using the variable X, the goal:\n20(c): Students must choose two different subjects such that:",
       "marks": 8,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2023_november_33_q_20_p0.jpg",
         "questions_images\\9618_2023_november_33_q_20_a_p0.jpg",
@@ -20841,7 +20795,7 @@
       "num_label": "3",
       "text": "A computer system has a dual-core Central Processing Unit (CPU).\n\n3(c): Complete the table by writing a definition for each of the database terms.\n3(a): State the purpose of the system clock and the Control Unit (CU) in a CPU.\n3(b)(i): (i) The number of cores in the processor affects the performance of the computer system.\n3(b)(ii): A solid state (flash) memory drive is automatically recognised by the computer when it is plugged into a port in the computer.\n3(c): Identify two disadvantages of using Dynamic RAM (DRAM) instead of Static RAM (SRAM) in a computer system.\n3(d): The computer system is used to store data received from a temperature sensor every five seconds. The data is stored on an optical disc using an optical disc reader/writer.\n3(d)(i): Describe the principal operation of an optical disc reader/writer.\n3(d)(ii): The computer uses a buffer when writing data to the optical disc.",
       "marks": 22,
-      "topic_id": "1.1",
+      "topic_id": "4.1",
       "images_q": [
         "questions_images\\9618_2024_november_11_q_3_p0.jpg",
         "questions_images\\9618_2024_november_11_q_3_c_p0.jpg",
@@ -20883,7 +20837,7 @@
       "num_label": "4",
       "text": "A student uses a laptop to write a program that is saved as a text file.\n\n4(a): The laptop has utility software and an Operating System (OS).\n4(a)(i): Describe the file management tasks carried out by an OS.\n4(a)(ii): Explain the need for back-up software.\n4(b): The student compresses the file before it is emailed to their teacher as an attachment.\n4(b)(i): Explain the benefits to the teacher of the attachment being a compressed file.\n4(b)(ii): Describe one lossless method of compressing a text file.\n4(c): The student used a program library when writing their program.\n4(d): The program code is written using an Integrated Development Environment (IDE).\n4(d)(i): One presentation feature found in a typical IDE is prettyprint.\n4(d)(ii): One debugging feature found in a typical IDE is single stepping.",
       "marks": 17,
-      "topic_id": "1.1",
+      "topic_id": "5.1",
       "images_q": [
         "questions_images\\9618_2024_november_11_q_4_p0.jpg",
         "questions_images\\9618_2024_november_11_q_4_a_p0.jpg",
@@ -20958,7 +20912,7 @@
       "num_label": "0",
       "text": "High\n\n0(c): Explain whether the security system is an example of a monitoring system or a control system.",
       "marks": 3,
-      "topic_id": "1.1",
+      "topic_id": "23.1",
       "images_q": [
         "questions_images\\9618_2024_november_11_q_0_p0.jpg",
         "questions_images\\9618_2024_november_11_q_0_c_p0.jpg"
@@ -21005,7 +20959,7 @@
       "num_label": "7",
       "text": "Software is distributed with a licence.\n\n7(a): Give two benefits of distributing software using a shareware software licence.\n7(b): Give two benefits of distributing software using a commercial software licence.",
       "marks": 4,
-      "topic_id": "1.1",
+      "topic_id": "7.1",
       "images_q": [
         "questions_images\\9618_2024_november_11_q_7_p0.jpg",
         "questions_images\\9618_2024_november_11_q_7_a_p0.jpg",
@@ -21061,7 +21015,7 @@
       "num_label": "1",
       "text": "LDM #19 DEC ACC\n\n1(a): Complete the truth table for the logic expression:\n1(b): Draw the logic circuit for the logic expression:",
       "marks": 4,
-      "topic_id": "4.1",
+      "topic_id": "3.2",
       "images_q": [
         "questions_images\\9618_2024_november_12_q_1_p0.jpg",
         "questions_images\\9618_2024_november_12_q_1_a_p0.jpg",
@@ -21121,7 +21075,7 @@
       "num_label": "3",
       "text": "A student has a computer.\n\n3(a): The computer is designed using the Von Neumann model for a computer system.\n3(b): The student needs to connect the computer to a monitor that has a screen resolution of 2560 × 1600 pixels. The monitor also has built-in speakers.\n3(c): The computer has an Operating System (OS). One of the key management tasks of the OS is process management.",
       "marks": 12,
-      "topic_id": "1.1",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\9618_2024_november_12_q_3_p0.jpg",
         "questions_images\\9618_2024_november_12_q_3_a_p0.jpg",
@@ -21187,7 +21141,7 @@
       "num_label": "5",
       "text": "A computer programmer is learning about the importance of acting ethically at work.\n\n5(a): Explain the reasons why the computer programmer needs to act ethically towards colleagues and the public.\n5(b): The programmer writes a program to be used in a business. The source code of the program can be modified by the business. The business pays the programmer for the maintenance and security updates.\n5(b)(i): Identify one suitable type of software licence for the program and describe the reasons for your choice.\n5(b)(ii): Explain the reasons why the programmer should copyright their program.",
       "marks": 9,
-      "topic_id": "1.1",
+      "topic_id": "7.1",
       "images_q": [
         "questions_images\\9618_2024_november_12_q_5_p0.jpg",
         "questions_images\\9618_2024_november_12_q_5_a_p0.jpg",
@@ -21253,7 +21207,7 @@
       "num_label": "7",
       "text": "A student takes a photograph of a science experiment.\n\n7(a): The photograph is saved as a bitmapped image.\n7(a)(i): Define the following bitmap terms.\n7(a)(ii): Explain why changing the image resolution will affect the image quality and file size.\n7(a)(iii): Identify one lossless method of compressing an image.\n7(b): The student draws a picture on paper that is scanned into the computer and saved as a vector graphic.",
       "marks": 7,
-      "topic_id": "1.1",
+      "topic_id": "1.2",
       "images_q": [
         "questions_images\\9618_2024_november_12_q_7_p0.jpg",
         "questions_images\\9618_2024_november_12_q_7_a_p0.jpg",
@@ -21345,7 +21299,7 @@
       "num_label": "1",
       "text": "LDD 50 ADD #4 ADD 54\n\n1(a): Describe the operation of a 2-input XOR gate.\n1(b): Write the logic expression for the following logic circuit.\n1(c): Draw the logic circuit for the logic expression:",
       "marks": 5,
-      "topic_id": "4.2",
+      "topic_id": "3.2",
       "images_q": [
         "questions_images\\9618_2024_november_13_q_1_p0.jpg",
         "questions_images\\9618_2024_november_13_q_1_a_p0.jpg",
@@ -21431,7 +21385,7 @@
       "num_label": "4",
       "text": "A company makes ice cream and sells it to shops.\n\n4(a): Identify two foreign keys in the table SALE and the table that each foreign key references.\n4(b): Write an SQL script to return the total quantity of ice cream sold to the customer with the ID of 0034E in the year 2023.\n4(c): The table definition for BATCH is repeated here:\n4(c)(i): Write an SQL script to define the table BATCH.\n4(c)(ii): The table BATCH is not normalised.\n4(d): Complete the following table by defining each database term.\n4(e): A Database Management System (DBMS) supports data integrity.",
       "marks": 19,
-      "topic_id": "4.3",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\9618_2024_november_13_q_4_p0.jpg",
         "questions_images\\9618_2024_november_13_q_4_a_p0.jpg",
@@ -21471,7 +21425,7 @@
       "num_label": "5",
       "text": "A computer programmer writes programs that are distributed with a software licence.\n\n5(a): Complete the table by writing the type of software licence each statement describes.\n5(b): Explain the reasons why it is important for the computer programmer to join a professional ethical body.",
       "marks": 6,
-      "topic_id": "1.1",
+      "topic_id": "7.1",
       "images_q": [
         "questions_images\\9618_2024_november_13_q_5_p0.jpg",
         "questions_images\\9618_2024_november_13_q_5_a_p0.jpg",
@@ -22393,7 +22347,7 @@
       "num_label": "3",
       "text": "Blue\n\n3(a): Describe circuit switching as a method of data transmission.\n3(b): State one benefit and one drawback of circuit switching as a method of data transmission.",
       "marks": 5,
-      "topic_id": "13.1",
+      "topic_id": "14.2",
       "images_q": [
         "questions_images\\9618_2024_november_31_q_3_p0.jpg",
         "questions_images\\9618_2024_november_31_q_3_a_p0.jpg",
@@ -22447,7 +22401,7 @@
       "num_label": "5",
       "text": "Indigo\n\n5(a): Explain what is meant by a hashing algorithm in the context of file access.\n5(b): The use of a hashing algorithm can result in the same storage location being identified for more than one record.\n5(c): The linked list in part (a) is implemented using a 1D array of records. Each record contains a left pointer, data and a right pointer.",
       "marks": 13,
-      "topic_id": "13.1",
+      "topic_id": "13.2",
       "images_q": [
         "questions_images\\9618_2024_november_31_q_5_p0.jpg",
         "questions_images\\9618_2024_november_31_q_5_a_p0.jpg",
@@ -22476,7 +22430,7 @@
       "num_label": "7",
       "text": "The truth table for a logic circuit is shown.\n\n7(a): Write the Boolean logic expression that corresponds to the given truth table as the sum-of-products.\n7(b): Complete the Karnaugh map (K-map) for the given truth table.\n7(c): Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.\n7(d)(i): (i) Write the Boolean logic expression from your answer to part (c) as the simplified sum-of-products.\n7(d)(ii): Use Boolean algebra to write your answer to part (d)(i) in its simplest form.",
       "marks": 10,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2024_november_31_q_7_p0.jpg",
         "questions_images\\9618_2024_november_31_q_7_a_p0.jpg",
@@ -22513,7 +22467,7 @@
       "num_label": "9",
       "text": "A veterinary surgery wants to create a class for individual pets. Some of the attributes required in the class are listed in the table.\n\n9(a): State one reason why the attributes would be declared as PRIVATE.\n9(b): Complete the class diagram for Pet, to include:",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2024_november_31_q_9_p0.jpg",
         "questions_images\\9618_2024_november_31_q_9_a_p0.jpg",
@@ -22542,7 +22496,7 @@
       "num_label": "10",
       "text": "Several syntax diagrams are shown.\n\n10(a): Complete the Backus-Naur Form (BNF) for the given syntax diagrams.\n10(b): A new syntax rule, password, is required. It must begin with a letter or a symbol, followed by a digit and end with one or two symbols.\n10(b)(i): Draw a syntax diagram for password.\n10(b)(ii): Write the BNF for password.",
       "marks": 9,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2024_november_31_q_10_p0.jpg",
         "questions_images\\9618_2024_november_31_q_10_a_p0.jpg",
@@ -22606,7 +22560,7 @@
       "num_label": "4",
       "text": "Numbers are stored in a computer using binary floating‑point representation with:\n\n4(a): Calculate the denary value of the given normalised binary floating‑point number.\n4(b): Calculate the normalised binary floating‑point representation of – 49.1875 in this system.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "13.3",
       "images_q": [
         "questions_images\\9618_2024_november_32_q_4_p0.jpg",
         "questions_images\\9618_2024_november_32_q_4_a_p0.jpg",
@@ -22635,7 +22589,7 @@
       "num_label": "6",
       "text": "The truth table for a logic circuit is shown.\n\n6(a): Write the Boolean logic expression that corresponds to the given truth table as the sum‑of‑products.\n6(b): Complete the Karnaugh map (K‑map) for the given truth table.\n6(c): Draw loop(s) around appropriate group(s) in the K‑map to produce an optimal sum‑of‑products.\n6(d): Write the Boolean logic expression from your answer to part (c) as the simplified sum‑of‑products.",
       "marks": 9,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2024_november_32_q_6_p0.jpg",
         "questions_images\\9618_2024_november_32_q_6_a_p0.jpg",
@@ -22669,7 +22623,7 @@
       "num_label": "7",
       "text": "Several syntax diagrams are shown.\n\n7(a): State why each number is invalid for the given syntax diagrams.\n7(b): Complete the Backus‑Naur Form (BNF) for the given syntax diagrams.\n7(c): A new syntax rule, code, is required. It must begin with a letter, followed by one or two numbers, and end with a symbol.\n7(c)(i): Draw a syntax diagram for code.\n7(c)(ii): Write the BNF for code.",
       "marks": 9,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2024_november_32_q_7_p0.jpg",
         "questions_images\\9618_2024_november_32_q_7_a_p0.jpg",
@@ -22729,7 +22683,7 @@
       "num_label": "10",
       "text": "Objects and classes form the basic structure of Object‑Oriented Programming (OOP).\n\n10(a): Outline the structure of a class.\n10(b): Give three differences between an object and a class.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2024_november_32_q_10_p0.jpg",
         "questions_images\\9618_2024_november_32_q_10_a_p0.jpg",
@@ -22844,7 +22798,7 @@
       "num_label": "3",
       "text": "Blue\n\n3(a): Describe circuit switching as a method of data transmission.\n3(b): State one benefit and one drawback of circuit switching as a method of data transmission.",
       "marks": 5,
-      "topic_id": "13.1",
+      "topic_id": "14.2",
       "images_q": [
         "questions_images\\9618_2024_november_33_q_3_p0.jpg",
         "questions_images\\9618_2024_november_33_q_3_a_p0.jpg",
@@ -22898,7 +22852,7 @@
       "num_label": "5",
       "text": "Indigo\n\n5(a): Explain what is meant by a hashing algorithm in the context of file access.\n5(b): The use of a hashing algorithm can result in the same storage location being identified for more than one record.\n5(c): The linked list in part (a) is implemented using a 1D array of records. Each record contains a left pointer, data and a right pointer.",
       "marks": 13,
-      "topic_id": "13.1",
+      "topic_id": "13.2",
       "images_q": [
         "questions_images\\9618_2024_november_33_q_5_p0.jpg",
         "questions_images\\9618_2024_november_33_q_5_a_p0.jpg",
@@ -22927,7 +22881,7 @@
       "num_label": "7",
       "text": "The truth table for a logic circuit is shown.\n\n7(a): Write the Boolean logic expression that corresponds to the given truth table as the sum-of-products.\n7(b): Complete the Karnaugh map (K-map) for the given truth table.\n7(c): Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.\n7(d)(i): (i) Write the Boolean logic expression from your answer to part (c) as the simplified sum-of-products.\n7(d)(ii): Use Boolean algebra to write your answer to part (d)(i) in its simplest form.",
       "marks": 10,
-      "topic_id": "13.1",
+      "topic_id": "15.2",
       "images_q": [
         "questions_images\\9618_2024_november_33_q_7_p0.jpg",
         "questions_images\\9618_2024_november_33_q_7_a_p0.jpg",
@@ -22964,7 +22918,7 @@
       "num_label": "9",
       "text": "A veterinary surgery wants to create a class for individual pets. Some of the attributes required in the class are listed in the table.\n\n9(a): State one reason why the attributes would be declared as PRIVATE.\n9(b): Complete the class diagram for Pet, to include:",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "20.1",
       "images_q": [
         "questions_images\\9618_2024_november_33_q_9_p0.jpg",
         "questions_images\\9618_2024_november_33_q_9_a_p0.jpg",
@@ -22993,7 +22947,7 @@
       "num_label": "10",
       "text": "Several syntax diagrams are shown.\n\n10(a): Complete the Backus-Naur Form (BNF) for the given syntax diagrams.\n10(b): A new syntax rule, password, is required. It must begin with a letter or a symbol, followed by a digit and end with one or two symbols.\n10(b)(i): Draw a syntax diagram for password.\n10(b)(ii): Write the BNF for password.",
       "marks": 9,
-      "topic_id": "13.1",
+      "topic_id": "16.2",
       "images_q": [
         "questions_images\\9618_2024_november_33_q_10_p0.jpg",
         "questions_images\\9618_2024_november_33_q_10_a_p0.jpg",
@@ -23584,7 +23538,7 @@
       "num_label": "2",
       "text": "A relational database, WORKEXPERIENCE, stores data about students and the companies where they complete work experience.\n\n2(a): Complete the entity-relationship (E-R) diagram for the database WORKEXPERIENCE.\n2(b): Explain why the database WORKEXPERIENCE is in Third Normal Form (3NF).\n2(c): Some example data from the PLACEMENT table is shown:\n2(c)(i): Write a Structured Query Language (SQL) script to delete all placements that have been completed.\n2(c)(ii): Write an SQL script to return the total number of placements completed by the student with ID LDEA01 at the company with ID NEAM. The total should be given an appropriate name.\n2(d): The database tables are repeated here:",
       "marks": 13,
-      "topic_id": "4.3",
+      "topic_id": "8.2",
       "images_q": [
         "questions_images\\9618_2025_november_11_q_2_p0.jpg",
         "questions_images\\9618_2025_november_11_q_2_a_p0.jpg",
@@ -23695,7 +23649,7 @@
       "num_label": "7",
       "text": "Web browsers use Internet Protocol (IP) addresses.\n\n7(a): Complete the table by describing the following types of IP address.\n7(b): Consider the following IP address:\n7(c): A user types a Uniform Resource Locator (URL) into the address bar of a web browser to access a web page.\n7(d): A bitmap file is downloaded. The image has a maximum of 256 colours and measures 512 pixels wide by 2048 pixels high.\n7(d)(i): Calculate an estimate of the file size of the bitmap in kibibytes.\n7(d)(ii): Explain why the actual file size may be larger than the one calculated in (d)(i).\n7(d)(iii): Explain how a bitmap image is compressed using run-length encoding (RLE).",
       "marks": 14,
-      "topic_id": "1.1",
+      "topic_id": "2.1",
       "images_q": [
         "questions_images\\9618_2025_november_11_q_7_p0.jpg",
         "questions_images\\9618_2025_november_11_q_7_a_p0.jpg",
@@ -23794,7 +23748,7 @@
       "num_label": "10",
       "text": "An architect needs a model of a building.\n\n10(a): Explain how the model will be printed using a 3D printer.\n10(b): State why a 3D printer needs a buffer.",
       "marks": 4,
-      "topic_id": "1.1",
+      "topic_id": "3.1",
       "images_q": [
         "questions_images\\9618_2025_november_11_q_10_p0.jpg",
         "questions_images\\9618_2025_november_11_q_10_a_p0.jpg",
@@ -23847,7 +23801,7 @@
       "num_label": "16",
       "text": "MB cache 32 MB cache",
       "marks": 4,
-      "topic_id": "1.1",
+      "topic_id": "4.1",
       "images_q": [
         "questions_images\\9618_2025_november_12_q_16_p0.jpg"
       ],
@@ -23868,7 +23822,7 @@
       "num_label": "4",
       "text": "A relational database, SHIPPING, stores data about the ships in a company and the containers that are carried on the ships.\n\n4(a): Describe the relationship between the two tables. Refer to the primary and foreign keys in your answer.\n4(b): The table CONTAINER needs an additional field to store the data for the last inspection date.\n4(c): Write an SQL script to return the number of containers stored in the database for the ship with the name Caledonia.\n4(d): Describe the purpose of a developer interface in a Database Management System (DBMS).",
       "marks": 10,
-      "topic_id": "4.2",
+      "topic_id": "8.3",
       "images_q": [
         "questions_images\\9618_2025_november_12_q_4_p0.jpg",
         "questions_images\\9618_2025_november_12_q_4_a_p0.jpg",
@@ -23972,7 +23926,7 @@
       "num_label": "10",
       "text": "A programmer is developing a computer program.\n\n10(a): Explain how the programmer can first use an interpreter and then a compiler to develop the computer program.\n10(b): The programmer releases the program as Free Software.\n10(c): A user downloads the computer program from the internet.",
       "marks": 7,
-      "topic_id": "1.1",
+      "topic_id": "5.2",
       "images_q": [
         "questions_images\\9618_2025_november_12_q_10_p0.jpg",
         "questions_images\\9618_2025_november_12_q_10_a_p0.jpg",
@@ -24093,7 +24047,7 @@
       "num_label": "3",
       "text": "Darwin Acula F No\n\n3(a): Complete the truth table for the following logic expression:\n3(b): Draw a logic circuit for the logic expression:\n3(c): Products are given a rating between 1 and 10 inclusive.\n3(d): A Database Management System (DBMS) is used to maintain and manage the database.",
       "marks": 17,
-      "topic_id": "1.1",
+      "topic_id": "3.2",
       "images_q": [
         "questions_images\\9618_2025_november_13_q_3_p0.jpg",
         "questions_images\\9618_2025_november_13_q_3_a_p0.jpg",
@@ -25056,7 +25010,7 @@
       "num_label": "2",
       "text": "Numbers are stored in a computer system using binary floating‑point representation with:\n\n2(a): Write the normalised floating‑point representation of the following positive binary number using this system.\n2(b): Calculate the normalised binary floating‑point representation of – 76.1875 in this system. Show your working.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "13.3",
       "images_q": [
         "questions_images\\9618_2025_november_31_q_2_p0.jpg",
         "questions_images\\9618_2025_november_31_q_2_a_p0.jpg",
@@ -25085,7 +25039,7 @@
       "num_label": "10",
       "text": "Explain what is meant by exception handling. Include an example of a possible cause of an exception in your answer.",
       "marks": 3,
-      "topic_id": "19.2",
+      "topic_id": "20.2",
       "images_q": [
         "questions_images\\9618_2025_november_31_q_10_p0.jpg"
       ],
@@ -25110,7 +25064,7 @@
       "num_label": "11",
       "text": "The table shows assembly language instructions for a processor that has one register, the Accumulator (ACC).\n\n11(a): Write assembly language code, using only the given instruction set to:\n11(b): The address 632 contains the value 45.",
       "marks": 7,
-      "topic_id": "13.1",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\9618_2025_november_31_q_11_p0.jpg",
         "questions_images\\9618_2025_november_31_q_11_a_p0.jpg",
@@ -25201,7 +25155,7 @@
       "num_label": "10",
       "text": "An exception is an error that may cause a program to halt unexpectedly.\n\n10(a): Describe how program termination due to an exception can be avoided.\n10(b): Identify two possible causes of exceptions.",
       "marks": 4,
-      "topic_id": "13.1",
+      "topic_id": "20.2",
       "images_q": [
         "questions_images\\9618_2025_november_32_q_10_p0.jpg",
         "questions_images\\9618_2025_november_32_q_10_a_p0.jpg",
@@ -25230,7 +25184,7 @@
       "num_label": "11",
       "text": "The table shows assembly language instructions for a processor that has one register, the Accumulator (ACC).",
       "marks": 7,
-      "topic_id": "19.1",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\9618_2025_november_32_q_11_p0.jpg",
         "questions_images\\9618_2025_november_32_q_11_p1.jpg"
@@ -25256,7 +25210,7 @@
       "num_label": "2",
       "text": "Numbers are stored in a computer system using binary floating‑point representation with:\n\n2(a): Outline the effect of changing the number of bits used to store the mantissa to 10 bits, in this system.\n2(b): Describe one example of a situation that could cause an overflow to occur and the consequences of such an overflow.",
       "marks": 6,
-      "topic_id": "13.1",
+      "topic_id": "13.3",
       "images_q": [
         "questions_images\\9618_2025_november_33_q_2_p0.jpg",
         "questions_images\\9618_2025_november_33_q_2_a_p0.jpg",
@@ -25437,7 +25391,7 @@
       "num_label": "12",
       "text": "An exception can occur when running a program.\n\n12(a): Explain what is meant by an exception.\n12(b): Identify one example of an exception and give one reason why the exception may cause a problem.",
       "marks": 5,
-      "topic_id": "13.1",
+      "topic_id": "20.2",
       "images_q": [
         "questions_images\\9618_2025_november_33_q_12_p0.jpg",
         "questions_images\\9618_2025_november_33_q_12_a_p0.jpg",
@@ -25466,7 +25420,7 @@
       "num_label": "13",
       "text": "The table shows assembly language instructions for a processor that has one register, the Accumulator (ACC).",
       "marks": 7,
-      "topic_id": "13.1",
+      "topic_id": "4.2",
       "images_q": [
         "questions_images\\9618_2025_november_33_q_13_p0.jpg"
       ],
@@ -30099,7 +30053,7 @@
       "marks": 8,
       "topic_id": "23.1",
       "answers": [
-        "Eight from:  Computers are able to take readings at more frequent intervals … (1st) … as humans take time writing down readings (1)  Computers can read several physical variables at the same time … (1st) … whereas humans would only be able to read one at a time (1)  Computers continuously take readings … (1st) … whereas humans take breaks (accept any reason why an individual human would not take readings continuously) (1)  Computers take readings as planned (as planned is an example) … (1st) … whereas humans may forget (1)  Readings taken by computers tend to be more accurate (1)  Computers can produce accurate graphs automatically/ instantaneously … (1st) … whereas humans take time to draw them (1)  Tables of results are produced automatically after the readings are received by the computer … (1st) … unlike a human who would take a lot of time to write them down neatly (1)  Computers can work in dangerous conditions (1st) plus one mark for an example of a dangerous condition (1) Max 6 marks for just bullet points 8 PUBLISHED May/June 2023 Question Answer Marks"
+        "Eight from:  Computers are able to take readings at more frequent intervals … (1st) … as humans take time writing down readings (1)  Computers can read several physical variables at the same time … (1st) … whereas humans would only be able to read one at a time (1)  Computers continuously take readings … (1st) … whereas humans take breaks (accept any reason why an individual human would not take readings continuously) (1)  Computers take readings as planned (as planned is an example) ��� (1st) … whereas humans may forget (1)  Readings taken by computers tend to be more accurate (1)  Computers can produce accurate graphs automatically/ instantaneously … (1st) … whereas humans take time to draw them (1)  Tables of results are produced automatically after the readings are received by the computer … (1st) … unlike a human who would take a lot of time to write them down neatly (1)  Computers can work in dangerous conditions (1st) plus one mark for an example of a dangerous condition (1) Max 6 marks for just bullet points 8 PUBLISHED May/June 2023 Question Answer Marks"
       ],
       "qp_path": "9626 Past Papers/9626 Information Technology June 2023 Question paper  13.pdf",
       "ms_path": "9626 Past Papers/9626 Information Technology June 2023 Mark Scheme  13.pdf",
@@ -33130,7 +33084,7 @@
       "paper": "Paper 1",
       "variant": "12",
       "num_label": "10",
-      "text": "* 0000800000008 * ,\u0001\u0001\u0001\u0001 \u0001\u0001\u0001\u0001\u0001\u0001\u0001 , ĬÙú¾Ġ´íÈõÏĪÅĊÝûµĀ× ĬĈÔûÜģĘčÙĊüÿù»ÆęēĂ ĥÅåĕµĕåµõÅÅąÅĕĥĕąÕ DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN A person uses a dialogue interface to control multiple devices in their home. Evaluate the use of a dialogue interface in this context.",
+      "text": "* 0000800000008 * ,\u0001\u0001\u0001\u0001 \u0001\u0001\u0001\u0001\u0001\u0001\u0001 , ĬÙú¾Ġ´í��õÏĪÅĊÝûµĀ× ĬĈÔûÜģĘčÙĊüÿù»ÆęēĂ ĥÅåĕµĕåµõÅÅąÅĕĥĕąÕ DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN A person uses a dialogue interface to control multiple devices in their home. Evaluate the use of a dialogue interface in this context.",
       "marks": 6,
       "topic_id": "23.2",
       "answers": [
@@ -37021,7 +36975,7 @@
       "paper": "Paper 3",
       "variant": "32",
       "num_label": "4",
-      "text": "* 0000800000004 * ,\u0001\u0001\u0001\u0001 \u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0005, ĬÕú¾Ġ´íÈõÏĪÅĊàú¸Ā× ĬåíñÚĨĐĢçĆûêÝÿéēĠĂ ĥąĕÕõµĥµåĕĕÅÅµąµµÕ DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN In computer animation, frames are played in sequence to create the illusion that an object is moving.\n\n4(a): Describe what is meant by a frame in a computer animation.\n4(b): Explain how changes in the frame rate can affect how objects appear to move.",
+      "text": "* 0000800000004 * ,\u0001\u0001\u0001\u0001 \u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0005, ĬÕú��Ġ´íÈõÏĪÅĊàú¸Ā× ĬåíñÚĨĐĢçĆûêÝÿéēĠĂ ĥąĕÕõµĥµåĕĕÅÅµąµµÕ DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN In computer animation, frames are played in sequence to create the illusion that an object is moving.\n\n4(a): Describe what is meant by a frame in a computer animation.\n4(b): Explain how changes in the frame rate can affect how objects appear to move.",
       "marks": 6,
       "topic_id": "40.1",
       "answers": [
@@ -42565,7 +42519,7 @@
       "paper": "Paper 1",
       "variant": "11",
       "num_label": "7",
-      "text": "* 0000800000006 * ,\u0001\u0001\u0001\u0001 \u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0007, ĬÙú¾Ġ´íÈõÏĪÅĊàùµþ× ĬäÍúÓĨĂīÓĊïĝîďĢìĐĂ ĥąµĕµĕąµååµÅąµåõÅÕ DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN Discuss the benefits and drawbacks of the use of a compiler to convert a computer program in a high level language into a low level language.",
+      "text": "* 0000800000006 * ,\u0001\u0001\u0001\u0001 \u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0007, ĬÙú¾Ġ´íÈõÏĪÅĊàùµþ× ĬäÍúÓĨ��īÓĊïĝîďĢìĐĂ ĥąµĕµĕąµååµÅąµåõÅÕ DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN Discuss the benefits and drawbacks of the use of a compiler to convert a computer program in a high level language into a low level language.",
       "marks": 8,
       "topic_id": "22.2",
       "answers": [
