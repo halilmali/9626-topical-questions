@@ -11,6 +11,7 @@ let originalDbV2 = null;
 let isDirty = false;
 let currentTab = 'assigner';
 let isServerOnline = false;
+let pendingRemovedImages = new Set();
 
 // Pagination and Filtering State
 let currentPage = 1;
@@ -432,6 +433,7 @@ function markDirty() {
 function resetEdits() {
   dbV1 = JSON.parse(JSON.stringify(originalDbV1));
   dbV2 = JSON.parse(JSON.stringify(originalDbV2));
+  pendingRemovedImages.clear();
 
   isDirty = false;
   unsavedBadge.style.display = 'none';
@@ -865,13 +867,14 @@ function updatePaperLink(inputEl) {
 
 // Remove an image from a question's image array
 function removeImage(qid, type, index) {
-  if (!confirm('Remove this image from the question?')) return;
+  if (!confirm('Remove this image from the question and archive the file when changes are saved?')) return;
   
   const question = dbV2.questions.find(q => q.id === qid);
   if (!question || !question[type]) return;
   
-  // Remove the image
-  question[type].splice(index, 1);
+  // Remove the reference now and archive the source file on save.
+  const [removedImage] = question[type].splice(index, 1);
+  if (removedImage) pendingRemovedImages.add(removedImage);
   
   // Sync to dbV1
   const { year, session, paper, variant, num_label } = question;
@@ -888,7 +891,7 @@ function removeImage(qid, type, index) {
   
   markDirty();
   applyFilters(); // Re-render to update UI
-  showToast('Image Removed', 'Image has been removed from the question.', 'info');
+  showToast('Image Removed', 'Image will be archived when changes are saved.', 'info');
 }
 
 // Add a new image from the input field
@@ -917,6 +920,7 @@ function addImageFromInput(inputEl) {
   
   // Normalize path separators to backslashes (consistent with existing data)
   const normalizedPath = path.replace(/\//g, '\\');
+  pendingRemovedImages.delete(normalizedPath);
   
   // Add the image path
   question[type].push(normalizedPath);
@@ -1297,17 +1301,23 @@ async function saveDatabaseToServer() {
       },
       body: JSON.stringify({
         v1: dbV1,
-        v2: dbV2
+        v2: dbV2,
+        removedImages: [...pendingRemovedImages]
       })
     });
 
     const result = await response.json();
     if (result.success) {
-      showToast('Database Saved!', 'Database JSON files updated on disk.', 'success');
+      const archivedCount = result.archivedImages?.length || 0;
+      const message = archivedCount
+        ? `Database updated and ${archivedCount} image${archivedCount === 1 ? '' : 's'} archived.`
+        : 'Database JSON files updated on disk.';
+      showToast('Database Saved!', message, 'success');
       
       // Update original benchmark copy
       originalDbV1 = JSON.parse(JSON.stringify(dbV1));
       originalDbV2 = JSON.parse(JSON.stringify(dbV2));
+      pendingRemovedImages.clear();
       
       isDirty = false;
       unsavedBadge.style.display = 'none';
