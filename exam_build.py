@@ -90,6 +90,24 @@ def latin1(text):
     return ''.join(out)
 
 
+def _docx_safe_text(text):
+    """Remove characters that XML 1.0 (and therefore Word) cannot store.
+
+    PDF extraction occasionally leaves control bytes such as U+0001 in the
+    question database.  python-docx raises a ValueError if even one of those
+    bytes reaches a paragraph or table cell.
+    """
+    clean = []
+    for ch in str(text or ''):
+        cp = ord(ch)
+        if (cp in (0x09, 0x0A, 0x0D) or
+                0x20 <= cp <= 0xD7FF or
+                0xE000 <= cp <= 0xFFFD or
+                0x10000 <= cp <= 0x10FFFF):
+            clean.append(ch)
+    return ''.join(clean)
+
+
 def first_span_text(block):
     """First non-empty span text + its x0/y0 for a text block."""
     for line in block.get('lines', []):
@@ -514,7 +532,8 @@ def _region_analysis(page, rect):
 
 def _clean_cell_text(text):
     lines = []
-    for line in str(text or '').replace('\ufffd', '\u2022').splitlines():
+    safe = _docx_safe_text(text).replace('\ufffd', '\u2022')
+    for line in safe.splitlines():
         lines.append(' '.join(line.split()))
     return '\n'.join(lines).strip()
 
@@ -672,7 +691,8 @@ def _spans_to_lines(page, rect, exclude_rects):
                 if any(sr.intersects(x) for x in exclude_rects):
                     continue
                 spans.append({
-                    'text': s['text'], 'x0': sr.x0, 'y0': sr.y0,
+                    'text': _docx_safe_text(s['text']),
+                    'x0': sr.x0, 'y0': sr.y0,
                     'x1': sr.x1, 'y1': sr.y1, 'font': s.get('font'),
                     'size': s.get('size', 11), 'flags': s.get('flags', 0)
                 })
@@ -850,7 +870,7 @@ def _clean_answers(answers):
         r'Cambridge International.*Mark Scheme.*)$', re.I)
     page_ref = re.compile(r'Page\s+\d+\s+of\s+\d+')
     for a in answers:
-        a = str(a or '')
+        a = _docx_safe_text(a)
         if not a.strip() or a in seen:
             continue
         seen.add(a)
@@ -866,59 +886,170 @@ def _clean_answers(answers):
     return out
 
 
-def build_image_docx_from_pdf(pdf_path, exam_name, doc_type, docx_path,
-                              dpi=200):
-    """Build a Word document that matches the exam PDF page-for-page.
+def _append_image_only_page(doc, image, pixel_width, pixel_height,
+                            landscape, first_page):
+    """Place one image on one A4 Word page without adding text objects."""
+    section = (doc.sections[0] if first_page
+               else doc.add_section(WD_SECTION.NEW_PAGE))
+    section.orientation = (WD_ORIENT.LANDSCAPE if landscape
+                           else WD_ORIENT.PORTRAIT)
+    section.page_width = Mm(DOCX_PAGE_MM[1] if landscape
+                            else DOCX_PAGE_MM[0])
+    section.page_height = Mm(DOCX_PAGE_MM[0] if landscape
+                             else DOCX_PAGE_MM[1])
 
-    Each PDF page is rendered at high resolution and placed full-width on an
-    A4 page (matching orientation). Result: the .docx looks exactly like the
-    PDF output, including tables, diagrams and layout.
-    """
-    src = fitz.open(pdf_path)
-    doc = Document()
-    normal = doc.styles['Normal']
-    normal.font.name = 'Arial'
-    normal.font.size = Pt(10.5)
+    # The crop already contains all source spacing and formatting. Use only a
+    # tiny safety margin so Word does not push a full-width image to a new page.
+    margin = Mm(2)
+    section.left_margin = section.right_margin = margin
+    section.top_margin = section.bottom_margin = margin
+    content_w = section.page_width - section.left_margin - section.right_margin
+    content_h = section.page_height - section.top_margin - section.bottom_margin
 
-    margin = Cm(1.2)
-    for idx, page in enumerate(src):
-        section = (doc.sections[0] if idx == 0
-                   else doc.add_section(WD_SECTION.NEW_PAGE))
-        landscape = page.rect.width > page.rect.height
-        section.orientation = (WD_ORIENT.LANDSCAPE if landscape
-                               else WD_ORIENT.PORTRAIT)
-        section.page_width = Mm(DOCX_PAGE_MM[1] if landscape
-                                else DOCX_PAGE_MM[0])
-        section.page_height = Mm(DOCX_PAGE_MM[0] if landscape
-                                 else DOCX_PAGE_MM[1])
-        section.left_margin = section.right_margin = margin
-        section.top_margin = section.bottom_margin = margin
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_before = Pt(0)
+    p.paragraph_format.space_after = Pt(0)
+    p.paragraph_format.line_spacing = 1.0
+    run = p.add_run()
+    aspect = pixel_height / max(pixel_width, 1)
+    height_at_full_width = int(content_w * aspect)
+    if height_at_full_width <= content_h:
+        run.add_picture(image, width=content_w)
+    else:
+        run.add_picture(image, height=content_h)
 
-        content_w_emu = (section.page_width - section.left_margin
-                         - section.right_margin)
-        content_h_emu = (section.page_height - section.top_margin
-                         - section.bottom_margin)
 
-        pix = page.get_pixmap(dpi=dpi, alpha=False)
-        png = BytesIO(pix.tobytes('png'))
-        p = doc.add_paragraph()
-        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p.paragraph_format.space_before = Pt(0)
-        p.paragraph_format.space_after = Pt(0)
-        p.paragraph_format.line_spacing = 1.0
-        run = p.add_run()
-        # Fit within the page content box, preserving aspect ratio
-        aspect = page.rect.height / page.rect.width
-        w_at_full = content_w_emu
-        h_at_full = int(w_at_full * aspect)
-        if h_at_full <= content_h_emu:
-            run.add_picture(png, width=w_at_full)
+def _item_source_landscape(item, source_cache, image_index,
+                           pixel_width, pixel_height, default_landscape):
+    """Use the original PDF page orientation, not a crop's aspect ratio."""
+    src = source_cache.get(item.get('source_path'))
+    if src is not None and src.page_count:
+        regions = item.get('regions') or []
+        if image_index < len(regions):
+            page_number = regions[image_index][0]
         else:
-            run.add_picture(png, height=content_h_emu)
+            page_number = item.get('source_page')
+        if page_number is not None and 0 <= page_number < src.page_count:
+            page = src[page_number]
+            return page.rect.width > page.rect.height
 
+    # A crop can be short and wide even though it came from a portrait page,
+    # so only use its aspect ratio when it is close to a full page.
+    ratio = pixel_width / max(pixel_height, 1)
+    if 0.6 <= ratio <= 0.85:
+        return False
+    if 1.15 <= ratio <= 1.75:
+        return True
+    return default_landscape
+
+
+def _fallback_item_png(item, landscape, dpi=300):
+    """Render unavailable source content to an image so Word stays image-only."""
+    width, height = ((PAGE_H, PAGE_W) if landscape else (PAGE_W, PAGE_H))
+    fallback_doc = fitz.open()
+    page = fallback_doc.new_page(width=width, height=height)
+    fallback = item.get('answers') or [item.get('text')]
+    text = '\n\n'.join(str(value or '') for value in fallback)
+    page.insert_textbox(
+        fitz.Rect(MARGIN, TOP_Y, width - MARGIN, height - MARGIN),
+        latin1(text), fontsize=10.5, fontname='helv')
+    pix = page.get_pixmap(dpi=dpi, alpha=False)
+    png = BytesIO(pix.tobytes('png'))
+    size = (pix.width, pix.height)
+    fallback_doc.close()
+    return png, size
+
+
+def _word_image_stream(image_path):
+    """Return original image bytes with a metadata-only JPEG compatibility fix."""
+    with open(image_path, 'rb') as image_file:
+        data = image_file.read()
+    if data.startswith(b'\xff\xd8') and b'JFIF\x00' not in data[:64]:
+        # Several source crops contain valid JPEG pixels but no JFIF density
+        # segment. python-docx rejects those files. Adding the standard APP0
+        # metadata segment changes no compressed image data and no pixels.
+        jfif = (b'\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00'
+                b'\x60\x00\x60\x00\x00')
+        data = data[:2] + jfif + data[2:]
+    return BytesIO(data)
+
+
+def build_image_docx_from_question_images(items, source_cache, docx_path,
+                                          default_landscape=False):
+    """Build Word from original question/mark-scheme crop images.
+
+    Existing JPEG/PNG crop bytes are embedded without image re-encoding,
+    preserving every table, dotted line, mark label, font and diagram exactly
+    as stored in the question database. Missing crops fall back to a 300-DPI
+    render of the original source-PDF region.
+    """
+    doc = Document()
+    pages = 0
+    original_images = 0
+    source_region_images = 0
+    fallback_images = 0
+
+    for item in items:
+        item_pages = 0
+        for image_index, image_path in enumerate(item.get('image_paths') or []):
+            if not image_path or not os.path.isfile(image_path):
+                continue
+            try:
+                image_info = fitz.Pixmap(image_path)
+                pixel_width, pixel_height = image_info.width, image_info.height
+                word_image = _word_image_stream(image_path)
+                landscape = _item_source_landscape(
+                    item, source_cache, image_index, pixel_width, pixel_height,
+                    default_landscape)
+                _append_image_only_page(
+                    doc, word_image, pixel_width, pixel_height, landscape,
+                    pages == 0)
+                pages += 1
+                item_pages += 1
+                original_images += 1
+            except Exception as exc:
+                print(f'Image crop failed for {image_path}: {exc}',
+                      file=sys.stderr)
+
+        # Some older database entries do not have pre-rendered crops. Render
+        # their detected regions from the original paper at 300 DPI instead.
+        if item_pages == 0:
+            src = source_cache.get(item.get('source_path'))
+            regions = item.get('regions') or []
+            if src is not None and regions:
+                for page_number, region in regions:
+                    pix = src[page_number].get_pixmap(
+                        clip=region, dpi=300, alpha=False)
+                    png = BytesIO(pix.tobytes('png'))
+                    source_page = src[page_number]
+                    landscape = source_page.rect.width > source_page.rect.height
+                    _append_image_only_page(
+                        doc, png, pix.width, pix.height, landscape, pages == 0)
+                    pages += 1
+                    item_pages += 1
+                    source_region_images += 1
+
+        # If neither a crop nor a usable source region exists, include the
+        # fallback content as a bitmap rather than silently omitting a question.
+        if item_pages == 0:
+            png, (pixel_width, pixel_height) = _fallback_item_png(
+                item, default_landscape)
+            _append_image_only_page(
+                doc, png, pixel_width, pixel_height, default_landscape,
+                pages == 0)
+            pages += 1
+            fallback_images += 1
+
+    if pages == 0:
+        raise RuntimeError('No question images were available for Word output.')
     doc.save(docx_path)
-    src.close()
-    return True
+    return {
+        'pages': pages,
+        'original_images': original_images,
+        'source_region_images': source_region_images,
+        'fallback_images': fallback_images,
+    }
 
 
 def build_exam(exam_name, doc_type, items, source_cache, show_marks):
@@ -963,20 +1094,22 @@ def build_docx(exam_name, doc_type, items, source_cache, show_marks, out_path):
 
     fp = sec.footer.paragraphs[0]
     fp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    fp.add_run(f'{exam_name} - {doc_type}    Page ')
+    safe_exam_name = _docx_safe_text(exam_name)
+    safe_doc_type = _docx_safe_text(doc_type)
+    fp.add_run(f'{safe_exam_name} - {safe_doc_type}    Page ')
     docx_add_field(fp, 'PAGE')
     fp.add_run(' of ')
     docx_add_field(fp, 'NUMPAGES')
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    r = p.add_run(exam_name)
+    r = p.add_run(safe_exam_name)
     r.bold = True
     r.font.size = Pt(22)
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    r = p.add_run(doc_type)
+    r = p.add_run(safe_doc_type)
     r.bold = True
     r.font.size = Pt(14)
 
@@ -1018,7 +1151,7 @@ def build_docx(exam_name, doc_type, items, source_cache, show_marks, out_path):
             doc.add_page_break()
             fallback = item.get('answers') or [item.get('text')]
             for para in fallback:
-                para = str(para or '')
+                para = _docx_safe_text(para)
                 if not para.strip():
                     continue
                 tp = doc.add_paragraph(para)
@@ -1194,7 +1327,10 @@ def main():
         qp_items.append({
             'marks': q.get('marks'),
             'regions': qp_regions, 'text': q.get('text'),
-            'source_path': q.get('qp_path')
+            'source_path': q.get('qp_path'),
+            'source_page': ((q.get('qp_page') or 1) - 1
+                            if q.get('qp_page') else None),
+            'image_paths': q.get('images_q') or []
         })
 
         # --- Mark scheme: clipped region, fallback to answers text ---
@@ -1224,7 +1360,10 @@ def main():
             'marks': None,
             'regions': ms_regions, 'text': ms_text,
             'answers': ms_answers,
-            'source_path': q.get('ms_path')
+            'source_path': q.get('ms_path'),
+            'source_page': ((q.get('ms_page') or 1) - 1
+                            if q.get('ms_page') else None),
+            'image_paths': q.get('images_ms') or []
         })
 
     # Keep the PDF as the exact-layout source-paper version.
@@ -1251,6 +1390,26 @@ def main():
         docx_built = True
         docx_mode = 'reflowable'
 
+    image_docx_built = False
+    qp_image_stats = None
+    ms_image_stats = None
+    if (spec.get('out_qp_image_docx') and
+            spec.get('out_ms_image_docx')):
+        if not HAS_DOCX:
+            raise RuntimeError(
+                'python-docx is required for image-only Word output.')
+        print('   building Question Paper as high-quality image-only Word...',
+              file=sys.stderr)
+        qp_image_stats = build_image_docx_from_question_images(
+            qp_items, source_cache, spec['out_qp_image_docx'],
+            default_landscape=False)
+        print('   building Mark Scheme as high-quality image-only Word...',
+              file=sys.stderr)
+        ms_image_stats = build_image_docx_from_question_images(
+            ms_items, source_cache, spec['out_ms_image_docx'],
+            default_landscape=True)
+        image_docx_built = True
+
     for src in source_cache.values():
         src.close()
 
@@ -1263,7 +1422,12 @@ def main():
         'qp_regions': qp_regions_found,
         'ms_regions': ms_regions_found,
         'docx': docx_built,
-        'docx_mode': docx_mode
+        'docx_mode': docx_mode,
+        'image_docx': image_docx_built,
+        'image_docx_mode': ('source-question-images'
+                            if image_docx_built else None),
+        'qp_image_stats': qp_image_stats,
+        'ms_image_stats': ms_image_stats
     }))
 
 

@@ -1126,13 +1126,20 @@ async function createExamFiles() {
              <a href="${data.msPdfUrl}" class="pdf-link" download>Mark Scheme (PDF)</a>
            </div>`
         : '';
+      const imageWordLinks = data.qpImageUrl && data.msImageUrl
+        ? `<div class="exam-result-links exam-result-links-image-only">
+             <a href="${data.qpImageUrl}" class="pdf-link" download>Question Paper (Image-only Word)</a>
+             <a href="${data.msImageUrl}" class="pdf-link" download>Mark Scheme (Image-only Word)</a>
+           </div>`
+        : '';
       resultBox.innerHTML = `
         <p><strong>"${escapeHtml(examName)}"</strong> is ready (${data.questionCount} questions, ${data.totalMarks} marks):</p>
-        <p class="exam-result-note">The PDF preserves the exact source layout. The Word version uses normal paragraphs, with source tables preserved as images for stable formatting.</p>
+        <p class="exam-result-note">Editable Word files use normal paragraphs with source tables preserved as images. Image-only Word files use the original question-paper and mark-scheme images directly, preserving their source formatting with no editable content.</p>
         <div class="exam-result-links">
-          <a href="${data.qpUrl}" class="pdf-link" download>Download Question Paper (${data.format || 'Word'})</a>
-          <a href="${data.msUrl}" class="pdf-link" download>Download Mark Scheme (${data.format || 'Word'})</a>
+          <a href="${data.qpUrl}" class="pdf-link" download>Question Paper (Editable ${data.format || 'Word'})</a>
+          <a href="${data.msUrl}" class="pdf-link" download>Mark Scheme (Editable ${data.format || 'Word'})</a>
         </div>
+        ${imageWordLinks}
         ${pdfLinks}
         `;
     } else {

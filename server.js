@@ -81,12 +81,26 @@ function questionSourceMeta(q) {
   ].filter(Boolean).join(' - ');
 }
 
+function resolveDatabasePath(filePath) {
+  if (typeof filePath !== 'string' || !filePath.trim()) return null;
+  return path.resolve(__dirname, filePath.replace(/[\\/]/g, path.sep));
+}
+
 // Build the exam PDFs + Word docs via exam_build.py (PyMuPDF +
 // python-docx): questions are clipped straight out of the source past-paper
 // PDFs so tables, diagrams, images and text keep their original formatting.
 // Returns null on failure so the caller can fall back to the text-based
 // generator.
-function buildExamWithPython(examName, questions, qpPath, msPath, qpDocxPath, msDocxPath) {
+function buildExamWithPython(
+  examName,
+  questions,
+  qpPath,
+  msPath,
+  qpDocxPath,
+  msDocxPath,
+  qpImageDocxPath,
+  msImageDocxPath
+) {
   const script = path.join(__dirname, 'exam_build.py');
   if (!fs.existsSync(script)) {
     return { success: false, error: 'exam_build.py not found' };
@@ -98,6 +112,8 @@ function buildExamWithPython(examName, questions, qpPath, msPath, qpDocxPath, ms
     out_ms: msPath,
     out_qp_docx: qpDocxPath || null,
     out_ms_docx: msDocxPath || null,
+    out_qp_image_docx: qpImageDocxPath || null,
+    out_ms_image_docx: msImageDocxPath || null,
     questions: questions.map(q => ({
       id: q.id,
       num_label: q.num_label,
@@ -105,9 +121,11 @@ function buildExamWithPython(examName, questions, qpPath, msPath, qpDocxPath, ms
       meta: questionSourceMeta(q),
       text: q.text,
       answers: q.answers,
-      qp_path: q.qp_path ? path.join(__dirname, q.qp_path) : null,
+      images_q: (q.images_q || []).map(resolveDatabasePath).filter(Boolean),
+      images_ms: (q.images_ms || []).map(resolveDatabasePath).filter(Boolean),
+      qp_path: resolveDatabasePath(q.qp_path),
       qp_page: q.qp_page,
-      ms_path: q.ms_path ? path.join(__dirname, q.ms_path) : null,
+      ms_path: resolveDatabasePath(q.ms_path),
       ms_page: q.ms_page
     }))
   };
@@ -118,7 +136,7 @@ function buildExamWithPython(examName, questions, qpPath, msPath, qpDocxPath, ms
   try {
     let result = spawnSync('python', [script, specPath], {
       encoding: 'utf8',
-      timeout: 120000,
+      timeout: 300000,
       maxBuffer: 10 * 1024 * 1024,
       cwd: __dirname
     });
@@ -126,7 +144,7 @@ function buildExamWithPython(examName, questions, qpPath, msPath, qpDocxPath, ms
       // 'python' not found - try the Windows launcher
       result = spawnSync('py', [script, specPath], {
         encoding: 'utf8',
-        timeout: 120000,
+        timeout: 300000,
         maxBuffer: 10 * 1024 * 1024,
         cwd: __dirname
       });
@@ -251,6 +269,8 @@ const server = http.createServer((req, res) => {
         const msFile = `${slug}_${stamp}_Mark_Scheme.pdf`;
         const qpDocxFile = `${slug}_${stamp}_Question_Paper.docx`;
         const msDocxFile = `${slug}_${stamp}_Mark_Scheme.docx`;
+        const qpImageDocxFile = `${slug}_${stamp}_Question_Paper_Image_Only.docx`;
+        const msImageDocxFile = `${slug}_${stamp}_Mark_Scheme_Image_Only.docx`;
 
         const examDir = path.join(__dirname, 'exams');
         fs.mkdirSync(examDir, { recursive: true });
@@ -258,13 +278,24 @@ const server = http.createServer((req, res) => {
         const msPath = path.join(examDir, msFile);
         const qpDocxPath = path.join(examDir, qpDocxFile);
         const msDocxPath = path.join(examDir, msDocxFile);
+        const qpImageDocxPath = path.join(examDir, qpImageDocxFile);
+        const msImageDocxPath = path.join(examDir, msImageDocxFile);
 
         const totalMarks = questions.reduce((sum, q) => sum + (q.marks || 0), 0);
 
         // Build exact-layout PDFs and stable Word copies using normal
         // paragraphs plus source-faithful images for tables and diagrams.
         let builtWith = 'source-regions';
-        const buildResult = buildExamWithPython(examName, questions, qpPath, msPath, qpDocxPath, msDocxPath);
+        const buildResult = buildExamWithPython(
+          examName,
+          questions,
+          qpPath,
+          msPath,
+          qpDocxPath,
+          msDocxPath,
+          qpImageDocxPath,
+          msImageDocxPath
+        );
         if (!buildResult || !buildResult.success) {
           throw new Error(buildResult?.error || 'The Word exam builder is unavailable.');
         }
@@ -277,7 +308,16 @@ const server = http.createServer((req, res) => {
           throw new Error('The editable Word files could not be created. Install the Python dependencies from requirements.txt, then try again.');
         }
 
-        console.log(`Created exam "${examName}" (${questions.length} questions, ${totalMarks} marks) [${builtWith}${docxBuilt ? ' + Word' : ''}]`);
+        const imageDocxBuilt = !!(
+          buildResult.image_docx &&
+          fs.existsSync(qpImageDocxPath) && fs.statSync(qpImageDocxPath).size > 0 &&
+          fs.existsSync(msImageDocxPath) && fs.statSync(msImageDocxPath).size > 0
+        );
+        if (!imageDocxBuilt) {
+          throw new Error('The image-only Word files could not be created.');
+        }
+
+        console.log(`Created exam "${examName}" (${questions.length} questions, ${totalMarks} marks) [${builtWith} + editable Word + image-only Word]`);
 
         const qpUrl = `/exams/${encodeURIComponent(qpDocxFile)}`;
         const msUrl = `/exams/${encodeURIComponent(msDocxFile)}`;
@@ -288,6 +328,8 @@ const server = http.createServer((req, res) => {
           message: 'Exam created successfully!',
           qpUrl,
           msUrl,
+          qpImageUrl: `/exams/${encodeURIComponent(qpImageDocxFile)}`,
+          msImageUrl: `/exams/${encodeURIComponent(msImageDocxFile)}`,
           qpPdfUrl: `/exams/${encodeURIComponent(qpFile)}`,
           msPdfUrl: `/exams/${encodeURIComponent(msFile)}`,
           format: 'Word',
