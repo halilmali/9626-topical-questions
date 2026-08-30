@@ -5,7 +5,8 @@ let appData = {
   chapters: [],
   questions: [],
   bookmarks: new Set(),
-  doneQuestions: new Set()
+  doneQuestions: new Set(),
+  examSelection: new Set()
 };
 
 let currentFilters = {
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   loadBookmarks();
   loadDoneQuestions();
+  loadExamSelection();
   initSideBySideToggle();
   fetchData();
   setupEventListeners();
@@ -861,6 +863,10 @@ function renderQuestions() {
             ${currentFilters.showBookmarksOnly ? `<span class="meta-tag topic-tag">Topic ${q.topic_id}</span>` : ''}
           </div>
           <div class="card-actions">
+            <button class="exam-select-btn ${isInExam(q.id) ? 'active' : ''}" data-qid="${q.id}" onclick="toggleExamSelection('${q.id}')" title="${isInExam(q.id) ? 'Remove from Exam' : 'Add to Exam'}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+              <span>${isInExam(q.id) ? 'In Exam' : 'Add to Exam'}</span>
+            </button>
             <button class="done-btn ${isDone ? 'active' : ''}" onclick="toggleDone('${q.id}')" title="${isDone ? 'Mark as Not Done' : 'Mark as Done'}">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <span>${isDone ? 'Done' : 'Mark Done'}</span>
@@ -903,6 +909,10 @@ function renderQuestions() {
             ${currentFilters.showBookmarksOnly ? `<span class="meta-tag topic-tag">Topic ${q.topic_id}</span>` : ''}
           </div>
           <div class="card-actions">
+            <button class="exam-select-btn ${isInExam(q.id) ? 'active' : ''}" data-qid="${q.id}" onclick="toggleExamSelection('${q.id}')" title="${isInExam(q.id) ? 'Remove from Exam' : 'Add to Exam'}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+              <span>${isInExam(q.id) ? 'In Exam' : 'Add to Exam'}</span>
+            </button>
             <button class="done-btn ${isDone ? 'active' : ''}" onclick="toggleDone('${q.id}')" title="${isDone ? 'Mark as Not Done' : 'Mark as Done'}">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <span>${isDone ? 'Done' : 'Mark Done'}</span>
@@ -949,9 +959,202 @@ function renderQuestions() {
       const partText = arr.length > 1 ? ` (Part ${idx + 1})` : '';
       img.onclick = () => openLightbox(img.src, `${q.year} ${q.session} ${q.paper} (Var ${q.variant}) - Q${q.num_label} - Mark Scheme${partText}`);
     });
-    
+
     container.appendChild(card);
   });
+
+  updateExamButtonStates();
+}
+
+// ==========================================================================
+// EXAM BUILDER
+// ==========================================================================
+const EXAM_STORAGE_KEY = 'exam_selection_v2';
+
+function isInExam(questionId) {
+  return appData.examSelection.has(questionId);
+}
+
+function loadExamSelection() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(EXAM_STORAGE_KEY) || '[]');
+    appData.examSelection = new Set(Array.isArray(saved) ? saved : []);
+  } catch (e) {
+    appData.examSelection = new Set();
+  }
+  updateExamCountBadge();
+}
+
+function saveExamSelection() {
+  localStorage.setItem(EXAM_STORAGE_KEY, JSON.stringify([...appData.examSelection]));
+  updateExamCountBadge();
+}
+
+function updateExamCountBadge() {
+  const badge = document.getElementById('exam-count');
+  if (badge) badge.textContent = appData.examSelection.size;
+}
+
+function toggleExamSelection(questionId) {
+  if (appData.examSelection.has(questionId)) {
+    appData.examSelection.delete(questionId);
+  } else {
+    appData.examSelection.add(questionId);
+  }
+  saveExamSelection();
+  updateExamButtonStates();
+}
+
+function updateExamButtonStates() {
+  document.querySelectorAll('.exam-select-btn').forEach(btn => {
+    const active = isInExam(btn.dataset.qid);
+    btn.classList.toggle('active', active);
+    const label = btn.querySelector('span');
+    if (label) label.textContent = active ? 'In Exam' : 'Add to Exam';
+    btn.title = active ? 'Remove from Exam' : 'Add to Exam';
+  });
+}
+
+function openExamBuilder() {
+  const modal = document.getElementById('exam-modal');
+  if (!modal) return;
+  renderExamBuilderList();
+  document.getElementById('exam-result').style.display = 'none';
+  modal.style.display = 'flex';
+}
+
+function closeExamBuilder() {
+  const modal = document.getElementById('exam-modal');
+  if (modal) modal.style.display = 'none';
+}
+
+function getSelectedExamQuestions() {
+  return [...appData.examSelection]
+    .map(id => appData.questions.find(q => q.id === id))
+    .filter(Boolean);
+}
+
+function renderExamBuilderList() {
+  const list = document.getElementById('exam-list');
+  const summary = document.getElementById('exam-summary');
+  const totalEl = document.getElementById('exam-total-marks');
+  const selected = getSelectedExamQuestions();
+  const totalMarks = selected.reduce((sum, q) => sum + (q.marks || 0), 0);
+
+  summary.textContent = `${selected.length} question${selected.length === 1 ? '' : 's'} selected`;
+  totalEl.textContent = `Total Marks: ${totalMarks}`;
+  document.getElementById('exam-create-btn').disabled = selected.length === 0;
+  document.getElementById('exam-clear-btn').disabled = selected.length === 0;
+
+  if (selected.length === 0) {
+    list.innerHTML = `
+      <div class="exam-empty">
+        <p>No questions selected yet.</p>
+        <p>Use the "Add to Exam" button on question cards to build your exam.</p>
+      </div>`;
+    return;
+  }
+
+  list.innerHTML = selected.map((q, idx) => `
+    <div class="exam-list-row">
+      <span class="exam-row-num">${idx + 1}</span>
+      <div class="exam-row-info">
+        <span class="exam-row-title">${q.year} ${q.session} &mdash; ${q.paper} (Var ${q.variant}) &mdash; Q${q.num_label}</span>
+        <span class="exam-row-meta">Topic ${q.topic_id} &middot; ${q.marks !== null && q.marks !== undefined ? q.marks + ' marks' : 'marks N/A'}</span>
+      </div>
+      <button class="exam-row-remove" onclick="removeFromExam('${q.id}')" title="Remove from Exam">&times;</button>
+    </div>
+  `).join('');
+}
+
+function removeFromExam(questionId) {
+  appData.examSelection.delete(questionId);
+  saveExamSelection();
+  updateExamButtonStates();
+  renderExamBuilderList();
+}
+
+function clearExamSelection() {
+  appData.examSelection.clear();
+  saveExamSelection();
+  updateExamButtonStates();
+  renderExamBuilderList();
+}
+
+async function createExamFiles() {
+  const nameInput = document.getElementById('exam-name-input');
+  const resultBox = document.getElementById('exam-result');
+  const createBtn = document.getElementById('exam-create-btn');
+  const examName = nameInput.value.trim();
+
+  resultBox.style.display = 'none';
+
+  if (!examName) {
+    resultBox.style.display = 'block';
+    resultBox.className = 'exam-result exam-result-error';
+    resultBox.textContent = 'Please give your exam a name first.';
+    nameInput.focus();
+    return;
+  }
+
+  const questionIds = [...appData.examSelection];
+  if (questionIds.length === 0) {
+    resultBox.style.display = 'block';
+    resultBox.className = 'exam-result exam-result-error';
+    resultBox.textContent = 'Select at least one question before generating the exam files.';
+    return;
+  }
+
+  createBtn.disabled = true;
+  createBtn.textContent = 'Generating...';
+  let response = null;
+
+  try {
+    response = await fetch('/api/create-exam', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: examName, questionIds })
+    });
+    const data = await response.json();
+
+    resultBox.style.display = 'block';
+    if (data.success) {
+      resultBox.className = 'exam-result exam-result-success';
+      const pdfLinks = data.qpPdfUrl && data.msPdfUrl
+        ? `<div class="exam-result-links exam-result-links-secondary">
+             <a href="${data.qpPdfUrl}" class="pdf-link" download>Question Paper (PDF)</a>
+             <a href="${data.msPdfUrl}" class="pdf-link" download>Mark Scheme (PDF)</a>
+           </div>`
+        : '';
+      resultBox.innerHTML = `
+        <p><strong>"${escapeHtml(examName)}"</strong> is ready (${data.questionCount} questions, ${data.totalMarks} marks):</p>
+        <p class="exam-result-note">The PDF preserves the exact source layout. The Word version uses normal paragraphs, with source tables preserved as images for stable formatting.</p>
+        <div class="exam-result-links">
+          <a href="${data.qpUrl}" class="pdf-link" download>Download Question Paper (${data.format || 'Word'})</a>
+          <a href="${data.msUrl}" class="pdf-link" download>Download Mark Scheme (${data.format || 'Word'})</a>
+        </div>
+        ${pdfLinks}
+        `;
+    } else {
+      resultBox.className = 'exam-result exam-result-error';
+      resultBox.textContent = data.error || 'Failed to create the exam.';
+    }
+  } catch (err) {
+    resultBox.style.display = 'block';
+    resultBox.className = 'exam-result exam-result-error';
+    if (!response) {
+      resultBox.textContent = 'Could not reach the server. Start it with "node server.js" and reload this page (http://localhost:8080).';
+    } else {
+      resultBox.textContent = `Exam creation failed (server responded with ${response.status}). If you just updated the code, restart server.js.`;
+    }
+  } finally {
+    createBtn.disabled = false;
+    createBtn.textContent = 'Generate Exam Files';
+  }
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
 // ==========================================================================
@@ -972,14 +1175,45 @@ function setupEventListeners() {
     sbsBtn.onclick = toggleSideBySide;
     updateSideBySideBtn();
   }
-  
+
   // Search & Filters Toggle
   initSearchFiltersToggle();
-  
+
+  // Exam Builder
+  const examBuilderBtn = document.getElementById('exam-builder-btn');
+  if (examBuilderBtn) examBuilderBtn.onclick = openExamBuilder;
+
+  const examModalCloseBtn = document.getElementById('exam-modal-close-btn');
+  if (examModalCloseBtn) examModalCloseBtn.onclick = closeExamBuilder;
+
+  const examModal = document.getElementById('exam-modal');
+  if (examModal) {
+    examModal.addEventListener('click', (e) => {
+      if (e.target === examModal) closeExamBuilder();
+    });
+  }
+
+  const examClearBtn = document.getElementById('exam-clear-btn');
+  if (examClearBtn) examClearBtn.onclick = clearExamSelection;
+
+  const examCreateBtn = document.getElementById('exam-create-btn');
+  if (examCreateBtn) examCreateBtn.onclick = createExamFiles;
+
+  const examNameInput = document.getElementById('exam-name-input');
+  if (examNameInput) {
+    examNameInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') createExamFiles();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeExamBuilder();
+  });
+
   document.querySelectorAll('.level-tab').forEach(tab => {
     tab.onclick = () => selectLevelTab(tab.dataset.level, tab);
   });
-  
+
   document.querySelectorAll('#session-filters .filter-chip').forEach(chip => {
     chip.onclick = () => selectSessionFilter(chip.dataset.session, chip);
   });

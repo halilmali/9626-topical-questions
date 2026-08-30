@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { spawnSync } = require('child_process');
 
 const PORT = 8080;
 const IMAGE_DIR = 'questions_images';
@@ -17,6 +18,7 @@ const MIME_TYPES = {
   '.gif': 'image/gif',
   '.svg': 'image/svg+xml',
   '.pdf': 'application/pdf',
+  '.docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
   '.ico': 'image/x-icon'
 };
 
@@ -67,6 +69,81 @@ function getReferencedImages(payload) {
     }
   }
   return references;
+}
+
+function questionSourceMeta(q) {
+  return [
+    q.subject,
+    q.session,
+    q.year,
+    `${q.paper}${q.variant ? ' Variant ' + q.variant : ''}`,
+    `Q${q.num_label}`
+  ].filter(Boolean).join(' - ');
+}
+
+// Build the exam PDFs + Word docs via exam_build.py (PyMuPDF +
+// python-docx): questions are clipped straight out of the source past-paper
+// PDFs so tables, diagrams, images and text keep their original formatting.
+// Returns null on failure so the caller can fall back to the text-based
+// generator.
+function buildExamWithPython(examName, questions, qpPath, msPath, qpDocxPath, msDocxPath) {
+  const script = path.join(__dirname, 'exam_build.py');
+  if (!fs.existsSync(script)) {
+    return { success: false, error: 'exam_build.py not found' };
+  }
+
+  const spec = {
+    exam_name: examName,
+    out_qp: qpPath,
+    out_ms: msPath,
+    out_qp_docx: qpDocxPath || null,
+    out_ms_docx: msDocxPath || null,
+    questions: questions.map(q => ({
+      id: q.id,
+      num_label: q.num_label,
+      marks: q.marks,
+      meta: questionSourceMeta(q),
+      text: q.text,
+      answers: q.answers,
+      qp_path: q.qp_path ? path.join(__dirname, q.qp_path) : null,
+      qp_page: q.qp_page,
+      ms_path: q.ms_path ? path.join(__dirname, q.ms_path) : null,
+      ms_page: q.ms_page
+    }))
+  };
+
+  const specPath = qpPath.replace(/\.pdf$/, '.spec.json');
+  fs.writeFileSync(specPath, JSON.stringify(spec), 'utf8');
+
+  try {
+    let result = spawnSync('python', [script, specPath], {
+      encoding: 'utf8',
+      timeout: 120000,
+      maxBuffer: 10 * 1024 * 1024,
+      cwd: __dirname
+    });
+    if (result.error) {
+      // 'python' not found - try the Windows launcher
+      result = spawnSync('py', [script, specPath], {
+        encoding: 'utf8',
+        timeout: 120000,
+        maxBuffer: 10 * 1024 * 1024,
+        cwd: __dirname
+      });
+    }
+    if (result.error) throw result.error;
+    if (result.status !== 0) {
+      throw new Error(`exam_build.py exited with ${result.status}: ${(result.stderr || '').slice(0, 500)}`);
+    }
+    const jsonLine = (result.stdout || '').trim().split('\n').pop();
+    const parsed = JSON.parse(jsonLine);
+    if (!parsed.success) throw new Error('exam_build.py reported failure');
+    return parsed;
+  } catch (err) {
+    return { success: false, error: err.message };
+  } finally {
+    try { fs.unlinkSync(specPath); } catch (e) { /* ignore */ }
+  }
 }
 
 const server = http.createServer((req, res) => {
@@ -124,6 +201,102 @@ const server = http.createServer((req, res) => {
         }));
       } catch (err) {
         console.error('Error saving database:', err);
+        res.writeHead(400, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: false, error: err.message }));
+      }
+    });
+    return;
+  }
+
+  // API Route: Create Exam (Question Paper + Mark Scheme PDFs)
+  if (req.method === 'POST' && req.url === '/api/create-exam') {
+    let body = '';
+    req.on('data', chunk => {
+      body += chunk.toString();
+    });
+    req.on('end', () => {
+      try {
+        const payload = JSON.parse(body);
+        const examName = String(payload.name || '').trim();
+        const questionIds = payload.questionIds;
+
+        if (!examName) {
+          throw new Error('Exam name is required.');
+        }
+        if (examName.length > 120) {
+          throw new Error('Exam name is too long (max 120 characters).');
+        }
+        if (!Array.isArray(questionIds) || questionIds.length === 0) {
+          throw new Error('Select at least one question for the exam.');
+        }
+        if (questionIds.length > 100) {
+          throw new Error('Too many questions selected (max 100).');
+        }
+
+        const dbPath = path.join(__dirname, 'questions_db_v2.json');
+        const database = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
+        const byId = new Map(database.questions.map(q => [q.id, q]));
+
+        const questions = questionIds.map(id => {
+          const q = byId.get(id);
+          if (!q) {
+            throw new Error(`Question not found: ${id}`);
+          }
+          return q;
+        });
+
+        const slug = examName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'exam';
+        const stamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+        const qpFile = `${slug}_${stamp}_Question_Paper.pdf`;
+        const msFile = `${slug}_${stamp}_Mark_Scheme.pdf`;
+        const qpDocxFile = `${slug}_${stamp}_Question_Paper.docx`;
+        const msDocxFile = `${slug}_${stamp}_Mark_Scheme.docx`;
+
+        const examDir = path.join(__dirname, 'exams');
+        fs.mkdirSync(examDir, { recursive: true });
+        const qpPath = path.join(examDir, qpFile);
+        const msPath = path.join(examDir, msFile);
+        const qpDocxPath = path.join(examDir, qpDocxFile);
+        const msDocxPath = path.join(examDir, msDocxFile);
+
+        const totalMarks = questions.reduce((sum, q) => sum + (q.marks || 0), 0);
+
+        // Build exact-layout PDFs and stable Word copies using normal
+        // paragraphs plus source-faithful images for tables and diagrams.
+        let builtWith = 'source-regions';
+        const buildResult = buildExamWithPython(examName, questions, qpPath, msPath, qpDocxPath, msDocxPath);
+        if (!buildResult || !buildResult.success) {
+          throw new Error(buildResult?.error || 'The Word exam builder is unavailable.');
+        }
+        const docxBuilt = !!(
+          buildResult.docx &&
+          fs.existsSync(qpDocxPath) && fs.statSync(qpDocxPath).size > 0 &&
+          fs.existsSync(msDocxPath) && fs.statSync(msDocxPath).size > 0
+        );
+        if (!docxBuilt) {
+          throw new Error('The editable Word files could not be created. Install the Python dependencies from requirements.txt, then try again.');
+        }
+
+        console.log(`Created exam "${examName}" (${questions.length} questions, ${totalMarks} marks) [${builtWith}${docxBuilt ? ' + Word' : ''}]`);
+
+        const qpUrl = `/exams/${encodeURIComponent(qpDocxFile)}`;
+        const msUrl = `/exams/${encodeURIComponent(msDocxFile)}`;
+
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({
+          success: true,
+          message: 'Exam created successfully!',
+          qpUrl,
+          msUrl,
+          qpPdfUrl: `/exams/${encodeURIComponent(qpFile)}`,
+          msPdfUrl: `/exams/${encodeURIComponent(msFile)}`,
+          format: 'Word',
+          questionCount: questions.length,
+          totalMarks,
+          builtWith
+        }));
+      } catch (err) {
+        console.error('Error creating exam:', err);
         res.writeHead(400, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ success: false, error: err.message }));
       }

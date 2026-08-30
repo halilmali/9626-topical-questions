@@ -63,6 +63,11 @@
             <span>Side-by-Side</span>
           </button>
 
+          <button class="action-btn exam-toggle-btn" id="exam-builder-btn" title="Create an Exam from Selected Questions">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span>Exam Builder (<span id="exam-count">0</span>)</span>
+          </button>
+
           <button class="action-btn bookmark-toggle-btn" id="show-bookmarks-btn" title="View Bookmarked Questions">
             <svg class="bookmark-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
             <span>Bookmarks (<span id="bookmark-count">0</span>)</span>
@@ -165,6 +170,33 @@
         </div>
       </div>
     </aside>
+  </div>
+
+  <!-- Exam Builder Modal -->
+  <div class="exam-modal" id="exam-modal" style="display: none;">
+    <div class="exam-modal-content">
+      <div class="exam-modal-header">
+        <h3>Create Exam</h3>
+        <button class="exam-modal-close" id="exam-modal-close-btn" title="Close">&times;</button>
+      </div>
+      <div class="exam-modal-body">
+        <label class="exam-field-label" for="exam-name-input">Exam Name</label>
+        <input type="text" id="exam-name-input" placeholder="e.g. Chapter 1 Test &mdash; Data Representation" maxlength="120">
+
+        <div class="exam-summary" id="exam-summary"></div>
+
+        <div class="exam-list" id="exam-list"></div>
+
+        <div class="exam-result" id="exam-result" style="display: none;"></div>
+      </div>
+      <div class="exam-modal-footer">
+        <span class="exam-total" id="exam-total-marks"></span>
+        <div class="exam-footer-actions">
+          <button class="exam-clear-btn" id="exam-clear-btn">Clear All</button>
+          <button class="exam-create-btn" id="exam-create-btn">Generate Exam Files</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Lightbox Modal for Image Zoom -->

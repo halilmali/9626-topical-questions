@@ -1431,3 +1431,322 @@ body:not(.dark-mode) .ms-screenshot {
   max-height: 340px;
 }
 
+/* ==========================================================================
+   EXAM BUILDER
+   ========================================================================== */
+
+/* Add to Exam button on question cards */
+.exam-select-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.exam-select-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.exam-select-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background: var(--accent-light);
+}
+
+.exam-select-btn.active {
+  border-color: var(--accent-color);
+  background: var(--accent-light);
+  color: var(--accent-color);
+}
+
+/* Header Exam Builder button badge */
+.exam-toggle-btn {
+  position: relative;
+}
+
+/* Modal */
+.exam-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.exam-modal-content {
+  display: flex;
+  flex-direction: column;
+  width: min(620px, calc(100vw - 40px));
+  max-height: calc(100vh - 80px);
+  background: var(--bg-sidebar);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.exam-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.exam-modal-header h3 {
+  font-family: var(--font-header);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.exam-modal-close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.exam-modal-close:hover {
+  color: var(--text-main);
+  background: var(--accent-light);
+}
+
+.exam-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px 22px;
+}
+
+.exam-field-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+#exam-name-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-app);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#exam-name-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+.exam-summary {
+  margin: 14px 0 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.exam-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exam-list-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: var(--card-bg);
+}
+
+.exam-row-num {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.exam-row-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.exam-row-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.exam-row-meta {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.exam-row-remove {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.exam-row-remove:hover {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.08);
+}
+
+.exam-empty {
+  padding: 28px 16px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  border: 1px dashed var(--border-color);
+  border-radius: 10px;
+}
+
+.exam-empty p + p {
+  margin-top: 6px;
+  font-size: 0.8rem;
+}
+
+/* Result box */
+.exam-result {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+}
+
+.exam-result-success {
+  background: var(--ms-bg);
+  border: 1px solid var(--ms-border);
+  color: var(--ms-text);
+}
+
+.exam-result-error {
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #ef4444;
+}
+
+.exam-result-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.exam-result-links-secondary {
+  margin-top: 4px;
+  opacity: 0.75;
+}
+
+.exam-result-links-secondary .pdf-link {
+  font-size: 0.78rem;
+}
+
+.exam-result-note {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+/* Footer */
+.exam-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 22px;
+  border-top: 1px solid var(--border-color);
+}
+
+.exam-total {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.exam-footer-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.exam-clear-btn,
+.exam-create-btn {
+  padding: 9px 18px;
+  border-radius: 10px;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.exam-clear-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+.exam-clear-btn:hover:not(:disabled) {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.exam-clear-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.exam-create-btn {
+  background: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  color: var(--text-inverse);
+}
+
+.exam-create-btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.exam-create-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
